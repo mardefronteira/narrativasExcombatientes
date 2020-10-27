@@ -485,23 +485,7 @@ cursor: pointer;
 
 /* Player */
 
-.mediPlayer {
-  float: left;
-  margin: 2px;
-  cursor: default;
+.clickable {
+  stroke: none;
+  fill: transparent;
 }
-/*
-.player {
-  min-width: 300px;
-  min-height: 55px;
-  max-width: 420px;
-  position: absolute;
-  z-index: 20;
-  text-align: left;
-  top:10vh;
-  left: 10vw;
-  border-radius: 5px;
-  color: var(--darkGray);
-  padding: 10px 10px;
-  background-color: var(--lightGray);
-} */

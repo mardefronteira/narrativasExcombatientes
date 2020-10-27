@@ -57,8 +57,8 @@ d3.csv( './data/frames.csv' ).then( d => data[ 'frames' ] = d );
 
 d3.csv( './data/audio-scenes.csv' ).then( d => {
   data[ 'audios' ] = d.map( a => {
-    a[ 'start_sec' ] = normalize_time( a[ 'start' ].split( ':' ).map( t => +t ) );
-    a[ 'end_sec' ] = normalize_time( a[ 'end' ].split( ':' ).map( t => +t ) );
+    a[ 'start_sec' ] = getTimeInSeconds( a[ 'start' ].split( ':' ).map( t => +t ) );
+    a[ 'end_sec' ] = getTimeInSeconds( a[ 'end' ].split( ':' ).map( t => +t ) );
     return a
   } );
 } );
@@ -69,13 +69,6 @@ d3.select( '#background' )
     last_click = 'restart';
     somethingIsActive = false;
   } );
-
-d3.selectAll('.play-button')
-  .on('click', (e) => {playAudio(e)});
-
-  function playAudio (e) {
-    console.log(e);
-  }
 
 /* Scene interactions */
 d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
@@ -452,25 +445,44 @@ function clearAllPlayers() {
   panels = []
 }
 
-function normalize_time( array ) {
+function getTimeInSeconds( formattedTime ) {
   let hoursInSeconds = 0;
   let minutesInSeconds = 0;
   let seconds = 0;
   let fractionOfSecond = 0;
 
-  if (array.length === 4) {
+  if (formattedTime.length === 4) {
     // if there are four elements in the time list, calculate hours, minutes, seconds and second fraction
-    hoursInSeconds = array[0] * 60 * 60;
-    minutesInSeconds = array[1] * 60;
-    seconds = array[2];
-    fractionOfSecond = array[3] / 60;
-  } else if (array.length === 2) {
+    hoursInSeconds = formattedTime[0] * 60 * 60;
+    minutesInSeconds = formattedTime[1] * 60;
+    seconds = formattedTime[2];
+    fractionOfSecond = formattedTime[3] / 60;
+  } else if (formattedTime.length === 2) {
     // if there are only two, set them as minutes and seconds
-    minutesInSeconds = array[0] * 60;
-    seconds = array[1];
+    minutesInSeconds = formattedTime[0] * 60;
+    seconds = formattedTime[1];
   }
 
   return hoursInSeconds + minutesInSeconds + seconds + fractionOfSecond;
+}
+
+function getFormattedTime( timeInSeconds ) {
+  let hours, minutes, seconds;
+
+  // calculate time in minutes
+  timeInMinutes = timeInSeconds / 60;
+
+  // calculate formatted time
+  hours = Math.floor(timeInMinutes / 60);
+  minutes = Math.floor(timeInMinutes % 60);
+  seconds = Math.floor((timeInMinutes - Math.floor(timeInMinutes)) * 60);
+
+  // add a zero before the value if it's less than 10
+  hours < 10 ? hours = `0${hours}` : '';
+  minutes < 10 ? minutes = `0${minutes}` : '';
+  seconds < 10 ? seconds = `0${seconds}` : '';
+
+  return `${hours}:${minutes}:${seconds}`;
 }
 
 function showFrame(sceneId) {
@@ -851,4 +863,34 @@ function show_elements() {
     }
   }
   last_click = entity;
+}
+
+function mapValue(baseVal, minInput, maxInput, minOutput, maxOutput) {
+  // let mappedVal = constrain(baseVal, minInput, maxInput);
+  // console.log(baseVal, minInput, maxInput, minOutput, maxOutput)
+  return Math.floor((baseVal - minInput) * (maxOutput - minOutput) / (maxInput - minInput) + minOutput);
+}
+
+function constrain(baseVal, min, max) {
+  if (baseVal < min){
+    return min;
+  } else if (baseVal > max){
+    return max;
+  } else {
+    return baseVal;
+  }
+}
+
+function getGroupName(character){
+  let groupName;
+
+  if (character.group !== 'G-02') {
+    groupName = data['groups'].filter( group => group['id'] === character.group)[0].group;
+  } else {
+    let subgroupName;
+    subgroupName = data['subgroups'].filter( subgroup => subgroup['id'] === character.subgroup)[0].subgroup;
+    groupName = `AUC - ${subgroupName}`
+  }
+
+  return groupName;
 }
