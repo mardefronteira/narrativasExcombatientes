@@ -23,13 +23,41 @@ a {
 
 #hidden-menu {
   /* background-color: var(--darkGray);*/
-  background-color: #CC3333; opacity: 85%;
+  background-color: #CC3333; opacity: 85%;
   opacity: .8;
   cursor: default;
-  padding: 5px;
+  /* padding: 5px; */
   position: relative;
   top: 0px;
   transition: 0.5s;
+}
+
+div#close-menu-div {
+  width: 100vw;
+  height: 3vh;
+  right: 0;
+  background-color: var(--darkGray);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+div#info-top-bar{
+  display: none;
+}
+
+div#info-menu-content {
+  /* padding: 10px 0 0 5vw; */
+  font-size: 15px;
+  /* text-align: justify; */
+}
+
+img#btn-close-menu{
+  cursor: pointer;
+  display:flex;
+  width: 100px;
+  height: 100px;
 }
 
 .menu-icon {
@@ -44,6 +72,9 @@ span#menu-title {
   top: 1.5vh;
   left: 3vw;
   cursor: pointer;
+  fill:#F2F2F2;
+  font-size: 14px;
+  letter-spacing:1;
 }
 
 div#menu-bar{
@@ -71,14 +102,6 @@ div#menu-bar{
 .selected-menu-icon .menu-text {
   fill: var(--darkGray);
   fill-opacity: 1;
-}
-
-img#btn-close-menu{
-  position: absolute;
-  cursor: pointer;
-  bottom: 10px;
-  width: 30px;
-  height: 30px;
 }
 
 span#btn-info{
@@ -162,14 +185,18 @@ span#btn-info{
 .row:before {
   box-sizing: border-box;
 }
+
 .row .col{
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 100%;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-left: 3.2rem;
+}
+
+#empty-col {
+  width: 15vw;
 }
 
 .grid-image{
@@ -250,12 +277,6 @@ span#btn-info{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-#info-top-bar{
-  display: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 video#video{

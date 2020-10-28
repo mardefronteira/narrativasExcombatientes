@@ -355,10 +355,6 @@ function get_entity( elem ) {
   return entity
 }
 
-
-let characterPlayers = [];
-let scenePlayers;
-
 function restart() {
 
   d3.selectAll( '.hidden' )
@@ -406,43 +402,15 @@ function restart() {
     .classed( 'hidden-player', true )
     .classed( 'visible-player', false );
 
-  // Close all panels
-  clearAllPlayers();
-
+    if (player) {
+      clearAllPlayers();
+    }
 }
 
 function clearAllPlayers() {
+  player.removeElements();
+  player = null;
 
-  d3.selectAll('.player').remove();
-  d3.selectAll('.temp-player').remove();
-  characterPlayers = [];
-  scenePlayers = null;
-
-//^^^^^ marcela's reestructuring ^^^^^
-
-  d3.selectAll( '.panel:not(.custom)' )
-    .transition()
-    .duration( 1000 )
-    .style( 'opacity', 0 )
-    .remove();
-
-  d3.selectAll( '.custom' )
-    .transition()
-    .duration( 1000 )
-    .style( 'opacity', 0 )
-    .style( 'visibility', 'hidden' );
-
-  d3.selectAll( '#custom_1,#custom_2,#custom_3' )
-    .style( 'left', '-1000px' );
-
-  d3.selectAll( '.transparent' )
-    .classed( 'transparent', false );
-
-  var sounds = document.getElementsByTagName('audio');
-  for(i=0; i<sounds.length; i++) sounds[i].pause();
-
-  i = 0;
-  panels = []
 }
 
 function getTimeInSeconds( formattedTime ) {
@@ -551,10 +519,10 @@ function showFrame(sceneId) {
     } );
 }
 
-let players = {};
+let player;
 function addPlayer(id, entity) {
-  players[id] = new Player (id, entity);
-  players[id].display();
+  player = new Player (id, entity);
+  player.display();
   // console.log(players);
 }
 
