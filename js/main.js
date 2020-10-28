@@ -1,12 +1,10 @@
 var i = 0;
 var data = {};
-var last_click = 'restart',
-  panels = [];
-
-var elem = null;
-var entity = null;
-
-let somethingIsActive = false;
+var lastClick = {
+  type: 'restart',
+  id: ''
+};
+var somethingIsActive;
 
 d3.csv( './data/scenes.csv' ).then( d => {
   d = d.map( i => {
@@ -66,86 +64,128 @@ d3.csv( './data/audio-scenes.csv' ).then( d => {
 d3.select( '#background' )
   .on( 'click', function() {
     restart();
-    last_click = 'restart';
+    lastClick = {
+      id: null,
+      type: 'restart',
+    }
     somethingIsActive = false;
+    console.log("background click")
   } );
 
 /* Scene interactions */
+let click = {
+  element: null,
+  id: null,
+  type: null,
+}
+
+function getClickedElement( element ){
+  click.element = element;
+  click.id = element.attr('id').slice(0,4);
+
+  if ( element.classed( 'scene' ) ) {
+    click.type = 'scene';
+  } else if ( element.classed( 'group' ) ) {
+    click.type = 'group';
+  } else if ( element.classed( 'subgroup' ) ) {
+    click.type = 'subgroup';
+  } else if ( element.classed( 'character' ) ) {
+    click.type = 'character';
+  } else if ( element.classed( 'frame' ) ) {
+    click.type = 'frame';
+  }
+}
+function updateLastClick() {
+  lastClick = {
+    type: click.type,
+    id: click.id,
+  }
+}
+
 d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
   .on( 'click', function() {
-    somethingIsActive = true;
+    // get element
+    getClickedElement(d3.select( this ))
 
-    elem = d3.select( this );
+    console.log(`last click: ${lastClick.type}(${lastClick.id}), current click: ${click.type}(${click.id})`)
+    console.log(somethingIsActive)
 
-    // Define the kind of node
-    entity = get_entity( elem );
+    switch (lastClick.type) {
 
-    restart();
-
-    console.log( 'last_click: ', last_click );
-    console.log( 'entity: ', entity );
-
-    if ( [ 'group', 'subgroup' ].includes( last_click ) ) {
-
-      if ( entity === 'character') {
-
-        // Showing the panel
-        // show_panel( elem.attr( 'id' ).slice(0,4), entity );
-
-      } else if ( last_click === 'subgroup' && entity === 'group' ) {
-
+      case 'restart':
+        restart();
         show_elements();
+        updateLastClick();
+        break;
 
-      }
-
-    } else if ( last_click === 'scene' && entity === 'character' ) {
-
-      // Show the panel when the character is activated in a scene
-      // show_panel( elem.attr( 'id' ).slice(0,4), entity );
-
-      d3.select( `#${elem.attr('id')}-name` )
-        .classed( 'transparent', true );
-
-    } else {
-
-      if ( ![ 'group', 'subgroup' ].includes( entity ) || last_click === 'restart' ) {
-        if ( !elem.classed( 'active' ) || ( last_click === 'character' && entity === 'scene' ) )
+      case 'scene':
+        if (click.type === 'character'){
+          player.displayCharacter(click.id);
+        } else{
+          restart();
           show_elements();
-      }
+          updateLastClick();
+        }
+        break;
+
+      case 'group':
+        if (click.type === 'character'){
+          restart();
+          show_elements();
+          updateLastClick();
+        }
+        break;
+
+      case 'subgroup':
+        if (['character','group'].includes(click.type)){
+          restart();
+          show_elements();
+          updateLastClick();
+        }
+        break;
+
+      case 'character':
+        restart();
+        show_elements();
+        updateLastClick();
+        break;
+
+      case 'frame':
+        restart();
+        show_elements();
+        updateLastClick();
     }
+
+    somethingIsActive = true;
   } )
   .on( 'mouseover', function() {
 
-    elem = d3.select( this );
+    getClickedElement(d3.select( this ));
 
-    // Define the kind of node
-    entity = get_entity( elem );
-
-
-    if (entity !== 'frame'){
+    if (click.type !== 'frame'){
       d3.selectAll( '.character-name' )
         .classed( 'visible-text', false );
     } else {
-      d3.select(`#${elem.attr( 'id' ).slice(0,4)}-tooltip`)
+      d3.select(`#${click.id}-tooltip`)
         .classed( 'visible-tooltip', true );
 
       // activate frame button
-      d3.select( `#${elem.attr( 'id' ).slice(0,4)}` )
+      d3.select( `#${click.id}` )
         .classed( 'selected-menu-icon', true );
     }
 
-    if ( ( elem.classed( 'active' ) === false ) && ( elem.classed( 'minor' ) === false ) ) {
+    if ( ( click.element.classed( 'active' ) === false ) && ( click.element.classed( 'minor' ) === false ) ) {
 
-      if (entity === 'scene') {
+      if (click.type === 'scene') {
 
-        d3.selectAll(`.${elem.attr('id')}`)
+        d3.selectAll(`.${click.id}`)
           .classed( 'hidden', true );
-        d3.select(`#${elem.attr('id')}-hover`)
+        d3.select(`#${click.id}-hover`)
           .classed('hidden', false);
 
-        if (last_click === 'restart'){
+        if (lastClick.type === 'restart'){
         // Highlight related scenes
-        var related_scenes = data[ 'scenes' ].filter( d => d[ 'id' ] === elem.attr( 'id' ).slice(0,4) )[ 0 ][ 'related' ];
+        var related_scenes = data[ 'scenes' ].filter( d => d[ 'id' ] === click.id )[ 0 ][ 'related' ];
 
         // show related scenes as hover
         for (let scene of related_scenes) {
@@ -163,9 +203,9 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
         }
 
       // Show the elements
-      if ( [ 'scene', 'character' ].includes( entity ) && last_click === 'restart' ) {
+      if ( [ 'scene', 'character' ].includes( click.type ) && lastClick.type === 'restart' ) {
         data[ 'relationships' ]
-          .filter( d => d[ entity ] === elem.attr( 'id' ).slice(0,4) )
+          .filter( d => d[ click.type ] === click.id )
           .map( r => {
             if ( r[ 'character' ] !== '' ) {
               var character = data[ 'characters' ].filter( c => c[ 'id' ] === r[ 'character' ] )[ 0 ];
@@ -214,18 +254,18 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
             }
 
           } );
-      } else if( entity == 'group' ) {
+      } else if( click.type == 'group' ) {
         // this happens when you hover over a group that is not selected or active by scene
         data[ 'characters' ]
-          .filter( d => d[ entity ] === elem.attr( 'id' ).slice(0,4) )
+          .filter( d => d[ click.type ] === click.id )
           .map( r => {
 
             d3.select( '#' + r[ 'group' ] + '.group' )
                 .classed( 'hover', true );
 
-            var group = data[ 'groups' ].filter( g => g[ 'id' ] === elem.attr( 'id' ).slice(0,4) )[ 0 ];
+            var group = data[ 'groups' ].filter( g => g[ 'id' ] === click.id )[ 0 ];
 
-              if ( last_click !== 'subgroup' ) {
+              if ( lastClick.type !== 'subgroup' ) {
 
                 d3.select( '#' + r[ 'group' ] + '.group-name' )
                   .classed( 'visible-text', true );
@@ -245,13 +285,13 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
           } );
 
 
-          var group_characters = data[ 'characters' ].filter( c => c[ 'group' ] === elem.attr( 'id' ).slice(0,4) ).map( c => c[ 'id' ] );
+          var group_characters = data[ 'characters' ].filter( c => c[ 'group' ] === click.id ).map( c => c[ 'id' ] );
           d3.selectAll( group_characters.map( c => '#' + c + '.character' ).join( ',' ) )
             .classed( 'hidden', false );
 
-      } else if( entity == 'subgroup' ) {
+      } else if( click.type == 'subgroup' ) {
         data[ 'characters' ]
-          .filter( d => d[ entity ] === elem.attr( 'id' ).slice(0,4) )
+          .filter( d => d[ click.type ] === click.id )
           .map( r => {
 
             d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
@@ -277,13 +317,13 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
 
           } );
       } else {
-        elem
+        click.element
           .classed( 'hover', true );
       }
 
       // Highlight related scenes
-      if ( entity === 'scene' ) {
-        var related_scenes = data[ 'scenes' ].filter( d => d[ 'id' ] === elem.attr( 'id' ).slice(0,4) )[ 0 ][ 'related' ];
+      if ( click.type === 'scene' ) {
+        var related_scenes = data[ 'scenes' ].filter( d => d[ 'id' ] === click.id )[ 0 ][ 'related' ];
         if ( related_scenes.length > 0 ) {
           d3.selectAll( related_scenes.map( s => '#' + s + '.scene' ).join( ',' ) )
             .classed( 'hover', true );
@@ -301,10 +341,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
       resetScenes();
     }
 
-    elem = d3.select( this );
-
-    // Define the kind of node
-    entity = get_entity( elem );
+    getClickedElement(d3.select( this ));
 
     // Hide all visible elements (no actives)
     d3.selectAll( '.hover' )
@@ -324,7 +361,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
     d3.selectAll( '.frame' )
       .classed( 'selected-menu-icon', false );
 
-    if ( last_click !== 'restart' ) {
+    if ( lastClick.type !== 'restart' ) {
       d3.selectAll( '.character:not(.active)' )
           .classed( 'hidden', true );
     }
@@ -338,22 +375,6 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
     }
 
   } );
-
-function get_entity( elem ) {
-  entity;
-  if ( elem.classed( 'scene' ) ) {
-    entity = 'scene';
-  } else if ( elem.classed( 'group' ) ) {
-    entity = 'group';
-  } else if ( elem.classed( 'subgroup' ) ) {
-    entity = 'subgroup';
-  } else if ( elem.classed( 'character' ) ) {
-    entity = 'character';
-  } else if ( elem.classed( 'frame' ) ) {
-    entity = 'frame';
-  }
-  return entity
-}
 
 function restart() {
 
@@ -410,7 +431,6 @@ function restart() {
 function clearAllPlayers() {
   player.removeElements();
   player = null;
-
 }
 
 function getTimeInSeconds( formattedTime ) {
@@ -520,9 +540,22 @@ function showFrame(sceneId) {
 }
 
 let player;
-function addPlayer(id, entity) {
-  player = new Player (id, entity);
-  player.display();
+function addPlayer(id, type) {
+  switch (type){
+    case 'scene':
+      player = new ScenePlayer (id, type);
+      player.display();
+      break;
+    case 'group':
+      console.log('open group player')
+      break;
+    case 'subgroup':
+      console.log('open subgroup player')
+      break;
+    case 'character':
+      console.log('open character player')
+      break;
+  }
   // console.log(players);
 }
 
@@ -574,9 +607,9 @@ function show_elements() {
       .classed( 'hidden', true );
 
     // Show the elements
-    if(entity === 'scene') {
+    if(click.type === 'scene') {
 
-      let sceneId = elem.attr('id').slice(0,4);
+      let sceneId = click.id;
       // console.log('sceneId: '+sceneId);
 
       // why???
@@ -592,7 +625,7 @@ function show_elements() {
 
       // get related characters
       data[ 'relationships' ]
-        .filter( d => d[ entity ] === elem.attr( 'id' ).slice(0,4) )
+        .filter( d => d[ click.type ] === click.id )
         .map( r => {
           if ( r[ 'character' ] !== '' ) {
             var character = data[ 'characters' ].filter( c => c[ 'id' ] === r[ 'character' ] )[ 0 ];
@@ -638,9 +671,9 @@ function show_elements() {
           }
 
         } );
-    } else if (entity === 'character') {
+    } else if (click.type === 'character') {
       data[ 'relationships' ]
-        .filter( d => d[ entity ] === elem.attr( 'id' ).slice(0,4) )
+        .filter( d => d[ click.type ] === click.id )
         .map( r => {
           if ( r[ 'character' ] !== '' ) {
             var character = data[ 'characters' ].filter( c => c[ 'id' ] === r[ 'character' ] )[ 0 ];
@@ -700,9 +733,9 @@ function show_elements() {
           }
 
         } );
-    } else if( entity == 'group' ) {
+    } else if( click.type == 'group' ) {
       data[ 'characters' ]
-        .filter( d => d[ entity ] === elem.attr( 'id' ).slice(0,4) )
+        .filter( d => d[ click.type ] === click.id )
         .map( r => {
 
           d3.select( '#' + r[ 'group' ] + '.group' )
@@ -710,7 +743,7 @@ function show_elements() {
             .classed( 'visited', true );
 
 
-          var group = data[ 'groups' ].filter( g => g[ 'id' ] === elem.attr( 'id' ).slice(0,4) )[ 0 ];
+          var group = data[ 'groups' ].filter( g => g[ 'id' ] === click.id )[ 0 ];
           if ( group[ 'organizer' ] === 'false' ) {
 
             d3.select( '#' + r[ 'group' ] + '.group-name' )
@@ -728,14 +761,14 @@ function show_elements() {
               .classed( 'active-text', true );
 
           } else {
-            d3.select( `#${elem.attr('id')}-player` )
+            d3.select( `#${click.id}-player` )
               .classed( 'visible-organizer', true );
           }
 
         } );
-    } else if( entity == 'subgroup' ) {
+    } else if( click.type == 'subgroup' ) {
       data[ 'characters' ]
-        .filter( d => d[ entity ] === elem.attr( 'id' ).slice(0,4) )
+        .filter( d => d[ click.type ] === click.id )
         .map( r => {
 
           d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
@@ -766,12 +799,12 @@ function show_elements() {
             .classed( 'active-text', true );
 
         } );
-    } else if (entity === 'frame') {
+    } else if (click.type === 'frame') {
         // get scene list in frames.csv
-        sceneList = data[ 'frames' ].filter( frame => frame[ 'id' ] === elem.attr('id') )[ 0 ]['scenes'].split(',');
+        sceneList = data[ 'frames' ].filter( frame => frame[ 'id' ] === click.id )[ 0 ]['scenes'].split(',');
         sceneList.map(sceneId => { showFrame(sceneId) });
     } else {
-      elem
+      click.element
         .classed( 'hidden', false )
         .classed( 'visited', true )
         .classed( 'active', true );
@@ -779,16 +812,16 @@ function show_elements() {
 
 
     // Highlight related scenes >> in show_elements (click)
-    if ( entity === 'scene' ) {
+    if ( click.type === 'scene' ) {
 
       // switch scene node to active
-      // d3.selectAll(`.${elem.attr('id')}`)
+      // d3.selectAll(`.${click.id}`)
       //   .classed( 'hidden', true );
-      d3.selectAll(`#${elem.attr('id')}-active`)
+      d3.selectAll(`#${click.id}-node-active`)
         .classed( 'hidden', false );
 
       // Highlight related scenes
-      var related_scenes = data[ 'scenes' ].filter( d => d[ 'id' ] === elem.attr( 'id' ).slice(0,4) )[ 0 ][ 'related' ];
+      var related_scenes = data[ 'scenes' ].filter( d => d[ 'id' ] === click.id )[ 0 ][ 'related' ];
       if ( related_scenes.length > 0 ) {
 
         // switch related scene node to minor
@@ -815,22 +848,12 @@ function show_elements() {
     d3.select( '.phantoms' )
       .style( 'visibility', 'hidden' );
 
-    if(entity !== 'frame') {
-      // Showing the panel
-      // show_panel( elem.attr( 'id' ).slice(0,4), entity );
 
-      // Temporary for 19/10 meeting
-      addPlayer(elem.attr('id'), entity);
-
-      let thisPlayer = d3.select(`#${elem.attr('id')}-player`);
-      if( thisPlayer !== null && thisPlayer.classed('organizer-screen') ) {
-        thisPlayer
-        .classed( 'hidden-player', false )
-        .classed( 'visible-player', true );
-      }
-    }
   }
-  last_click = entity;
+  if (click.type !== 'frame'){
+    // show player
+    addPlayer(click.id, click.type);
+  }
 }
 
 function mapValue(baseVal, minInput, maxInput, minOutput, maxOutput) {
