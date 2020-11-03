@@ -1,5 +1,5 @@
 class ScenePlayer {
-  constructor(id, entity){
+  constructor(id, entity) {
     this.id = id.slice(0,4);
     this.type = entity;
     this.playerId = `scene-player`;
@@ -148,13 +148,15 @@ class ScenePlayer {
   }
 
   playPause(e) {
-    // pause all other players
-    Array.from(document.querySelectorAll('audio')).map(audio => audio.pause());
-
-    // play or pause audio
+    // get audio info
     let targetType = e.target.id.split('-')[0];
     let audioId = targetType === 'scene' ? this.audioId : this.characterAudio;
     let audioElement = document.getElementById(audioId);
+
+    // pause all other players
+    Array.from(document.querySelectorAll('audio')).map(audio => audio.id !== audioId ? audio.pause() : ``);
+
+    // play or pause audio
     audioElement.paused ? audioElement.play() : audioElement.pause();
   }
 
@@ -211,4 +213,19 @@ class ScenePlayer {
       group.innerHTML = currentCharacter.groupName;
     }
   }
+}
+
+class GroupPlayer {
+  constructor (id) {
+    this.id = id.slice(0,4);
+    this.type = `group`;
+    this.playerId = `scene-player`;
+    this.audioId = `scene-audio`;
+    this.playerSVG = groupPlayer; // player SVG in ./svg/players.js
+    this.characterAudios = [];
+    this.characters = [];
+    this.clickables = [];
+  }
+
+
 }
