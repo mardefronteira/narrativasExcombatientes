@@ -214,18 +214,3 @@ class ScenePlayer {
     }
   }
 }
-
-class GroupPlayer {
-  constructor (id) {
-    this.id = id.slice(0,4);
-    this.type = `group`;
-    this.playerId = `scene-player`;
-    this.audioId = `scene-audio`;
-    this.playerSVG = groupPlayer; // player SVG in ./svg/players.js
-    this.characterAudios = [];
-    this.characters = [];
-    this.clickables = [];
-  }
-
-
-}

@@ -130,17 +130,17 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
 
       case 'group':
         if (click.type === 'character'){
-          restart();
-          show_elements();
-          updateLastClick();
+          player.displayCharacter(click.id);
         }
         break;
 
       case 'subgroup':
-        if (['character','group'].includes(click.type)){
+        if (click.type === 'group'){
           restart();
           show_elements();
           updateLastClick();
+        } else if (click.type === 'character'){
+          player.displayCharacter(click.id);
         }
         break;
 
@@ -547,10 +547,12 @@ function addPlayer(id, type) {
       player.display();
       break;
     case 'group':
-      console.log('open group player')
+      player = new GroupPlayer(id);
+      player.display();
       break;
     case 'subgroup':
-      console.log('open subgroup player')
+      player = new GroupPlayer(id);
+      player.display();
       break;
     case 'character':
       console.log('open character player')
