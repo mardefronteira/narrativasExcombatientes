@@ -67,3 +67,34 @@ let scenePlayer =  `
   </g>
  `
 //style="fill:#0D0D0D; font-family:'Heebo-Bold'; font-size:17px;"
+/*
+<text >
+<tspan x="0" y="0" style="fill:#252526; font-family:'Heebo-Bold'; font-size:16px; letter-spacing:1;">Francisco Caraballo</tspan>
+<tspan x="0" y="20" style="fill:#252526; font-family:'Heebo-Medium'; font-size:16px; letter-spacing:1;">EPL</tspan>
+</text>
+*/
+
+characterPlayer = `
+  <rect id="player-background" x="720.3453" y="0.3461" style="opacity:0.09;fill:#252526;" width="491.9806" height="1090"/>
+  <foreignObject transform="matrix(1 0 0 1 779.5695 104.1689)" x="0" y="0" width="420" height="100">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+    <span id="character-name">Nome personagem</span>
+    <br />
+    <span id="character-group">Grupo</span>
+    </div>
+  </foreignObject>
+  <text id="character-time" transform="matrix(1 0 0 1 1116.4893 179.1159)" style="fill:#252526; font-family:'Heebo-Medium'; font-size:11px;">– 00:00:00</text>
+  <line id="character-timeline" style="opacity:0.24;fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="779.7209" y1="175.2357" x2="1108.7209" y2="175.2357"/>
+  <line id="character-marker" style="fill:none;stroke:#252526;stroke-width:1.9269;stroke-linecap:round;stroke-miterlimit:10;" x1="779.7209" y1="165.0012" x2="779.7209" y2="186.0974"/>
+  <polygon id="character-button" style="fill:transparent;stroke:#252526;stroke-width:1.9269;stroke-miterlimit:10;" points="751.8037,185.2304 751.8037,165.9813
+	751.8267,165.7636 751.867,165.5981 751.952,165.4193 752.0593,165.2493 752.1845,165.1062 752.3231,165.0034 752.502,164.896
+	752.6675,164.8379 752.8419,164.7977 753.0655,164.7977 753.2488,164.829 753.4501,164.8871 753.6513,164.9899 753.7159,165.0219
+	766.4427,174.6554 766.5303,174.7298 766.6377,174.8505 766.7003,174.922 766.754,175.0025 766.7897,175.0741 766.8255,175.159
+	766.8568,175.253 766.8881,175.3558 766.906,175.4631 766.9194,175.5705 766.9105,175.7001 766.8926,175.8388 766.8524,175.9819
+	766.7986,176.1071 766.7495,176.2234 766.6913,176.3083 766.5974,176.4201 766.499,176.5051 766.4427,176.5549 753.7159,186.1606
+	753.5842,186.2494 753.4634,186.312 753.3248,186.3701 753.1862,186.3969 753.0386,186.4193 752.8374,186.4148 752.6183,186.3612
+	752.3992,186.2672 752.2158,186.1331 752.0861,186.0034 751.9833,185.8648 751.9028,185.7083 751.8447,185.5696 751.8044,185.3952
+	"/>
+  <line id="character-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="779.7209" y1="175.2357" x2="779.7209" y2="175.2357"/>
+
+`

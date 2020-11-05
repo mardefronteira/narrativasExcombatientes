@@ -555,7 +555,8 @@ function addPlayer(id, type) {
       player.display();
       break;
     case 'character':
-      console.log('open character player')
+    player = new CharacterPlayer(id);
+    player.display();
       break;
   }
   // console.log(players);

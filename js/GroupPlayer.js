@@ -1,7 +1,6 @@
 class GroupPlayer {
-  constructor(id, entity) {
+  constructor(id) {
     this.id = id.slice(0,4);
-    this.type = entity;
     this.playerId = `group-player`;
     this.playerSVG = groupPlayer; // player SVG in ./svg/players.js
     this.characterAudios = [];
@@ -23,10 +22,11 @@ class GroupPlayer {
     let groupInfo;
     if (this.id[0] === 'G') {
       groupInfo = data['groups'].filter(group => group['id'] === this.id)[0];
+      document.querySelector('#group-name').innerHTML = groupInfo.group;
     } else {
       groupInfo = data['subgroups'].filter(subgroup => subgroup['id'] === this.id)[0];
+      document.querySelector('#group-name').innerHTML = groupInfo.subgroup;
     }
-    document.querySelector('#group-name').innerHTML = groupInfo.group;
     document.querySelector('#group-description').innerHTML = groupInfo.description;
 
     // get character data
