@@ -3,6 +3,8 @@ class ScenePlayer {
     this.id = id.slice(0,4);
     this.type = entity;
     this.playerId = `scene-player`;
+    this.playerPosition = eval(`${this.id.replace('-','')}.playerPosition`);
+    this.playerColor = eval(`${this.id.replace('-','')}.playerColor`);
     this.audioId = `scene-audio`;
     this.characterAudio = `character-audio`;
     this.playerSVG = scenePlayer; // player SVG in ./svg/players.js
@@ -20,6 +22,9 @@ class ScenePlayer {
     let gElement = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     gElement.id = this.playerId;
     gElement.innerHTML = this.playerSVG;
+    // set matrix back to pixel zero
+    console.log(this.playerPosition - 680.3453)
+    gElement.setAttribute( "transform", `translate(${this.playerPosition-680.3453},0)`);
     gElement.classList.add('player');
 
     // create audio elements
@@ -85,6 +90,9 @@ class ScenePlayer {
     name.innerHTML = data['scenes'].filter(scene => scene['id'] === this.id)[0].scene;
     document.getElementById('scene-character').innerHTML = '';
     document.getElementById('scene-group').innerHTML = '';
+
+    // set background color
+    document.getElementById('player-background').setAttribute("fill", this.playerColor);
   }
 
   displayCharacter( characterId ) {

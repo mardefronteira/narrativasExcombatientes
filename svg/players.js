@@ -1,5 +1,5 @@
 let scenePlayer =  `
-<rect id="player-background" x="680.3453" y="0.3461" style="fill:#252526;opacity:0.09;" width="491.9806" height="1090"/>
+<rect id="player-background" x="680.3453" y="0" style="opacity:0.13;" width="491.9806" height="1090"/>
 <g id="scene-player">
    <text transform="matrix(1 0 0 1 739.6605 380.1401)">
      <tspan id="scene-name" x="0" y="0" style="fill:#252526; font-family:"Heebo-Bold"; font-size:16px; letter-spacing:1;">Scene name</tspan>

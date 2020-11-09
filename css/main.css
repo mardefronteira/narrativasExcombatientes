@@ -504,9 +504,31 @@ cursor: pointer;
 }
 
 
-/* Player */
+/* player */
 
 .clickable {
   stroke: none;
   fill: transparent;
+}
+
+/* group classes */
+
+.minor-group {
+  stroke-width: 0.75;
+}
+
+.active-group {
+  stroke-width: 1.5;
+}
+
+/* character classes */
+
+.active-character {
+  fill-opacity: 1;
+}
+
+.teste {
+  fill: #f87d6f;
+  stroke: #f87d6f;
+  background-color: blue;
 }

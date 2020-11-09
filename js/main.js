@@ -108,7 +108,6 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
     getClickedElement(d3.select( this ))
 
     console.log(`last click: ${lastClick.type}(${lastClick.id}), current click: ${click.type}(${click.id})`)
-    console.log(somethingIsActive)
 
     switch (lastClick.type) {
 
@@ -155,52 +154,85 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
         show_elements();
         updateLastClick();
     }
-
     somethingIsActive = true;
+    console.log(`is something active? ${somethingIsActive}`);
   } )
   .on( 'mouseover', function() {
-
+    // get hovered element
     getClickedElement(d3.select( this ));
 
-    if (click.type !== 'frame'){
+    // node behavior in home page
+    if (lastClick.type = 'restart') {
+
+      // hide all character names
       d3.selectAll( '.character-name' )
         .classed( 'visible-text', false );
-    } else {
-      d3.select(`#${click.id}-tooltip`)
-        .classed( 'visible-tooltip', true );
 
-      // activate frame button
-      d3.select( `#${click.id}` )
-        .classed( 'selected-menu-icon', true );
+      // set all scene nodes to minor
+      d3.selectAll('.initial-node')
+        .classed( 'hidden', true );
+
+      d3.selectAll('.hover-node')
+        .classed( 'hidden', true );
+
+      d3.selectAll('.minor-node')
+        .classed( 'hidden', false );
+
+      // set all groups to minor
+      d3.selectAll('.group')
+        .classed( 'active-group', false )
+        .classed( 'minor-group', true );
+
+      // set all groups to minor
+      d3.selectAll('.subgroup')
+        .classed( 'active-group', false )
+        .classed( 'minor-group', true );
+
+      // clicked element behavior
+      switch (click.type) {
+
+        case 'frame':
+          // show tooltip
+          d3.select(`#${click.id}-tooltip`)
+            .classed( 'visible-tooltip', true );
+          // activate frame button
+          d3.select( `#${click.id}` )
+            .classed( 'selected-menu-icon', true );
+            break;
+
+        case 'scene':
+          if (!click.element.classed('active')){
+            // Hide all nodes from selected scene
+            d3.selectAll(`.${click.id}-node`)
+              .classed( 'hidden', true );
+            d3.select(`#${click.id}-hover`)
+              .classed('hidden', false);
+
+            showRelatedScenes(click.id);
+          }
+          break;
+
+        default:
+        ''
+      }
     }
+
 
     if ( ( click.element.classed( 'active' ) === false ) && ( click.element.classed( 'minor' ) === false ) ) {
 
       if (click.type === 'scene') {
 
+        // Show hover node of selected scene
         d3.selectAll(`.${click.id}`)
           .classed( 'hidden', true );
         d3.select(`#${click.id}-hover`)
           .classed('hidden', false);
 
         if (lastClick.type === 'restart'){
-        // Highlight related scenes
-        var related_scenes = data[ 'scenes' ].filter( d => d[ 'id' ] === click.id )[ 0 ][ 'related' ];
-
-        // show related scenes as hover
-        for (let scene of related_scenes) {
-
-              d3.select(`#${scene}-node`)
-                .classed( 'hover', false );
-
-              d3.selectAll(`#${scene}-node-initial`)
-                .classed( 'hidden', true );
-
-              d3.selectAll(`#${scene}-node-hover`)
-                .classed( 'hidden', false );
-            }
-          }
+          // Highlight related scenes
+          showRelatedScenes(click.id);
         }
+      }
 
       // Show the elements
       if ( [ 'scene', 'character' ].includes( click.type ) && lastClick.type === 'restart' ) {
@@ -230,11 +262,11 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
 
               if ( r[ 'subgroup' ] !== '' ) {
                 d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
-                  .classed( 'hover', true );
+                  .classed( 'active-group', true );
               }
 
               d3.select( '#' + r[ 'group' ] + '.group' )
-                  .classed( 'hover', true );
+                  .classed( 'active-group', true );
 
               d3.select( '#' + r[ 'group' ] + '.group-link' )
                 .classed( 'visible-link', true );
@@ -243,7 +275,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
                 .classed( 'visible-text', true );
 
               d3.select( '#' + r[ 'character' ] + '.character' )
-                .classed( 'hover', true );
+                .classed( 'active-character', true );
 
               d3.select( '#' + r[ 'character' ] + '.character-link' )
                 .classed( 'visible-link', true );
@@ -261,7 +293,8 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
           .map( r => {
 
             d3.select( '#' + r[ 'group' ] + '.group' )
-                .classed( 'hover', true );
+              .classed( 'hover', true )
+              .classed( 'active-group', true );
 
             var group = data[ 'groups' ].filter( g => g[ 'id' ] === click.id )[ 0 ];
 
@@ -273,7 +306,8 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
               }
 
               d3.select( '#' + r[ 'id' ] + '.character' )
-                .classed( 'hover', true );
+                .classed( 'hover', true )
+                .classed( 'active-character', true );;
 
               d3.select( '#' + r[ 'id' ] + '.character-link' )
                 .classed( 'visible-link', true );
@@ -295,10 +329,10 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
           .map( r => {
 
             d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
-                .classed( 'hover', true );
+                .classed( 'active-group', true );
 
             d3.select( '#' + r[ 'group' ] + '.group' )
-                .classed( 'hover', true );
+                .classed( 'active-group', true );
 
             d3.select( '#' + r[ 'subgroup' ] + '.subgroup-name' )
               .classed( 'visible-text', true );
@@ -307,7 +341,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
               .classed( 'visible-text', true );
 
             d3.select( '#' + r[ 'id' ] + '.character' )
-              .classed( 'hover', true );
+              .classed( 'active-character', true );
 
             d3.select( '#' + r[ 'id' ] + '.character-link' )
               .classed( 'visible-link', true );
@@ -316,50 +350,46 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
               .classed( 'visible-text', true );
 
           } );
-      } else {
-        click.element
-          .classed( 'hover', true );
-      }
-
-      // Highlight related scenes
-      if ( click.type === 'scene' ) {
-        var related_scenes = data[ 'scenes' ].filter( d => d[ 'id' ] === click.id )[ 0 ][ 'related' ];
-        if ( related_scenes.length > 0 ) {
-          d3.selectAll( related_scenes.map( s => '#' + s + '.scene' ).join( ',' ) )
-            .classed( 'hover', true );
-
-          d3.selectAll( related_scenes.map( s => '#' + s + '.scene-name' ).join( ',' ) )
-            .classed( 'visible-text', true );
-        }
       }
     }
 
-  } )
+  } );
+
+
+d3.selectAll( '.scene,.group,.subgroup,.character' )
   .on( 'mouseout', function() {
-
-    if (!somethingIsActive) {
-      resetScenes();
-    }
 
     getClickedElement(d3.select( this ));
 
-    // Hide all visible elements (no actives)
-    d3.selectAll( '.hover' )
-      .classed( 'hover', false );
+    if (!somethingIsActive) {
+      resetScenes();
 
-    d3.selectAll( '.visible-text' )
-      .classed( 'visible-text', false );
+      // Hide all visible elements (no actives)
+      d3.selectAll( '.group', '.subgroup' )
+        .classed( 'active-group', false )
+        .classed( 'minor-group', true );
 
-    d3.selectAll( '.visible-link' )
-      .classed( 'visible-link', false );
+      d3.selectAll( '.subgroup' )
+        .classed( 'active-group', false )
+        .classed( 'minor-group', true );
 
-    // hide tooltips
-    d3.selectAll( '.visible-tooltip' )
-    .classed( 'visible-tooltip', false );
+      d3.selectAll( '.hover' )
+        .classed( 'hover', false );
 
-    // deactivate frame button
-    d3.selectAll( '.frame' )
-      .classed( 'selected-menu-icon', false );
+      d3.selectAll( '.visible-text' )
+        .classed( 'visible-text', false );
+
+      d3.selectAll( '.visible-link' )
+        .classed( 'visible-link', false );
+
+      // hide tooltips
+      d3.selectAll( '.visible-tooltip' )
+      .classed( 'visible-tooltip', false );
+
+      // deactivate frame button
+      d3.selectAll( '.frame' )
+        .classed( 'selected-menu-icon', false );
+    }
 
     if ( lastClick.type !== 'restart' ) {
       d3.selectAll( '.character:not(.active)' )
@@ -376,6 +406,25 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
 
   } );
 
+  d3.selectAll('.frame').on( 'mouseout', function() {
+
+    if (!somethingIsActive) {
+      resetScenes();
+    }
+
+    getClickedElement(d3.select( this ));
+
+    // hide tooltips
+    d3.selectAll( '.visible-tooltip' )
+    .classed( 'visible-tooltip', false );
+
+    if (lastClick.id !== click.id){
+      // deactivate frame button
+      d3.selectAll( '.frame' )
+        .classed( 'selected-menu-icon', false );
+    }
+  });
+
 function restart() {
 
   d3.selectAll( '.hidden' )
@@ -384,27 +433,38 @@ function restart() {
   // reset scene nodes to initial
   d3.selectAll( '.scene-node' )
     .classed( 'hidden', true );
+
   d3.selectAll( '.initial-node' )
     .classed( 'hidden', false );
-
-  d3.selectAll( '.active-node')
-    .classed( 'hidden', true );
 
   d3.selectAll('.in-frame')
     .classed( 'in-frame', false );
 
+  // reset all group nodes to minor
+  d3.selectAll( '.group','.subgroup' )
+    .classed( 'active-group', false )
+    .classed( 'minor-group', true );
+
+  // reset all character nodes to minor
+  d3.selectAll( '.character' )
+    .classed( 'active-character', false );;
+
+  // hide all links
   d3.selectAll( '.active-link' )
     .classed( 'active-link', false );
 
+  // hide all organizer screens
   d3.selectAll( '.organizer-screen' )
     .classed( 'visible-organizer', false );
 
+  // set all elements as not active
   d3.selectAll( '.active' )
     .classed( 'active', false );
 
   d3.selectAll( '.active-text' )
     .classed( 'active-text', false );
 
+  // hide all text
   d3.selectAll( '.visible-text' )
     .classed ( 'visible-text', false );
 
@@ -486,13 +546,12 @@ function showFrame(sceneId) {
     } )
     .map( r => {
 
-      d3.select( `#${r['scene']}-active-node`)
-        .classed( 'hidden', true );
-
       d3.select( '#' + r[ 'scene' ] + '.scene' )
         .classed( 'hidden', false )
-        .classed( 'in-frame', true );
+        .classed( 'in-frame', true )
 
+      d3.select( `#${r['scene']}-node-hover`)
+        .classed( 'hidden', false );
 
       d3.select( '#' + r[ 'scene' ] + '.scene-link' )
         .classed( 'active-link', true );
@@ -565,7 +624,7 @@ function addPlayer(id, type) {
 function loaded() {
   // create scene nodes dinamically
   let scenes = document.querySelectorAll('.scene');
-  let nodeTypes = ['active','initial','hover'];
+  let nodeTypes = ['minor','initial','hover'];
 
   // for every scene, get its jsId
   for (let scene of scenes) {
@@ -579,7 +638,7 @@ function loaded() {
       thisNode.classList.add('scene-node');
       thisNode.classList.add(`${scene.id.slice(0,4)}-node`);
       thisNode.classList.add(`${nodeTypes[i]}-node`);
-      thisNode.innerHTML = eval(`${jsId}.${nodeTypes[i]}`);
+      thisNode.innerHTML = eval(`${jsId}.${nodeTypes[i]}Node`);
 
       scene.appendChild(thisNode);
     }
@@ -589,10 +648,13 @@ function loaded() {
 }
 
 function resetScenes() {
-  d3.selectAll('.scene-node')
-    .classed('hidden', true);
-  d3.selectAll('.initial-node')
-    .classed('hidden', false);
+  d3.selectAll( '.scene-node' )
+    .classed( 'hidden', true );
+  d3.selectAll( '.initial-node' )
+    .classed( 'hidden', false );
+
+  d3.selectAll( '.character' )
+    .classed( 'active-character', false );
 }
 
 function show_elements() {
@@ -613,11 +675,6 @@ function show_elements() {
     if(click.type === 'scene') {
 
       let sceneId = click.id;
-      // console.log('sceneId: '+sceneId);
-
-      // why???
-      // d3.selectAll( `${sceneId}-node-active` )
-      //   .classed( 'hidden', false );
 
       // activate name and link of clicked scene
       d3.select( '#' + sceneId + '.scene-link' )
@@ -664,7 +721,8 @@ function show_elements() {
             d3.select( '#' + r[ 'character' ] + '.character' )
               .classed( 'hidden', false )
               .classed( 'visited', true )
-              .classed( 'active', true );
+              .classed( 'active', true )
+              .classed( 'active-character', true );
 
             d3.select( '#' + r[ 'character' ] + '.character-link' )
               .classed( 'active-link', true );
@@ -755,7 +813,8 @@ function show_elements() {
             d3.select( '#' + r[ 'id' ] + '.character' )
               .classed( 'hidden', false )
               .classed( 'visited', true )
-              .classed( 'active', true );
+              .classed( 'active', true )
+              .classed( 'active-character', true );
 
             d3.select( '#' + r[ 'id' ] + '.character-link' )
               .classed( 'active-link', true );
@@ -792,7 +851,8 @@ function show_elements() {
           d3.select( '#' + r[ 'id' ] + '.character' )
             .classed( 'hidden', false )
             .classed( 'visited', true )
-            .classed( 'active', true );
+            .classed( 'active', true )
+            .classed( 'active-character', true );;
 
           d3.select( '#' + r[ 'id' ] + '.character-link' )
             .classed( 'active-link', true );
@@ -887,4 +947,21 @@ function getGroupName(character){
   }
 
   return groupName;
+}
+
+function showRelatedScenes(sceneId) {
+  // Highlight related scenes
+  var relatedScenes = data[ 'scenes' ].filter( d => d[ 'id' ] === sceneId )[ 0 ][ 'related' ];
+
+  // show related scenes as hover
+  for (let scene of relatedScenes) {
+    d3.selectAll(`#${scene}-node-initial`)
+      .classed( 'hidden', true );
+
+    d3.selectAll(`#${scene}-node-hover`)
+      .classed( 'hidden', false );
+
+    d3.selectAll(`#${scene}-node-minor`)
+      .classed( 'hidden', true );
+  }
 }
