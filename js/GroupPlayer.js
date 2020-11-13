@@ -43,7 +43,8 @@ class GroupPlayer {
       clickableArea.setAttribute("width", clickable.w);
       clickableArea.setAttribute("height", clickable.h);
       clickableArea.classList.add('clickable');
-      clickableArea.addEventListener('mousedown', e => {this.setTime(e)});
+      clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
+      clickableArea.addEventListener('click', e => {this.setTime(e)});
       document.querySelector(`#character-player-${i}`).appendChild(clickableArea);
 
       let audioElement = document.createElement('AUDIO');

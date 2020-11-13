@@ -29,7 +29,8 @@ class CharacterPlayer {
     clickableArea.setAttribute("width", this.clickable.w);
     clickableArea.setAttribute("height", this.clickable.h);
     clickableArea.classList.add('clickable');
-    clickableArea.addEventListener('mousedown', e => {this.setTime(e)});
+    clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
+    clickableArea.addEventListener('click', e => {this.setTime(e)});
     document.querySelector(`#character-player`).appendChild(clickableArea);
 
     let audioElement = document.createElement('AUDIO');

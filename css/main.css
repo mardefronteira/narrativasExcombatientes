@@ -49,7 +49,8 @@ div#info-top-bar{
 
 div#info-menu-content {
   /* padding: 10px 0 0 5vw; */
-  font-size: 13px;
+  font-size: 17px;
+  line-height: 22px;
   /* text-align: justify; */
 }
 
@@ -302,6 +303,7 @@ video#video{
   /*font-family: 'Heebo-SemiBold';*/
   font-weight: 600;
   visibility: hidden;
+  font-size: 20px;
 }
 
 .group, .subgroup {
@@ -325,12 +327,21 @@ stroke-miterlimit: 10;
 cursor: pointer;
 } */
 
-.group-name, .subgroup-name {
+.group-name {
   fill: var(--mediumGray);
   /* font-family: 'Heebo-SemiBold'; */
   font-weight: 600;
   visibility: hidden;
-  font-size:12.9993px;
+  font-size: 20px;
+  letter-spacing:1;
+}
+
+.subgroup-name {
+  fill: var(--mediumGray);
+  /* font-family: 'Heebo-SemiBold'; */
+  font-weight: 500;
+  visibility: hidden;
+  font-size: 20px;
   letter-spacing:1;
 }
 
@@ -355,8 +366,9 @@ cursor: pointer;
 .character-name{
   fill: var(--darkGray);
   /*font-family: 'Heebo-SemiBold';*/
-  font-weight: 600;
+  font-weight: 500;
   visibility: hidden;
+  font-size: 20px;
 }
 
 .hover {
@@ -375,8 +387,8 @@ cursor: pointer;
 }
 
 .in-frame {
-  fill-opacity: .77;
-  stroke-opacity: 0;
+  /* fill-opacity: .77;
+  stroke-opacity: 0; */
 }
 
 .minor {
@@ -514,11 +526,11 @@ cursor: pointer;
 /* group classes */
 
 .minor-group {
-  stroke-width: 0.75;
+  opacity: .3;
 }
 
 .active-group {
-  stroke-width: 1.5;
+  opacity: 1;
 }
 
 /* character classes */
@@ -527,8 +539,15 @@ cursor: pointer;
   fill-opacity: 1;
 }
 
+
 .teste {
   fill: #f87d6f;
   stroke: #f87d6f;
   background-color: blue;
+}
+
+/* scene node */
+
+.minor-node {
+  fill:transparent;
 }

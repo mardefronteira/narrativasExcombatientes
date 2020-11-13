@@ -22,10 +22,10 @@ class ScenePlayer {
     let gElement = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     gElement.id = this.playerId;
     gElement.innerHTML = this.playerSVG;
-    // set matrix back to pixel zero
-    console.log(this.playerPosition - 680.3453)
-    gElement.setAttribute( "transform", `translate(${this.playerPosition-680.3453},0)`);
     gElement.classList.add('player');
+
+    // set matrix to player position
+    gElement.setAttribute( "transform", `translate(${this.playerPosition-680.3453},0)`);
 
     // create audio elements
     let audioElement = document.createElement('AUDIO');
@@ -40,7 +40,7 @@ class ScenePlayer {
 
     let characterAudioElement = document.createElement('AUDIO');
     characterAudioElement.id = this.characterAudio;
-    characterAudioElement.preload = 'none';
+    characterAudioElement.preload = 'auto';
     characterAudioElement.dataSize = 45;
     characterAudioElement.currentTime = 0;
     characterAudioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
@@ -67,7 +67,8 @@ class ScenePlayer {
     clickableArea.setAttribute("width", this.clickable.w);
     clickableArea.setAttribute("height", this.clickable.h);
     clickableArea.classList.add('clickable');
-    clickableArea.addEventListener('mousedown', e => {this.setTime(e)});
+    clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
+    clickableArea.addEventListener('click', e => {this.setTime(e)});
     gElement.appendChild(clickableArea);
 
     clickableArea = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
@@ -77,7 +78,8 @@ class ScenePlayer {
     clickableArea.setAttribute("width", this.characterClickable.w);
     clickableArea.setAttribute("height", this.characterClickable.h);
     clickableArea.classList.add('clickable');
-    clickableArea.addEventListener('mousedown', e => {this.setTime(e)});
+    clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
+    clickableArea.addEventListener('click', e => {this.setTime(e)});
     gElement.appendChild(clickableArea);
 
     this.timecodes = data['audios'].filter( relation => relation['scene'] === this.id);
@@ -179,10 +181,10 @@ class ScenePlayer {
   }
 
   setTime(e) {
-    // update audio time based on where the timebar was clicked
-    let targetType = e.target.id.split('-')[0];
-    let audioElement = document.getElementById(`${targetType}-audio`);
-    audioElement.currentTime = mapValue(e.offsetX, 0, this.clickable.w, 0, audioElement.duration);
+      // update audio time based on where the marker was dragged
+      let targetType = e.target.id.split('-')[0];
+      let audioElement = document.getElementById(`${targetType}-audio`);
+      audioElement.currentTime = mapValue(e.offsetX, 0, this.clickable.w, 0, audioElement.duration);
   }
 
   updatePlayer(target) {
