@@ -26,12 +26,6 @@ function showContentInfo(){
 
 function showVideo () {
   $('.modal').show()
-  // document.removeEventListener('mousemove', mouseUpdate);
-
-  // videoElement.loop = false;
-  // videoElement.controls = false;
-  // videoElement.muted = true;
-  // videoElement.play();
 
   video.bind('ended', function () {
     console.log('SE TERMINO EL VIDEO');
@@ -44,7 +38,6 @@ function hideVideo () {
   videoElement.currentTime = 0;
   videoElement.muted = true;
   $('.modal').hide();
-  // document.addEventListener('mousemove', mouseUpdate);
 }
 
 function playVideo(){

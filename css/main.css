@@ -1,5 +1,5 @@
 :root {
-  --darkGray: #333333;
+  --darkGray: #252526;
   --mediumGray: #666666;
   --black: #000000;
   --lightGray: #cccccc;
@@ -15,15 +15,14 @@ body {
 
 a {
   font-weight: bold;
-  color: inherit;
+  color: #33FFCC;
 }
-
 
 /* Top menu */
 
 #hidden-menu {
-  /* background-color: var(--darkGray);*/
-  background-color: #CC3333; opacity: 85%;
+  background-color: var(--darkGray);
+  /* background-color: #CC3333; opacity: 85%; */
   opacity: .8;
   cursor: default;
   /* padding: 5px; */
@@ -35,12 +34,13 @@ a {
 div#close-menu-div {
   width: 100vw;
   height: 3vh;
-  right: 0;
-  background-color: var(--darkGray);
+  background: var(--mediumGray);
+  opacity: 0.7;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
+  border-top: var(--lightGray) solid .5px;
 }
 
 div#info-top-bar{
@@ -68,18 +68,42 @@ img#btn-close-menu{
   stroke-miterlimit:10;
 }
 
-span#menu-title {
-  position:absolute;
+text#menu-title {
+  position:relative;
   top: 1.5vh;
   left: 3vw;
   cursor: pointer;
-  fill:#F2F2F2;
-  font-size: 14px;
   letter-spacing:1;
+  fill:#33FFCC;
+  stroke:none;
+  font-size:19px;
 }
 
 div#menu-bar{
   display:block;
+}
+
+g#btn-info{
+  fill:#33FFCC;
+}
+
+g#M-01{
+  fill:#FF8000;
+}
+g#M-02{
+  fill:#3FA9F5;
+}
+g#M-03{
+  fill:#FFFFFF;
+}
+g#M-04{
+  fill:#05F258;
+}
+g#M-05{
+  fill:#F2E205;
+}
+g#M-06{
+  fill:#3DFFF1;
 }
 
 .menu-node {
@@ -88,11 +112,12 @@ div#menu-bar{
   fill: var(--lightGray);
   fill-opacity: 0;
   pointer-events: visible;
+  stroke-miterlimit:10;
 }
 
-.menu-text {
-  fill: #E2E4E4;
-  stroke: none;
+polygon.menu-node:hover, g#btn-info:hover{
+  fill-opacity: 1;
+  opacity: 1;
 }
 
 .selected-menu-icon .menu-node {
@@ -100,18 +125,19 @@ div#menu-bar{
   opacity: 1;
 }
 
-.selected-menu-icon .menu-text {
-  fill: var(--darkGray);
-  fill-opacity: 1;
+.menu-text {
+  font-size:16px;
+  letter-spacing:1;
+  stroke: none;
 }
 
-span#btn-info{
-  cursor: pointer;
-  position:absolute;
-  right:0;
-  top:0;
-  width:3vw;
-  height:5vh;
+g.frame:hover > text, g#btn-info:hover > text{
+  fill:var(--darkGray);
+}
+
+.selected-menu-icon .menu-text {
+  fill:var(--darkGray);
+  fill-opacity: 1;
 }
 
 #hover-space {
@@ -200,13 +226,28 @@ span#btn-info{
   width: 15vw;
 }
 
+div#contacts {
+  text-align: right;
+}
+
+div#logos{
+  justify-content: space-around;
+  /* text-align: left !important; */
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+
 .grid-image{
   display: flex;
-  justify-content: center;
-  background-color: #FFF;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  /* justify-content: left; */
+  /* background-color: #FFF; */
+  /* margin-right: 10px; */
+  /* margin-bottom: 10px; */
   width: 50%;
+  max-height: 30%;
 }
 
 .organizer-screen {
@@ -421,16 +462,16 @@ cursor: pointer;
 }
 
 .tooltip{
-  opacity: 0;
+  display:none;
 }
 
 .visible-tooltip{
-  opacity: 1;
+  display:block;
 }
 
 .tooltip-popup{
-  opacity: 0.77;
-  fill: var(--darkGray);
+  opacity: 0.9;
+  z-index: -1;
 }
 
 .tooltip-text{

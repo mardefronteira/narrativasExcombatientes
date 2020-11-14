@@ -277,7 +277,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
               d3.select( '#' + r[ 'group' ] + '.group-link' )
                 .classed( 'visible-link', true );
 
-              d3.select( '#' + r[ 'group' ] + '.group-name' )
+              d3.select( '#' + r[ 'group' ] + '-name' )
                 .classed( 'visible-text', true );
 
               d3.select( '#' + r[ 'character' ] + '.character' )
@@ -308,7 +308,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
 
               if ( lastClick.type !== 'subgroup' ) {
 
-                d3.select( '#' + r[ 'group' ] + '.group-name' )
+                d3.select( '#' + r[ 'group' ] + '-name' )
                   .classed( 'visible-text', true );
 
               }
@@ -342,10 +342,10 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
             d3.select( '#' + r[ 'group' ] + '.group' )
                 .classed( 'active-group', true );
 
-            d3.select( '#' + r[ 'subgroup' ] + '.subgroup-name' )
+            d3.select( '#' + r[ 'subgroup' ] + '-name' )
               .classed( 'visible-text', true );
 
-            d3.select( '#' + r[ 'group' ] + '.group-name' )
+            d3.select( '#' + r[ 'group' ] + '-name' )
               .classed( 'visible-text', true );
 
             d3.select( '#' + r[ 'id' ] + '.character' )
@@ -601,7 +601,7 @@ function showFrame(frameId, showLinks = true) {
             .classed( 'active-link', true );
         }
 
-        d3.select( '#' + r[ 'group' ] + '.group-name' )
+        d3.select( '#' + r[ 'group' ] + '-name' )
           .classed( 'active-text', true );
 
         d3.select( '#' + r[ 'character' ] + '.character' )
@@ -751,7 +751,7 @@ function show_elements() {
               d3.select( '#' + r[ 'group' ] + '.group-link' )
                 .classed( 'active-link', true );
 
-              d3.select( '#' + r[ 'group' ] + '.group-name' )
+              d3.select( '#' + r[ 'group' ] + '-name' )
                 .classed( 'active-text', true );
 
               d3.select( '#' + r[ 'character' ] + '.character' )
@@ -820,7 +820,7 @@ function show_elements() {
             d3.select( '#' + r[ 'group' ] + '.group-link' )
               .classed( 'active-link', true );
 
-            d3.select( '#' + r[ 'group' ] + '.group-name' )
+            d3.select( '#' + r[ 'group' ] + '-name' )
               .classed( 'active-text', true );
 
             d3.select( '#' + r[ 'character' ] + '.character' )
@@ -854,7 +854,7 @@ function show_elements() {
           var group = data[ 'groups' ].filter( g => g[ 'id' ] === click.id )[ 0 ];
           if ( group[ 'organizer' ] === 'false' ) {
 
-            d3.select( '#' + r[ 'group' ] + '.group-name' )
+            d3.select( '#' + r[ 'group' ] + '-name' )
               .classed( 'active-text', true );
 
             d3.select( '#' + r[ 'id' ] + '.character' )
@@ -894,10 +894,10 @@ function show_elements() {
             .classed( 'hidden', false )
             .classed( 'visited', true );
 
-          d3.select( '#' + r[ 'group' ] + '.group-name' )
+          d3.select( '#' + r[ 'group' ] + '-name' )
             .classed( 'active-text', true );
 
-          d3.select( '#' + r[ 'subgroup' ] + '.subgroup-name' )
+          d3.select( '#' + r[ 'subgroup' ] + '-name' )
             .classed( 'active-text', true );
 
           d3.select( '#' + r[ 'id' ] + '.character' )
@@ -917,6 +917,8 @@ function show_elements() {
 
       case 'frame':
         showFrame(click.id);
+        d3.select(`#${click.id}`)
+          .classed( 'selected-menu-icon', true );
         break;
 
       default:
@@ -926,46 +928,6 @@ function show_elements() {
           .classed( 'active', true );
     }
 
-
-  //   // Highlight related scenes >> in show_elements (click)
-  //   if ( click.type === 'scene' ) {
-  //
-  //     // switch scene node to active
-  //     // d3.selectAll(`.${click.id}`)
-  //     //   .classed( 'hidden', true );
-  //     d3.selectAll(`#${click.id}-node-active`)
-  //       .classed( 'hidden', false );
-  //
-  //     // Highlight related scenes
-  //     var related_scenes = data[ 'scenes' ].filter( d => d[ 'id' ] === click.id )[ 0 ][ 'related' ];
-  //     if ( related_scenes.length > 0 ) {
-  //
-  //       // switch related scene node to minor
-  //       for (let sceneId of related_scenes) {
-  //
-  //         d3.select(`#${sceneId}-node`)
-  //           .classed( 'hover', false );
-  //
-  //         d3.selectAll(`#${sceneId}-node-initial`)
-  //           .classed( 'hidden', true );
-  //
-  //         d3.selectAll(`#${sceneId}-node-hover`)
-  //           .classed( 'hidden', false );
-  //
-  //         d3.selectAll(`${sceneId}`+'.scene-name')
-  //         .classed( 'hidden', false )
-  //         .classed( 'visible-text', false )
-  //         .classed( 'minor-text', true );
-  //       }
-  //
-  //   }
-  //
-  //   // Hiding the phantoms
-  //   d3.select( '.phantoms' )
-  //     .style( 'visibility', 'hidden' );
-  //
-  //
-  // }
   if (click.type !== 'frame'){
     // show player
     addPlayer(click.id, click.type);
