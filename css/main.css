@@ -7,10 +7,23 @@
 }
 
 body {
-  /* background-color: var(--lightGray); */
-  background: radial-gradient(circle, rgba(255,254,254,0.665703781512605) 6%, rgba(217,217,217,0.6264880952380952) 34%, rgba(51,102,102,0.5788690476190477) 100%);
   font-family: 'Heebo', sans-serif;
   margin: auto;
+}
+
+.gradient-bg{
+  background: radial-gradient(circle, rgba(255,254,254,0.665703781512605) 6%, rgba(217,217,217,0.6264880952380952) 34%, rgba(51,102,102,0.5788690476190477) 100%);
+  transition: 1s;
+}
+
+.black-bg{
+  background: var(--darkGray);
+}
+
+div#intro-page{
+  position:absolute;
+  top:0;
+  left:0;
 }
 
 a {
@@ -49,8 +62,8 @@ div#info-top-bar{
 
 div#info-menu-content {
   /* padding: 10px 0 0 5vw; */
-  font-size: 17px;
-  line-height: 22px;
+  font-size: 1.1em;
+  line-height: 1.3em;
   /* text-align: justify; */
 }
 
@@ -107,17 +120,20 @@ g#M-06{
 }
 
 .menu-node {
-  cursor: pointer;
   stroke: var(--lightGray);
   fill: var(--lightGray);
   fill-opacity: 0;
   pointer-events: visible;
   stroke-miterlimit:10;
+  cursor: pointer;
 }
 
-polygon.menu-node:hover, g#btn-info:hover{
-  fill-opacity: 1;
-  opacity: 1;
+.menu-button {
+  cursor:pointer;
+}
+
+g#intro-buttons {
+  cursor:pointer;
 }
 
 .selected-menu-icon .menu-node {
@@ -131,8 +147,13 @@ polygon.menu-node:hover, g#btn-info:hover{
   stroke: none;
 }
 
-g.frame:hover > text, g#btn-info:hover > text{
+g.menu-button:hover > text {
   fill:var(--darkGray);
+}
+
+g.menu-button:hover > polygon {
+  fill-opacity: 1;
+  opacity: 1;
 }
 
 .selected-menu-icon .menu-text {
@@ -197,6 +218,7 @@ g.frame:hover > text, g#btn-info:hover > text{
   background: #f08c09;
   color: #fff;
 }
+
 #btn-play:hover {
   background: #dd7e03;
 }
@@ -443,7 +465,10 @@ cursor: pointer;
 
 .hidden {
   visibility: hidden;
-  /* fill-opacity:0; */
+}
+
+.hidden-intro-page {
+  visibility: hidden;
 }
 
 .home-text {

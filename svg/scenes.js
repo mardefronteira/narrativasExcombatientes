@@ -62,6 +62,9 @@ let E01 = {
   	1053.566,891.7985 "/>`,
   playerPosition: `650.3453`,
   playerColor: `#F2E205`,
+  player: `
+
+  `,
 }
 let E02 = {
   initialNode: `
@@ -152,6 +155,45 @@ let E03 = {
   	865.9385,905.551 860.4424,904.3702 "/>`,
   playerPosition: `440.3453`,
   playerColor: `#FF8000`,
+  player: `
+    <rect id="player-background" x="440.3453" y="0.3461" style="fill:#FF8000;opacity:0.13;" width="491.9806" height="1090"/>
+    <line id="scene-timeline" style="opacity:0.24;fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="487.8922" y1="727.0568" x2="816.8922" y2="727.0568"/>
+    <text id="scene-time" transform="matrix(1 0 0 1 824.6605 733.5091)" style="fill:#252526; font-size:15px; letter-spacing:1;">– 00:00:00</text>
+    <text transform="matrix(1 0 0 1 484.6604 567.5646)">
+    <tspan id="scene-name" x="0" y="0" style="fill:#0D0D0D; font-size:20px; letter-spacing:1;">EXPANSIÓN DE LAS GUERRILLAS</tspan>
+    <tspan id="scene-character" x="0" y="48" style="fill:#252526; font-size:20px; letter-spacing:1;"></tspan>
+    <tspan id="scene-alias" x="0" y="72" style="fill:#252526; font-size:17px; letter-spacing:1;">Alias Lorem Ipsum</tspan>
+    <tspan id="scene-group" x="0" y="96" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+    </text>
+
+    <text transform="matrix(1 0 0 1 484.6604 104.5148)" style=" fill:#252526; font-size:18px;">
+    <tspan id="scene-frame" x="0" y="0" style="font-size:20px; letter-spacing:1;">Territorialidad</tspan>
+    <tspan x="0" y="54">Los Excombatientes de las guerrillas </tspan>
+    <tspan x="0" y="81">describieron y analizaron críticamente las </tspan>
+    <tspan x="0" y="108">formas en que cada grupo configuró sus bases </tspan>
+    <tspan x="0" y="135">poblacionales, y estableció relaciones con </tspan>
+    <tspan x="0" y="162">actores sociales y políticos. Por su parte, </tspan>
+    <tspan x="0" y="189">excombatientes de las AUC plantearon como su </tspan>
+    <tspan x="0" y="216">estrategia de territorialización y expansión </tspan>
+    <tspan x="0" y="243">correspondió a una dinámica de lucha </tspan>
+    <tspan x="0" y="270">contrainsurgente. A partir de este diálogo se </tspan>
+    <tspan x="0" y="297">pueden resaltar territorios que fueron </tspan>
+    <tspan x="0" y="324">disputados por los distintos grupos armados </tspan>
+    <tspan x="0" y="351">desde unas dinámicas de control territorial en lo </tspan>
+    <tspan x="0" y="378">social, político, económico cultural.</tspan>
+    </text>
+    <g id="scene-button">
+      <rect style="fill:transparent;stroke:none;" x="460.8396" y="715.8223" width="15px" height="20px"></rect>
+      <polygon id="scene-play-button" style="fill:transparent;stroke:#252526;stroke-width:1.9269;stroke-miterlimit:10;" points="462.9749,738.2114 462.9749,718.9623   462.998,718.7446 463.0382,718.5791 463.1232,718.4002 463.2305,718.2303 463.3557,718.0872 463.4944,717.9844 463.6732,717.877   463.8387,717.8189 464.0131,717.7786 464.2367,717.7786 464.42,717.8099 464.6213,717.8681 464.8225,717.9709 464.8872,718.0029   477.614,727.6364 477.7016,727.7108 477.8089,727.8315 477.8715,727.903 477.9252,727.9835 477.961,728.0551 477.9967,728.14   478.028,728.2339 478.0594,728.3368 478.0772,728.4441 478.0906,728.5515 478.0817,728.6812 478.0638,728.8198 478.0236,728.9628   477.9699,729.0881 477.9207,729.2043 477.8626,729.2893 477.7687,729.4011 477.6703,729.4861 477.614,729.5359 464.8872,739.1415   464.7554,739.2303 464.6347,739.293 464.4961,739.3511 464.3575,739.3779 464.2099,739.4003 464.0086,739.3958 463.7895,739.3422   463.5704,739.2482 463.3871,739.1141 463.2574,738.9844 463.1545,738.8458 463.074,738.6892 463.0159,738.5506 462.9756,738.3762   "/>
+      <g id="scene-pause-button">
+      <line id="p_E-03_2_" style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="460.8396" y1="715.8223" x2="460.8396" y2="736.9185"/>
+      <line id="p_E-03_1_" style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="473.9645" y1="715.8223" x2="473.9645" y2="736.9185"/>
+      </g>
+    </g>
+    <line id="scene-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="487.8922" y1="727.0568" x2="487.8922" y2="727.0568"/>
+    <line id="scene-marker" style="fill:none;stroke:#252526;stroke-width:1.9269;stroke-linecap:round;stroke-miterlimit:10;" x1="487.8922" y1="715.8952" x2="487.8922" y2="736.9913"/>
+  `,
 }
 let E04 = {
   initialNode: `
@@ -303,6 +345,54 @@ let E06 = {
   	1120.0554,282.0414 1118.5663,287.4389 1124.5076,290.1371 "/>`,
   playerPosition: `680.3453`,
   playerColor: `#FF8000`,
+  player: `
+  <rect id="player-background" style="fill:#FF8000;opacity:0.13;" x="680.3453" y="0.3461" width="491.9806" height="1090"/>
+  <line id="scene-timeline" style="opacity:0.24;fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="727.8922" y1="987.0568" x2="1056.8921" y2="987.0568"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 1064.6604 993.5091)" style="fill:#252526; font-size:15px; letter-spacing:1;">– 00:00:00</text>
+  <text transform="matrix(1 0 0 1 724.6605 823.2512)">
+  <tspan id="scene-name" x="0" y="0" style="fill:#0D0D0D; font-size:20px; letter-spacing:1;">EXPANSIÓN DE LAS GUERRILLAS</tspan>
+  <tspan id="scene-character" x="0" y="48" style="fill:#252526; font-size:20px; letter-spacing:1;"></tspan>
+  <tspan id="scene-alias" x="0" y="72" style="fill:#252526; font-size:17px; letter-spacing:1;">Alias Lorem Ipsum</tspan>
+  <tspan id="scene-group" x="0" y="96" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+  <tspan id="scene-group-overflow" x="0" y="120" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+  </text>
+
+<text transform="matrix(1 0 0 1 724.6605 104.5148)" style="fill:#252526; font-size:18px;">
+<tspan x="0" y="0" style="fill:#252526; font-size:20px; letter-spacing:1;">Territorialidad</tspan>
+<tspan x="0" y="54">Los Excombatientes de las </tspan>
+<tspan x="0" y="81">guerrillas describieron y </tspan>
+<tspan x="0" y="108">analizaron críticamente las </tspan>
+<tspan x="0" y="135">formas en que cada grupo </tspan>
+<tspan x="0" y="162">configuró sus bases </tspan>
+<tspan x="0" y="189">poblacionales, y estableció </tspan>
+<tspan x="0" y="216">relaciones con actores </tspan>
+<tspan x="0" y="243">sociales y políticos. Por su </tspan>
+<tspan x="0" y="270">parte, excombatientes de las </tspan>
+<tspan x="0" y="297">AUC plantearon como su </tspan>
+<tspan x="0" y="324">estrategia de territorialización </tspan>
+<tspan x="0" y="351">y expansión correspondió a </tspan>
+<tspan x="0" y="378">una dinámica de lucha </tspan>
+<tspan x="0" y="405">contrainsurgente. A partir de </tspan>
+<tspan x="0" y="432">este diálogo se pueden </tspan>
+<tspan x="0" y="459">resaltar territorios que fueron </tspan>
+<tspan x="0" y="486">disputados por los distintos </tspan>
+<tspan x="0" y="513">grupos armados desde unas </tspan>
+<tspan x="0" y="540">dinámicas de control territorial </tspan>
+<tspan x="0" y="567">en lo social, político, </tspan>
+<tspan x="0" y="594">económico cultural.</tspan>
+</text>
+
+  <g id="scene-button">
+    <rect style="fill:transparent;stroke:none;" x="700.8396" y="975.8223" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" style="fill:transparent;stroke:#252526;stroke-width:1.9269;stroke-miterlimit:10;" points="702.9749,998.2114 702.9749,978.9623   702.998,978.7446 703.0382,978.5791 703.1232,978.4002 703.2305,978.2303 703.3557,978.0872 703.4944,977.9844 703.6732,977.877   703.8387,977.8189 704.0131,977.7786 704.2367,977.7786 704.42,977.8099 704.6213,977.8681 704.8225,977.9709 704.8871,978.0029   717.614,987.6364 717.7016,987.7108 717.8089,987.8315 717.8715,987.903 717.9252,987.9835 717.9609,988.0551 717.9968,988.14   718.028,988.2339 718.0593,988.3368 718.0772,988.4441 718.0906,988.5515 718.0817,988.6812 718.0638,988.8198 718.0236,988.9628   717.9699,989.0881 717.9207,989.2043 717.8626,989.2893 717.7687,989.4011 717.6703,989.4861 717.614,989.5359 704.8871,999.1415   704.7554,999.2303 704.6347,999.293 704.4961,999.3511 704.3574,999.3779 704.2099,999.4003 704.0087,999.3958 703.7895,999.3422   703.5704,999.2482 703.387,999.1141 703.2574,998.9844 703.1545,998.8458 703.074,998.6892 703.0159,998.5506 702.9756,998.3762 "/>
+    <g id="scene-pause-button">
+      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="700.8396" y1="975.8223" x2="700.8396" y2="996.9185"/>
+      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="713.9645" y1="975.8223" x2="713.9645" y2="996.9185"/>
+    </g>
+  </g>
+  <line id="scene-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="727.8922" y1="987.0568" x2="727.8922" y2="987.0568"/>
+  <line id="scene-marker" style="fill:none;stroke:#252526;stroke-width:1.9269;stroke-linecap:round;stroke-miterlimit:10;" x1="727.8922" y1="975.8952" x2="727.8922" y2="996.9913"/>
+  `,
 }
 let E07 = {
   initialNode: `
@@ -386,6 +476,44 @@ let E08 = {
   	671.6399,549.9058 "/>`,
   playerPosition: `240.3453`,
   playerColor: `#FF8000`,
+  player: `
+    <rect id="player-background" x="240.3453" y="0.3461" style="fill:#FF8000;opacity:0.13;" width="491.9806" height="1090"/>
+    <line id="scene-timeline" style="opacity:0.24;fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="287.8922" y1="837.0568" x2="616.8922" y2="837.0568"/>
+    <text id="scene-time" transform="matrix(1 0 0 1 624.6604 843.5091)" style="fill:#252526; font-size:15px; letter-spacing:1;">– 00:00:00</text>
+    <text transform="matrix(1 0 0 1 284.6604 677.0373)">
+    <tspan id="scene-name" x="0" y="0" style="fill:#0D0D0D; font-size:20px; letter-spacing:1;">EXPANSIÓN DE LAS GUERRILLAS</tspan>
+    <tspan id="scene-character" x="0" y="48" style="fill:#252526; font-size:20px; letter-spacing:1;"></tspan>
+    <tspan id="scene-alias" x="0" y="72" style="fill:#252526; font-size:17px; letter-spacing:1;">Alias Lorem Ipsum</tspan>
+    <tspan id="scene-group" x="0" y="96" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+    </text>
+    <text transform="matrix(1 0 0 1 284.6604 104.5148)" style=" fill:#252526; font-size:18px;">
+      <tspan x="0" y="0" style="font-size:20px; letter-spacing:1;">Territorialidad</tspan>
+      <tspan x="0" y="54" >Los Excombatientes de las guerrillas </tspan>
+      <tspan x="0" y="81" >describieron y analizaron críticamente las </tspan>
+      <tspan x="0" y="108" >formas en que cada grupo configuró sus bases </tspan>
+      <tspan x="0" y="135" >poblacionales, y estableció relaciones con </tspan>
+      <tspan x="0" y="162" >actores sociales y políticos. Por su parte, </tspan>
+      <tspan x="0" y="189" >excombatientes de las AUC plantearon como su </tspan>
+      <tspan x="0" y="216" >estrategia de territorialización y expansión </tspan>
+      <tspan x="0" y="243" >correspondió a una dinámica de lucha </tspan>
+      <tspan x="0" y="270" >contrainsurgente. A partir de este diálogo se </tspan>
+      <tspan x="0" y="297" >pueden resaltar territorios que fueron </tspan>
+      <tspan x="0" y="324" >disputados por los distintos grupos armados </tspan>
+      <tspan x="0" y="351" >desde unas dinámicas de control territorial en lo </tspan>
+      <tspan x="0" y="378" >social, político, económico cultural.</tspan>
+    </text>
+    <g id="scene-button">
+      <rect style="fill:transparent;stroke:none;" x="260.8396" y="825.8223" width="15px" height="20px"></rect>
+      <polygon id="scene-play-button" style="fill:transparent;stroke:#252526;stroke-width:1.9269;stroke-miterlimit:10;" points="262.9749,848.2114 262.9749,828.9623   262.998,828.7446 263.0382,828.5791 263.1232,828.4002 263.2305,828.2303 263.3557,828.0872 263.4944,827.9844 263.6732,827.877   263.8387,827.8189 264.0131,827.7786 264.2367,827.7786 264.42,827.8099 264.6213,827.8681 264.8225,827.9709 264.8872,828.0029   277.614,837.6364 277.7016,837.7108 277.8089,837.8315 277.8715,837.903 277.9252,837.9835 277.961,838.0551 277.9967,838.14   278.028,838.2339 278.0594,838.3368 278.0772,838.4441 278.0906,838.5515 278.0817,838.6812 278.0638,838.8198 278.0236,838.9628   277.9699,839.0881 277.9207,839.2043 277.8626,839.2893 277.7687,839.4011 277.6703,839.4861 277.614,839.5359 264.8872,849.1415   264.7554,849.2303 264.6347,849.293 264.4961,849.3511 264.3575,849.3779 264.2099,849.4003 264.0086,849.3958 263.7895,849.3422   263.5704,849.2482 263.3871,849.1141 263.2574,848.9844 263.1545,848.8458 263.074,848.6892 263.0159,848.5506 262.9756,848.3762   "/>
+      <g id="scene-pause-button">
+      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="260.8396" y1="825.8223" x2="260.8396" y2="846.9185"/>
+      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="273.9645" y1="825.8223" x2="273.9645" y2="846.9185"/>
+      </g>
+    </g>
+    <line id="scene-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="287.8922" y1="837.0568" x2="287.8922" y2="837.0568"/>
+    <line id="scene-marker" style="fill:none;stroke:#252526;stroke-width:1.9269;stroke-linecap:round;stroke-miterlimit:10;" x1="287.8922" y1="825.8952" x2="287.8922" y2="846.9913"/>
+  `,
 }
 let E09 = {
   initialNode: `
@@ -1062,6 +1190,46 @@ let E23 = {
   	269.9892,916.6509 273.7701,914.5321 277.6888,913.5956 281.0986,916.2347 284.8078,916.752 "/>`,
   playerPosition: `160.3453`,
   playerColor: `#FF8000`,
+  player: `
+  <rect id="player-background" style="fill:#FF8000;opacity:0.13;" x="160.3453" y="0.3461" width="491.9806" height="1090"/>
+  <line id="scene-timeline" style="opacity:0.24;fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="207.8921" y1="727.0568" x2="536.8922" y2="727.0568"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 544.6604 733.5091)" style="fill:#252526; font-size:15px; letter-spacing:1;">– 00:00:00</text>
+  <text transform="matrix(1 0 0 1 204.6604 567.5646)">
+    <tspan id="scene-name" x="0" y="0" style="fill:#0D0D0D; font-size:20px; letter-spacing:1;">EXPANSIÓN DE LAS GUERRILLAS</tspan>
+    <tspan id="scene-character" x="0" y="48" style="fill:#252526; font-size:20px; letter-spacing:1;"></tspan>
+    <tspan id="scene-alias" x="0" y="72" style="fill:#252526; font-size:17px; letter-spacing:1;">Alias Lorem Ipsum</tspan>
+    <tspan id="scene-group" x="0" y="96" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+  </text>
+
+  <text transform="matrix(1 0 0 1 204.6604 104.5148)" style="fill:#252526; font-size:18px;">
+    <tspan x="0" y="0" style="font-size:20px; letter-spacing:1;">Territorialidad</tspan>
+    <tspan x="0" y="54">Los Excombatientes de las guerrillas </tspan>
+    <tspan x="0" y="81">describieron y analizaron críticamente las </tspan>
+    <tspan x="0" y="108">formas en que cada grupo configuró sus bases </tspan>
+    <tspan x="0" y="135">poblacionales, y estableció relaciones con </tspan>
+    <tspan x="0" y="162">actores sociales y políticos. Por su parte, </tspan>
+    <tspan x="0" y="189">excombatientes de las AUC plantearon como su </tspan>
+    <tspan x="0" y="216">estrategia de territorialización y expansión </tspan>
+    <tspan x="0" y="243">correspondió a una dinámica de lucha </tspan>
+    <tspan x="0" y="270">contrainsurgente. A partir de este diálogo se </tspan>
+    <tspan x="0" y="297">pueden resaltar territorios que fueron </tspan>
+    <tspan x="0" y="324">disputados por los distintos grupos armados </tspan>
+    <tspan x="0" y="351">desde unas dinámicas de control territorial en lo </tspan>
+    <tspan x="0" y="378">social, político, económico cultural.</tspan>
+  </text>
+
+  <g id="scene-button">
+    <rect style="fill:transparent;stroke:none;" x="180.8396" y="715.8223" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" style="fill:transparent;stroke:#252526;stroke-width:1.9269;stroke-miterlimit:10;" points="182.9749,738.2114 182.9749,718.9623   182.998,718.7446 183.0382,718.5791 183.1232,718.4002 183.2305,718.2303 183.3557,718.0872 183.4944,717.9844 183.6732,717.877   183.8387,717.8189 184.0131,717.7786 184.2367,717.7786 184.4201,717.8099 184.6213,717.8681 184.8225,717.9709 184.8872,718.0029   197.614,727.6364 197.7016,727.7108 197.8089,727.8315 197.8715,727.903 197.9252,727.9835 197.961,728.0551 197.9967,728.14   198.028,728.2339 198.0593,728.3368 198.0772,728.4441 198.0907,728.5515 198.0817,728.6812 198.0638,728.8198 198.0236,728.9628   197.9699,729.0881 197.9207,729.2043 197.8626,729.2893 197.7687,729.4011 197.6703,729.4861 197.614,729.5359 184.8872,739.1415   184.7554,739.2303 184.6347,739.293 184.4961,739.3511 184.3575,739.3779 184.2099,739.4003 184.0086,739.3958 183.7895,739.3422   183.5704,739.2482 183.387,739.1141 183.2574,738.9844 183.1545,738.8458 183.074,738.6892 183.0159,738.5506 182.9756,738.3762 "/>
+    <g id="scene-pause-button">
+      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="180.8396" y1="715.8223" x2="180.8396" y2="736.9185"/>
+      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="193.9645" y1="715.8223" x2="193.9645" y2="736.9185"/>
+    </g>
+  </g>
+  <line id="scene-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="207.8921" y1="727.0568" x2="207.8921" y2="727.0568"/>
+  <line id="scene-marker" style="fill:none;stroke:#252526;stroke-width:1.9269;stroke-linecap:round;stroke-miterlimit:10;" x1="207.8921" y1="715.8952" x2="207.8921" y2="736.9913"/>
+  `,
 }
 let E24 = {
   initialNode: `

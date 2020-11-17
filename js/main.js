@@ -22,7 +22,7 @@ d3.csv( './data/scenes.csv' ).then( d => {
       }
     }
 
-    i[ 'popup_coords' ] = i[ 'popup_coords' ].split( ',' ).map( c => +c );
+    // i[ 'popup_coords' ] = i[ 'popup_coords' ].split( ',' ).map( c => +c );
 
     return i
   } );
@@ -30,26 +30,26 @@ d3.csv( './data/scenes.csv' ).then( d => {
 } );
 
 d3.csv( './data/groups.csv' ).then( d => {
-  d = d.map( i => {
-    i[ 'popup_coords' ] = i[ 'popup_coords' ].split( ',' ).map( c => +c );
-    return i
-  } );
+  // d = d.map( i => {
+  //   // i[ 'popup_coords' ] = i[ 'popup_coords' ].split( ',' ).map( c => +c );
+  //   return i
+  // } );
   data[ 'groups' ] = d
 } );
 
 d3.csv( './data/subgroups.csv' ).then( d => {
-  d = d.map( i => {
-    i[ 'popup_coords' ] = i[ 'popup_coords' ].split( ',' ).map( c => +c );
-    return i
-  } );
+  // d = d.map( i => {
+  //   i[ 'popup_coords' ] = i[ 'popup_coords' ].split( ',' ).map( c => +c );
+  //   return i
+  // } );
   data[ 'subgroups' ] = d
 } );
 
 d3.csv( './data/characters.csv' ).then( d => {
-  d = d.map( i => {
-    i[ 'popup_coords' ] = i[ 'popup_coords' ].split( ',' ).map( c => +c );
-    return i
-  } );
+  // d = d.map( i => {
+  //   i[ 'popup_coords' ] = i[ 'popup_coords' ].split( ',' ).map( c => +c );
+  //   return i
+  // } );
   data[ 'characters' ] = d
 } );
 
@@ -188,6 +188,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
       switch (click.type) {
 
         case 'frame':
+
           // show tooltip
           d3.select(`#${click.id}-tooltip`)
             .classed( 'visible-tooltip', true );
@@ -218,6 +219,16 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
           d3.select(`#${click.id}.scene-name`)
           .classed( 'visible-text', true );
           break;
+
+          case 'frame':
+            // show tooltip
+            d3.select(`#${click.id}-tooltip`)
+              .classed( 'visible-tooltip', true );
+            // activate frame button
+            d3.select( `#${click.id}` )
+              .classed( 'selected-menu-icon', true );
+            break;
+
         default:
 
       }
@@ -919,6 +930,7 @@ function show_elements() {
         showFrame(click.id);
         d3.select(`#${click.id}`)
           .classed( 'selected-menu-icon', true );
+
         break;
 
       default:
@@ -999,4 +1011,19 @@ function setAllScenesAs(nodeType) {
     d3.selectAll(`.${type}-node`)
       .classed( 'hidden', hidden );
     })
+}
+
+function getAllNames() {
+  // get scene and character names from csv files
+  let characterNames = Array.from(document.querySelectorAll('.character-name'));
+  characterNames.map( nameElement => {
+    let character = data[ 'characters' ].find(character => character.id === nameElement.id.slice(0,4));
+    nameElement.innerHTML = character.character;
+  });
+
+  let sceneNames = Array.from(document.querySelectorAll('.scene-name'));
+  sceneNames.map( nameElement => {
+    let scene = data[ 'scenes' ].find(scene => scene.id === nameElement.id.slice(0,4));
+    nameElement.innerHTML = scene.scene;
+  });
 }

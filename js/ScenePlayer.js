@@ -1,17 +1,16 @@
 class ScenePlayer {
   constructor(id, entity) {
     this.id = id.slice(0,4);
+    this.jsId = this.id.replace('-','');
     this.type = entity;
     this.playerId = `scene-player`;
-    this.playerPosition = eval(`${this.id.replace('-','')}.playerPosition`);
-    this.playerColor = eval(`${this.id.replace('-','')}.playerColor`);
+    // this.playerPosition = eval(`${this.jsId}.playerPosition`);
+    this.playerColor = eval(`${this.jsId}.playerColor`);
     this.audioId = `scene-audio`;
-    this.characterAudio = `character-audio`;
-    this.playerSVG = scenePlayer; // player SVG in ./svg/players.js
+    this.playerSVG = eval(`${this.jsId}.player`); // player SVG in ./svg/scenes.js
     this.timecodes;
     this.characters;
     this.clickable;
-    this.characterClickable;
   }
 
   display() {
@@ -25,40 +24,29 @@ class ScenePlayer {
     gElement.classList.add('player');
 
     // set matrix to player position
-    gElement.setAttribute( "transform", `translate(${this.playerPosition-680.3453},0)`);
+    // gElement.setAttribute( "transform", `translate(${this.playerPosition-680.3453},0)`);
 
     // create audio elements
     let audioElement = document.createElement('AUDIO');
     audioElement.id = this.audioId;
     audioElement.preload = 'auto';
-    audioElement.dataSize = 45;
+    // audioElement.dataSize = 45;
     audioElement.currentTime = 0;
     if ( target[ 'audio' ] !== undefined && target[ 'audio' ] !== '' ) {
       audioElement.src = `./audios/${target['audio']}`;
     }
     audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
 
-    let characterAudioElement = document.createElement('AUDIO');
-    characterAudioElement.id = this.characterAudio;
-    characterAudioElement.preload = 'auto';
-    characterAudioElement.dataSize = 45;
-    characterAudioElement.currentTime = 0;
-    characterAudioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
-
     // add elements to DOM
     document.querySelector('#players').appendChild(gElement);
     document.body.appendChild(audioElement);
-    document.body.appendChild(characterAudioElement);
 
     // get play buttons and set click event
     document.getElementById(`scene-button`)
       .addEventListener('click', (e) => {this.playPause(e)});
-    document.getElementById(`character-button`)
-      .addEventListener('click', (e) => {this.playPause(e)});
 
     // create timeline clickable area
     this.clickable = this.getClickableArea(this.type); // get coordinates
-    this.characterClickable = this.getClickableArea('character')
 
     let clickableArea = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
     clickableArea.setAttribute("id", `${this.type}-clickable`)
@@ -66,17 +54,6 @@ class ScenePlayer {
     clickableArea.setAttribute("y", this.clickable.y);
     clickableArea.setAttribute("width", this.clickable.w);
     clickableArea.setAttribute("height", this.clickable.h);
-    clickableArea.classList.add('clickable');
-    clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
-    clickableArea.addEventListener('click', e => {this.setTime(e)});
-    gElement.appendChild(clickableArea);
-
-    clickableArea = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-    clickableArea.setAttribute("id", `character-clickable`)
-    clickableArea.setAttribute("x", this.characterClickable.x);
-    clickableArea.setAttribute("y", this.characterClickable.y);
-    clickableArea.setAttribute("width", this.characterClickable.w);
-    clickableArea.setAttribute("height", this.characterClickable.h);
     clickableArea.classList.add('clickable');
     clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
     clickableArea.addEventListener('click', e => {this.setTime(e)});
@@ -95,25 +72,9 @@ class ScenePlayer {
 
     // set background color
     document.getElementById('player-background').setAttribute("fill", this.playerColor);
-  }
 
-  displayCharacter( characterId ) {
-    // get character data
-    let targetCharacter = data[ 'characters' ].filter(character => character['id'] === characterId)[0]
-
-    // show audio player
-    d3.select('#character-player')
-      .classed('hidden', false);
-
-    // assign source to character audio
-    let characterAudio = document.querySelector(`#${this.characterAudio}`);
-    characterAudio.src = `../audios/${targetCharacter.audio}`;
-
-    // set character and group names
-    let name = document.getElementById('character-character');
-    name.innerHTML = targetCharacter.character;
-    let groupName = document.getElementById('character-group');
-    groupName.innerHTML = getGroupName(targetCharacter);
+    // hide pause button
+    document.getElementById('scene-pause-button').classList.add('hidden');
   }
 
   getCharacters(){
@@ -160,24 +121,27 @@ class ScenePlayer {
   playPause(e) {
     // get audio info
     let targetType = e.target.id.split('-')[0];
-    let audioId = targetType === 'scene' ? this.audioId : this.characterAudio;
-    let audioElement = document.getElementById(audioId);
+    let audioElement = document.getElementById(this.audioId);
 
     // pause all other players
-    Array.from(document.querySelectorAll('audio')).map(audio => audio.id !== audioId ? audio.pause() : ``);
+    Array.from(document.querySelectorAll('audio')).map(audio => audio.id !==  this.audioId ? audio.pause() : ``);
 
     // play or pause audio
     audioElement.paused ? audioElement.play() : audioElement.pause();
+
+    // show corresponding button
+    let buttonToShow = audioElement.paused ? 'play' : 'pause';
+    let buttonToHide = audioElement.paused ? 'pause' : 'play';
+    document.getElementById(`scene-${buttonToShow}-button`).classList.remove('hidden');
+    document.getElementById(`scene-${buttonToHide}-button`).classList.add('hidden');
   }
 
   removeElements() {
     let targetPlayer = document.querySelector(`#scene-player`);
     let targetAudio = document.querySelector(`#${this.audioId}`);
-    let targetCharacter = document.querySelector(`#${this.characterAudio}`);
 
     targetPlayer.remove();
     targetAudio.remove();
-    targetCharacter.remove();
   }
 
   setTime(e) {
@@ -190,7 +154,7 @@ class ScenePlayer {
   updatePlayer(target) {
     let audioElement = target;
     let targetType = target.id.split('-')[0];
-    let clickable = targetType === 'scene' ? this.clickable : this.characterClickable;
+    let clickable = this.clickable;
     let currentTime = audioElement.currentTime;
 
     // get marker and timebar, and scale them to the current audio time
