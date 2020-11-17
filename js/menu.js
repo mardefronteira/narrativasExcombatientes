@@ -72,7 +72,7 @@ function init() {
   document.querySelector('#narratives-node').addEventListener('click', showNarratives);
   document.querySelector('#narratives-label').addEventListener('click', showNarratives);
 
-  btnInfo.on('click', () => playVideoWithSound(0));
+  btnInfo.on('click', showVideo);
   btnClose.on('click', hideVideo);
   menuTitle.on('click', showContentInfo);
   btnActiveSound.on('click', playVideo);

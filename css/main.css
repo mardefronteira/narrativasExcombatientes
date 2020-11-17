@@ -408,14 +408,6 @@ cursor: pointer;
   letter-spacing:1;
 }
 
-
-/* .subgroup-name{
-  fill: var(--darkGray);
-  font-family: 'Heebo-SemiBold';
-  font-weight: 600;
-  visibility: hidden;
-} */
-
 .character {
   fill: var(--teal);
   fill-opacity: 0;
@@ -432,6 +424,7 @@ cursor: pointer;
   font-weight: 500;
   visibility: hidden;
   font-size: 20px;
+  cursor: default;
 }
 
 .hover {

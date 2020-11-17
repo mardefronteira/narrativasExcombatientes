@@ -1013,6 +1013,7 @@ function setAllScenesAs(nodeType) {
     })
 }
 
+
 function getAllNames() {
   // get scene and character names from csv files
   let characterNames = Array.from(document.querySelectorAll('.character-name'));
