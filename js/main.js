@@ -188,7 +188,6 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
       switch (click.type) {
 
         case 'frame':
-
           // show tooltip
           d3.select(`#${click.id}-tooltip`)
             .classed( 'visible-tooltip', true );
@@ -220,14 +219,14 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
           .classed( 'visible-text', true );
           break;
 
-          case 'frame':
-            // show tooltip
-            d3.select(`#${click.id}-tooltip`)
-              .classed( 'visible-tooltip', true );
-            // activate frame button
-            d3.select( `#${click.id}` )
-              .classed( 'selected-menu-icon', true );
-            break;
+        case 'frame':
+          // show tooltip
+          d3.select(`#${click.id}-tooltip`)
+            .classed( 'visible-tooltip', true );
+          // activate frame button
+          d3.select( `#${click.id}` )
+            .classed( 'selected-menu-icon', true );
+          break;
 
         default:
 
@@ -236,20 +235,6 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
 
 
     if ( ( click.element.classed( 'active' ) === false ) && ( click.element.classed( 'minor' ) === false ) ) {
-
-      // if (click.type === 'scene') {
-      //
-      //   // Show hover node of selected scene
-      //   d3.selectAll(`.${click.id}`)
-      //     .classed( 'hidden', true );
-      //   d3.select(`#${click.id}-hover`)
-      //     .classed('hidden', false);
-      //
-      //   if (lastClick.type === 'restart'){
-      //     // Highlight related scenes
-      //     showRelatedScenes(click.id);
-      //   }
-      // }
 
       // Show the elements
       if ( [ 'scene', 'character' ].includes( click.type ) && lastClick.type === 'restart' ) {
@@ -360,7 +345,9 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
               .classed( 'visible-text', true );
 
             d3.select( '#' + r[ 'id' ] + '.character' )
+              .classed( 'hidden', false )
               .classed( 'active-character', true );
+
 
             d3.select( '#' + r[ 'id' ] + '.character-link' )
               .classed( 'visible-link', true );
@@ -388,7 +375,11 @@ d3.selectAll( '.scene,.group,.subgroup,.character' )
 
       if (click.type === 'subgroup') {
         d3.selectAll('.subgroup-name')
-        .classed('visible-text', false);
+         .classed('visible-text', false);
+         if (lastClick.type === 'subgroup' && click.id !== lastClick.id) {
+          d3.selectAll(`#${click.id}`)
+           .classed('active-group', false);
+         }
       }
 
       if (click.type === 'scene') {
@@ -424,20 +415,21 @@ d3.selectAll( '.scene,.group,.subgroup,.character' )
 
   d3.selectAll('.frame').on( 'mouseout', function() {
 
-    if (!somethingIsActive) {
-      restart();
-    }
-
     getClickedElement(d3.select( this ));
 
-    // hide tooltips
-    d3.selectAll( '.visible-tooltip' )
-    .classed( 'visible-tooltip', false );
-
+    // if button wasn't clicked
     if (lastClick.id !== click.id){
       // deactivate frame button
       d3.selectAll( '.frame' )
         .classed( 'selected-menu-icon', false );
+
+      // hide tooltips
+      d3.selectAll( '.visible-tooltip' )
+        .classed( 'visible-tooltip', false );
+
+      if (!somethingIsActive) {
+        restart();
+      }
     }
   });
 
@@ -505,6 +497,14 @@ function restart() {
   // deselect frame buttons
   d3.selectAll( '.frame' )
     .classed( 'selected-menu-icon', false );
+
+  // hide tooltip pause buttons
+  d3.selectAll( '.tooltip-pause-button')
+    .classed( 'hidden', true );
+
+  // hide tooltip
+  d3.selectAll( '.tooltip')
+    .classed( 'visible-tooltip', false );
 
     if (player) {
       clearAllPlayers();
@@ -649,8 +649,12 @@ function addPlayer(id, type) {
       player.display();
       break;
     case 'character':
-    player = new CharacterPlayer(id);
-    player.display();
+      player = new CharacterPlayer(id);
+      player.display();
+      break;
+    case 'frame':
+      player = new TooltipPlayer(id);
+      player.display();
       break;
   }
   // console.log(players);
@@ -889,27 +893,35 @@ function show_elements() {
         break;
 
     case 'subgroup':
-      d3.selectAll(`#G-02.group, #${click.id}.subgroup`)
-      .classed( 'active-group', true );
+    d3.selectAll( `.subgroup` )
+      .classed( 'hidden', false );
+
+    d3.selectAll(`#G-02.group, #${click.id}.subgroup`)
+      .classed( 'active-group', true )
+      .classed( 'hidden', false )
+      .classed( 'visited', true );
+
+    d3.selectAll(`#G-02-name`)
+      .classed( 'active-text', true );
+
 
       data[ 'characters' ]
         .filter( d => d[ click.type ] === click.id )
         .map( r => {
 
-          d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
-            .classed( 'hidden', false )
-            .classed( 'visited', true );
+          // d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
+          //   .classed( 'hidden', false )
+          //   .classed( 'visited', true );
+          //
+          // d3.select( '#' + r[ 'group' ] + '.group' )
+          //   .classed( 'hidden', false )
+          //   .classed( 'visited', true );
 
-
-          d3.select( '#' + r[ 'group' ] + '.group' )
-            .classed( 'hidden', false )
-            .classed( 'visited', true );
-
-          d3.select( '#' + r[ 'group' ] + '-name' )
-            .classed( 'active-text', true );
-
-          d3.select( '#' + r[ 'subgroup' ] + '-name' )
-            .classed( 'active-text', true );
+          // d3.select( '#' + r[ 'group' ] + '-name' )
+          //   .classed( 'active-text', true );
+          //
+          // d3.select( '#' + r[ 'subgroup' ] + '-name' )
+          //   .classed( 'active-text', true );
 
           d3.select( '#' + r[ 'id' ] + '.character' )
             .classed( 'hidden', false )
@@ -930,7 +942,8 @@ function show_elements() {
         showFrame(click.id);
         d3.select(`#${click.id}`)
           .classed( 'selected-menu-icon', true );
-
+        d3.select(`#${click.id}-tooltip`)
+          .classed( 'visible-tooltip', true );
         break;
 
       default:
@@ -940,10 +953,10 @@ function show_elements() {
           .classed( 'active', true );
     }
 
-  if (click.type !== 'frame'){
+  // if (click.type !== 'frame'){
     // show player
     addPlayer(click.id, click.type);
-  }
+  // }
 }
 
 function mapValue(baseVal, minInput, maxInput, minOutput, maxOutput) {

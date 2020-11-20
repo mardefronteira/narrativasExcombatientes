@@ -62,7 +62,7 @@ div#info-top-bar{
 
 div#info-menu-content {
   /* padding: 10px 0 0 5vw; */
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.3em;
   /* text-align: justify; */
 }
@@ -370,7 +370,7 @@ video#video{
 }
 
 .group, .subgroup {
-  fill: none;
+  fill: transparent;
   fill-opacity: 0;
   stroke: var(--black);
   stroke-opacity: 1;
@@ -590,6 +590,8 @@ cursor: pointer;
 
 .active-group {
   opacity: 1;
+  fill-opacity: .7;
+  fill: var(--darkGray);
 }
 
 /* character classes */
@@ -597,7 +599,6 @@ cursor: pointer;
 .active-character {
   fill-opacity: 1;
 }
-
 
 .teste {
   fill: #f87d6f;

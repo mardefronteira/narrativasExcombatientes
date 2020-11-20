@@ -25,9 +25,9 @@ let scenePlayer =  `
    </g>
    <line id="character-timebar" style="fill:transparent;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="742.8922" y1="615.0568" x2="742.8922" y2="615.0568"/>
  </g>
- `
+ `;
 
- groupPlayer = `
+let groupPlayer = `
   <rect id="player-background" x="589.3453" y="0.3461" style="fill:#252526; opacity:0.09;" width="491.9806" height="1090"/>
   <foreignObject transform="matrix(1 0 0 1 633.8849 126.5473)" x="0" y="0" width="420" height="280">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -67,16 +67,9 @@ let scenePlayer =  `
     <polygon id="character-button-3" style="fill:transparent;stroke:#252526;stroke-width:2.7;stroke-miterlimit:10;" points="621.7491,974.6281 621.7491,955.379   621.7722,955.1613 621.8124,954.9958 621.8974,954.8169 622.0048,954.647 622.1299,954.5039 622.2686,954.401 622.4474,954.2937   622.6129,954.2355 622.7873,954.1953 623.0109,954.1953 623.1943,954.2266 623.3955,954.2847 623.5967,954.3876 623.6614,954.4196   636.3882,964.0531 636.4758,964.1274 636.5831,964.2482 636.6458,964.3197 636.6994,964.4002 636.7352,964.4717 636.7709,964.5567   636.8022,964.6506 636.8336,964.7535 636.8514,964.8608 636.8649,964.9681 636.8559,965.0978 636.838,965.2365 636.7978,965.3795   636.7441,965.5048 636.6949,965.621 636.6368,965.706 636.5429,965.8178 636.4445,965.9028 636.3882,965.9526 623.6614,975.5582   623.5297,975.647 623.4089,975.7096 623.2703,975.7678 623.1317,975.7946 622.9841,975.817 622.7828,975.8125 622.5637,975.7588   622.3446,975.6649 622.1613,975.5308 622.0316,975.4011 621.9287,975.2625 621.8482,975.1059 621.7901,974.9673 621.7498,974.7929   "/>
     <line id="character-timebar-3" style="fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="649.6664" y1="964.6333" x2="649.6664" y2="964.6333"/>
   </g>
- `
-//style="fill:#0D0D0D; font-family:'Heebo-Bold'; font-size:17px;"
-/*
-<text >
-<tspan x="0" y="0" style="fill:#252526; font-family:'Heebo-Bold'; font-size:16px; letter-spacing:1;">Francisco Caraballo</tspan>
-<tspan x="0" y="20" style="fill:#252526; font-family:'Heebo-Medium'; font-size:16px; letter-spacing:1;">EPL</tspan>
-</text>
-*/
+ `;
 
-characterPlayer = `
+let characterPlayer = `
   <rect id="player-background" x="720.3453" y="0.3461" style="opacity:0.09;fill:#252526;" width="491.9806" height="1090"/>
   <foreignObject transform="matrix(1 0 0 1 779.5695 104.1689)" x="0" y="0" width="420" height="100">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -99,4 +92,4 @@ characterPlayer = `
 	"/>
   <line id="character-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="779.7209" y1="175.2357" x2="779.7209" y2="175.2357"/>
 
-`
+`;
