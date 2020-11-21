@@ -12,7 +12,8 @@ body {
 }
 
 .gradient-bg{
-  background: radial-gradient(circle, rgba(255,254,254,0.665703781512605) 6%, rgba(217,217,217,0.6264880952380952) 34%, rgba(51,102,102,0.5788690476190477) 100%);
+  /* background: radial-gradient(circle, rgba(255,254,254,0.665703781512605) 6%, rgba(217,217,217,0.6264880952380952) 34%, rgba(51,102,102,0.5788690476190477) 100%); */
+  background-color: #e8fffa;
   transition: 1s;
 }
 
@@ -70,6 +71,8 @@ div#info-menu-content {
 img#btn-close-menu{
   cursor: pointer;
   display:flex;
+  opacity:1;
+  visibility: visible;
   width: 100px;
   height: 100px;
 }
@@ -86,7 +89,7 @@ text#menu-title {
   top: 1.5vh;
   left: 3vw;
   cursor: pointer;
-  letter-spacing:1;
+  letter-spacing:1px;
   fill:#33FFCC;
   stroke:none;
   font-size:19px;
@@ -143,7 +146,7 @@ g#intro-buttons {
 
 .menu-text {
   font-size:16px;
-  letter-spacing:1;
+  letter-spacing:1px;
   stroke: none;
 }
 
@@ -295,7 +298,7 @@ div#logos{
 }
 
 .player-description {
-  letter-spacing:1;
+  /* letter-spacing:1; */
   /* font-family:'Heebo-Medium'; */
   opacity:0.6;
   fill:#0D0D0D;
@@ -333,7 +336,7 @@ div#logos{
   font-size:15px;
   fill:#0D0D0D;
   font-family:'Heebo-SemiBold';
-  letter-spacing:1;
+  /* letter-spacing:1; */
 }
 
 .text-center {
@@ -396,7 +399,7 @@ cursor: pointer;
   font-weight: 600;
   visibility: hidden;
   font-size: 20px;
-  letter-spacing:1;
+  /* letter-spacing:1; */
 }
 
 .subgroup-name {
@@ -405,13 +408,13 @@ cursor: pointer;
   font-weight: 500;
   visibility: hidden;
   font-size: 20px;
-  letter-spacing:1;
+  /* letter-spacing:1; */
 }
 
 .character {
-  fill: var(--teal);
+  fill: #f3022f;
   fill-opacity: 0;
-  stroke: var(--teal);
+  stroke: #f3022f;
   stroke-opacity: .8;
   stroke-width: 2px;
   stroke-miterlimit: 10;
@@ -590,8 +593,8 @@ cursor: pointer;
 
 .active-group {
   opacity: 1;
-  fill-opacity: .7;
-  fill: var(--darkGray);
+  /* fill-opacity: .7; */
+  /* fill: var(--darkGray); */
 }
 
 /* character classes */

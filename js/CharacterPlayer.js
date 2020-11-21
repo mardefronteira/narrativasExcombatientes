@@ -51,6 +51,12 @@ class CharacterPlayer {
 
     // play or pause audio
     audioElement.paused ? audioElement.play() : audioElement.pause();
+
+    // show corresponding button
+    let buttonToShow = audioElement.paused ? 'play' : 'pause';
+    let buttonToHide = audioElement.paused ? 'pause' : 'play';
+    document.getElementById(`character-${buttonToShow}-button`).classList.remove('hidden');
+    document.getElementById(`character-${buttonToHide}-button`).classList.add('hidden');
   }
 
   getClickableArea() {

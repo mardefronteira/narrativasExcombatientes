@@ -953,15 +953,13 @@ function show_elements() {
           .classed( 'active', true );
     }
 
-  // if (click.type !== 'frame'){
+  if (click.type !== 'frame' || click.id === 'M-01') {
     // show player
     addPlayer(click.id, click.type);
-  // }
+  }
 }
 
 function mapValue(baseVal, minInput, maxInput, minOutput, maxOutput) {
-  // let mappedVal = constrain(baseVal, minInput, maxInput);
-  // console.log(baseVal, minInput, maxInput, minOutput, maxOutput)
   return Math.floor((baseVal - minInput) * (maxOutput - minOutput) / (maxInput - minInput) + minOutput);
 }
 

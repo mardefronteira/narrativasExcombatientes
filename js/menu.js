@@ -63,9 +63,16 @@ function showIntroPage() {
   d3.select('#intro-page').classed( 'hidden-intro-page', false );
 }
 
+function showCredits() {
+  let credits = d3.select('#intro-credits');
+  let visibility = credits.classed('hidden-intro-page') ? false : true;
+  credits.classed('hidden-intro-page', visibility);
+}
+
 function init() {
   showIntroPage();
 
+  document.querySelector('#credits-node').addEventListener('click', showCredits)
   document.querySelector('#intro-node').addEventListener('click', showVideo);
   document.querySelector('#intro-label').addEventListener('click', showVideo);
   document.querySelector('#menu-logo').addEventListener('click', showIntroPage);
