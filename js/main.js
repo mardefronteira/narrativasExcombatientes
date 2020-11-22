@@ -956,6 +956,9 @@ function show_elements() {
   if (click.type !== 'frame' || click.id === 'M-01') {
     // show player
     addPlayer(click.id, click.type);
+
+    // stop home audio
+    document.querySelector('#home-audio').pause();
   }
 }
 

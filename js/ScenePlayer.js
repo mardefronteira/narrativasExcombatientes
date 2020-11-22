@@ -30,12 +30,12 @@ class ScenePlayer {
     let audioElement = document.createElement('AUDIO');
     audioElement.id = this.audioId;
     audioElement.preload = 'auto';
-    // audioElement.dataSize = 45;
     audioElement.currentTime = 0;
     if ( target[ 'audio' ] !== undefined && target[ 'audio' ] !== '' ) {
       audioElement.src = `./audios/${target['audio']}`;
     }
     audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
+    audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
 
     // add elements to DOM
     document.querySelector('#players').appendChild(gElement);
@@ -69,6 +69,7 @@ class ScenePlayer {
     name.innerHTML = data['scenes'].filter(scene => scene['id'] === this.id)[0].scene;
     document.getElementById('scene-character').innerHTML = '';
     document.getElementById('scene-group').innerHTML = '';
+    document.getElementById('scene-alias').innerHTML = '';
 
     // set background color
     document.getElementById('player-background').setAttribute("fill", this.playerColor);
@@ -151,6 +152,18 @@ class ScenePlayer {
       audioElement.currentTime = mapValue(e.offsetX, 0, this.clickable.w, 0, audioElement.duration);
   }
 
+  showFrame(id){
+    let thisFrame = data['frames'].find(frame => frame.scenes.includes(id));
+
+    showFrame(thisFrame.id);
+    d3.select(`#${thisFrame.id}`)
+      .classed( 'selected-menu-icon', true );
+    d3.select(`#${thisFrame.id}-tooltip`)
+      .classed( 'visible-tooltip', true );
+
+    document.querySelector(`#scene-player`).classList.add('hidden');
+  }
+
   updatePlayer(target) {
     let audioElement = target;
     let targetType = target.id.split('-')[0];
@@ -176,6 +189,7 @@ class ScenePlayer {
       // update text
       let character = document.getElementById(`${targetType}-character`);
       let group = document.getElementById(`${targetType}-group`);
+      let alias = document.getElementById(`${targetType}-alias`);
 
       // get character that corresponds to timecode
       let currentCharacter = this.timecodes.filter(slice => (slice.start_sec < currentTime) && (slice.end_sec > currentTime))[0].character;
@@ -185,6 +199,7 @@ class ScenePlayer {
 
       character.innerHTML = currentCharacter.character;
       group.innerHTML = currentCharacter.groupName;
+      alias.innerHTML = "Alias Lorem Ipsum";
     }
   }
 }

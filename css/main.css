@@ -292,46 +292,6 @@ div#logos{
   display: block;
 }
 
-.player-title {
-  fill:#3F403D;
-  font-size:15px;
-}
-
-.player-description {
-  /* letter-spacing:1; */
-  /* font-family:'Heebo-Medium'; */
-  opacity:0.6;
-  fill:#0D0D0D;
-  font-size:15px;
-}
-
-.player-timer {
-  font-family:'Heebo-Medium';
-  opacity:0.6;
-  fill:#0D0D0D;
-  font-size:13px;
-}
-
-.player-timebar {
-  fill:none;
-  stroke:#000000;
-  stroke-width:2;
-  stroke-linecap:round;
-  stroke-miterlimit:10;
-}
-
-.player-timeline {
-  opacity:0.6;
-  fill:#0D0D0D;
-  stroke:#0D0D0D;
-  stroke-miterlimit:10;
-}
-
-.player-button {
-  fill:#0D0D0D;
-  opacity:0.6;
-}
-
 .character-in-player {
   font-size:15px;
   fill:#0D0D0D;
@@ -583,6 +543,65 @@ cursor: pointer;
 .clickable {
   stroke: none;
   fill: transparent;
+}
+
+.time {
+  fill:#252526;
+  font-size:15px;
+  letter-spacing:2px;
+}
+
+.timeline {
+  opacity:0.24;
+  fill:none;
+  stroke:#252526;
+  stroke-width:2.141;
+  stroke-miterlimit:10;
+}
+
+.player-regular {
+  fill:#252526;
+  font-size:17px;
+}
+
+.player-description {
+  fill:#252526;
+  font-size:18px;
+}
+
+.player-bold {
+  font-weight:'bold';
+  font-size:20px;
+}
+
+.play-button {
+  fill:transparent;
+  stroke:#252526;
+  stroke-width:1.9269;
+  stroke-miterlimit:10;
+}
+
+.pause-button {
+  fill:none;
+  stroke:#252526;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+
+.timebar {
+  fill:none;
+  stroke:#252526;
+  stroke-width:2.141;
+  stroke-miterlimit:10;
+}
+
+.marker {
+  fill:none;
+  stroke:#252526;
+  stroke-width:1.9269;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
 }
 
 /* group classes */

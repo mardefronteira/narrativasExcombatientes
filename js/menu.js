@@ -49,11 +49,25 @@ function playVideo(){
 }
 
 function showNarratives() {
+  // prepare homepage
   getAllNames();
+  restart();
+
+  //show all links
+  d3.selectAll('.link')
+    .classed( 'visible-link', true );
+
   d3.select('#body').classed( 'black-bg', false );
   d3.select('#body').classed( 'gradient-bg', true );
   d3.selectAll('.menu-button').classed('hidden-intro-page',false);
   d3.select('#intro-page').classed( 'hidden-intro-page', true );
+
+  // hide intro video, if visible
+  hideVideo();
+
+  // start sound
+  let homeAudio = document.querySelector('#home-audio')
+  homeAudio.currentTime === 0 ? homeAudio.play() : '';
 }
 
 function showIntroPage() {
@@ -80,10 +94,18 @@ function init() {
   document.querySelector('#narratives-label').addEventListener('click', showNarratives);
 
   btnInfo.on('click', showVideo);
-  btnClose.on('click', hideVideo);
+  btnClose.on('click', showNarratives);
   menuTitle.on('click', showContentInfo);
   btnActiveSound.on('click', playVideo);
   btnCloseMenu.on('click', showContentInfo);
 
   video.bind('ended', hideVideo);
+
+  // create home audio
+  let audioElement = document.createElement('AUDIO');
+  audioElement.id = 'home-audio';
+  audioElement.preload = 'auto';
+  audioElement.currentTime = 0;
+  audioElement.src = `./audios/HOME.mp3`;
+  document.body.appendChild(audioElement);
 }

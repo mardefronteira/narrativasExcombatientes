@@ -1287,8 +1287,43 @@ let E24 = {
   	383.4282,126.5926 382.0561,128.7623 383.9915,129.5854 384.3698,131.0126 385.1329,132.3727 385.7766,133.813 383.9398,135.4381
   	385.6525,136.8692 384.7817,138.3178 384.2704,139.7204 384.1618,141.1689 384.9088,142.8875 382.5616,143.6677 384.3369,145.9528
   	382.4251,146.72 380.6907,147.3869 382.2151,150.1288 380.0594,150.4188 "/>`,
-  playerPosition: ``,
-  playerColor: ``,
+  player:`<rect id="player-background" x="40.3453" y="0.3461" style="opacity:0.13;fill:#3DFFF1;" width="491.9806" height="1090"/>
+  <line id="scene-timeline" class="timeline" x1="83.8921" y1="927.0568" x2="412.8922" y2="927.0568"/>
+  <line id="scene-timebar" class="timebar" x1="83.8921" y1="927.0568" x2="397.0094" y2="927.0568"/>
+  <line id="scene-marker" class="marker" x1="396.3586" y1="915.8952" x2="396.3586" y2="936.9913"/>
+  <text id="scene-time" class="time" transform="matrix(1 0 0 1 420.6604 933.5091)" >– 00:00:00</text>
+  <text class="player-text" class="player-regular" transform="matrix(1 0 0 1 80.6604 767.0373)">
+    <tspan x="0" y="0" id="scene-name" class="player-bold">LOS TIEMPOS QUE TOMÓ NEGOCIAR</tspan>
+    <tspan id="scene-character" x="0" y="48">Óscar Leonardo Montealegre</tspan>
+    <tspan id="scene-alias" x="0" y="72" style="">Alias Lorem Ipsum</tspan>
+    <tspan id="scene-group" x="0" y="96">AUC – Autodefensas Campesinas </tspan>
+    <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+  </text>
+   <text class="player-description" transform="matrix(1 0 0 1 80.6604 194.5148)">
+     <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
+     <tspan x="0" y="54">Recuento de los procesos de negociación </tspan>
+     <tspan x="0" y="81">llevados a cabo en los 90 por las guerrillas, en </tspan>
+     <tspan x="0" y="108">los 2000 por las AUC y en distintas épocas por </tspan>
+     <tspan x="0" y="135">las FARC-EP. El relato de las guerrillas hizo </tspan>
+     <tspan x="0" y="162">énfasis en los acercamientos en pro de una </tspan>
+     <tspan x="0" y="189">salida dialogada al conflicto armado </tspan>
+     <tspan x="0" y="216">colombiano y la búsqueda por lograr </tspan>
+     <tspan x="0" y="243">transformaciones sociales, políticas y </tspan>
+     <tspan x="0" y="270">económicas. Los excombatientes de las AUC </tspan>
+     <tspan x="0" y="297">hicieron su relato del proceso de diálogo en </tspan>
+     <tspan x="0" y="324">Santa Fe de Ralito, haciendo énfasis en las </tspan>
+     <tspan x="0" y="351">dificultades de la negociación teniendo en </tspan>
+     <tspan x="0" y="378">cuenta las rupturas internas existentes dentro </tspan>
+     <tspan x="0" y="405">de las AUC y las presiones por una rendición </tspan>
+     <tspan x="0" y="432">militar y política.</tspan>
+   </text>
+   <g id="scene-button">
+      <polygon id="scene-play-button" class="play-button" points="58.9749,938.2114 58.9749,918.9623    58.998,918.7446 59.0382,918.5791 59.1232,918.4002 59.2305,918.2303 59.3557,918.0872 59.4944,917.9844 59.6732,917.877    59.8387,917.8189 60.0131,917.7786 60.2367,917.7786 60.4201,917.8099 60.6213,917.8681 60.8225,917.9709 60.8872,918.0029    73.614,927.6364 73.7016,927.7108 73.8089,927.8315 73.8715,927.903 73.9252,927.9835 73.961,928.0551 73.9967,928.14    74.028,928.2339 74.0593,928.3368 74.0772,928.4441 74.0906,928.5515 74.0817,928.6812 74.0638,928.8198 74.0236,928.9628    73.9699,929.0881 73.9207,929.2043 73.8626,929.2893 73.7687,929.4011 73.6703,929.4861 73.614,929.5359 60.8872,939.1415    60.7554,939.2303 60.6347,939.293 60.4961,939.3511 60.3574,939.3779 60.2099,939.4003 60.0086,939.3958 59.7895,939.3422    59.5704,939.2482 59.387,939.1141 59.2574,938.9844 59.1545,938.8458 59.074,938.6892 59.0159,938.5506 58.9756,938.3762  "/>
+      <g id="scene-pause-button" class="pause-button hidden">
+        <line x1="56.8396" y1="915.8223" x2="56.8396" y2="936.9185"/>
+        <line x1="69.9645" y1="915.8223" x2="69.9645" y2="936.9185"/>
+      </g>
+    </g>`,
 }
 let E25 = {
   initialNode: `
@@ -1361,3 +1396,44 @@ let E26 = {
   playerPosition: `170.3453`,
   playerColor: `#3FA9F5`,
 }
+
+
+/*
+		<rect id="player-background" x="40.3453" y="0.3461" style="opacity:0.13;fill:#3DFFF1;" width="491.9806" height="1090"/>
+		<line id="scene-timeline" class="timeline" x1="83.8921" y1="927.0568" x2="412.8922" y2="927.0568"/>
+    <line id="scene-timebar" class="timebar" x1="83.8921" y1="927.0568" x2="397.0094" y2="927.0568"/>
+    <line id="scene-marker" class="marker" x1="396.3586" y1="915.8952" x2="396.3586" y2="936.9913"/>
+		<text id="scene-time" class="time" transform="matrix(1 0 0 1 420.6604 933.5091)" >– 00:00:00</text>
+	  <text class="player-text" class="player-regular" transform="matrix(1 0 0 1 80.6604 767.0373)">
+      <tspan x="0" y="0" class="player-bold">LOS TIEMPOS QUE TOMÓ NEGOCIAR</tspan>
+      <tspan id="scene-character" x="0" y="48">Óscar Leonardo Montealegre</tspan>
+      <tspan id="scene-alias" x="0" y="72" style="">Alias Lorem Ipsum</tspan>
+      <tspan id="scene-group" x="0" y="96">AUC – Autodefensas Campesinas </tspan>
+      <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+    </text>
+	   <text class="player-description" transform="matrix(1 0 0 1 80.6604 194.5148)">
+       <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
+       <tspan x="0" y="54">Recuento de los procesos de negociación </tspan>
+       <tspan x="0" y="81">llevados a cabo en los 90 por las guerrillas, en </tspan>
+       <tspan x="0" y="108">los 2000 por las AUC y en distintas épocas por </tspan>
+       <tspan x="0" y="135">las FARC-EP. El relato de las guerrillas hizo </tspan>
+       <tspan x="0" y="162">énfasis en los acercamientos en pro de una </tspan>
+       <tspan x="0" y="189">salida dialogada al conflicto armado </tspan>
+       <tspan x="0" y="216">colombiano y la búsqueda por lograr </tspan>
+       <tspan x="0" y="243">transformaciones sociales, políticas y </tspan>
+       <tspan x="0" y="270">económicas. Los excombatientes de las AUC </tspan>
+       <tspan x="0" y="297">hicieron su relato del proceso de diálogo en </tspan>
+       <tspan x="0" y="324">Santa Fe de Ralito, haciendo énfasis en las </tspan>
+       <tspan x="0" y="351">dificultades de la negociación teniendo en </tspan>
+       <tspan x="0" y="378">cuenta las rupturas internas existentes dentro </tspan>
+       <tspan x="0" y="405">de las AUC y las presiones por una rendición </tspan>
+       <tspan x="0" y="432">militar y política.</tspan>
+     </text>
+     <g id="scene-button">
+        <polygon id="scene-play-button" class="play-button" points="58.9749,938.2114 58.9749,918.9623    58.998,918.7446 59.0382,918.5791 59.1232,918.4002 59.2305,918.2303 59.3557,918.0872 59.4944,917.9844 59.6732,917.877    59.8387,917.8189 60.0131,917.7786 60.2367,917.7786 60.4201,917.8099 60.6213,917.8681 60.8225,917.9709 60.8872,918.0029    73.614,927.6364 73.7016,927.7108 73.8089,927.8315 73.8715,927.903 73.9252,927.9835 73.961,928.0551 73.9967,928.14    74.028,928.2339 74.0593,928.3368 74.0772,928.4441 74.0906,928.5515 74.0817,928.6812 74.0638,928.8198 74.0236,928.9628    73.9699,929.0881 73.9207,929.2043 73.8626,929.2893 73.7687,929.4011 73.6703,929.4861 73.614,929.5359 60.8872,939.1415    60.7554,939.2303 60.6347,939.293 60.4961,939.3511 60.3574,939.3779 60.2099,939.4003 60.0086,939.3958 59.7895,939.3422    59.5704,939.2482 59.387,939.1141 59.2574,938.9844 59.1545,938.8458 59.074,938.6892 59.0159,938.5506 58.9756,938.3762  "/>
+        <g id="scene-pause-button" class="pause-button hidden">
+          <line x1="56.8396" y1="915.8223" x2="56.8396" y2="936.9185"/>
+          <line x1="69.9645" y1="915.8223" x2="69.9645" y2="936.9185"/>
+        </g>
+      </g>
+*/
