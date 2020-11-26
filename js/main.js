@@ -958,7 +958,7 @@ function show_elements() {
     addPlayer(click.id, click.type);
 
     // stop home audio
-    document.querySelector('#home-audio').pause();
+    // document.querySelector('#home-audio').pause();
   }
 }
 

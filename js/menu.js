@@ -66,8 +66,8 @@ function showNarratives() {
   hideVideo();
 
   // start sound
-  let homeAudio = document.querySelector('#home-audio')
-  homeAudio.currentTime === 0 ? homeAudio.play() : '';
+  // let homeAudio = document.querySelector('#home-audio')
+  // homeAudio.currentTime === 0 ? homeAudio.play() : '';
 }
 
 function showIntroPage() {
@@ -102,10 +102,10 @@ function init() {
   video.bind('ended', hideVideo);
 
   // create home audio
-  let audioElement = document.createElement('AUDIO');
-  audioElement.id = 'home-audio';
-  audioElement.preload = 'auto';
-  audioElement.currentTime = 0;
-  audioElement.src = `./audios/HOME.mp3`;
-  document.body.appendChild(audioElement);
+  // let audioElement = document.createElement('AUDIO');
+  // audioElement.id = 'home-audio';
+  // audioElement.preload = 'auto';
+  // audioElement.currentTime = 0;
+  // audioElement.src = `./audios/HOME.mp3`;
+  // document.body.appendChild(audioElement);
 }
