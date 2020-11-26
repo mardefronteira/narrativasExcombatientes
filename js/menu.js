@@ -13,6 +13,7 @@ $(document).ready(function(){
 })
 
 let infoIsVisible = false;
+
 function showContentInfo(){
   if (infoIsVisible) {
     contentInfo.fadeOut('slow');
@@ -53,14 +54,11 @@ function showNarratives() {
   getAllNames();
   restart();
 
-  //show all links
-  d3.selectAll('.link')
-    .classed( 'visible-link', true );
-
   d3.select('#body').classed( 'black-bg', false );
   d3.select('#body').classed( 'gradient-bg', true );
   d3.selectAll('.menu-button').classed('hidden-intro-page',false);
   d3.select('#intro-page').classed( 'hidden-intro-page', true );
+  setMenuColor('white');
 
   // hide intro video, if visible
   hideVideo();
@@ -70,11 +68,19 @@ function showNarratives() {
   // homeAudio.currentTime === 0 ? homeAudio.play() : '';
 }
 
+function setMenuColor(colorToSet) {
+  let color = colorToSet === 'black' ? true : false;
+  d3.select('#menu-title').classed( 'in-intro', color );
+  d3.select('#info-menu-content').classed( 'in-intro', color );
+  d3.selectAll('.info-button').classed( 'in-intro', color );
+}
+
 function showIntroPage() {
   d3.select('#body').classed( 'black-bg', true );
   d3.select('#body').classed( 'gradient-bg', false );
   d3.selectAll('.menu-button').classed('hidden-intro-page',true);
   d3.select('#intro-page').classed( 'hidden-intro-page', false );
+  setMenuColor('black');
 }
 
 function showCredits() {

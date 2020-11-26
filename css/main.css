@@ -3,7 +3,21 @@
   --mediumGray: #666666;
   --black: #000000;
   --lightGray: #cccccc;
-  --teal: #33ffcc;
+  --primary: #f27777;
+  --m01node: #ffb98e;
+  --m01player: #673065;;
+  --m02node: #e5d4d3;
+  --m02player: #e5d4d3;
+  --m03node: #c1a292;
+  --m03player: #c1a292;
+  --m04node: #986b58;
+  --m04player: #05F258;
+  --m05node: #ff6b00;
+  --m05player: #F2E205;;
+  --m06node: #002f87;
+  --m06player: #986B58;
+
+
 }
 
 body {
@@ -12,7 +26,6 @@ body {
 }
 
 .gradient-bg{
-  /* background: radial-gradient(circle, rgba(255,254,254,0.665703781512605) 6%, rgba(217,217,217,0.6264880952380952) 34%, rgba(51,102,102,0.5788690476190477) 100%); */
   background-color: #e8fffa;
   transition: 1s;
 }
@@ -35,11 +48,8 @@ a {
 /* Top menu */
 
 #hidden-menu {
-  background-color: var(--darkGray);
-  /* background-color: #CC3333; opacity: 85%; */
-  opacity: .8;
+  background-color: var(--primary);
   cursor: default;
-  /* padding: 5px; */
   position: relative;
   top: 0px;
   transition: 0.5s;
@@ -48,13 +58,11 @@ a {
 div#close-menu-div {
   width: 100vw;
   height: 3vh;
-  background: var(--mediumGray);
-  opacity: 0.7;
+  background: none;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
-  border-top: var(--lightGray) solid .5px;
 }
 
 div#info-top-bar{
@@ -62,26 +70,16 @@ div#info-top-bar{
 }
 
 div#info-menu-content {
-  /* padding: 10px 0 0 5vw; */
-  font-size: 1em;
-  line-height: 1.3em;
-  /* text-align: justify; */
+  font-size: 12px;
+  line-height: 1.2em;
 }
 
 img#btn-close-menu{
   cursor: pointer;
   display:flex;
   opacity:1;
-  visibility: visible;
   width: 100px;
   height: 100px;
-}
-
-.menu-icon {
-  fill:none;
-  stroke:#E2E4E4;
-  stroke-width:0.75;
-  stroke-miterlimit:10;
 }
 
 text#menu-title {
@@ -90,45 +88,127 @@ text#menu-title {
   left: 3vw;
   cursor: pointer;
   letter-spacing:1px;
-  fill:#33FFCC;
+  fill:#FFF;
   stroke:none;
   font-size:19px;
+}
+
+text#menu-title.in-intro {
+  fill:#000;
+  stroke:#000;
+}
+
+#info-menu-content.in-intro {
+  color: #000;
+}
+
+.info-button.in-intro {
+  stroke:#000;
+  fill: #000;
 }
 
 div#menu-bar{
   display:block;
 }
+/*separar icones do (?) e home para estilizar somente em hover */
 
-g#btn-info{
-  fill:#33FFCC;
+.info-button {
+  cursor: pointer;
+  fill-opacity: 0;
+  fill: #FFF;
+  font-size: 1rem;
+  font-weight: 1000;
+  stroke: #FFF;
 }
 
-g#M-01{
-  fill:#FF8000;
+.info-button > text {
+  fill: #FFF;
+  fill-opacity: 1;
+  font-size: 1rem;
+  font-weight: 1000;
+  stroke: none;
 }
-g#M-02{
-  fill:#3FA9F5;
+
+.info-button:hover {
+  fill-opacity: 1;
 }
-g#M-03{
-  fill:#FFFFFF;
+
+.info-button:hover > text {
+  fill:var(--primary);
 }
-g#M-04{
-  fill:#05F258;
+
+.M-01{
+  fill:var(--m01node);
+  stroke:var(--m01node);
 }
-g#M-05{
-  fill:#F2E205;
+
+.M-02{
+  fill:var(--m02node);
+  stroke:var(--m02node);
 }
-g#M-06{
-  fill:#3DFFF1;
+
+.M-03{
+  fill:var(--m03node);
+  stroke:var(--m03node);
+}
+
+.M-04{
+  fill:var(--m04node);
+  stroke:var(--m04node);
+}
+
+.M-05{
+  fill:var(--m05node);
+  stroke:var(--m05node);
+}
+
+.M-06{
+  fill:var(--m06node);
+  stroke:var(--m06node);
 }
 
 .menu-node {
-  stroke: var(--lightGray);
-  fill: var(--lightGray);
-  fill-opacity: 0;
   pointer-events: visible;
   stroke-miterlimit:10;
-  cursor: pointer;
+}
+
+.selected-menu-icon .menu-node {
+  fill-opacity: 0;
+  opacity: 1;
+}
+
+.menu-text {
+  font-weight: bold;
+  fill:var(--black);
+  fill-opacity: 1;
+}
+
+text#M-06-number {
+  fill:#FFF;
+}
+
+.selected-menu-icon > #M-01-number {
+  fill:var(--m01node);
+}
+
+.selected-menu-icon > #M-02-number {
+  fill:var(--m02node);
+}
+
+.selected-menu-icon > #M-03-number {
+  fill:var(--m03node);
+}
+
+.selected-menu-icon > #M-04-number {
+  fill:var(--m04node);
+}
+
+.selected-menu-icon > #M-05-number {
+  fill:var(--m05node);
+}
+
+.selected-menu-icon > #M-06-number {
+  fill:var(--m06node);
 }
 
 .menu-button {
@@ -139,29 +219,10 @@ g#intro-buttons {
   cursor:pointer;
 }
 
-.selected-menu-icon .menu-node {
-  fill-opacity: 1;
-  opacity: 1;
-}
-
 .menu-text {
   font-size:16px;
   letter-spacing:1px;
   stroke: none;
-}
-
-g.menu-button:hover > text {
-  fill:var(--darkGray);
-}
-
-g.menu-button:hover > polygon {
-  fill-opacity: 1;
-  opacity: 1;
-}
-
-.selected-menu-icon .menu-text {
-  fill:var(--darkGray);
-  fill-opacity: 1;
 }
 
 #hover-space {
@@ -315,10 +376,7 @@ video#video{
 /* Vis */
 
 .scene {
-  fill: var(--darkGray);
-  fill-opacity: .8;
-  stroke:var(--darkGray);
-  stroke-opacity: .2;
+  opacity: .95;
   stroke-width: 2px;
   stroke-miterlimit: 10;
   cursor: pointer;
@@ -372,9 +430,9 @@ cursor: pointer;
 }
 
 .character {
-  fill: #f3022f;
+  fill: var(--primary);
   fill-opacity: 0;
-  stroke: #f3022f;
+  stroke: var(--primary);
   stroke-opacity: .8;
   stroke-width: 2px;
   stroke-miterlimit: 10;
@@ -405,14 +463,20 @@ cursor: pointer;
   stroke-opacity: 0;
 }
 
-.in-frame {
-  /* fill-opacity: .77;
-  stroke-opacity: 0; */
-}
+/* .in-frame {
+  fill-opacity: .77;
+  stroke-opacity: 0;
+} */
 
-.minor {
+/* .minor {
   fill-opacity: 0;
   stroke-opacity: 0.77;
+} */
+
+.minor.scene {
+  stroke: var(--lightGray);
+  stroke-opacity: 1;
+  fill: transparent;
 }
 
 .visited-text {
@@ -444,20 +508,45 @@ cursor: pointer;
 
 .tooltip{
   display:none;
+  stroke:#FFF;
+  fill:#FFF;
 }
 
 .visible-tooltip{
   display:block;
 }
 
-.tooltip-popup{
-  opacity: 0.9;
-  z-index: -1;
+.popup {
+  fill: var(--primary);
 }
 
-.tooltip-text{
-  fill: var(--lightGray);
-	font-size:12px;
+.tooltip > text :not(.tooltip-time){
+	font-size:19px;
+  font-weight: bold;
+  stroke: none;
+  stroke-miterlimit:10;
+}
+
+.tooltip-button {
+  fill: transparent;
+  stroke-width:3;
+  stroke-linecap:round;
+}
+
+.tooltip-timeline {
+  opacity:0.24;
+  fill:none;
+  stroke-width:2;
+}
+
+.tooltip-time {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.tooltip-timebar, .tooltip-marker {
+ stroke-width:2;
+ stroke-linecap:round;
 }
 
 .transparent {
@@ -540,6 +629,36 @@ cursor: pointer;
 
 /* player */
 
+.M-01-player {
+  fill: var(--m01player);
+  fill-opacity: .15;
+}
+
+.M-02-player {
+  fill: var(--m01player);
+  fill-opacity: .30;
+}
+
+.M-03-player {
+  fill: var(--m01player);
+  fill-opacity: .30;
+}
+
+.M-04-player {
+  fill: var(--m01player);
+  fill-opacity: .15;
+}
+
+.M-05-player {
+  fill: var(--m01player);
+  fill-opacity: .15;
+}
+
+.M-06-player {
+  fill: var(--m01player);
+  fill-opacity: .30;
+}
+
 .clickable {
   stroke: none;
   fill: transparent;
@@ -570,7 +689,7 @@ cursor: pointer;
 }
 
 .player-bold {
-  font-weight:'bold';
+  font-weight: bold;
   font-size:20px;
 }
 

@@ -4,13 +4,12 @@ class ScenePlayer {
     this.jsId = this.id.replace('-','');
     this.type = entity;
     this.playerId = `scene-player`;
-    // this.playerPosition = eval(`${this.jsId}.playerPosition`);
-    this.playerColor = eval(`${this.jsId}.playerColor`);
-    this.audioId = `scene-audio`;
+    this.audioId = `${this.id}-audio`;
     this.playerSVG = eval(`${this.jsId}.player`); // player SVG in ./svg/scenes.js
     this.timecodes;
     this.characters;
     this.clickable;
+    this.hasBegun = false;
   }
 
   display() {
@@ -23,9 +22,6 @@ class ScenePlayer {
     gElement.innerHTML = this.playerSVG;
     gElement.classList.add('player');
 
-    // set matrix to player position
-    // gElement.setAttribute( "transform", `translate(${this.playerPosition-680.3453},0)`);
-
     // create audio elements
     let audioElement = document.createElement('AUDIO');
     audioElement.id = this.audioId;
@@ -34,8 +30,6 @@ class ScenePlayer {
     if ( target[ 'audio' ] !== undefined && target[ 'audio' ] !== '' ) {
       audioElement.src = `./audios/${target['audio']}`;
     }
-    audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
-    audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
 
     // add elements to DOM
     document.querySelector('#players').appendChild(gElement);
@@ -76,6 +70,9 @@ class ScenePlayer {
 
     // hide pause button
     document.getElementById('scene-pause-button').classList.add('hidden');
+
+    audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
+    audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
   }
 
   getCharacters(){
@@ -135,6 +132,7 @@ class ScenePlayer {
     let buttonToHide = audioElement.paused ? 'pause' : 'play';
     document.getElementById(`scene-${buttonToShow}-button`).classList.remove('hidden');
     document.getElementById(`scene-${buttonToHide}-button`).classList.add('hidden');
+    this.hasBegun = this.hasBegun === false ? true : false;
   }
 
   removeElements() {
@@ -142,13 +140,14 @@ class ScenePlayer {
     let targetAudio = document.querySelector(`#${this.audioId}`);
 
     targetPlayer.remove();
+    targetAudio.currentTime = 0;
     targetAudio.remove();
   }
 
   setTime(e) {
       // update audio time based on where the marker was dragged
       let targetType = e.target.id.split('-')[0];
-      let audioElement = document.getElementById(`${targetType}-audio`);
+      let audioElement = document.getElementById(this.audioId);
       audioElement.currentTime = mapValue(e.offsetX, 0, this.clickable.w, 0, audioElement.duration);
   }
 
@@ -165,41 +164,41 @@ class ScenePlayer {
   }
 
   updatePlayer(target) {
-    let audioElement = target;
-    let targetType = target.id.split('-')[0];
-    let clickable = this.clickable;
-    let currentTime = audioElement.currentTime;
+    if (this.hasBegun) {
+      let audioElement = target;
+      let clickable = this.clickable;
+      let currentTime = audioElement.currentTime;
 
-    // get marker and timebar, and scale them to the current audio time
-    let marker =  document.getElementById(`${targetType}-marker`);
-    let timebar =  document.getElementById(`${targetType}-timebar`);
-    let markerPos = mapValue(currentTime, 0, audioElement.duration, clickable.x, clickable.x + clickable.w);
-    if (isNaN(markerPos)) {
-      markerPos = clickable.x;
-    }
-    marker.setAttribute("x1", parseInt(markerPos));
-    marker.setAttribute("x2", parseInt(markerPos));
-    timebar.setAttribute("x2", parseInt(markerPos));
+      console.log(currentTime);
 
-    // update time
-    let timeString = document.getElementById(`${targetType}-time`);
-    timeString.innerHTML = `– ${getFormattedTime(currentTime)}`
+      // get marker and timebar, and scale them to the current audio time
+      let marker =  document.getElementById(`${this.id}-marker`);
+      let timebar =  document.getElementById(`${this.id}-timebar`);
+      let markerPos = mapValue(currentTime, 0, audioElement.duration, clickable.x, clickable.x + clickable.w);
+      if (isNaN(markerPos)) {
+        markerPos = clickable.x;
+      }
+      marker.setAttribute("x1", parseInt(markerPos));
+      marker.setAttribute("x2", parseInt(markerPos));
+      timebar.setAttribute("x2", parseInt(markerPos));
 
-    if(targetType === 'scene') {
-      // update text
-      let character = document.getElementById(`${targetType}-character`);
-      let group = document.getElementById(`${targetType}-group`);
-      let alias = document.getElementById(`${targetType}-alias`);
+      // update time
+      let timeString = document.getElementById(`scene-time`);
+      timeString.innerHTML = `– ${getFormattedTime(currentTime)}`
+        // update text
+        let character = document.getElementById(`scene-character`);
+        let group = document.getElementById(`scene-group`);
+        let alias = document.getElementById(`scene-alias`);
 
-      // get character that corresponds to timecode
-      let currentCharacter = this.timecodes.filter(slice => (slice.start_sec < currentTime) && (slice.end_sec > currentTime))[0].character;
+        // get character that corresponds to timecode
+        let currentCharacter = this.timecodes.filter(slice => (slice.start_sec < currentTime) && (slice.end_sec > currentTime))[0].character;
 
-      // get its info
-      currentCharacter = this.characters.filter(char => char.id === currentCharacter)[0];
+        // get its info
+        currentCharacter = this.characters.filter(char => char.id === currentCharacter)[0];
 
-      character.innerHTML = currentCharacter.character;
-      group.innerHTML = currentCharacter.groupName;
-      alias.innerHTML = "Alias Lorem Ipsum";
-    }
-  }
+        character.innerHTML = currentCharacter.character;
+        group.innerHTML = currentCharacter.groupName;
+        alias.innerHTML = currentCharacter.alias ? `Alias ${currentCharacter.alias}` : '';
+      } // ends if hasBegun
+  } // ends updatePlayer()
 }
