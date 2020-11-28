@@ -66,9 +66,14 @@ class TooltipPlayer {
   }
 
   setTime(e) {
+    e = e || window.event;
+    const target = e.target || e.srcElement,
+    clickBox = target.getBoundingClientRect(),
+    offsetX = e.clientX - clickBox.left;
+
     // update audio time based on where the timebar was clicked
     let audioElement = document.getElementById(`tooltip-audio`);
-    audioElement.currentTime = mapValue(e.offsetX, 0, this.clickable.w, 0, audioElement.duration);
+    audioElement.currentTime = mapValue(offsetX, 0, clickBox.width, 0, audioElement.duration);
   }
 
   updatePlayer(target) {

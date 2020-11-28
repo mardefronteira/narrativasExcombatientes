@@ -25,6 +25,8 @@ body {
   margin: auto;
 }
 
+svg#viz { position:fixed; top:10; left:0; height:100%; width:100%; }
+
 .gradient-bg{
   background-color: #e8fffa;
   transition: 1s;
@@ -34,10 +36,30 @@ body {
   background: var(--darkGray);
 }
 
-div#intro-page{
+g#intro-page{
   position:absolute;
   top:0;
   left:0;
+}
+
+.intro-node {
+  fill:transparent;
+  stroke:#F6F7EA;
+  stroke-width:0.75;
+  stroke-miterlimit:10;
+}
+
+.intro-label {
+  font-size:17px;
+  fill: #F6F7EA;
+}
+
+.intro-link {
+  opacity:0.7;
+  fill:none;
+  stroke:#F6F7EA;
+  stroke-width:0.7;
+  stroke-miterlimit:10;
 }
 
 a {
@@ -576,46 +598,6 @@ cursor: pointer;
   stroke-opacity: .9;
 }
 
-.phantom {
-  fill: #0D0D0D;
-  fill-opacity: 0;
-  stroke:#0D0D0D;
-  stroke-opacity: .05;
-  stroke-width: 2px;
-  stroke-miterlimit: 10;
-}
-
-/* Draggable panel */
-
-.panel {
-  position: absolute;
-  z-index: 20;
-  text-align: left;
-  background-color: var(--lightGray);
-  opacity: 0;
-  min-width: 300px;
-  min-height: 55px;
-  max-width: 420px;
-  border-radius: 5px;
-  color: var(--darkGray);
-  padding: 10px 10px;
-}
-
-.panel .close-panel {
-  text-align: right;
-  font-size: 0.6rem;
-  margin-top: 2px;
-  margin-bottom: -10px;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.panel-body {
-  font-size: 0.8rem;
-  letter-spacing: 0.1rem;
-  cursor: move;
-}
-
 .hidden-player {
   display:none;
 }
@@ -693,6 +675,11 @@ cursor: pointer;
   font-size:20px;
 }
 
+.invisible {
+  fill: transparent;
+  stroke: none;
+}
+
 .play-button {
   fill:transparent;
   stroke:#252526;
@@ -723,6 +710,12 @@ cursor: pointer;
   stroke-miterlimit:10;
 }
 
+.guide-button > text {
+  fill:#002F87;
+  font-weight: bold;
+  font-size:27px;
+}
+
 /* group classes */
 
 .minor-group {
@@ -739,12 +732,6 @@ cursor: pointer;
 
 .active-character {
   fill-opacity: 1;
-}
-
-.teste {
-  fill: #f87d6f;
-  stroke: #f87d6f;
-  background-color: blue;
 }
 
 /* scene node */

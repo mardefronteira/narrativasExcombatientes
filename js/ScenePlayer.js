@@ -72,7 +72,7 @@ class ScenePlayer {
     document.getElementById('scene-pause-button').classList.add('hidden');
 
     audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
-    audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
+    // audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
   }
 
   getCharacters(){
@@ -145,10 +145,15 @@ class ScenePlayer {
   }
 
   setTime(e) {
-      // update audio time based on where the marker was dragged
-      let targetType = e.target.id.split('-')[0];
-      let audioElement = document.getElementById(this.audioId);
-      audioElement.currentTime = mapValue(e.offsetX, 0, this.clickable.w, 0, audioElement.duration);
+    e = e || window.event;
+    const target = e.target || e.srcElement,
+    clickBox = target.getBoundingClientRect(),
+    offsetX = e.clientX - clickBox.left;
+
+    // update audio time based on where the marker was dragged
+    let targetType = e.target.id.split('-')[0];
+    let audioElement = document.getElementById(this.audioId);
+    audioElement.currentTime = mapValue(offsetX, 0, clickBox.width, 0, audioElement.duration);
   }
 
   showFrame(id){
@@ -169,7 +174,7 @@ class ScenePlayer {
       let clickable = this.clickable;
       let currentTime = audioElement.currentTime;
 
-      console.log(currentTime);
+      // console.log(currentTime);
 
       // get marker and timebar, and scale them to the current audio time
       let marker =  document.getElementById(`${this.id}-marker`);

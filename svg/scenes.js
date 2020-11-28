@@ -45,18 +45,18 @@ let E03 = {
   	865.9385,905.551 860.4424,904.3702 `,
   player: `
     <rect id="player-background" x="440.3453" y="0.3461" class="M-01-player player-background" width="491.9806" height="1090"/>
-    <line id="scene-timeline" style="opacity:0.24;fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="487.8922" y1="727.0568" x2="816.8922" y2="727.0568"/>
-    <text id="scene-time" transform="matrix(1 0 0 1 824.6605 733.5091)" style="fill:#252526; font-size:15px; letter-spacing:1;">– 00:00:00</text>
+    <line id="scene-timeline" class="timeline" x1="487.8922" y1="727.0568" x2="816.8922" y2="727.0568"/>
+    <text id="scene-time" transform="matrix(1 0 0 1 824.6605 733.5091)" class="time">– 00:00:00</text>
     <text transform="matrix(1 0 0 1 484.6604 567.5646)">
-    <tspan id="scene-name" x="0" y="0" style="fill:#0D0D0D; font-size:20px; letter-spacing:1;">EXPANSIÓN DE LAS GUERRILLAS</tspan>
-    <tspan id="scene-character" x="0" y="48" style="fill:#252526; font-size:20px; letter-spacing:1;"></tspan>
-    <tspan id="scene-alias" x="0" y="72" style="fill:#252526; font-size:17px; letter-spacing:1;">Alias Lorem Ipsum</tspan>
-    <tspan id="scene-group" x="0" y="96" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
-    <tspan id="scene-group-overflow" x="0" y="120" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+    <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
+    <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+    <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
+    <tspan id="scene-group" x="0" y="96"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120"></tspan>
     </text>
 
     <text transform="matrix(1 0 0 1 484.6604 104.5148)" style=" fill:#252526; font-size:18px;">
-    <tspan id="scene-frame" x="0" y="0" style="font-size:20px; letter-spacing:1;">Territorialidad</tspan>
+    <tspan id="scene-frame" x="0" y="0" class="player-bold">Territorialidad</tspan>
     <tspan x="0" y="54">Los Excombatientes de las guerrillas </tspan>
     <tspan x="0" y="81">describieron y analizaron críticamente las </tspan>
     <tspan x="0" y="108">formas en que cada grupo configuró sus bases </tspan>
@@ -72,15 +72,15 @@ let E03 = {
     <tspan x="0" y="378">social, político, económico cultural.</tspan>
     </text>
     <g id="scene-button">
-      <rect style="fill:transparent;stroke:none;" x="460.8396" y="715.8223" width="15px" height="20px"></rect>
-      <polygon id="scene-play-button" style="fill:transparent;stroke:#252526;stroke-width:1.9269;stroke-miterlimit:10;" points="462.9749,738.2114 462.9749,718.9623   462.998,718.7446 463.0382,718.5791 463.1232,718.4002 463.2305,718.2303 463.3557,718.0872 463.4944,717.9844 463.6732,717.877   463.8387,717.8189 464.0131,717.7786 464.2367,717.7786 464.42,717.8099 464.6213,717.8681 464.8225,717.9709 464.8872,718.0029   477.614,727.6364 477.7016,727.7108 477.8089,727.8315 477.8715,727.903 477.9252,727.9835 477.961,728.0551 477.9967,728.14   478.028,728.2339 478.0594,728.3368 478.0772,728.4441 478.0906,728.5515 478.0817,728.6812 478.0638,728.8198 478.0236,728.9628   477.9699,729.0881 477.9207,729.2043 477.8626,729.2893 477.7687,729.4011 477.6703,729.4861 477.614,729.5359 464.8872,739.1415   464.7554,739.2303 464.6347,739.293 464.4961,739.3511 464.3575,739.3779 464.2099,739.4003 464.0086,739.3958 463.7895,739.3422   463.5704,739.2482 463.3871,739.1141 463.2574,738.9844 463.1545,738.8458 463.074,738.6892 463.0159,738.5506 462.9756,738.3762   "/>
-      <g id="scene-pause-button">
-      <line id="p_E-03_2_" style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="460.8396" y1="715.8223" x2="460.8396" y2="736.9185"/>
-      <line id="p_E-03_1_" style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="473.9645" y1="715.8223" x2="473.9645" y2="736.9185"/>
+      <rect class="invisible" x="460.8396" y="715.8223" width="15px" height="20px"></rect>
+      <polygon id="scene-play-button" class="play-button" points="462.9749,738.2114 462.9749,718.9623   462.998,718.7446 463.0382,718.5791 463.1232,718.4002 463.2305,718.2303 463.3557,718.0872 463.4944,717.9844 463.6732,717.877   463.8387,717.8189 464.0131,717.7786 464.2367,717.7786 464.42,717.8099 464.6213,717.8681 464.8225,717.9709 464.8872,718.0029   477.614,727.6364 477.7016,727.7108 477.8089,727.8315 477.8715,727.903 477.9252,727.9835 477.961,728.0551 477.9967,728.14   478.028,728.2339 478.0594,728.3368 478.0772,728.4441 478.0906,728.5515 478.0817,728.6812 478.0638,728.8198 478.0236,728.9628   477.9699,729.0881 477.9207,729.2043 477.8626,729.2893 477.7687,729.4011 477.6703,729.4861 477.614,729.5359 464.8872,739.1415   464.7554,739.2303 464.6347,739.293 464.4961,739.3511 464.3575,739.3779 464.2099,739.4003 464.0086,739.3958 463.7895,739.3422   463.5704,739.2482 463.3871,739.1141 463.2574,738.9844 463.1545,738.8458 463.074,738.6892 463.0159,738.5506 462.9756,738.3762   "/>
+      <g id="scene-pause-button" class="pause-button">
+      <line id="p_E-03_2_" x1="460.8396" y1="715.8223" x2="460.8396" y2="736.9185"/>
+      <line id="p_E-03_1_" x1="473.9645" y1="715.8223" x2="473.9645" y2="736.9185"/>
       </g>
     </g>
-    <line id="E-03-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="487.8922" y1="727.0568" x2="487.8922" y2="727.0568"/>
-    <line id="E-03-marker" style="fill:none;stroke:#252526;stroke-width:1.9269;stroke-linecap:round;stroke-miterlimit:10;" x1="487.8922" y1="715.8952" x2="487.8922" y2="736.9913"/>
+    <line id="E-03-timebar" class="timebar" x1="487.8922" y1="727.0568" x2="487.8922" y2="727.0568"/>
+    <line id="E-03-marker" class="marker" x1="487.8922" y1="715.8952" x2="487.8922" y2="736.9913"/>
   `,
 }
 let E04 = {
@@ -125,18 +125,18 @@ let E06 = {
   	1120.0554,282.0414 1118.5663,287.4389 1124.5076,290.1371 `,
   player: `
   <rect id="player-background" class="M-01-player player-background" x="680.3453" y="0.3461" width="491.9806" height="1090"/>
-  <line id="scene-timeline" style="opacity:0.24;fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="727.8922" y1="987.0568" x2="1056.8921" y2="987.0568"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 1064.6604 993.5091)" style="fill:#252526; font-size:15px; letter-spacing:1;">– 00:00:00</text>
+  <line id="scene-timeline" class="timeline" x1="727.8922" y1="987.0568" x2="1056.8921" y2="987.0568"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 1064.6604 993.5091)" class="time">– 00:00:00</text>
   <text transform="matrix(1 0 0 1 724.6605 823.2512)">
-  <tspan id="scene-name" x="0" y="0" style="fill:#0D0D0D; font-size:20px; letter-spacing:1;">EXPANSIÓN DE LAS GUERRILLAS</tspan>
-  <tspan id="scene-character" x="0" y="48" style="fill:#252526; font-size:20px; letter-spacing:1;"></tspan>
-  <tspan id="scene-alias" x="0" y="72" style="fill:#252526; font-size:17px; letter-spacing:1;">Alias Lorem Ipsum</tspan>
-  <tspan id="scene-group" x="0" y="96" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
-  <tspan id="scene-group-overflow" x="0" y="120" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+  <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
+  <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+  <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
+  <tspan id="scene-group" x="0" y="96"></tspan>
+  <tspan id="scene-group-overflow" x="0" y="120"></tspan>
   </text>
 
-<text transform="matrix(1 0 0 1 724.6605 104.5148)" style="fill:#252526; font-size:18px;">
-<tspan x="0" y="0" style="fill:#252526; font-size:20px; letter-spacing:1;">Territorialidad</tspan>
+<text transform="matrix(1 0 0 1 724.6605 104.5148)" class="player-description">
+<tspan x="0" y="0" class="player-bold">Territorialidad</tspan>
 <tspan x="0" y="54">Los Excombatientes de las </tspan>
 <tspan x="0" y="81">guerrillas describieron y </tspan>
 <tspan x="0" y="108">analizaron críticamente las </tspan>
@@ -161,15 +161,15 @@ let E06 = {
 </text>
 
   <g id="scene-button">
-    <rect style="fill:transparent;stroke:none;" x="700.8396" y="975.8223" width="15px" height="20px"></rect>
-    <polygon id="scene-play-button" style="fill:transparent;stroke:#252526;stroke-width:1.9269;stroke-miterlimit:10;" points="702.9749,998.2114 702.9749,978.9623   702.998,978.7446 703.0382,978.5791 703.1232,978.4002 703.2305,978.2303 703.3557,978.0872 703.4944,977.9844 703.6732,977.877   703.8387,977.8189 704.0131,977.7786 704.2367,977.7786 704.42,977.8099 704.6213,977.8681 704.8225,977.9709 704.8871,978.0029   717.614,987.6364 717.7016,987.7108 717.8089,987.8315 717.8715,987.903 717.9252,987.9835 717.9609,988.0551 717.9968,988.14   718.028,988.2339 718.0593,988.3368 718.0772,988.4441 718.0906,988.5515 718.0817,988.6812 718.0638,988.8198 718.0236,988.9628   717.9699,989.0881 717.9207,989.2043 717.8626,989.2893 717.7687,989.4011 717.6703,989.4861 717.614,989.5359 704.8871,999.1415   704.7554,999.2303 704.6347,999.293 704.4961,999.3511 704.3574,999.3779 704.2099,999.4003 704.0087,999.3958 703.7895,999.3422   703.5704,999.2482 703.387,999.1141 703.2574,998.9844 703.1545,998.8458 703.074,998.6892 703.0159,998.5506 702.9756,998.3762 "/>
-    <g id="scene-pause-button">
-      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="700.8396" y1="975.8223" x2="700.8396" y2="996.9185"/>
-      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="713.9645" y1="975.8223" x2="713.9645" y2="996.9185"/>
+    <rect class="invisible" x="700.8396" y="975.8223" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" class="play-button" points="702.9749,998.2114 702.9749,978.9623   702.998,978.7446 703.0382,978.5791 703.1232,978.4002 703.2305,978.2303 703.3557,978.0872 703.4944,977.9844 703.6732,977.877   703.8387,977.8189 704.0131,977.7786 704.2367,977.7786 704.42,977.8099 704.6213,977.8681 704.8225,977.9709 704.8871,978.0029   717.614,987.6364 717.7016,987.7108 717.8089,987.8315 717.8715,987.903 717.9252,987.9835 717.9609,988.0551 717.9968,988.14   718.028,988.2339 718.0593,988.3368 718.0772,988.4441 718.0906,988.5515 718.0817,988.6812 718.0638,988.8198 718.0236,988.9628   717.9699,989.0881 717.9207,989.2043 717.8626,989.2893 717.7687,989.4011 717.6703,989.4861 717.614,989.5359 704.8871,999.1415   704.7554,999.2303 704.6347,999.293 704.4961,999.3511 704.3574,999.3779 704.2099,999.4003 704.0087,999.3958 703.7895,999.3422   703.5704,999.2482 703.387,999.1141 703.2574,998.9844 703.1545,998.8458 703.074,998.6892 703.0159,998.5506 702.9756,998.3762 "/>
+    <g id="scene-pause-button" class="pause-button">
+      <line x1="700.8396" y1="975.8223" x2="700.8396" y2="996.9185"/>
+      <line x1="713.9645" y1="975.8223" x2="713.9645" y2="996.9185"/>
     </g>
   </g>
-  <line id="E-06-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="727.8922" y1="987.0568" x2="727.8922" y2="987.0568"/>
-  <line id="E-06-marker" style="fill:none;stroke:#252526;stroke-width:1.9269;stroke-linecap:round;stroke-miterlimit:10;" x1="727.8922" y1="975.8952" x2="727.8922" y2="996.9913"/>
+  <line id="E-06-timebar" class="timebar" x1="727.8922" y1="987.0568" x2="727.8922" y2="987.0568"/>
+  <line id="E-06-marker" class="marker" x1="727.8922" y1="975.8952" x2="727.8922" y2="996.9913"/>
   `,
 }
 let E07 = {
@@ -184,7 +184,70 @@ let E07 = {
   	780.9521,946.7375 781.8969,948.9614 781.8259,951.0309 778.8597,951.5284 780.3389,954.7912 778.3781,955.7539 777.1108,957.2411
   	774.9581,957.6442 773.7843,959.2567 772.4572,960.8671 770.82,962.1111 768.2693,960.6165 766.7594,962.3499 764.7278,961.546
   	762.8885,961.3489 761.1113,960.8882 758.9543,962.8796 757.1786,961.8622 `,
-  player: ``,
+  player: `<rect id="player-background" class="M-06-player player-background" x="491.99" y="-1" width="492" height="1090"/>
+  <line id="scene-timeline" class="timeline" x1="533.89" y1="777.06" x2="862.89" y2="777.06"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 870.6604 783.5091)" class="time">– 00:00:00</text>
+  <text transform="matrix(1 0 0 1 530.6604 617.0373)" class="player-regular">
+  <tspan id="scene-name" x="0" y="0" class="player-bold""></tspan>
+  <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+  <tspan id="scene-alias" x="0" y="72"></tspan>
+  <tspan id="scene-group" x="0" y="96"></tspan>
+  <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+  </text>
+
+  <text class="player-description"  transform="matrix(1 0 0 1 530.6604 104.5148)">
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
+    <tspan x="0" y="54">Recuento de los procesos de </tspan>
+    <tspan x="0" y="81">negociación llevados a cabo en los 90 </tspan>
+    <tspan x="0" y="108">por las guerrillas, en los 2000 por las </tspan>
+    <tspan x="0" y="135">AUC y en distintas épocas por las </tspan>
+    <tspan x="0" y="162">FARC-EP. El relato de las guerrillas </tspan>
+    <tspan x="0" y="189">hizo énfasis en los acercamientos en </tspan>
+    <tspan x="0" y="216">pro de una salida dialogada al conflicto </tspan>
+    <tspan x="0" y="243">armado colombiano y la búsqueda por lograr </tspan>
+    <tspan x="0" y="270">transformaciones sociales, políticas y </tspan>
+    <tspan x="0" y="297">económicas. Los excombatientes de las AUC </tspan>
+    <tspan x="0" y="324">hicieron su relato del proceso de diálogo en Santa </tspan>
+    <tspan x="0" y="351">Fe de Ralito, haciendo énfasis en las dificultades </tspan>
+    <tspan x="0" y="378">de la negociación teniendo en cuenta las rupturas </tspan>
+    <tspan x="0" y="405">internas existentes dentro de las AUC y las </tspan>
+    <tspan x="0" y="432">presiones por una rendición militar y política.</tspan>
+  </text>
+
+  <line id="E-07-timebar" class="timebar" x1="533.89" y1="777.06" x2="533.89" y2="777.06"/>
+  <line id="E-07-marker" class="marker" x1="533.89" y1="765.9" x2="533.89" y2="786.99"/>
+
+  <g id="scene-button">
+    <rect class="invisible" x="506" y="765" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" class="play-button" points="506.5,785.93 506.5,766.68 506.52,766.47 506.56,766.3 506.65,766.12 506.76,765.95 506.88,765.81
+      507.02,765.71 507.2,765.6 507.36,765.54 507.54,765.5 507.76,765.5 507.95,765.53 508.15,765.59 508.35,765.69 508.41,765.72
+      521.14,775.36 521.23,775.43 521.33,775.55 521.4,775.62 521.45,775.7 521.49,775.78 521.52,775.86 521.55,775.96 521.58,776.06
+      521.6,776.17 521.62,776.27 521.61,776.4 521.59,776.54 521.55,776.68 521.49,776.81 521.45,776.93 521.39,777.01 521.29,777.12
+      521.2,777.21 521.14,777.26 508.41,786.86 508.28,786.95 508.16,787.01 508.02,787.07 507.88,787.1 507.73,787.12 507.53,787.12
+      507.31,787.06 507.1,786.97 506.91,786.84 506.78,786.71 506.68,786.57 506.6,786.41 506.54,786.27 506.5,786.1 	"/>
+    <g id="scene-pause-button" class="pause-button" class="pause-button">
+      <line x1="506.84" y1="765.82" x2="506.84" y2="786.92"/>
+      <line x1="519.96" y1="765.82" x2="519.96" y2="786.92"/>
+    </g>
+  </g>
+  <g id="E-07-guide-button" class="guide-button">
+  	<polygon style="fill:#F27777;" points="589.69,1021.16 583.94,1022.91 585.12,1026.58 583.54,1029.29 579.34,1030 577.37,1031.94
+  	578.26,1037.29 575.45,1038.93 571.86,1038.95 570.29,1043.29 567.69,1046.81 563.46,1042.95 560.4,1046.77 557.1,1043.78
+  	553.28,1046.34 549.97,1044.95 547.63,1041.59 545.23,1039.24 543.2,1036.7 542.18,1033.37 535.52,1035.24 534.26,1031.84
+  	530.8,1029.79 536.36,1023.81 532.14,1022.01 527.78,1019.4 532.29,1015.69 532.82,1012.66 529.31,1008.87 530.78,1005.7
+  	530.38,1001.79 534.16,999.85 536.08,997.13 537.68,994.08 542.19,994.18 542.06,988.46 546.91,990.11 550.32,990.26
+  	551.5,982.88 555.37,983.67 558.87,981.8 562.58,982.19 565.13,988.13 569.1,985.84 570.1,991.98 572.99,992.67 578.03,990.86
+  	578.34,995.46 580.2,997.85 586.24,997.45 585.29,1001.95 588.15,1004.31 586.32,1008.3 585.91,1011.46 592.43,1014.28
+  	586.51,1017.43 			"/>
+    <polygon style="fill:#002F87;" points="572.37,1017.25 569.56,1019.57 568.37,1022.46 565.72,1024.14 562.59,1023.88 559.83,1023.67
+    556.45,1024.12 554,1022 552.81,1019.04 550.81,1016.27 550.05,1012.7 552.78,1010.07 553.88,1006.64 557.29,1005.62
+    560.29,1003.65 563.83,1003.99 566.74,1005.94 569.04,1008.22 570.47,1011.01 570.62,1014.03 			"/>
+    <rect x="615.27" y="988.34" class="invisible" width="248.55" height="55.69"/>
+    <text transform="matrix(1 0 0 1 615.2747 1008.5926)">
+      <tspan x="0" y="0" >Ir a guía de estudio </tspan>
+      <tspan x="0" y="29" >acuerdos de paz</tspan>
+    </text>
+  </g>`,
 }
 let E08 = {
   node: `674.5076,550.4149
@@ -197,17 +260,17 @@ let E08 = {
   	671.6399,549.9058 `,
   player: `
     <rect id="player-background" x="240.3453" y="0.3461" class="M-01-player player-background" width="491.9806" height="1090"/>
-    <line id="scene-timeline" style="opacity:0.24;fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="287.8922" y1="837.0568" x2="616.8922" y2="837.0568"/>
-    <text id="scene-time" transform="matrix(1 0 0 1 624.6604 843.5091)" style="fill:#252526; font-size:15px; letter-spacing:1;">– 00:00:00</text>
+    <line id="scene-timeline" class="timeline" x1="287.8922" y1="837.0568" x2="616.8922" y2="837.0568"/>
+    <text id="scene-time" transform="matrix(1 0 0 1 624.6604 843.5091)" class="time">– 00:00:00</text>
     <text transform="matrix(1 0 0 1 284.6604 677.0373)">
-    <tspan id="scene-name" x="0" y="0" style="fill:#0D0D0D; font-size:20px; letter-spacing:1;">EXPANSIÓN DE LAS GUERRILLAS</tspan>
-    <tspan id="scene-character" x="0" y="48" style="fill:#252526; font-size:20px; letter-spacing:1;"></tspan>
-    <tspan id="scene-alias" x="0" y="72" style="fill:#252526; font-size:17px; letter-spacing:1;">Alias Lorem Ipsum</tspan>
-    <tspan id="scene-group" x="0" y="96" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
-    <tspan id="scene-group-overflow" x="0" y="120" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+    <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
+    <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+    <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
+    <tspan id="scene-group" x="0" y="96"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120"></tspan>
     </text>
     <text transform="matrix(1 0 0 1 284.6604 104.5148)" style=" fill:#252526; font-size:18px;">
-      <tspan x="0" y="0" style="font-size:20px; letter-spacing:1;">Territorialidad</tspan>
+      <tspan x="0" y="0" class="player-bold">Territorialidad</tspan>
       <tspan x="0" y="54" >Los Excombatientes de las guerrillas </tspan>
       <tspan x="0" y="81" >describieron y analizaron críticamente las </tspan>
       <tspan x="0" y="108" >formas en que cada grupo configuró sus bases </tspan>
@@ -223,15 +286,15 @@ let E08 = {
       <tspan x="0" y="378" >social, político, económico cultural.</tspan>
     </text>
     <g id="scene-button">
-      <rect style="fill:transparent;stroke:none;" x="260.8396" y="825.8223" width="15px" height="20px"></rect>
-      <polygon id="scene-play-button" style="fill:transparent;stroke:#252526;stroke-width:1.9269;stroke-miterlimit:10;" points="262.9749,848.2114 262.9749,828.9623   262.998,828.7446 263.0382,828.5791 263.1232,828.4002 263.2305,828.2303 263.3557,828.0872 263.4944,827.9844 263.6732,827.877   263.8387,827.8189 264.0131,827.7786 264.2367,827.7786 264.42,827.8099 264.6213,827.8681 264.8225,827.9709 264.8872,828.0029   277.614,837.6364 277.7016,837.7108 277.8089,837.8315 277.8715,837.903 277.9252,837.9835 277.961,838.0551 277.9967,838.14   278.028,838.2339 278.0594,838.3368 278.0772,838.4441 278.0906,838.5515 278.0817,838.6812 278.0638,838.8198 278.0236,838.9628   277.9699,839.0881 277.9207,839.2043 277.8626,839.2893 277.7687,839.4011 277.6703,839.4861 277.614,839.5359 264.8872,849.1415   264.7554,849.2303 264.6347,849.293 264.4961,849.3511 264.3575,849.3779 264.2099,849.4003 264.0086,849.3958 263.7895,849.3422   263.5704,849.2482 263.3871,849.1141 263.2574,848.9844 263.1545,848.8458 263.074,848.6892 263.0159,848.5506 262.9756,848.3762   "/>
-      <g id="scene-pause-button">
-      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="260.8396" y1="825.8223" x2="260.8396" y2="846.9185"/>
-      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="273.9645" y1="825.8223" x2="273.9645" y2="846.9185"/>
+      <rect class="invisible" x="260.8396" y="825.8223" width="15px" height="20px"></rect>
+      <polygon id="scene-play-button" class="play-button" points="262.9749,848.2114 262.9749,828.9623   262.998,828.7446 263.0382,828.5791 263.1232,828.4002 263.2305,828.2303 263.3557,828.0872 263.4944,827.9844 263.6732,827.877   263.8387,827.8189 264.0131,827.7786 264.2367,827.7786 264.42,827.8099 264.6213,827.8681 264.8225,827.9709 264.8872,828.0029   277.614,837.6364 277.7016,837.7108 277.8089,837.8315 277.8715,837.903 277.9252,837.9835 277.961,838.0551 277.9967,838.14   278.028,838.2339 278.0594,838.3368 278.0772,838.4441 278.0906,838.5515 278.0817,838.6812 278.0638,838.8198 278.0236,838.9628   277.9699,839.0881 277.9207,839.2043 277.8626,839.2893 277.7687,839.4011 277.6703,839.4861 277.614,839.5359 264.8872,849.1415   264.7554,849.2303 264.6347,849.293 264.4961,849.3511 264.3575,849.3779 264.2099,849.4003 264.0086,849.3958 263.7895,849.3422   263.5704,849.2482 263.3871,849.1141 263.2574,848.9844 263.1545,848.8458 263.074,848.6892 263.0159,848.5506 262.9756,848.3762   "/>
+      <g id="scene-pause-button" class="pause-button">
+      <line x1="260.8396" y1="825.8223" x2="260.8396" y2="846.9185"/>
+      <line x1="273.9645" y1="825.8223" x2="273.9645" y2="846.9185"/>
       </g>
     </g>
-    <line id="E-08-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="287.8922" y1="837.0568" x2="287.8922" y2="837.0568"/>
-    <line id="E-08-marker" style="fill:none;stroke:#252526;stroke-width:1.9269;stroke-linecap:round;stroke-miterlimit:10;" x1="287.8922" y1="825.8952" x2="287.8922" y2="846.9913"/>
+    <line id="E-08-timebar" class="timebar" x1="287.8922" y1="837.0568" x2="287.8922" y2="837.0568"/>
+    <line id="E-08-marker" class="marker" x1="287.8922" y1="825.8952" x2="287.8922" y2="846.9913"/>
   `,
 }
 let E09 = {
@@ -255,7 +318,56 @@ let E10 = {
   	856.9102,222.4033 861.6171,221.0981 864.47,217.5764 868.4305,215.5915 872.4144,213.1912 877.2691,216.1362 881.4148,214.7433
   	885.546,215.7579 889.0598,218.3512 894.5227,216.4967 897.9948,219.402 901.797,221.8416 905.1589,224.946 905.9604,229.7467
   	906.1335,234.2815 `,
-  player: ``,
+  player: `<rect id="player-background" class="M-06-player player-background" x="470.35" y="-1" width="492" height="1090"/>
+  <line id="scene-timeline" class="timeline" x1="513.89" y1="827.06" x2="842.89" y2="827.06"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 850.6604 833.5091)" class="time">– 00:00:00</text>
+  <text transform="matrix(1 0 0 1 510.6604 667.0373)" class="player-description">
+    <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
+    <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+    <tspan id="scene-alias" x="0" y="72"></tspan>
+    <tspan id="scene-group" x="0" y="96"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+  </text>
+
+  <text class="player-description"  transform="matrix(1 0 0 1 510.6604 104.5148)">
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
+  <tspan x="0" y="54">Recuento de los procesos de </tspan><tspan x="0" y="81">negociación llevados a cabo en los 90 </tspan><tspan x="0" y="108">por las guerrillas, en los 2000 por las </tspan><tspan x="0" y="135">AUC y en distintas épocas por las </tspan><tspan x="0" y="162">FARC-EP. El relato de las guerrillas hizo </tspan><tspan x="0" y="189">énfasis en los acercamientos en pro de </tspan><tspan x="0" y="216">una salida dialogada al conflicto armado </tspan><tspan x="0" y="243">colombiano y la búsqueda por lograr </tspan><tspan x="0" y="270">transformaciones sociales, políticas y </tspan><tspan x="0" y="297">económicas. Los excombatientes de las </tspan><tspan x="0" y="324">AUC hicieron su relato del proceso de </tspan><tspan x="0" y="351">diálogo en Santa Fe de Ralito, haciendo </tspan><tspan x="0" y="378">énfasis en las dificultades de la </tspan><tspan x="0" y="405">negociación teniendo en cuenta las </tspan><tspan x="0" y="432">rupturas internas existentes dentro de </tspan><tspan x="0" y="459">las AUC y las presiones por una </tspan><tspan x="0" y="486">rendición militar y política.</tspan>
+  </text>
+
+  <line id="E-10-timebar" class="timebar" x1="513.89" y1="827.06" x2="513.89" y2="827.06"/>
+  <line id="E-10-marker" class="marker" x1="513.89" y1="815.9" x2="513.89" y2="836.99"/>
+
+  <g id="scene-button">
+    <rect class="invisible" x="486" y="815" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" class="play-button" points="486.5,835.93 486.5,816.68 486.52,816.47 486.56,816.3 486.65,816.12 486.76,815.95 486.88,815.81
+  		487.02,815.71 487.2,815.6 487.36,815.54 487.54,815.5 487.76,815.5 487.95,815.53 488.15,815.59 488.35,815.69 488.41,815.72
+  		501.14,825.36 501.23,825.43 501.33,825.55 501.4,825.62 501.45,825.7 501.49,825.78 501.52,825.86 501.55,825.96 501.58,826.06
+  		501.6,826.17 501.62,826.27 501.61,826.4 501.59,826.54 501.55,826.68 501.49,826.81 501.45,826.93 501.39,827.01 501.29,827.12
+  		501.2,827.21 501.14,827.26 488.41,836.86 488.28,836.95 488.16,837.01 488.02,837.07 487.88,837.1 487.73,837.12 487.53,837.12
+  		487.31,837.06 487.1,836.97 486.91,836.84 486.78,836.71 486.68,836.57 486.6,836.41 486.54,836.27 486.5,836.1 	"/>
+    <g id="scene-pause-button" class="pause-button">
+      <line x1="486.84" y1="815.82" x2="486.84" y2="836.92"/>
+      <line x1="499.96" y1="815.82" x2="499.96" y2="836.92"/>
+    </g>
+  </g>
+  <g id="E-10-guide-button" class="guide-button">
+  	<polygon style="fill:#F27777;" points="571.69,1020.16 565.94,1021.91 567.12,1025.58 565.54,1028.29 561.34,1029 559.37,1030.94
+      560.26,1036.29 557.45,1037.93 553.86,1037.95 552.29,1042.29 549.69,1045.81 545.46,1041.95 542.4,1045.77 539.1,1042.78
+      535.28,1045.34 531.97,1043.95 529.63,1040.59 527.23,1038.24 525.2,1035.7 524.18,1032.37 517.52,1034.24 516.26,1030.84
+      512.8,1028.79 518.36,1022.81 514.14,1021.01 509.78,1018.4 514.29,1014.69 514.82,1011.66 511.31,1007.87 512.78,1004.7
+      512.38,1000.79 516.16,998.85 518.08,996.13 519.68,993.08 524.19,993.18 524.06,987.46 528.91,989.11 532.32,989.26
+      533.5,981.88 537.37,982.67 540.87,980.8 544.58,981.19 547.13,987.13 551.1,984.84 552.1,990.98 554.99,991.67 560.03,989.86
+      560.34,994.46 562.2,996.85 568.24,996.45 567.29,1000.95 570.15,1003.31 568.32,1007.3 567.91,1010.46 574.43,1013.28
+      568.51,1016.43 			"/>
+    <polygon style="fill:#002F87;" points="554.37,1016.25 551.56,1018.57 550.37,1021.46 547.72,1023.14 544.59,1022.88 541.83,1022.67
+      538.45,1023.12 536,1021 534.81,1018.04 532.81,1015.27 532.05,1011.7 534.78,1009.07 535.88,1005.64 539.29,1004.62
+      542.29,1002.65 545.83,1002.99 548.74,1004.94 551.04,1007.22 552.47,1010.01 552.62,1013.03 			"/>
+    <rect x="597.27" y="987.34" class="invisible" width="248.55" height="55.69"/>
+    <text transform="matrix(1 0 0 1 597.2747 1007.5926)">
+      <tspan x="0" y="0" >Ir a guía de estudio </tspan>
+      <tspan x="0" y="29">acuerdos de paz</tspan>
+    </text>
+  </g>`,
 }
 let E11 = {
   node: `603.6063,863.3466
@@ -267,7 +379,57 @@ let E11 = {
   	554.5316,832.7229 558.3535,830.3542 563.4995,833.5792 567.4265,833.349 571.5164,829.9184 575.3392,833.0563 579.9907,831.4601
   	584.0038,833.0274 587.1941,836.0624 590.1823,838.9775 592.4886,842.4213 597.1324,843.7524 599.223,847.4438 599.1323,852.0939
   	601.5278,855.4404 601.7627,859.5081 `,
-  player: ``,
+  player: `<rect id="player-background" class="M-06-player player-background" x="510.35" y="-1" width="492" height="1090"/>
+  <line id="scene-timeline" class="timeline" x1="553.89" y1="777.06" x2="882.89" y2="777.06"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 890.6604 783.5091)" class="time">– 00:00:00</text>
+
+  <text transform="matrix(1 0 0 1 550.6604 617.0373)" class="player-description">
+    <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
+    <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+    <tspan id="scene-alias" x="0" y="72"></tspan>
+    <tspan id="scene-group" x="0" y="96"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+  </text>
+
+  <text class="player-description" transform="matrix(1 0 0 1 550.6604 104.5148)">
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
+    <tspan x="0" y="54">Recuento de los procesos de </tspan><tspan x="0" y="81">negociación llevados a cabo en los 90 </tspan><tspan x="0" y="108">por las guerrillas, en los 2000 por las </tspan><tspan x="0" y="135">AUC y en distintas épocas por las </tspan><tspan x="0" y="162">FARC-EP. El relato de las guerrillas </tspan><tspan x="0" y="189">hizo énfasis en los acercamientos en </tspan><tspan x="0" y="216">pro de una salida dialogada al </tspan><tspan x="0" y="243">conflicto armado colombiano y la búsqueda por </tspan><tspan x="0" y="270">lograr transformaciones sociales, políticas y </tspan><tspan x="0" y="297">económicas. Los excombatientes de las AUC </tspan><tspan x="0" y="324">hicieron su relato del proceso de diálogo en </tspan><tspan x="0" y="351">Santa Fe de Ralito, haciendo énfasis en las </tspan><tspan x="0" y="378">dificultades de la negociación teniendo en </tspan><tspan x="0" y="405">cuenta las rupturas internas existentes dentro </tspan><tspan x="0" y="432">de las AUC y las presiones por una rendición </tspan><tspan x="0" y="459">militar y política.</tspan>
+  </text>
+
+  <line id="E-11-timebar" class="timebar" x1="553.89" y1="777.06" x2="553.89" y2="777.06"/>
+  <line id="E-11-marker" class="marker" x1="553.89" y1="765.9" x2="553.89" y2="786.99"/>
+
+  <g id="scene-button">
+    <rect class="invisible" x="526.84" y="765" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" class="play-button" points="526.5,785.93 526.5,766.68 526.52,766.47 526.56,766.3 526.65,766.12 526.76,765.95 526.88,765.81
+  		527.02,765.71 527.2,765.6 527.36,765.54 527.54,765.5 527.76,765.5 527.95,765.53 528.15,765.59 528.35,765.69 528.41,765.72
+  		541.14,775.36 541.23,775.43 541.33,775.55 541.4,775.62 541.45,775.7 541.49,775.78 541.52,775.86 541.55,775.96 541.58,776.06
+  		541.6,776.17 541.62,776.27 541.61,776.4 541.59,776.54 541.55,776.68 541.49,776.81 541.45,776.93 541.39,777.01 541.29,777.12
+  		541.2,777.21 541.14,777.26 528.41,786.86 528.28,786.95 528.16,787.01 528.02,787.07 527.88,787.1 527.73,787.12 527.53,787.12
+  		527.31,787.06 527.1,786.97 526.91,786.84 526.78,786.71 526.68,786.57 526.6,786.41 526.54,786.27 526.5,786.1 	"/>
+    <g id="scene-pause-button" class="pause-button">
+      <line x1="526.84" y1="765.82" x2="526.84" y2="786.92"/>
+      <line x1="539.96" y1="765.82" x2="539.96" y2="786.92"/>
+    </g>
+  </g>
+  <g id="E-11-guide-button" class="guide-button">
+  	<polygon style="fill:#F27777;" points="610.69,1024.16 604.94,1025.91 606.12,1029.58 604.54,1032.29 600.34,1033 598.37,1034.94
+      599.26,1040.29 596.45,1041.93 592.86,1041.95 591.29,1046.29 588.69,1049.81 584.46,1045.95 581.4,1049.77 578.1,1046.78
+      574.28,1049.34 570.97,1047.95 568.63,1044.59 566.23,1042.24 564.2,1039.7 563.18,1036.37 556.52,1038.24 555.26,1034.84
+      551.8,1032.79 557.36,1026.81 553.14,1025.01 548.78,1022.4 553.29,1018.69 553.82,1015.66 550.31,1011.87 551.78,1008.7
+      551.38,1004.79 555.16,1002.85 557.08,1000.13 558.68,997.08 563.19,997.18 563.06,991.46 567.91,993.11 571.32,993.26
+      572.5,985.88 576.37,986.67 579.87,984.8 583.58,985.19 586.13,991.13 590.1,988.84 591.1,994.98 593.99,995.67 599.03,993.86
+      599.34,998.46 601.2,1000.85 607.24,1000.45 606.29,1004.95 609.15,1007.31 607.32,1011.3 606.91,1014.46 613.43,1017.28
+      607.51,1020.43 			"/>
+    <polygon style="fill:#002F87;" points="593.37,1020.25 590.56,1022.57 589.37,1025.46 586.72,1027.14 583.59,1026.88 580.83,1026.67
+      577.45,1027.12 575,1025 573.81,1022.04 571.81,1019.27 571.05,1015.7 573.78,1013.07 574.88,1009.64 578.29,1008.62
+      581.29,1006.65 584.83,1006.99 587.74,1008.94 590.04,1011.22 591.47,1014.01 591.62,1017.03 			"/>
+    <rect x="636.27" y="991.34" class="invisible" width="248.55" height="55.69"/>
+    <text transform="matrix(1 0 0 1 636.2747 1011.5926)">
+      <tspan x="0" y="0" >Ir a guía de estudio </tspan>
+      <tspan x="0" y="29">acuerdos de paz</tspan>
+    </text>
+  </g>`,
 }
 let E12 = {
   node: `568.9958,636.3518
@@ -365,7 +527,56 @@ let E18 = {
   	455.9098,668.7462 456.0849,672.9385 453.6067,676.1758 455.0225,681.5914 451.3248,684.147 447.9287,686.6113 443.867,688.1153
   	443.5872,694.0422 438.5331,693.9638 437.3746,700.423 432.572,700.3221 428.2939,700.7867 424.2329,701.6259 419.9793,700.6507
   	415.999,701.0635 411.5869,705.7747 407.2875,704.5142 403.944,700.1293 `,
-  player: ``,
+  player: `<rect id="player-background" class="M-06-player player-background" x="40.35" y="-1" width="492" height="1090"/>
+  <line id="scene-timeline" class="timeline" x1="83.89" y1="927.06" x2="412.89" y2="927.06"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 420.6604 933.5091)" class="time">– 00:00:00</text>
+
+  <text transform="matrix(1 0 0 1 80.6604 767.0373)" class="player-description">
+    <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
+    <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+    <tspan id="scene-alias" x="0" y="72"></tspan>
+    <tspan id="scene-group" x="0" y="96"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+  </text>
+
+  <text class="player-description" transform="matrix(1 0 0 1 80.6604 104.5148)">
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
+    <tspan x="0" y="54">Recuento de los procesos de </tspan><tspan x="0" y="81">negociación llevados a cabo en </tspan><tspan x="0" y="108">los 90 por las guerrillas, en los </tspan><tspan x="0" y="135">2000 por las AUC y en distintas </tspan><tspan x="0" y="162">épocas por las FARC-EP. El relato </tspan><tspan x="0" y="189">de las guerrillas hizo énfasis en </tspan><tspan x="0" y="216">los acercamientos en pro de una </tspan><tspan x="0" y="243">salida dialogada al conflicto </tspan><tspan x="0" y="270">armado colombiano y la búsqueda </tspan><tspan x="0" y="297">por lograr transformaciones </tspan><tspan x="0" y="324">sociales, políticas y económicas. </tspan><tspan x="0" y="351">Los excombatientes de las AUC </tspan><tspan x="0" y="378">hicieron su relato del proceso de </tspan><tspan x="0" y="405">diálogo en Santa Fe de Ralito, </tspan><tspan x="0" y="432">haciendo énfasis en las </tspan><tspan x="0" y="459">dificultades de la negociación </tspan><tspan x="0" y="486">teniendo en cuenta las rupturas </tspan><tspan x="0" y="513">internas existentes dentro de las </tspan><tspan x="0" y="540">AUC y las presiones por una </tspan><tspan x="0" y="567">rendición militar y política.</tspan>
+  </text>
+
+  <line id="E-18-timebar" class="timebar" x1="83.89" y1="927.06" x2="83.89" y2="927.06"/>
+  <line id="E-18-marker" class="marker" x1="83.89" y1="915.9" x2="83.89" y2="936.99"/>
+
+  <g id="scene-button">
+    <rect class="invisible" x="56.84" y="915.82" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" class="play-button" points="56.5,935.93 56.5,916.68 56.52,916.47 56.56,916.3 56.65,916.12 56.76,915.95 56.88,915.81
+  		57.02,915.71 57.2,915.6 57.36,915.54 57.54,915.5 57.76,915.5 57.95,915.53 58.15,915.59 58.35,915.69 58.41,915.72 71.14,925.36
+  		71.23,925.43 71.33,925.55 71.4,925.62 71.45,925.7 71.49,925.78 71.52,925.86 71.55,925.96 71.58,926.06 71.6,926.17
+  		71.62,926.27 71.61,926.4 71.59,926.54 71.55,926.68 71.49,926.81 71.45,926.93 71.39,927.01 71.29,927.12 71.2,927.21
+  		71.14,927.26 58.41,936.86 58.28,936.95 58.16,937.01 58.02,937.07 57.88,937.1 57.73,937.12 57.53,937.12 57.31,937.06
+  		57.1,936.97 56.91,936.84 56.78,936.71 56.68,936.57 56.6,936.41 56.54,936.27 56.5,936.1 	"/>
+    <g id="scene-pause-button" class="pause-button">
+      <line x1="56.84" y1="915.82" x2="56.84" y2="936.92"/>
+      <line x1="69.96" y1="915.82" x2="69.96" y2="936.92"/>
+    </g>
+  </g>
+  <g id="E-18-guide-button" class="guide-button">
+  	<polygon style="fill:#F27777;" points="140.69,1013.16 134.94,1014.91 136.12,1018.58 134.54,1021.29 130.34,1022 128.37,1023.94
+      129.26,1029.29 126.45,1030.93 122.86,1030.95 121.29,1035.29 118.69,1038.81 114.46,1034.95 111.4,1038.77 108.1,1035.78
+      104.28,1038.34 100.97,1036.95 98.63,1033.59 96.23,1031.24 94.2,1028.7 93.18,1025.37 86.52,1027.24 85.26,1023.84
+      81.8,1021.79 87.36,1015.81 83.14,1014.01 78.78,1011.4 83.29,1007.69 83.82,1004.66 80.31,1000.87 81.78,997.7 81.38,993.79
+      85.16,991.85 87.08,989.13 88.68,986.08 93.19,986.18 93.06,980.46 97.91,982.11 101.32,982.26 102.5,974.88 106.37,975.67
+      109.87,973.8 113.58,974.19 116.13,980.13 120.1,977.84 121.1,983.98 123.99,984.67 129.03,982.86 129.34,987.46 131.2,989.85
+      137.24,989.45 136.29,993.95 139.15,996.31 137.32,1000.3 136.91,1003.46 143.43,1006.28 137.51,1009.43 			"/>
+    <polygon style="fill:#002F87;"  points="123.37,1009.25 120.56,1011.57 119.37,1014.46 116.72,1016.14 113.59,1015.88 110.83,1015.67
+      107.45,1016.12 105,1014 103.81,1011.04 101.81,1008.27 101.05,1004.7 103.78,1002.07 104.88,998.64 108.29,997.62
+      111.29,995.65 114.83,995.99 117.74,997.94 120.04,1000.22 121.47,1003.01 121.62,1006.03 			"/>
+    <rect x="166.27" y="980.34" class="invisible" width="248.55" height="55.69"/>
+    <text transform="matrix(1 0 0 1 166.2747 1000.5926)">
+      <tspan x="0" y="0" >Ir a guía de estudio </tspan>
+      <tspan x="0" y="29">acuerdos de paz</tspan>
+    </text>
+  </g>`,
 }
 let E19 = {
   node: `424.986,511.2916
@@ -379,7 +590,56 @@ let E19 = {
   	449.6484,498.5749 447.1011,499.4546 447.8604,501.5197 446.0495,502.3686 445.6699,504.0211 445.9071,506.3956 444.5367,507.516
   	443.2011,508.6475 440.7048,507.9665 439.4113,508.8761 438.0956,509.8412 436.7121,510.8421 435.1102,511.2762 433.4583,511.4323
   	431.8044,511.0819 430.2707,510.1049 428.763,509.8758 426.6382,511.85 `,
-  player: ``,
+  player: `<rect id="player-background" class="M-06-player player-background" x="10.35" y="-1" width="492" height="1090"/>
+  <line id="scene-timeline" class="timeline" x1="53.89" y1="883.06" x2="382.89" y2="883.06"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 390.6604 889.5091)" class="time">– 00:00:00</text>
+
+  <text transform="matrix(1 0 0 1 50.6604 723.0373)" class="player-description">
+    <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
+    <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+    <tspan id="scene-alias" x="0" y="72"></tspan>
+    <tspan id="scene-group" x="0" y="96"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+  </text>
+
+  <text class="player-description" transform="matrix(1 0 0 1 50.6604 104.5148)">
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
+    <tspan x="0" y="54">Recuento de los procesos de </tspan><tspan x="0" y="81">negociación llevados a cabo en los 90 </tspan><tspan x="0" y="108">por las guerrillas, en los 2000 por las </tspan><tspan x="0" y="135">AUC y en distintas épocas por las </tspan><tspan x="0" y="162">FARC-EP. El relato de las guerrillas </tspan><tspan x="0" y="189">hizo énfasis en los acercamientos en </tspan><tspan x="0" y="216">pro de una salida dialogada al </tspan><tspan x="0" y="243">conflicto armado colombiano y la </tspan><tspan x="0" y="270">búsqueda por lograr transformaciones </tspan><tspan x="0" y="297">sociales, políticas y económicas. Los </tspan><tspan x="0" y="324">excombatientes de las AUC hicieron su </tspan><tspan x="0" y="351">relato del proceso de diálogo en Santa </tspan><tspan x="0" y="378">Fe de Ralito, haciendo énfasis en las </tspan><tspan x="0" y="405">dificultades de la negociación </tspan><tspan x="0" y="432">teniendo en cuenta las rupturas </tspan><tspan x="0" y="459">internas existentes dentro de las AUC </tspan><tspan x="0" y="486">y las presiones por una rendición </tspan><tspan x="0" y="513">militar y política.</tspan>
+  </text>
+
+  <line id="E-19-timebar" class="timebar" x1="53.89" y1="883.06" x2="53.89" y2="883.06"/>
+  <line id="E-19-marker" class="marker" x1="53.89" y1="871.9" x2="53.89" y2="892.99"/>
+
+  <g id="scene-button">
+    <rect class="invisible" x="56.84" y="915.82" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" class="play-button" points="27.5,891.93 27.5,872.68 27.52,872.47 27.56,872.3 27.65,872.12 27.76,871.95 27.88,871.81
+  		28.02,871.71 28.2,871.6 28.36,871.54 28.54,871.5 28.76,871.5 28.95,871.53 29.15,871.59 29.35,871.69 29.41,871.72 42.14,881.36
+  		42.23,881.43 42.33,881.55 42.4,881.62 42.45,881.7 42.49,881.78 42.52,881.86 42.55,881.96 42.58,882.06 42.6,882.17
+  		42.62,882.27 42.61,882.4 42.59,882.54 42.55,882.68 42.49,882.81 42.45,882.93 42.39,883.01 42.29,883.12 42.2,883.21
+  		42.14,883.26 29.41,892.86 29.28,892.95 29.16,893.01 29.02,893.07 28.88,893.1 28.73,893.12 28.53,893.12 28.31,893.06
+  		28.1,892.97 27.91,892.84 27.78,892.71 27.68,892.57 27.6,892.41 27.54,892.27 27.5,892.1 	"/>
+    <g id="scene-pause-button" class="pause-button">
+      <line x1="26.84" y1="871.82" x2="26.84" y2="892.92"/>
+      <line x1="39.96" y1="871.82" x2="39.96" y2="892.92"/>
+    </g>
+  </g>
+  <g id="E-19-guide-button" class="guide-button">
+  	<polygon style="fill:#F27777;" points="112.69,991.16 106.94,992.91 108.12,996.58 106.54,999.29 102.34,1000 100.37,1001.94
+      101.26,1007.29 98.45,1008.93 94.86,1008.95 93.29,1013.29 90.69,1016.81 86.46,1012.95 83.4,1016.77 80.1,1013.78
+      76.28,1016.34 72.97,1014.95 70.63,1011.59 68.23,1009.24 66.2,1006.7 65.18,1003.37 58.52,1005.24 57.26,1001.84 53.8,999.79
+      59.36,993.81 55.14,992.01 50.78,989.4 55.29,985.69 55.82,982.66 52.31,978.87 53.78,975.7 53.38,971.79 57.16,969.85
+      59.08,967.13 60.68,964.08 65.19,964.18 65.06,958.46 69.91,960.11 73.32,960.26 74.5,952.88 78.37,953.67 81.87,951.8
+      85.58,952.19 88.13,958.13 92.1,955.84 93.1,961.98 95.99,962.67 101.03,960.86 101.34,965.46 103.2,967.85 109.24,967.45
+      108.29,971.95 111.15,974.31 109.32,978.3 108.91,981.46 115.43,984.28 109.51,987.43 			"/>
+    <polygon style="fill:#002F87;"  points="95.37,987.25 92.56,989.57 91.37,992.46 88.72,994.14 85.59,993.88 82.83,993.67 79.45,994.12
+      77,992 75.81,989.04 73.81,986.27 73.05,982.7 75.78,980.07 76.88,976.64 80.29,975.62 83.29,973.65 86.83,973.99 89.74,975.94
+      92.04,978.22 93.47,981.01 93.62,984.03 			"/>
+    <rect x="138.27" y="958.34" class="invisible" width="248.55" height="55.69"/>
+    <text transform="matrix(1 0 0 1 138.2747 978.5926)">
+      <tspan x="0" y="0" >Ir a guía de estudio </tspan>
+      <tspan x="0" y="29">acuerdos de paz</tspan>
+    </text>
+  </g>`,
 }
 let E20 = {
   node: `520.36,283.71
@@ -438,18 +698,18 @@ let E23 = {
   	269.9892,916.6509 273.7701,914.5321 277.6888,913.5956 281.0986,916.2347 284.8078,916.752 `,
   player: `
   <rect id="player-background" class="M-01-player player-background" x="160.3453" y="0.3461" width="491.9806" height="1090"/>
-  <line id="scene-timeline" style="opacity:0.24;fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="207.8921" y1="727.0568" x2="536.8922" y2="727.0568"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 544.6604 733.5091)" style="fill:#252526; font-size:15px; letter-spacing:1;">– 00:00:00</text>
+  <line id="scene-timeline" class="timeline" x1="207.8921" y1="727.0568" x2="536.8922" y2="727.0568"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 544.6604 733.5091)" class="time">– 00:00:00</text>
   <text transform="matrix(1 0 0 1 204.6604 567.5646)">
-    <tspan id="scene-name" x="0" y="0" style="fill:#0D0D0D; font-size:20px; letter-spacing:1;">EXPANSIÓN DE LAS GUERRILLAS</tspan>
-    <tspan id="scene-character" x="0" y="48" style="fill:#252526; font-size:20px; letter-spacing:1;"></tspan>
-    <tspan id="scene-alias" x="0" y="72" style="fill:#252526; font-size:17px; letter-spacing:1;">Alias Lorem Ipsum</tspan>
-    <tspan id="scene-group" x="0" y="96" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
-    <tspan id="scene-group-overflow" x="0" y="120" style="fill:#252526; font-size:17px; letter-spacing:1;"></tspan>
+    <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
+    <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+    <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
+    <tspan id="scene-group" x="0" y="96"></tspan>
+    <tspan id="scene-group-overflow" x="0" y="120"></tspan>
   </text>
 
-  <text transform="matrix(1 0 0 1 204.6604 104.5148)" style="fill:#252526; font-size:18px;">
-    <tspan x="0" y="0" style="font-size:20px; letter-spacing:1;">Territorialidad</tspan>
+  <text transform="matrix(1 0 0 1 204.6604 104.5148)" class="player-description">
+    <tspan x="0" y="0" class="player-bold">Territorialidad</tspan>
     <tspan x="0" y="54">Los Excombatientes de las guerrillas </tspan>
     <tspan x="0" y="81">describieron y analizaron críticamente las </tspan>
     <tspan x="0" y="108">formas en que cada grupo configuró sus bases </tspan>
@@ -466,15 +726,15 @@ let E23 = {
   </text>
 
   <g id="scene-button">
-    <rect style="fill:transparent;stroke:none;" x="180.8396" y="715.8223" width="15px" height="20px"></rect>
-    <polygon id="scene-play-button" style="fill:transparent;stroke:#252526;stroke-width:1.9269;stroke-miterlimit:10;" points="182.9749,738.2114 182.9749,718.9623   182.998,718.7446 183.0382,718.5791 183.1232,718.4002 183.2305,718.2303 183.3557,718.0872 183.4944,717.9844 183.6732,717.877   183.8387,717.8189 184.0131,717.7786 184.2367,717.7786 184.4201,717.8099 184.6213,717.8681 184.8225,717.9709 184.8872,718.0029   197.614,727.6364 197.7016,727.7108 197.8089,727.8315 197.8715,727.903 197.9252,727.9835 197.961,728.0551 197.9967,728.14   198.028,728.2339 198.0593,728.3368 198.0772,728.4441 198.0907,728.5515 198.0817,728.6812 198.0638,728.8198 198.0236,728.9628   197.9699,729.0881 197.9207,729.2043 197.8626,729.2893 197.7687,729.4011 197.6703,729.4861 197.614,729.5359 184.8872,739.1415   184.7554,739.2303 184.6347,739.293 184.4961,739.3511 184.3575,739.3779 184.2099,739.4003 184.0086,739.3958 183.7895,739.3422   183.5704,739.2482 183.387,739.1141 183.2574,738.9844 183.1545,738.8458 183.074,738.6892 183.0159,738.5506 182.9756,738.3762 "/>
-    <g id="scene-pause-button">
-      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="180.8396" y1="715.8223" x2="180.8396" y2="736.9185"/>
-      <line style="fill:none;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="193.9645" y1="715.8223" x2="193.9645" y2="736.9185"/>
+    <rect class="invisible" x="180.8396" y="715.8223" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" class="play-button" points="182.9749,738.2114 182.9749,718.9623   182.998,718.7446 183.0382,718.5791 183.1232,718.4002 183.2305,718.2303 183.3557,718.0872 183.4944,717.9844 183.6732,717.877   183.8387,717.8189 184.0131,717.7786 184.2367,717.7786 184.4201,717.8099 184.6213,717.8681 184.8225,717.9709 184.8872,718.0029   197.614,727.6364 197.7016,727.7108 197.8089,727.8315 197.8715,727.903 197.9252,727.9835 197.961,728.0551 197.9967,728.14   198.028,728.2339 198.0593,728.3368 198.0772,728.4441 198.0907,728.5515 198.0817,728.6812 198.0638,728.8198 198.0236,728.9628   197.9699,729.0881 197.9207,729.2043 197.8626,729.2893 197.7687,729.4011 197.6703,729.4861 197.614,729.5359 184.8872,739.1415   184.7554,739.2303 184.6347,739.293 184.4961,739.3511 184.3575,739.3779 184.2099,739.4003 184.0086,739.3958 183.7895,739.3422   183.5704,739.2482 183.387,739.1141 183.2574,738.9844 183.1545,738.8458 183.074,738.6892 183.0159,738.5506 182.9756,738.3762 "/>
+    <g id="scene-pause-button" class="pause-button">
+      <line x1="180.8396" y1="715.8223" x2="180.8396" y2="736.9185"/>
+      <line x1="193.9645" y1="715.8223" x2="193.9645" y2="736.9185"/>
     </g>
   </g>
-  <line id="E-23-timebar" style="fill:none;stroke:#252526;stroke-width:2.141;stroke-miterlimit:10;" x1="207.8921" y1="727.0568" x2="207.8921" y2="727.0568"/>
-  <line id="E-23-marker" style="fill:none;stroke:#252526;stroke-width:1.9269;stroke-linecap:round;stroke-miterlimit:10;" x1="207.8921" y1="715.8952" x2="207.8921" y2="736.9913"/>
+  <line id="E-23-timebar" class="timebar" x1="207.8921" y1="727.0568" x2="207.8921" y2="727.0568"/>
+  <line id="E-23-marker" class="marker" x1="207.8921" y1="715.8952" x2="207.8921" y2="736.9913"/>
   `,
 }
 let E24 = {
@@ -493,43 +753,57 @@ let E24 = {
   	383.4282,126.5926 382.0561,128.7623 383.9915,129.5854 384.3698,131.0126 385.1329,132.3727 385.7766,133.813 383.9398,135.4381
   	385.6525,136.8692 384.7817,138.3178 384.2704,139.7204 384.1618,141.1689 384.9088,142.8875 382.5616,143.6677 384.3369,145.9528
   	382.4251,146.72 380.6907,147.3869 382.2151,150.1288 380.0594,150.4188 `,
-  player:`<rect id="player-background" x="40.3453" y="0.3461" class="M-06-player player-background" width="491.9806" height="1090"/>
-  <line id="scene-timeline" class="timeline" x1="83.8921" y1="927.0568" x2="412.8922" y2="927.0568"/>
-  <line id="E-24-timebar" class="timebar" x1="83.8921" y1="927.0568" x2="397.0094" y2="927.0568"/>
-  <line id="E-24-marker" class="marker" x1="396.3586" y1="915.8952" x2="396.3586" y2="936.9913"/>
-  <text id="scene-time" class="time" transform="matrix(1 0 0 1 420.6604 933.5091)" >– 00:00:00</text>
-  <text class="player-text" class="player-regular" transform="matrix(1 0 0 1 80.6604 767.0373)">
-    <tspan x="0" y="0" id="scene-name" class="player-bold">LOS TIEMPOS QUE TOMÓ NEGOCIAR</tspan>
-    <tspan id="scene-character" x="0" y="48">Óscar Leonardo Montealegre</tspan>
-    <tspan id="scene-alias" x="0" y="72" style="">Alias Lorem Ipsum</tspan>
-    <tspan id="scene-group" x="0" y="96">AUC – Autodefensas Campesinas </tspan>
+  player:`<rect id="player-background" class="M-06-player player-background" x="40.35" y="-1" width="492" height="1090"/>
+  <line id="scene-timeline" class="timeline" x1="83.89" y1="927.06" x2="412.89" y2="927.06"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 420.6604 933.5091)" class="time">– 00:00:00</text>
+
+  <text transform="matrix(1 0 0 1 80.6604 767.0373)" class="player-description">
+    <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
+    <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
+    <tspan id="scene-alias" x="0" y="72"></tspan>
+    <tspan id="scene-group" x="0" y="96"></tspan>
     <tspan id="scene-group-overflow" x="0" y="120"></tspan>
   </text>
-   <text class="player-description" transform="matrix(1 0 0 1 80.6604 194.5148)">
-     <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
-     <tspan x="0" y="54">Recuento de los procesos de negociación </tspan>
-     <tspan x="0" y="81">llevados a cabo en los 90 por las guerrillas, en </tspan>
-     <tspan x="0" y="108">los 2000 por las AUC y en distintas épocas por </tspan>
-     <tspan x="0" y="135">las FARC-EP. El relato de las guerrillas hizo </tspan>
-     <tspan x="0" y="162">énfasis en los acercamientos en pro de una </tspan>
-     <tspan x="0" y="189">salida dialogada al conflicto armado </tspan>
-     <tspan x="0" y="216">colombiano y la búsqueda por lograr </tspan>
-     <tspan x="0" y="243">transformaciones sociales, políticas y </tspan>
-     <tspan x="0" y="270">económicas. Los excombatientes de las AUC </tspan>
-     <tspan x="0" y="297">hicieron su relato del proceso de diálogo en </tspan>
-     <tspan x="0" y="324">Santa Fe de Ralito, haciendo énfasis en las </tspan>
-     <tspan x="0" y="351">dificultades de la negociación teniendo en </tspan>
-     <tspan x="0" y="378">cuenta las rupturas internas existentes dentro </tspan>
-     <tspan x="0" y="405">de las AUC y las presiones por una rendición </tspan>
-     <tspan x="0" y="432">militar y política.</tspan>
-   </text>
-   <g id="scene-button">
-      <polygon id="scene-play-button" class="play-button" points="58.9749,938.2114 58.9749,918.9623    58.998,918.7446 59.0382,918.5791 59.1232,918.4002 59.2305,918.2303 59.3557,918.0872 59.4944,917.9844 59.6732,917.877    59.8387,917.8189 60.0131,917.7786 60.2367,917.7786 60.4201,917.8099 60.6213,917.8681 60.8225,917.9709 60.8872,918.0029    73.614,927.6364 73.7016,927.7108 73.8089,927.8315 73.8715,927.903 73.9252,927.9835 73.961,928.0551 73.9967,928.14    74.028,928.2339 74.0593,928.3368 74.0772,928.4441 74.0906,928.5515 74.0817,928.6812 74.0638,928.8198 74.0236,928.9628    73.9699,929.0881 73.9207,929.2043 73.8626,929.2893 73.7687,929.4011 73.6703,929.4861 73.614,929.5359 60.8872,939.1415    60.7554,939.2303 60.6347,939.293 60.4961,939.3511 60.3574,939.3779 60.2099,939.4003 60.0086,939.3958 59.7895,939.3422    59.5704,939.2482 59.387,939.1141 59.2574,938.9844 59.1545,938.8458 59.074,938.6892 59.0159,938.5506 58.9756,938.3762  "/>
-      <g id="scene-pause-button" class="pause-button hidden">
-        <line x1="56.8396" y1="915.8223" x2="56.8396" y2="936.9185"/>
-        <line x1="69.9645" y1="915.8223" x2="69.9645" y2="936.9185"/>
-      </g>
-    </g>`,
+
+  <text class="player-description" transform="matrix(1 0 0 1 50.6604 104.5148)">
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
+    <tspan x="0" y="54">Recuento de los procesos de </tspan><tspan x="0" y="81">negociación llevados a cabo en los 90 </tspan><tspan x="0" y="108">por las guerrillas, en los 2000 por las </tspan><tspan x="0" y="135">AUC y en distintas épocas por las </tspan><tspan x="0" y="162">FARC-EP. El relato de las guerrillas </tspan><tspan x="0" y="189">hizo énfasis en los acercamientos en </tspan><tspan x="0" y="216">pro de una salida dialogada al </tspan><tspan x="0" y="243">conflicto armado colombiano y la </tspan><tspan x="0" y="270">búsqueda por lograr transformaciones </tspan><tspan x="0" y="297">sociales, políticas y económicas. Los </tspan><tspan x="0" y="324">excombatientes de las AUC hicieron su </tspan><tspan x="0" y="351">relato del proceso de diálogo en Santa </tspan><tspan x="0" y="378">Fe de Ralito, haciendo énfasis en las </tspan><tspan x="0" y="405">dificultades de la negociación </tspan><tspan x="0" y="432">teniendo en cuenta las rupturas </tspan><tspan x="0" y="459">internas existentes dentro de las AUC </tspan><tspan x="0" y="486">y las presiones por una rendición </tspan><tspan x="0" y="513">militar y política.</tspan>
+  </text>
+
+  <line id="E-24-timebar" class="timebar" x1="83.89" y1="927.06" x2="83.89" y2="927.06"/>
+  <line id="E-24-marker" class="marker" x1="83.89" y1="915.9" x2="83.89" y2="936.99"/>
+
+  <g id="scene-button">
+    <rect class="invisible" x="56.84" y="915.82" width="15px" height="20px"></rect>
+    <polygon id="scene-play-button" class="play-button" points="57,936.43 57,917.18 57.02,916.97 57.06,916.8 57.15,916.62 57.26,916.45 57.38,916.31
+      57.52,916.21 57.7,916.1 57.86,916.04 58.04,916 58.26,916 58.45,916.03 58.65,916.09 58.85,916.19 58.91,916.22 71.64,925.86
+      71.73,925.93 71.83,926.05 71.9,926.12 71.95,926.2 71.99,926.28 72.02,926.36 72.05,926.46 72.08,926.56 72.1,926.67
+      72.12,926.77 72.11,926.9 72.09,927.04 72.05,927.18 71.99,927.31 71.95,927.43 71.89,927.51 71.79,927.62 71.7,927.71
+      71.64,927.76 58.91,937.36 58.78,937.45 58.66,937.51 58.52,937.57 58.38,937.6 58.23,937.62 58.03,937.62 57.81,937.56
+      57.6,937.47 57.41,937.34 57.28,937.21 57.18,937.07 57.1,936.91 57.04,936.77 57,936.6 		"/>
+    <g id="scene-pause-button" class="pause-button">
+      <line x1="56.84" y1="915.82" x2="56.84" y2="936.92"/>
+      <line x1="69.96" y1="915.82" x2="69.96" y2="936.92"/>
+    </g>
+  </g>
+  <g id="E-24-guide-button" class="guide-button">
+  	<polygon style="fill:#F27777;" points="141.69,1018.16 135.94,1019.91 137.12,1023.58 135.54,1026.29 131.34,1027 129.37,1028.94
+      130.26,1034.29 127.45,1035.93 123.86,1035.95 122.29,1040.29 119.69,1043.81 115.46,1039.95 112.4,1043.77 109.1,1040.78
+      105.28,1043.34 101.97,1041.95 99.63,1038.59 97.23,1036.24 95.2,1033.7 94.18,1030.37 87.52,1032.24 86.26,1028.84
+      82.8,1026.79 88.36,1020.81 84.14,1019.01 79.78,1016.4 84.29,1012.69 84.82,1009.66 81.31,1005.87 82.78,1002.7 82.38,998.79
+      86.16,996.85 88.08,994.13 89.68,991.08 94.19,991.18 94.06,985.46 98.91,987.11 102.32,987.26 103.5,979.88 107.37,980.67
+      110.87,978.8 114.58,979.19 117.13,985.13 121.1,982.84 122.1,988.98 124.99,989.67 130.03,987.86 130.34,992.46 132.2,994.85
+      138.24,994.45 137.29,998.95 140.15,1001.31 138.32,1005.3 137.91,1008.46 144.43,1011.28 138.51,1014.43 			"/>
+    <polygon style="fill:#002F87;"  points="124.37,1014.25 121.56,1016.57 120.37,1019.46 117.72,1021.14 114.59,1020.88 111.83,1020.67
+      108.45,1021.12 106,1019 104.81,1016.04 102.81,1013.27 102.05,1009.7 104.78,1007.07 105.88,1003.64 109.29,1002.62
+      112.29,1000.65 115.83,1000.99 118.74,1002.94 121.04,1005.22 122.47,1008.01 122.62,1011.03 			"/>
+    <rect x="167.27" y="985.34" class="invisible" width="248.55" height="55.69"/>
+    <text transform="matrix(1 0 0 1 167.2747 1005.5926)">
+      <tspan x="0" y="0" >Ir a guía de estudio </tspan>
+      <tspan x="0" y="29">acuerdos de paz</tspan>
+    </text>
+  </g>
+  `,
 }
 let E25 = {
   node: `170.1903,704.7034

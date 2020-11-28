@@ -76,9 +76,15 @@ class CharacterPlayer {
   }
 
   setTime(e) {
+    e = e || window.event;
+    const target = e.target || e.srcElement,
+    clickBox = target.getBoundingClientRect(),
+    offsetX = e.clientX - clickBox.left;
+
     // update audio time based on where the timebar was clicked
+    let targetId = e.target.id.slice(-1);
     let audioElement = document.getElementById(`character-audio`);
-    audioElement.currentTime = mapValue(e.offsetX, 0, this.clickable.w, 0, audioElement.duration);
+    audioElement.currentTime = mapValue(offsetX, 0, clickBox.width, 0, audioElement.duration);
   }
 
   updatePlayer(target) {

@@ -725,6 +725,8 @@ function loaded() {
       scene.appendChild(thisNode);
   }
 
+  // document.querySelector('#viz').setAttribute('viewBox', `0 0 ${window.innerHeight} ${window.innerWidth}`);
+
   restart ();
 }
 
