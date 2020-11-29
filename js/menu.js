@@ -25,17 +25,17 @@ function showContentInfo(){
 }
 
 function showVideo() {
-  $('.modal').show()
-
+  Array.from(document.querySelectorAll('audio')).map(audio => audio.id !==  this.audioId ? audio.pause() : ``);
   videoElement.currentTime = 0;
   playVideo();
+  $('#video-modal').show()
 }
 
 function hideVideo () {
   videoElement.pause();
   videoElement.currentTime = 0;
   videoElement.muted = true;
-  $('.modal').hide();
+  $('#video-modal').hide();
 
 }
 
@@ -64,7 +64,9 @@ function showNarratives() {
   hideVideo();
 
   // start sound
-  // let homeAudio = document.querySelector('#home-audio')
+  let homeAudio = document.querySelector('#home-audio');
+  homeAudio.currentTime = 0;
+  homeAudio.play();
   // homeAudio.currentTime === 0 ? homeAudio.play() : '';
 }
 
@@ -93,6 +95,7 @@ function init() {
   showIntroPage();
 
   document.querySelector('#credits-node').addEventListener('click', showCredits)
+  document.querySelector('#guide-node').addEventListener('click', openGuide);
   document.querySelector('#intro-node').addEventListener('click', showVideo);
   document.querySelector('#intro-label').addEventListener('click', showVideo);
   document.querySelector('#menu-logo').addEventListener('click', showIntroPage);
@@ -108,10 +111,11 @@ function init() {
   video.bind('ended', hideVideo);
 
   // create home audio
-  // let audioElement = document.createElement('AUDIO');
-  // audioElement.id = 'home-audio';
-  // audioElement.preload = 'auto';
-  // audioElement.currentTime = 0;
-  // audioElement.src = `./audios/HOME.mp3`;
-  // document.body.appendChild(audioElement);
+  let audioElement = document.createElement('AUDIO');
+  audioElement.id = 'home-audio';
+  audioElement.preload = 'auto';
+  audioElement.currentTime = 0;
+  audioElement.src = `./audios/HOME.mp3`;
+  document.body.appendChild(audioElement);
+  audioElement.loop();
 }

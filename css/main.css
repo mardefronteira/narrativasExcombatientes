@@ -79,12 +79,20 @@ a {
 
 div#close-menu-div {
   width: 100vw;
-  height: 3vh;
+  height: 5vh;
   background: none;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+img#btn-close-menu{
+  cursor: pointer;
+  display:flex;
+  opacity:1;
+  height: 50%;
+  width: auto;
 }
 
 div#info-top-bar{
@@ -94,14 +102,6 @@ div#info-top-bar{
 div#info-menu-content {
   font-size: 12px;
   line-height: 1.2em;
-}
-
-img#btn-close-menu{
-  cursor: pointer;
-  display:flex;
-  opacity:1;
-  width: 100px;
-  height: 100px;
 }
 
 text#menu-title {
@@ -257,6 +257,17 @@ g#intro-buttons {
   z-index: 1049;
 }
 
+div#guide-modal{
+  background: #FFF;
+  color: #000;
+  height:100%;
+  width:auto;
+}
+
+.guide-button {
+  cursor: pointer;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -327,11 +338,12 @@ g#intro-buttons {
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 100%;
-  padding-left: 3.2rem;
+  padding-left: 3rem;
+  line-height: 1rem;
 }
 
 #empty-col {
-  width: 15vw;
+  width: 25vw;
 }
 
 div#contacts {

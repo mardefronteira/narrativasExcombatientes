@@ -3,6 +3,7 @@ class ScenePlayer {
     this.id = id.slice(0,4);
     this.jsId = this.id.replace('-','');
     this.type = entity;
+    this.frame = '';
     this.playerId = `scene-player`;
     this.audioId = `${this.id}-audio`;
     this.playerSVG = eval(`${this.jsId}.player`); // player SVG in ./svg/scenes.js
@@ -73,6 +74,13 @@ class ScenePlayer {
 
     audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
     // audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
+
+    this.frame = data['frames'].find(frame => frame.scenes.includes(this.id));
+    console.log(this.frame)
+    if (this.frame.id === 'M-06'){
+      console.log('adicionou')
+      document.querySelector(`#${this.id}-guide-button`).addEventListener('click', openGuide);
+    }
   }
 
   getCharacters(){
@@ -149,6 +157,7 @@ class ScenePlayer {
     const target = e.target || e.srcElement,
     clickBox = target.getBoundingClientRect(),
     offsetX = e.clientX - clickBox.left;
+    // console.log(offsetX);
 
     // update audio time based on where the marker was dragged
     let targetType = e.target.id.split('-')[0];
@@ -156,17 +165,17 @@ class ScenePlayer {
     audioElement.currentTime = mapValue(offsetX, 0, clickBox.width, 0, audioElement.duration);
   }
 
-  showFrame(id){
-    let thisFrame = data['frames'].find(frame => frame.scenes.includes(id));
-
-    showFrame(thisFrame.id);
-    d3.select(`#${thisFrame.id}`)
-      .classed( 'selected-menu-icon', true );
-    d3.select(`#${thisFrame.id}-tooltip`)
-      .classed( 'visible-tooltip', true );
-
-    document.querySelector(`#scene-player`).classList.add('hidden');
-  }
+  // showFrame(id){
+  //   let thisFrame = data['frames'].find(frame => frame.scenes.includes(id));
+  //
+  //   showFrame(thisFrame.id);
+  //   d3.select(`#${thisFrame.id}`)
+  //     .classed( 'selected-menu-icon', true );
+  //   d3.select(`#${thisFrame.id}-tooltip`)
+  //     .classed( 'visible-tooltip', true );
+  //
+  //   document.querySelector(`#scene-player`).classList.add('hidden');
+  // }
 
   updatePlayer(target) {
     if (this.hasBegun) {
@@ -183,10 +192,11 @@ class ScenePlayer {
       if (isNaN(markerPos)) {
         markerPos = clickable.x;
       }
-      marker.setAttribute("x1", parseInt(markerPos));
-      marker.setAttribute("x2", parseInt(markerPos));
-      timebar.setAttribute("x2", parseInt(markerPos));
-
+      if (marker){
+        marker.setAttribute("x1", parseInt(markerPos));
+        marker.setAttribute("x2", parseInt(markerPos));
+        timebar.setAttribute("x2", parseInt(markerPos));
+      }
       // update time
       let timeString = document.getElementById(`scene-time`);
       timeString.innerHTML = `– ${getFormattedTime(currentTime)}`
@@ -196,10 +206,19 @@ class ScenePlayer {
         let alias = document.getElementById(`scene-alias`);
 
         // get character that corresponds to timecode
-        let currentCharacter = this.timecodes.filter(slice => (slice.start_sec < currentTime) && (slice.end_sec > currentTime))[0].character;
+        let currentCharacter = this.timecodes.find(slice => (slice.start_sec < currentTime) && (slice.end_sec > currentTime));
+        if (currentCharacter) {
+          currentCharacter = this.characters.find(char => char.id === currentCharacter.character);
+        } else {
+          currentCharacter = {
+            character: '',
+            groupName: '',
+            alias: '',
+          }
+        }
 
-        // get its info
-        currentCharacter = this.characters.filter(char => char.id === currentCharacter)[0];
+        // // get its info
+        // currentCharacter = this.characters.filter(char => char.id === currentCharacter)[0];
 
         character.innerHTML = currentCharacter.character;
         group.innerHTML = currentCharacter.groupName;

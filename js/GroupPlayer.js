@@ -153,6 +153,6 @@ class GroupPlayer {
     document.querySelector(`#group-player`).remove();
 
     // delete audio elements
-    Array.from(document.querySelectorAll('audio')).map(audio => audio.remove());
+    document.querySelector(`#character-audio`).remove();
   }
 }

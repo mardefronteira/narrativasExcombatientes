@@ -46,6 +46,8 @@ class CharacterPlayer {
   }
 
   playPause(e) {
+    Array.from(document.querySelectorAll('audio')).map(audio => audio.id !==  this.audioId ? audio.pause() : ``);
+
     // get audio info
     let audioElement = document.getElementById(`character-audio`);
 
@@ -112,6 +114,6 @@ class CharacterPlayer {
     document.querySelector(`#character-player`).remove();
 
     // delete audio elements
-    Array.from(document.querySelectorAll('audio')).map(audio => audio.remove());
+    document.querySelector(`#character-audio`).remove();
   }
 }

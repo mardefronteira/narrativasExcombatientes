@@ -7,6 +7,8 @@
     <!-- Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/99775cdb50.js" crossorigin="anonymous"></script>
@@ -20,6 +22,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/guide.css">
     <script type="text/javascript" src="./password.js"></script>
 
     <script type="text/javascript">
@@ -37,9 +40,6 @@
         }
       }
     </script>
-    <script type="text/javascript" src="./svg/scenes.js"></script>
-    <script type="text/javascript" src="./svg/groups.js"></script>
-    <script type="text/javascript" src="./svg/players.js"></script>
 
   </head>
   <body id="body" onload="loaded()" class="black-bg">
@@ -99,10 +99,11 @@
           <div id="info-menu-content" class="row">
             <div class="col">
               <p>El relato de la guerra, de sus causas, de las vicisitudes que subyacen a las travesías y los combates, han sido contadas por académicos y cronistas que, en una basta literatura, alguna de ella muy fundada y rigurosa otra un tanto especulativa, han reconstruido los hechos de nuestro conflicto armado no exentos de interpretaciones y subjetividades.</p>
-              <p>El trabajo que presentamos a continuación es la primera sistematización, en una plataforma web, de las voces de los protagonistas, enemigos muchos de ellos, que interactuaron por primera vez a través de la palabra y no del fusil. Debates álgidos que en la mayoría de los casos no pretendían ni terminaban en un consenso, ese ha sido el principal valor de estas conversaciones, que sin pretender ponerse de acuerdo lograron elaborar reflexiones compartidas sobre el conflicto armado y su papel individual y colectivo en este.</p>
-              <p>Este ejercicio, denominado Narrativas de Excombatientes, es una aproximación experiencial a los contextos explicativos de la guerra en Colombia a partir de seis ejes temáticos:</p>
+              <p>El trabajo que presentamos a continuación es la primera sistematización, en una plataforma web, de las voces de los protagonistas, enemigos muchos de ellos, que interactuaron por primera vez a través de la palabra y no del fusil. Debates álgidos que en la mayoría de los casos no pretendían ni terminaban en un consenso, ese ha sido el principal valor de</p>
             </div>
             <div class="col">
+              <p>estas conversaciones, que sin pretender ponerse de acuerdo lograron elaborar reflexiones compartidas sobre el conflicto armado y su papel individual y colectivo en este.</p>
+              <p>Este ejercicio, denominado Narrativas de Excombatientes, es una aproximación experiencial a los contextos explicativos de la guerra en Colombia a partir de seis ejes temáticos:</p>
               <ol>
               <li>Ideología y relaciones internacionales</li>
               <li>Control territorial y colonización armada</li>
@@ -111,10 +112,12 @@
               <li>Factores de persistencia</li>
               <li>Procesos de negociación</li>
             </ol>
+          </div>
+          <div class="col">
              <p>Las organizaciones que han participado en los diferentes momentos de este proceso, ABC Paz, el ICTJ y, por supuesto, La Comisión de la Verdad, han querido ofrecer estos testimonios al público en general para que dicha aproximación sea directa y constituya un insumo más para quienes están interesados en comprender las causas, dinámicas y roles de quienes participaron de la confrontación armada y, al tiempo, las coyunturas, criterios y debates que asumieron para deponer las armas, negociar la paz y reincorporarse a la vida civil.</p>
-            </div>
+          </div>
             <div id="empty-col"></div>
-            <div id="contacts" class="col"> <!--grupos organizadores-->
+            <!-- <div id="contacts" class="col">
               <p><strong>Contactos</strong></p>
               <p><strong>ABC PAZ</strong><br/>
               Calle 134 bis # 19 - 35 Apto 101<br/>
@@ -138,14 +141,14 @@
               info@comisiondelaverdad.co<br/>
               <a href="https://comisiondelaverdad.co">https://comisiondelaverdad.co</a></p>
             </div>
-            <div id="logos" class="col"><!--logos-->
+            <div id="logos" class="col">
               <img class="grid-image" src="img/logo_abc.jpg">
               <img class="grid-image" src="img/logo_ictj.png">
               <img class="grid-image" src="img/logo_cev.svg">
-            </div>
+            </div> -->
           </div>
           <div id="close-menu-div">
-            <img id="btn-close-menu" alt="close menu" src="./img/upArrow.svg" width="300" height="300" />
+            <img id="btn-close-menu" alt="close menu" src="./img/upArrow.svg" width="50" height="50" />
           </div>
         </div>
       </div>
@@ -750,9 +753,9 @@
                 <text transform="matrix(1 0 0 1 1433.3098 796.7824)" class="intro-label">Créditos</text>
               </g>
             </g>
-            <g id="tabs-node">
+            <g id="guide-node">
             	<polygon class="intro-node" points="660.5129,363.7512 655.8517,368.0796 653.5156,373.1822 648.7567,376.2292    643.1315,376.0113 638.0709,375.6504 632.0839,376.1037 627.6627,372.3218 625.3931,367.0784 622.0593,362.0262 620.9028,355.687    625.4415,350.8675 627.6293,344.9236 633.5798,342.912 638.9896,339.621 645.2908,340.1872 650.5341,343.505 654.7194,347.5347    657.3659,352.5153 657.7955,357.9586  "/>
-              <g id="tabs-label">
+              <g id="guide-label">
                 <rect x="686.0242" y="355.6486" class="invisible" width="100" height="14.1978"/>
                 <text transform="matrix(1 0 0 1 686.0242 368.3986)" class="intro-label">Guías</text>
               </g>
@@ -818,8 +821,68 @@
       </svg>
     </div>
 
+    <div id="guide-modal" class="modal">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+      <rect id="guide-background" x="-3.04" y="1.71" width="1925.29" height="1081.26"/>
+      <rect id="guide-main-background" x="209.72" y="176.25" width="1495" height="831.79"/>
 
-    <div class="modal">
+      <foreignObject id="guide-content" x="209.72" y="176.25" width="1495" height="831.79"></foreignObject>
+
+      <rect id="guide-scrollbar" x="1712.68" y="205.38" width="12.12" height="68.94"/>
+
+      <g id="guide-close-button" onClick="closeGuide()">
+      	<rect class="invisible" x="1799.02" y="54.52" width="33.97" height="21.92"/>
+      	<text transform="matrix(1 0 0 1 1799.019 69.5163)" class="player-bold">X</text>
+      </g>
+      	<text id="guide-title" transform="matrix(1 0 0 1 705.1223 70.4737)" class="player-bold">GUÍAS COMPLEMENTARIAS ACUERDOS DE PAZ</text>
+
+      <g id="guide-timeline" class="guide-tab">
+      	<path d="M218.26,176.25v-36.97c0-6.08,4.92-11,11-11h148c6.08,0,11,4.92,11,11   v36.97"/>
+      	<rect x="220" y="130" class="invisible" width="170" height="50"/>
+      	<text transform="matrix(1 0 0 1 225.119 157.6459)">LÍNEA DE TIEMPO</text>
+      </g>
+      <g id="guide-01" class="guide-tab guide-tab-active">
+      	<path d="M575.21,178.06h-170v-38.77c0-6.08,4.92-11,11-11h148c6.08,0,11,4.92,11,11      		V178.06z"/>
+      	<rect x="405" y="130" class="invisible" width="170" height="50"/>
+      	<text transform="matrix(1 0 0 1 468.2797 157.6459)">M-19</text>
+      </g>
+      <g id="guide-02" class="guide-tab">
+      	<path d="M762.21,178.06h-170v-38.77c0-6.08,4.92-11,11-11h148c6.08,0,11,4.92,11,11V178.06z"/>
+      	<rect x="590" y="130" class="invisible" width="170" height="50"/>
+      	<text transform="matrix(1 0 0 1 659.0193 157.6459)">AUC</text>
+      </g>
+      <g id="guide-03" class="guide-tab">
+      	<path d="M949.21,178.06h-170v-38.77c0-6.08,4.92-11,11-11h148c6.08,0,11,4.92,11,11      		V178.06z"/>
+      	<rect x="780" y="130" class="invisible" width="170" height="50"/>
+      	<text transform="matrix(1 0 0 1 834.3662 157.6459)" >Guia 3</text>
+      </g>
+      <g id="guide-04" class="guide-tab">
+        <path d="M1135.21,178.06h-170v-38.77c0-6.08,4.92-11,11-11h148c6.08,0,11,4.92,11,11V178.06z"/>
+        <rect x="965" y="130" class="invisible" width="170" height="50"/>
+        <text transform="matrix(1 0 0 1 1021.1345 157.6459)">Guía 4</text>
+      </g>
+      <g id="guide-05" class="guide-tab">
+        <path d="M1322.21,178.06h-170v-38.77c0-6.08,4.92-11,11-11h148c6.08,0,11,4.92,11,11V178.06z"/>
+        <rect x="1150" y="130" class="invisible" width="170" height="50"/>
+        <text transform="matrix(1 0 0 1 1208.0844 157.6459)">Guía 5</text>
+      </g>
+      <g id="guide-06" class="guide-tab">
+        <path d="M1339.5,176.25v-36.97c0-6.08,4.92-11,11-11h148c6.08,0,11,4.92,11,11      		v36.97"/>
+        <rect x="1340" y="130" class="invisible" width="170" height="50"/>
+        <text transform="matrix(1 0 0 1 1394.9438 157.6459)">Guía 6</text>
+      </g>
+      <g id="guide-07" class="guide-tab">
+        <path d="M1526.36,176.25v-36.97c0-6.08,4.92-11,11-11h148c6.08,0,11,4.92,11,11v36.97"/>
+        <rect x="1525" y="130" class="invisible" width="170" height="50"/>
+        <text transform="matrix(1 0 0 1 1581.8025 157.6459)">Guía 7</text>
+      </g>
+      </svg>
+    </div>
+    <audio id="guide-audio" src="./audios/GUIAS.mp3" class="hidden"></audio>
+
+
+    <div id="video-modal" class="modal">
         <div class="modal-content">
           <!-- muted controls autoplay="true" -->
           <video id="video" muted>
@@ -831,10 +894,16 @@
         </div>
     </div>
 
+    <!-- SVG elements -->
+    <script type="text/javascript" src="./svg/scenes.js"></script>
+    <script type="text/javascript" src="./svg/groups.js"></script>
+    <script type="text/javascript" src="./svg/players.js"></script>
+    <script type="text/javascript" src="./svg/guides.js"></script>
 
     <!-- Custom scripts -->
-    <script type="text/javascript" src="./js/menu.js"></script>
+    <script type="text/javascript" src="./js/guide.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
     <script type="text/javascript" src="./js/ScenePlayer.js"></script>
     <script type="text/javascript" src="./js/GroupPlayer.js"></script>
     <script type="text/javascript" src="./js/CharacterPlayer.js"></script>

@@ -39,6 +39,9 @@ class TooltipPlayer {
     // get audio info
     let audioElement = document.getElementById(`tooltip-audio`);
 
+    // pause all other players
+    Array.from(document.querySelectorAll('audio')).map(audio => audio.id !== audioElement.id ? audio.pause() : ``);
+
     // play or pause audio
     audioElement.paused ? audioElement.play() : audioElement.pause();
 
@@ -111,7 +114,7 @@ class TooltipPlayer {
     if (document.querySelector(`#tooltip-clickable`)){
       document.querySelector(`#tooltip-clickable`).remove();
     }
-    // delete audio elements
-    Array.from(document.querySelectorAll('audio')).map(audio => audio.remove());
+    // delete audio element
+      document.querySelector(`#tooltip-audio`).remove();
   }
 }

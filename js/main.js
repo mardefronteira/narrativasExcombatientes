@@ -559,6 +559,8 @@ function restart() {
   // show organizer names
   d3.selectAll( '.organizer-name' )
     .classed( 'visible-text', true );
+
+  document.querySelector('#home-audio').play();
 }
 
 function clearAllPlayers() {
