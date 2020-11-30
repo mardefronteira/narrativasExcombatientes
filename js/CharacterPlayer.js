@@ -17,6 +17,7 @@ class CharacterPlayer {
 
     // set character info
     document.querySelector('#character-name').innerHTML = this.character.character;
+    document.querySelector('#character-alias').innerHTML = this.character.alias;
     document.querySelector('#character-group').innerHTML = getGroupName(this.character);
 
     // create players and audios for characters

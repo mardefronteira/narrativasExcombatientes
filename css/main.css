@@ -17,7 +17,7 @@
   --m06node: #002f87;
   --m06player: #986B58;
 
-
+  font-size: 15px;
 }
 
 body {
@@ -100,8 +100,8 @@ div#info-top-bar{
 }
 
 div#info-menu-content {
-  font-size: 12px;
-  line-height: 1.2em;
+  font-size: 15px;
+  line-height: 1.5em;
 }
 
 text#menu-title {
@@ -261,7 +261,7 @@ div#guide-modal{
   background: #FFF;
   color: #000;
   height:100%;
-  width:auto;
+  /* width:auto; */
 }
 
 .guide-button {
@@ -339,7 +339,6 @@ div#guide-modal{
   flex-grow: 1;
   max-width: 100%;
   padding-left: 3rem;
-  line-height: 1rem;
 }
 
 #empty-col {

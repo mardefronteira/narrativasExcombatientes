@@ -83,6 +83,8 @@ function showIntroPage() {
   d3.selectAll('.menu-button').classed('hidden-intro-page',true);
   d3.select('#intro-page').classed( 'hidden-intro-page', false );
   setMenuColor('black');
+
+  document.querySelector('#home-audio').pause();
 }
 
 function showCredits() {
@@ -92,8 +94,6 @@ function showCredits() {
 }
 
 function init() {
-  showIntroPage();
-
   document.querySelector('#credits-node').addEventListener('click', showCredits)
   document.querySelector('#guide-node').addEventListener('click', openGuide);
   document.querySelector('#intro-node').addEventListener('click', showVideo);
@@ -117,5 +117,7 @@ function init() {
   audioElement.currentTime = 0;
   audioElement.src = `./audios/HOME.mp3`;
   document.body.appendChild(audioElement);
-  audioElement.loop();
+
+  showIntroPage();
+
 }

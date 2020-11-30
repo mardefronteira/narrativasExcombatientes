@@ -10,22 +10,6 @@
   fill:#002F87;
 }
 
-#guide-content {
-  /* stroke: #1D1D1B;
-  stroke-width: 3px; */
-}
-
-#guide-content-div {
-  height: 100%;
-  overflow: auto;
-  padding: 5vw 5vh;
-  border: 2px solid #F27777;
-}
-
-#guide-content-div > div{
-  max-height: 100%;
-}
-
 #guide-close-button {
   cursor: pointer;
 }
@@ -49,94 +33,66 @@
 .guide-tab-active {
   fill:#FFF;
 }
-.st0{fill:#E8FFFA;}
-.st1{fill:none;}
-.st2{clip-path:url(#SVGID_2_);fill:#1D1D1B;}
-.st3{fill:#002F87;}
-.st4{fill:none;}
-.st5{font-family:'Heebo-Black';}
-.st6{font-size:20px;}
-.st7{letter-spacing:1;}
-.st8{font-family:'Heebo-Bold';}
-.st9{font-family:'Heebo-Medium';}
-.st10{font-size:17px;}
-.st11{fill:#FFF;stroke:#F27777;stroke-miterlimit:10;}
-.st12{fill:#F27777;}
 
-div.Marco-de-texto-b-sico {
-	border:none;
+div#guide-content-div {
+	padding: 5% 7%;
+	display:flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 82%;
+  border: 2px solid #F27777;
 }
 
-p.cuerpo {
-	color:#000000;
-	font-family:Roboto, sans-serif;
-	font-size:23px;
-	font-style:normal;
-	font-variant:normal;
-	font-weight:normal;
-	line-height:1.5;
-	margin-bottom:0;
-	margin-left:0;
-	margin-right:0;
-	margin-top:0;
-	orphans:1;
-	page-break-after:auto;
-	page-break-before:auto;
-	text-align:justify;
-	text-align-last:left;
-	text-decoration:none;
-	text-indent:0;
-	text-transform:none;
-	widows:1;
+.empty-col, .img-col {
+	width: 50%;
+  display: flex;
+	flex-direction: column;
+  justify-content: space-around;
 }
 
-p.personajes {
-	color:#000000;
-	font-family: "Roboto", sans-serif;
-	font-size:23px;
-	font-style:italic;
-	font-variant:normal;
-	font-weight:normal;
-	line-height:1.2;
-	margin-bottom:0;
-	margin-left:25px;
-	margin-right:0;
-	margin-top:0;
-	orphans:1;
-	page-break-after:auto;
-	page-break-before:auto;
-	text-align:justify;
-	text-align-last:left;
-	text-decoration:none;
-	text-indent:0;
-	text-transform:none;
-	widows:1;
+.text-block {
+	text-align: justify;
+	width: 50%;
+	flex-direction: column;
+
+  font-size: 1.5em;
+  font-family:Roboto, sans-serif;
+  color:#000000;
+  line-height: 1.5em;
+  font-style:normal;
+  font-weight:normal;
 }
-p.t-tulos {
-	-epub-hyphens:none;
-	color:#000000;
-	font-family:"Playfair Display", serif;
-	font-size:51px;
-	font-style:normal;
-	font-variant:normal;
+
+.guide-list > li {
+	padding-bottom: 1em;
+}
+
+.text-block > h1 {
+	font-family:"Playfair Display SemiBold", serif;
+	font-size:2.5em;
 	font-weight:600;
-	line-height:1.2;
-	margin-bottom:0;
-	margin-left:0;
-	margin-right:0;
-	margin-top:0;
-	orphans:1;
-	page-break-after:auto;
-	page-break-before:auto;
-	text-align:left;
-	text-decoration:none;
-	text-indent:0;
-	text-transform:none;
-	widows:1;
+	line-height: 1em;
+	text-align: left;
 }
-p.ParaOverride-1 {
-	margin-left:36px;
+
+.text-block > blockquote {
+	padding-left: 10%;
+	width:90%;
+	font-style:italic;
 }
-p.ParaOverride-2 {
-	text-align:right;
+
+.text-block > a {
+  color:DodgerBlue;
+  font-size:1em;
+  font-style:italic;
+  padding-bottom: 20em;
+}
+
+a > i {
+  padding-left: 1em; 
+}
+
+img {
+	width: 100%;
+	height: auto;
 }

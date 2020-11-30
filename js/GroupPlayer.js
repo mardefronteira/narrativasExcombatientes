@@ -93,6 +93,9 @@ class GroupPlayer {
     let characterName = document.querySelector(`#character-name`);
     characterName.innerHTML = thisCharacter.character;
 
+    let characterAlias = document.querySelector(`#character-alias`);
+    characterAlias.innerHTML = thisCharacter.alias;
+
     // Display element with the play button
     document.querySelector('#character-player').classList.remove('hidden');
     document.querySelector('#character-play-button').classList.remove('hidden');
