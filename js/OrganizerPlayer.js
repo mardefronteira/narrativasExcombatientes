@@ -34,6 +34,7 @@ class OrganizerPlayer {
       clickableArea.setAttribute("width", clickable.w);
       clickableArea.setAttribute("height", clickable.h);
       clickableArea.classList.add('clickable');
+      clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
       clickableArea.addEventListener('mousedown', e => {this.setTime(e)});
       document.querySelector(`#organizer-player-${i}`).appendChild(clickableArea);
 
