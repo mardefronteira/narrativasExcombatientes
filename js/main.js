@@ -392,8 +392,8 @@ d3.selectAll( '.scene,.group,.subgroup,.character' )
 
     // Show all character names if no characters are active
     let activeTexts = d3.selectAll( '.active-text' )["_groups"][0]; // select all active texts
-    let activeOrganizer = d3.selectAll( '.visible-organizer' )["_groups"][0]; // select all active organizers
-    if (activeTexts.length === 0 && activeOrganizer.length === 0) {
+    let activeOrganizer = ['G-09','G-10','G-11'].includes(click.id) ? true : false; // select all active organizers
+    if (activeTexts.length === 0 && !activeOrganizer) {
       d3.selectAll( '.character-name' )
         .classed('visible-text', true);
     } else {
@@ -560,7 +560,9 @@ function restart() {
   d3.selectAll( '.organizer-name' )
     .classed( 'visible-text', true );
 
-  document.querySelector('#home-audio').play();
+  if (d3.select('#intro-page').classed('hidden-intro-page')){
+    document.querySelector('#home-audio').play();
+  }
 }
 
 function clearAllPlayers() {
@@ -693,8 +695,14 @@ function addPlayer(id, type) {
       player.display();
       break;
     case 'group':
-      player = new GroupPlayer(id);
-      player.display();
+      let idNum = id.slice(2,4);
+      if (parseInt(idNum) < 9) {
+        player = new GroupPlayer(id);
+        player.display();
+      } else {
+        player = new OrganizerPlayer(id);
+        player.display();
+      }
       break;
     case 'subgroup':
       player = new GroupPlayer(id);
