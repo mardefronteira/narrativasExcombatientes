@@ -18,7 +18,24 @@ class CharacterPlayer {
     // set character info
     document.querySelector('#character-name').innerHTML = this.character.character;
     document.querySelector('#character-alias').innerHTML = this.character.alias;
-    document.querySelector('#character-group').innerHTML = getGroupName(this.character);
+    // document.querySelector('#character-group').innerHTML = getGroupName(this.character);
+
+    let group = document.querySelector('#character-group');
+    let groupOverflow = document.querySelector('#character-group-overflow');
+
+    switch (this.character.group) {
+      case "G-03":
+        group.innerHTML = "EJÉRCITO DE LIBERACIÓN NACIONAL";
+        groupOverflow.innerHTML = "- REPLANTEAMIENTO";
+        break;
+      case "G-08":
+        group.innerHTML = "FUERZAS ARMADAS REVOLUCIONARIAS DE ";
+        groupOverflow.innerHTML = "COLOMBIA - EJÉRCITO DEL PUEBLO";
+        break;
+      default:
+        group.innerHTML = getGroupName(this.character);
+        groupOverflow.innerHTML = '';
+    }
 
     // create players and audios for characters
     this.clickable = this.getClickableArea();

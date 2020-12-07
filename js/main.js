@@ -157,7 +157,10 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
     // get hovered element
     getClickedElement(d3.select( this ));
 
-    d3.selectAll( '.organizer-name' )
+    // d3.selectAll( '.organizer-name' )
+    //   .classed( 'visible-text', false );
+
+    d3.selectAll( '.group-name' )
       .classed( 'visible-text', false );
 
     // node behavior in home page, when nothing is active
@@ -529,6 +532,14 @@ function restart() {
   d3.selectAll( '.character-name' )
     .classed( 'visible-text', true );
 
+  // show all group names
+  d3.selectAll('.group-name')
+    .classed('visible-text',true);
+
+  // show organizer names
+  // d3.selectAll( '.organizer-name' )
+  //   .classed( 'visible-text', true );
+
   // hide all players
   d3.selectAll('.temp-player' )
     .classed( 'hidden-player', true )
@@ -555,10 +566,6 @@ function restart() {
   if (player) {
     clearAllPlayers();
   }
-
-  // show organizer names
-  d3.selectAll( '.organizer-name' )
-    .classed( 'visible-text', true );
 
   if (d3.select('#intro-page').classed('hidden-intro-page')){
     document.querySelector('#home-audio').play();
@@ -769,7 +776,11 @@ function show_elements() {
   clearNodes();
 
   // hide organizer names
-  d3.selectAll( '.organizer-name' )
+  // d3.selectAll( '.organizer-name' )
+  //   .classed( 'visible-text', false );
+
+  // hide group names
+  d3.selectAll( '.group-name' )
     .classed( 'visible-text', false );
 
     // Show elements

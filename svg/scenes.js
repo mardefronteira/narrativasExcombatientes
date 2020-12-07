@@ -47,7 +47,7 @@ let E03 = {
     <rect id="player-background" x="440.3453" y="0.3461" class="M-01-player player-background" width="491.9806" height="1090"/>
     <line id="scene-timeline" class="timeline" x1="487.8922" y1="727.0568" x2="816.8922" y2="727.0568"/>
     <text id="scene-time" transform="matrix(1 0 0 1 824.6605 733.5091)" class="time">– 00:00:00</text>
-    <text transform="matrix(1 0 0 1 484.6604 567.5646)">
+    <text class="player-regular" transform="matrix(1 0 0 1 484.6604 567.5646)" >
     <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
     <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
@@ -55,7 +55,7 @@ let E03 = {
     <tspan id="scene-group-overflow" x="0" y="120"></tspan>
     </text>
 
-    <text transform="matrix(1 0 0 1 484.6604 104.5148)" style=" fill:#252526; font-size:18px;">
+    <text transform="matrix(1 0 0 1 484.6604 104.5148)" class="player-description">
     <tspan id="scene-frame" x="0" y="0" class="player-bold">Territorialidad</tspan>
     <tspan x="0" y="54">Los Excombatientes de las guerrillas </tspan>
     <tspan x="0" y="81">describieron y analizaron críticamente las </tspan>
@@ -127,7 +127,7 @@ let E06 = {
   <rect id="player-background" class="M-01-player player-background" x="680.3453" y="0.3461" width="491.9806" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="727.8922" y1="987.0568" x2="1056.8921" y2="987.0568"/>
   <text id="scene-time" transform="matrix(1 0 0 1 1064.6604 993.5091)" class="time">– 00:00:00</text>
-  <text transform="matrix(1 0 0 1 724.6605 823.2512)">
+  <text class="player-regular" transform="matrix(1 0 0 1 724.6605 823.2512)" >
   <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
   <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
   <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
@@ -262,14 +262,14 @@ let E08 = {
     <rect id="player-background" x="240.3453" y="0.3461" class="M-01-player player-background" width="491.9806" height="1090"/>
     <line id="scene-timeline" class="timeline" x1="287.8922" y1="837.0568" x2="616.8922" y2="837.0568"/>
     <text id="scene-time" transform="matrix(1 0 0 1 624.6604 843.5091)" class="time">– 00:00:00</text>
-    <text transform="matrix(1 0 0 1 284.6604 677.0373)">
+    <text class="player-regular" transform="matrix(1 0 0 1 284.6604 677.0373)">
     <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
     <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
     <tspan id="scene-group" x="0" y="96"></tspan>
     <tspan id="scene-group-overflow" x="0" y="120"></tspan>
     </text>
-    <text transform="matrix(1 0 0 1 284.6604 104.5148)" style=" fill:#252526; font-size:18px;">
+    <text transform="matrix(1 0 0 1 284.6604 104.5148)" class="player-description">
       <tspan x="0" y="0" class="player-bold">Territorialidad</tspan>
       <tspan x="0" y="54" >Los Excombatientes de las guerrillas </tspan>
       <tspan x="0" y="81" >describieron y analizaron críticamente las </tspan>
@@ -321,7 +321,7 @@ let E10 = {
   player: `<rect id="player-background" class="M-06-player player-background" x="470.35" y="-1" width="492" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="513.89" y1="827.06" x2="842.89" y2="827.06"/>
   <text id="scene-time" transform="matrix(1 0 0 1 850.6604 833.5091)" class="time">– 00:00:00</text>
-  <text transform="matrix(1 0 0 1 510.6604 667.0373)" class="player-description">
+  <text transform="matrix(1 0 0 1 510.6604 667.0373)" class="player-regular">
     <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
     <tspan id="scene-alias" x="0" y="72"></tspan>
@@ -383,7 +383,7 @@ let E11 = {
   <line id="scene-timeline" class="timeline" x1="553.89" y1="777.06" x2="882.89" y2="777.06"/>
   <text id="scene-time" transform="matrix(1 0 0 1 890.6604 783.5091)" class="time">– 00:00:00</text>
 
-  <text transform="matrix(1 0 0 1 550.6604 617.0373)" class="player-description">
+  <text transform="matrix(1 0 0 1 550.6604 617.0373)" class="player-regular">
     <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
     <tspan id="scene-alias" x="0" y="72"></tspan>
@@ -531,7 +531,7 @@ let E18 = {
   <line id="scene-timeline" class="timeline" x1="83.89" y1="927.06" x2="412.89" y2="927.06"/>
   <text id="scene-time" transform="matrix(1 0 0 1 420.6604 933.5091)" class="time">– 00:00:00</text>
 
-  <text transform="matrix(1 0 0 1 80.6604 767.0373)" class="player-description">
+  <text transform="matrix(1 0 0 1 80.6604 767.0373)" class="player-regular">
     <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
     <tspan id="scene-alias" x="0" y="72"></tspan>
@@ -594,7 +594,7 @@ let E19 = {
   <line id="scene-timeline" class="timeline" x1="53.89" y1="883.06" x2="382.89" y2="883.06"/>
   <text id="scene-time" transform="matrix(1 0 0 1 390.6604 889.5091)" class="time">– 00:00:00</text>
 
-  <text transform="matrix(1 0 0 1 50.6604 723.0373)" class="player-description">
+  <text transform="matrix(1 0 0 1 50.6604 723.0373)" class="player-regular">
     <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
     <tspan id="scene-alias" x="0" y="72"></tspan>
@@ -700,7 +700,7 @@ let E23 = {
   <rect id="player-background" class="M-01-player player-background" x="160.3453" y="0.3461" width="491.9806" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="207.8921" y1="727.0568" x2="536.8922" y2="727.0568"/>
   <text id="scene-time" transform="matrix(1 0 0 1 544.6604 733.5091)" class="time">– 00:00:00</text>
-  <text transform="matrix(1 0 0 1 204.6604 567.5646)">
+  <text class="player-regular" transform="matrix(1 0 0 1 204.6604 567.5646)">
     <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
     <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
@@ -757,7 +757,7 @@ let E24 = {
   <line id="scene-timeline" class="timeline" x1="83.89" y1="927.06" x2="412.89" y2="927.06"/>
   <text id="scene-time" transform="matrix(1 0 0 1 420.6604 933.5091)" class="time">– 00:00:00</text>
 
-  <text transform="matrix(1 0 0 1 80.6604 767.0373)" class="player-description">
+  <text transform="matrix(1 0 0 1 80.6604 767.0373)" class="player-regular">
     <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
     <tspan id="scene-alias" x="0" y="72"></tspan>

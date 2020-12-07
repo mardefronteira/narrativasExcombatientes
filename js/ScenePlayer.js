@@ -203,6 +203,7 @@ class ScenePlayer {
         // update text
         let character = document.getElementById(`scene-character`);
         let group = document.getElementById(`scene-group`);
+        let groupOverflow = document.getElementById(`scene-group-overflow`);
         let alias = document.getElementById(`scene-alias`);
 
         // get character that corresponds to timecode
@@ -221,8 +222,21 @@ class ScenePlayer {
         // currentCharacter = this.characters.filter(char => char.id === currentCharacter)[0];
 
         character.innerHTML = currentCharacter.character;
-        group.innerHTML = currentCharacter.groupName;
-        alias.innerHTML = currentCharacter.alias ? `Alias ${currentCharacter.alias}` : '';
+        alias.innerHTML = currentCharacter.alias ? `${currentCharacter.alias}` : '';
+
+        switch (currentCharacter.group) {
+          case "G-03":
+            group.innerHTML = "EJÉRCITO DE LIBERACIÓN NACIONAL";
+            groupOverflow.innerHTML = "- REPLANTEAMIENTO";
+            break;
+          case "G-08":
+            group.innerHTML = "FUERZAS ARMADAS REVOLUCIONARIAS DE ";
+            groupOverflow.innerHTML = "COLOMBIA - EJÉRCITO DEL PUEBLO";
+            break;
+          default:
+            group.innerHTML = currentCharacter.groupName;
+            groupOverflow.innerHTML = '';
+        }
       } // ends if hasBegun
   } // ends updatePlayer()
 }
