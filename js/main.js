@@ -567,9 +567,9 @@ function restart() {
     clearAllPlayers();
   }
 
-  if (d3.select('#intro-page').classed('hidden-intro-page')){
-    document.querySelector('#home-audio').play();
-  }
+  // if (d3.select('#intro-page').classed('hidden-intro-page')){
+  //   document.querySelector('#home-audio').play();
+  // }
 }
 
 function clearAllPlayers() {
