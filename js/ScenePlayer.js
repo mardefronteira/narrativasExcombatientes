@@ -4,6 +4,7 @@ class ScenePlayer {
     this.jsId = this.id.replace('-','');
     this.type = entity;
     this.frame = '';
+    this.scene = data[ `scenes` ].find( target => target[ 'id' ] === this.id );
     this.playerId = `scene-player`;
     this.audioId = `${this.id}-audio`;
     this.playerSVG = eval(`${this.jsId}.player`); // player SVG in ./svg/scenes.js
@@ -16,7 +17,7 @@ class ScenePlayer {
   display() {
     // get details of the element that was clicked
     let target = data[ `${this.type}s` ].find( target => target[ 'id' ] === this.id );
-
+    console.log(this.scene);
     // create SVG player object
     let gElement = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     gElement.id = this.playerId;
@@ -59,12 +60,14 @@ class ScenePlayer {
     // populate this.characters array with their info
     this.characters = this.getCharacters();
 
-    // set scene name, clear characters
+    // set scene name, clear characters, set initial time
     let name = document.getElementById('scene-name')
     name.innerHTML = data['scenes'].filter(scene => scene['id'] === this.id)[0].scene;
     document.getElementById('scene-character').innerHTML = '';
     document.getElementById('scene-group').innerHTML = '';
     document.getElementById('scene-alias').innerHTML = '';
+
+    document.getElementById(`scene-time`).innerHTML = `– 00:00 / ${this.scene.duration.slice(3)}`
 
     // set background color
     document.getElementById('player-background').setAttribute("fill", this.playerColor);
@@ -199,7 +202,7 @@ class ScenePlayer {
       }
       // update time
       let timeString = document.getElementById(`scene-time`);
-      timeString.innerHTML = `– ${getFormattedTime(currentTime)}`
+      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.scene.duration.slice(3)}`
         // update text
         let character = document.getElementById(`scene-character`);
         let group = document.getElementById(`scene-group`);

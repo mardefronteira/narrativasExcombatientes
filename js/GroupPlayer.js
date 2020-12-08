@@ -6,6 +6,7 @@ class GroupPlayer {
     this.playerSVG = eval(`${this.jsId}.player`); // player SVG in ./svg/players.js
     this.characters = [];
     this.clickable;
+    this.activeCharacter;
   }
 
   display() {
@@ -45,12 +46,14 @@ class GroupPlayer {
 
     let randomCharacter = this.characters[Math.floor(Math.random() * this.characters.length)].id;
     this.displayCharacter(randomCharacter);
+
+    document.querySelector(`#character-time`).innerHTML = `– 00:00 / ${this.activeCharacter.duration.slice(3)}`;
   }
 
   playPause(e) {
     // get audio info
     let targetId = e.target.id.slice(-1);
-    let audioElement = document.getElementById(`character-audio`);
+    let audioElement = document.querySelector(`#character-audio`);
 
     // pause all other players
     Array.from(document.querySelectorAll('audio')).map(audio => audio.id !== audioElement.id ? audio.pause() : ``);
@@ -83,18 +86,21 @@ class GroupPlayer {
 
   displayCharacter (id) {
     // get character character info
-    let thisCharacter = this.characters.find( char => char.id === id);
+    this.activeCharacter = this.characters.find( char => char.id === id);
 
     // set audio source
     let audioElement = document.querySelector(`#character-audio`);
-    audioElement.src = `../audios/${thisCharacter.audio}`;
+    audioElement.src = `../audios/${this.activeCharacter.audio}`;
 
     // set character name
     let characterName = document.querySelector(`#character-name`);
-    characterName.innerHTML = thisCharacter.character;
+    characterName.innerHTML = this.activeCharacter.character;
 
     let characterAlias = document.querySelector(`#character-alias`);
-    characterAlias.innerHTML = thisCharacter.alias;
+    characterAlias.innerHTML = this.activeCharacter.alias;
+
+    let timeString = document.getElementById(`character-time`);
+    timeString.innerHTML = `– ${getFormattedTime(audioElement.currentTime)} / ${this.activeCharacter.duration.slice(3)}`
 
     // Display element with the play button
     document.querySelector('#character-player').classList.remove('hidden');
@@ -147,7 +153,7 @@ class GroupPlayer {
 
       // update time
       let timeString = document.getElementById(`character-time`);
-      timeString.innerHTML = `– ${getFormattedTime(currentTime)}`
+      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.activeCharacter.duration.slice(3)}`
     }
   }
 

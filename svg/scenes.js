@@ -65,11 +65,11 @@ let E03 = {
     <tspan x="0" y="189">excombatientes de las AUC plantearon como su </tspan>
     <tspan x="0" y="216">estrategia de territorialización y expansión </tspan>
     <tspan x="0" y="243">correspondió a una dinámica de lucha </tspan>
-    <tspan x="0" y="270">contrainsurgente. A partir de este diálogo se </tspan>
+    <tspan x="0" y="270">contrainsurgente. A partir de este diálogo, se </tspan>
     <tspan x="0" y="297">pueden resaltar territorios que fueron </tspan>
     <tspan x="0" y="324">disputados por los distintos grupos armados </tspan>
     <tspan x="0" y="351">desde unas dinámicas de control territorial en lo </tspan>
-    <tspan x="0" y="378">social, político, económico cultural.</tspan>
+    <tspan x="0" y="378">social, político, económico y cultural.</tspan>
     </text>
     <g id="scene-button">
       <rect class="invisible" x="460.8396" y="715.8223" width="15px" height="20px"></rect>
@@ -151,13 +151,13 @@ let E06 = {
 <tspan x="0" y="351">y expansión correspondió a </tspan>
 <tspan x="0" y="378">una dinámica de lucha </tspan>
 <tspan x="0" y="405">contrainsurgente. A partir de </tspan>
-<tspan x="0" y="432">este diálogo se pueden </tspan>
+<tspan x="0" y="432">este diálogo, se pueden </tspan>
 <tspan x="0" y="459">resaltar territorios que fueron </tspan>
 <tspan x="0" y="486">disputados por los distintos </tspan>
 <tspan x="0" y="513">grupos armados desde unas </tspan>
 <tspan x="0" y="540">dinámicas de control territorial </tspan>
 <tspan x="0" y="567">en lo social, político, </tspan>
-<tspan x="0" y="594">económico cultural.</tspan>
+<tspan x="0" y="594">económico y cultural.</tspan>
 </text>
 
   <g id="scene-button">
@@ -197,21 +197,22 @@ let E07 = {
 
   <text class="player-description"  transform="matrix(1 0 0 1 530.6604 104.5148)">
     <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
-    <tspan x="0" y="54">Recuento de los procesos de </tspan>
-    <tspan x="0" y="81">negociación llevados a cabo en los 90 </tspan>
-    <tspan x="0" y="108">por las guerrillas, en los 2000 por las </tspan>
-    <tspan x="0" y="135">AUC y en distintas épocas por las </tspan>
-    <tspan x="0" y="162">FARC-EP. El relato de las guerrillas </tspan>
-    <tspan x="0" y="189">hizo énfasis en los acercamientos en </tspan>
-    <tspan x="0" y="216">pro de una salida dialogada al conflicto </tspan>
-    <tspan x="0" y="243">armado colombiano y la búsqueda por lograr </tspan>
-    <tspan x="0" y="270">transformaciones sociales, políticas y </tspan>
-    <tspan x="0" y="297">económicas. Los excombatientes de las AUC </tspan>
-    <tspan x="0" y="324">hicieron su relato del proceso de diálogo en Santa </tspan>
-    <tspan x="0" y="351">Fe de Ralito, haciendo énfasis en las dificultades </tspan>
-    <tspan x="0" y="378">de la negociación teniendo en cuenta las rupturas </tspan>
-    <tspan x="0" y="405">internas existentes dentro de las AUC y las </tspan>
-    <tspan x="0" y="432">presiones por una rendición militar y política.</tspan>
+    <tspan x="0" y="54">En estas conversaciones se hace un</tspan>
+    <tspan x="0" y="81">recuento de los procesos de</tspan>
+    <tspan x="0" y="108">negociación llevados a cabo en los 90</tspan>
+    <tspan x="0" y="135">por las guerrillas, en los 2000 por las</tspan>
+    <tspan x="0" y="162">AUC y en distintas épocas por las</tspan>
+    <tspan x="0" y="189">FARC-EP. El relato de las guerrillas</tspan>
+    <tspan x="0" y="216">hizo énfasis en los acercamientos en pro</tspan>
+    <tspan x="0" y="243">de una salida dialogada al conflicto armado</tspan>
+    <tspan x="0" y="270">colombiano y la búsqueda por lograr</tspan>
+    <tspan x="0" y="297">transformaciones sociales, políticas y</tspan>
+    <tspan x="0" y="324">económicas. Los excombatientes de las AUC</tspan>
+    <tspan x="0" y="351">relataron, entre otros, el proceso de diálogo en</tspan>
+    <tspan x="0" y="378">Santa Fe de Ralito, haciendo énfasis en las</tspan>
+    <tspan x="0" y="405">dificultades de la negociación a causa de las</tspan>
+    <tspan x="0" y="432">rupturas internas existentes dentro de las AUC y</tspan>
+    <tspan x="0" y="459">las presiones por una rendición militar y política.</tspan>
   </text>
 
   <line id="E-07-timebar" class="timebar" x1="533.89" y1="777.06" x2="533.89" y2="777.06"/>
@@ -261,7 +262,7 @@ let E08 = {
   player: `
     <rect id="player-background" x="240.3453" y="0.3461" class="M-01-player player-background" width="491.9806" height="1090"/>
     <line id="scene-timeline" class="timeline" x1="287.8922" y1="837.0568" x2="616.8922" y2="837.0568"/>
-    <text id="scene-time" transform="matrix(1 0 0 1 624.6604 843.5091)" class="time">– 00:00:00</text>
+    <text id="scene-time" transform="matrix(1 0 0 1 624.6604 841.50)" class="time">– 00:00:00</text>
     <text class="player-regular" transform="matrix(1 0 0 1 284.6604 677.0373)">
     <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
@@ -279,11 +280,11 @@ let E08 = {
       <tspan x="0" y="189" >excombatientes de las AUC plantearon como su </tspan>
       <tspan x="0" y="216" >estrategia de territorialización y expansión </tspan>
       <tspan x="0" y="243" >correspondió a una dinámica de lucha </tspan>
-      <tspan x="0" y="270" >contrainsurgente. A partir de este diálogo se </tspan>
+      <tspan x="0" y="270" >contrainsurgente. A partir de este diálogo, se </tspan>
       <tspan x="0" y="297" >pueden resaltar territorios que fueron </tspan>
       <tspan x="0" y="324" >disputados por los distintos grupos armados </tspan>
       <tspan x="0" y="351" >desde unas dinámicas de control territorial en lo </tspan>
-      <tspan x="0" y="378" >social, político, económico cultural.</tspan>
+      <tspan x="0" y="378" >social, político, económico y cultural.</tspan>
     </text>
     <g id="scene-button">
       <rect class="invisible" x="260.8396" y="825.8223" width="15px" height="20px"></rect>
@@ -329,7 +330,28 @@ let E10 = {
     <tspan id="scene-group-overflow" x="0" y="120"></tspan>
   </text>
 
-  <text class="player-description"  transform="matrix(1 0 0 1 510.6604 104.5148)">
+  <text class="player-description" transform="matrix(1 0 0 1 510.6604 104.5148)">
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
+    <tspan x="0" y="54">En estas conversaciones se hace un </tspan>
+    <tspan x="0" y="81">recuento de los procesos de negociación </tspan>
+    <tspan x="0" y="108">llevados a cabo en los 90 por las </tspan>
+    <tspan x="0" y="135">guerrillas, en los 2000 por las AUC y en </tspan>
+    <tspan x="0" y="162">distintas épocas por las FARC-EP. El </tspan>
+    <tspan x="0" y="189">relato de las guerrillas hizo énfasis en </tspan>
+    <tspan x="0" y="216">los acercamientos en pro de una salida </tspan>
+    <tspan x="0" y="243">dialogada al conflicto armado </tspan>
+    <tspan x="0" y="270">colombiano y la búsqueda por lograr </tspan>
+    <tspan x="0" y="297">transformaciones sociales, políticas y </tspan>
+    <tspan x="0" y="324">económicas. Los excombatientes de las </tspan>
+    <tspan x="0" y="351">AUC relataron, entre otros, el proceso de </tspan>
+    <tspan x="0" y="378">diálogo en Santa Fe de Ralito, haciendo </tspan>
+    <tspan x="0" y="405">énfasis en las dificultades de la </tspan>
+    <tspan x="0" y="432">negociación a causa de las rupturas </tspan>
+    <tspan x="0" y="459">internas existentes dentro de las AUC </tspan>
+    <tspan x="0" y="486">y las presiones por una rendición militar </tspan>
+    <tspan x="0" y="513">y política.</tspan>
+  </text>
+
     <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
   <tspan x="0" y="54">Recuento de los procesos de </tspan><tspan x="0" y="81">negociación llevados a cabo en los 90 </tspan><tspan x="0" y="108">por las guerrillas, en los 2000 por las </tspan><tspan x="0" y="135">AUC y en distintas épocas por las </tspan><tspan x="0" y="162">FARC-EP. El relato de las guerrillas hizo </tspan><tspan x="0" y="189">énfasis en los acercamientos en pro de </tspan><tspan x="0" y="216">una salida dialogada al conflicto armado </tspan><tspan x="0" y="243">colombiano y la búsqueda por lograr </tspan><tspan x="0" y="270">transformaciones sociales, políticas y </tspan><tspan x="0" y="297">económicas. Los excombatientes de las </tspan><tspan x="0" y="324">AUC hicieron su relato del proceso de </tspan><tspan x="0" y="351">diálogo en Santa Fe de Ralito, haciendo </tspan><tspan x="0" y="378">énfasis en las dificultades de la </tspan><tspan x="0" y="405">negociación teniendo en cuenta las </tspan><tspan x="0" y="432">rupturas internas existentes dentro de </tspan><tspan x="0" y="459">las AUC y las presiones por una </tspan><tspan x="0" y="486">rendición militar y política.</tspan>
   </text>
@@ -540,8 +562,7 @@ let E18 = {
   </text>
 
   <text class="player-description" transform="matrix(1 0 0 1 80.6604 104.5148)">
-    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
-    <tspan x="0" y="54">Recuento de los procesos de </tspan><tspan x="0" y="81">negociación llevados a cabo en </tspan><tspan x="0" y="108">los 90 por las guerrillas, en los </tspan><tspan x="0" y="135">2000 por las AUC y en distintas </tspan><tspan x="0" y="162">épocas por las FARC-EP. El relato </tspan><tspan x="0" y="189">de las guerrillas hizo énfasis en </tspan><tspan x="0" y="216">los acercamientos en pro de una </tspan><tspan x="0" y="243">salida dialogada al conflicto </tspan><tspan x="0" y="270">armado colombiano y la búsqueda </tspan><tspan x="0" y="297">por lograr transformaciones </tspan><tspan x="0" y="324">sociales, políticas y económicas. </tspan><tspan x="0" y="351">Los excombatientes de las AUC </tspan><tspan x="0" y="378">hicieron su relato del proceso de </tspan><tspan x="0" y="405">diálogo en Santa Fe de Ralito, </tspan><tspan x="0" y="432">haciendo énfasis en las </tspan><tspan x="0" y="459">dificultades de la negociación </tspan><tspan x="0" y="486">teniendo en cuenta las rupturas </tspan><tspan x="0" y="513">internas existentes dentro de las </tspan><tspan x="0" y="540">AUC y las presiones por una </tspan><tspan x="0" y="567">rendición militar y política.</tspan>
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan><tspan x="0" y="54">En estas conversaciones se hace </tspan><tspan x="0" y="81">un recuento de los procesos de </tspan><tspan x="0" y="108">negociación llevados a cabo en </tspan><tspan x="0" y="135">los 90 por las guerrillas, en los </tspan><tspan x="0" y="162">2000 por las AUC y en distintas </tspan><tspan x="0" y="189">épocas por las FARC-EP. El relato </tspan><tspan x="0" y="216">de las guerrillas hizo énfasis en </tspan><tspan x="0" y="243">los acercamientos en pro de una </tspan><tspan x="0" y="270">salida dialogada al conflicto </tspan><tspan x="0" y="297">armado colombiano y la búsqueda </tspan><tspan x="0" y="324">por lograr transformaciones </tspan><tspan x="0" y="351">sociales, políticas y económicas. </tspan><tspan x="0" y="378">Los excombatientes de las AUC </tspan><tspan x="0" y="405">relataron, entre otros, el proceso </tspan><tspan x="0" y="432">de diálogo en Santa Fe de Ralito, </tspan><tspan x="0" y="459">haciendo énfasis en las </tspan><tspan x="0" y="486">dificultades de la negociación a </tspan><tspan x="0" y="513">causa de las rupturas internas </tspan><tspan x="0" y="540">existentes dentro de las AUC y las </tspan><tspan x="0" y="567">presiones por una rendición </tspan><tspan x="0" y="594">militar y política.</tspan>
   </text>
 
   <line id="E-18-timebar" class="timebar" x1="83.89" y1="927.06" x2="83.89" y2="927.06"/>
@@ -603,8 +624,7 @@ let E19 = {
   </text>
 
   <text class="player-description" transform="matrix(1 0 0 1 50.6604 104.5148)">
-    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
-    <tspan x="0" y="54">Recuento de los procesos de </tspan><tspan x="0" y="81">negociación llevados a cabo en los 90 </tspan><tspan x="0" y="108">por las guerrillas, en los 2000 por las </tspan><tspan x="0" y="135">AUC y en distintas épocas por las </tspan><tspan x="0" y="162">FARC-EP. El relato de las guerrillas </tspan><tspan x="0" y="189">hizo énfasis en los acercamientos en </tspan><tspan x="0" y="216">pro de una salida dialogada al </tspan><tspan x="0" y="243">conflicto armado colombiano y la </tspan><tspan x="0" y="270">búsqueda por lograr transformaciones </tspan><tspan x="0" y="297">sociales, políticas y económicas. Los </tspan><tspan x="0" y="324">excombatientes de las AUC hicieron su </tspan><tspan x="0" y="351">relato del proceso de diálogo en Santa </tspan><tspan x="0" y="378">Fe de Ralito, haciendo énfasis en las </tspan><tspan x="0" y="405">dificultades de la negociación </tspan><tspan x="0" y="432">teniendo en cuenta las rupturas </tspan><tspan x="0" y="459">internas existentes dentro de las AUC </tspan><tspan x="0" y="486">y las presiones por una rendición </tspan><tspan x="0" y="513">militar y política.</tspan>
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan><tspan x="0" y="54">En estas conversaciones se hace un </tspan><tspan x="0" y="81">recuento de los procesos de </tspan><tspan x="0" y="108">negociación llevados a cabo en los 90 </tspan><tspan x="0" y="135">por las guerrillas, en los 2000 por las </tspan><tspan x="0" y="162">AUC y en distintas épocas por las </tspan><tspan x="0" y="189">FARC-EP. El relato de las guerrillas </tspan><tspan x="0" y="216">hizo énfasis en los acercamientos en </tspan><tspan x="0" y="243">pro de una salida dialogada al </tspan><tspan x="0" y="270">conflicto armado colombiano y la </tspan><tspan x="0" y="297">búsqueda por lograr transformaciones </tspan><tspan x="0" y="324">sociales, políticas y económicas. Los </tspan><tspan x="0" y="351">excombatientes de las AUC relataron, </tspan><tspan x="0" y="378">entre otros, el proceso de diálogo en </tspan><tspan x="0" y="405">Santa Fe de Ralito, haciendo énfasis </tspan><tspan x="0" y="432">en las dificultades de la negociación a </tspan><tspan x="0" y="459">causa de las rupturas internas </tspan><tspan x="0" y="486">existentes dentro de las AUC y las </tspan><tspan x="0" y="513">presiones por una rendición militar </tspan><tspan x="0" y="540">y política.</tspan>
   </text>
 
   <line id="E-19-timebar" class="timebar" x1="53.89" y1="883.06" x2="53.89" y2="883.06"/>
@@ -718,11 +738,11 @@ let E23 = {
     <tspan x="0" y="189">excombatientes de las AUC plantearon como su </tspan>
     <tspan x="0" y="216">estrategia de territorialización y expansión </tspan>
     <tspan x="0" y="243">correspondió a una dinámica de lucha </tspan>
-    <tspan x="0" y="270">contrainsurgente. A partir de este diálogo se </tspan>
+    <tspan x="0" y="270">contrainsurgente. A partir de este diálogo, se </tspan>
     <tspan x="0" y="297">pueden resaltar territorios que fueron </tspan>
     <tspan x="0" y="324">disputados por los distintos grupos armados </tspan>
     <tspan x="0" y="351">desde unas dinámicas de control territorial en lo </tspan>
-    <tspan x="0" y="378">social, político, económico cultural.</tspan>
+    <tspan x="0" y="378">social, político, económico y cultural.</tspan>
   </text>
 
   <g id="scene-button">
@@ -765,9 +785,8 @@ let E24 = {
     <tspan id="scene-group-overflow" x="0" y="120"></tspan>
   </text>
 
-  <text class="player-description" transform="matrix(1 0 0 1 50.6604 104.5148)">
-    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan>
-    <tspan x="0" y="54">Recuento de los procesos de </tspan><tspan x="0" y="81">negociación llevados a cabo en los 90 </tspan><tspan x="0" y="108">por las guerrillas, en los 2000 por las </tspan><tspan x="0" y="135">AUC y en distintas épocas por las </tspan><tspan x="0" y="162">FARC-EP. El relato de las guerrillas </tspan><tspan x="0" y="189">hizo énfasis en los acercamientos en </tspan><tspan x="0" y="216">pro de una salida dialogada al </tspan><tspan x="0" y="243">conflicto armado colombiano y la </tspan><tspan x="0" y="270">búsqueda por lograr transformaciones </tspan><tspan x="0" y="297">sociales, políticas y económicas. Los </tspan><tspan x="0" y="324">excombatientes de las AUC hicieron su </tspan><tspan x="0" y="351">relato del proceso de diálogo en Santa </tspan><tspan x="0" y="378">Fe de Ralito, haciendo énfasis en las </tspan><tspan x="0" y="405">dificultades de la negociación </tspan><tspan x="0" y="432">teniendo en cuenta las rupturas </tspan><tspan x="0" y="459">internas existentes dentro de las AUC </tspan><tspan x="0" y="486">y las presiones por una rendición </tspan><tspan x="0" y="513">militar y política.</tspan>
+  <text class="player-description" transform="matrix(1 0 0 1 83.6604 104.5148)">
+    <tspan x="0" y="0" class="player-bold">ACUERDOS DE PAZ</tspan><tspan x="0" y="54">En estas conversaciones se hace un </tspan><tspan x="0" y="81">recuento de los procesos de </tspan><tspan x="0" y="108">negociación llevados a cabo en los 90 </tspan><tspan x="0" y="135">por las guerrillas, en los 2000 por las </tspan><tspan x="0" y="162">AUC y en distintas épocas por las </tspan><tspan x="0" y="189">FARC-EP. El relato de las guerrillas </tspan><tspan x="0" y="216">hizo énfasis en los acercamientos en </tspan><tspan x="0" y="243">pro de una salida dialogada al </tspan><tspan x="0" y="270">conflicto armado colombiano y la </tspan><tspan x="0" y="297">búsqueda por lograr transformaciones </tspan><tspan x="0" y="324">sociales, políticas y económicas. Los </tspan><tspan x="0" y="351">excombatientes de las AUC relataron, </tspan><tspan x="0" y="378">entre otros, el proceso de diálogo en </tspan><tspan x="0" y="405">Santa Fe de Ralito, haciendo énfasis </tspan><tspan x="0" y="432">en las dificultades de la negociación a </tspan><tspan x="0" y="459">causa de las rupturas internas </tspan><tspan x="0" y="486">existentes dentro de las AUC y las </tspan><tspan x="0" y="513">presiones por una rendición militar </tspan><tspan x="0" y="540">y política.</tspan>
   </text>
 
   <line id="E-24-timebar" class="timebar" x1="83.89" y1="927.06" x2="83.89" y2="927.06"/>

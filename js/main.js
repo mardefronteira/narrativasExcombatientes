@@ -102,7 +102,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
   .on( 'click', function() {
     // get element
     getClickedElement(d3.select( this ))
-
+    closeGuide();
     console.log(`last click: ${lastClick.type}(${lastClick.id}), current click: ${click.type}(${click.id})`)
 
     switch (lastClick.type) {
@@ -605,16 +605,18 @@ function getFormattedTime( timeInSeconds ) {
   timeInMinutes = timeInSeconds / 60;
 
   // calculate formatted time
-  hours = Math.floor(timeInMinutes / 60);
-  minutes = Math.floor(timeInMinutes % 60);
+  // hours = Math.floor(timeInMinutes / 60);
+  // minutes = Math.floor(timeInMinutes % 60);
+  minutes = Math.floor(timeInMinutes);
   seconds = Math.floor((timeInMinutes - Math.floor(timeInMinutes)) * 60);
 
   // add a zero before the value if it's less than 10
-  hours < 10 ? hours = `0${hours}` : '';
+  // hours < 10 ? hours = `0${hours}` : '';
   minutes < 10 ? minutes = `0${minutes}` : '';
   seconds < 10 ? seconds = `0${seconds}` : '';
 
-  return `${hours}:${minutes}:${seconds}`;
+  // return `${hours}:${minutes}:${seconds}`;
+  return `${minutes}:${seconds}`;
 }
 
 function showFrame(frameId, showLinks = true) {

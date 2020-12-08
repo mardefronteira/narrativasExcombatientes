@@ -89,10 +89,18 @@ div#guide-content-div {
 }
 
 a > i {
-  padding-left: 1em; 
+  padding-left: 1em;
 }
 
 img {
 	width: 100%;
 	height: auto;
+}
+
+div#guide-modal{
+  background: #FFF;
+  color: #000;
+  height:100%;
+  z-index: 1030;
+  /* width:auto; */
 }

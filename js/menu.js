@@ -28,14 +28,16 @@ function showVideo() {
   Array.from(document.querySelectorAll('audio')).map(audio => audio.id !==  this.audioId ? audio.pause() : ``);
   videoElement.currentTime = 0;
   playVideo();
-  $('#video-modal').show()
+  document.querySelector('#video-modal').classList.remove('modal-hidden');
+  // $('#video-modal').show()
 }
 
 function hideVideo () {
   videoElement.pause();
   videoElement.currentTime = 0;
   videoElement.muted = true;
-  $('#video-modal').hide();
+  document.querySelector('#video-modal').classList.add('modal-hidden');
+  // $('#video-modal').hide();
 
 }
 
@@ -84,6 +86,7 @@ function showIntroPage() {
   d3.select('#intro-page').classed( 'hidden-intro-page', false );
   setMenuColor('black');
 
+  closeGuide();
   // document.querySelector('#home-audio').pause();
 }
 
