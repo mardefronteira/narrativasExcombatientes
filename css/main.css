@@ -564,6 +564,7 @@ cursor: pointer;
 
 .popup {
   fill: var(--primary);
+  stroke:none;
 }
 
 .tooltip > text :not(.tooltip-time){
@@ -605,12 +606,18 @@ cursor: pointer;
   fill-opacity: .4;
 }
 
+
 .link {
   fill:none;
   stroke: var(--black);
   stroke-width: 0.5;
   stroke-opacity: .6;
   visibility: hidden;
+  pointer-events: none;
+}
+
+.player-background {
+  pointer-events: none;
 }
 
 .visible-link {

@@ -218,7 +218,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
       switch ( click.type ){
 
         case 'scene':
-          d3.select(`#${click.id}.scene-name`)
+          d3.select(`#${click.id}-name`)
           .classed( 'visible-text', true );
           break;
 
@@ -252,6 +252,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
             return r;
           } )
           .map( r => {
+            console.log(r['scene']) // aqui
             // show hover node of scenes related to character
             d3.select( `#${r[ 'scene' ]}-node` )
               .classed( 'hidden', false )
@@ -448,7 +449,7 @@ let frameList = [
   },
   {
     id: "M-03",
-    scenes: ["E-12","E-13","E-20"],
+    scenes: ["E-11","E-12","E-13","E-20"],
   },
   {
     id: "M-04",
@@ -624,9 +625,21 @@ function showFrame(frameId, showLinks = true) {
 
   sceneList = data[ 'frames' ].filter( frame => frame[ 'id' ] === frameId )[ 0 ]['scenes'].split(',');
   sceneList.map(sceneId => {
+    showSceneAs(sceneId, 'hover');
+
+    if (showLinks) {
+      d3.select( '#' + sceneId + '.scene-link' )
+        .classed( 'active-link', true );
+    }
+
+    d3.select( `#${sceneId}-name` )
+      .classed( 'active-text', true );
+
+    console.log(sceneId);
   data[ 'relationships' ]
     .filter( linked => linked['scene'] === sceneId )
     .map( r => {
+      console.log(r)
       if ( r[ 'character' ] !== '' ) {
         var character = data[ 'characters' ].filter( c => c[ 'id' ] === r[ 'character' ] )[ 0 ];
         r[ 'group' ] = character[ 'group' ];
@@ -636,19 +649,11 @@ function showFrame(frameId, showLinks = true) {
     } )
     .map( r => {
 
-      d3.select( '#' + r[ 'scene' ] + '.scene' )
-        .classed( 'hidden', false )
-        .classed( 'in-frame', true )
+      console.log(r)
 
-      showSceneAs(r['scene'], 'hover');
-
-      if (showLinks) {
-        d3.select( '#' + r[ 'scene' ] + '.scene-link' )
-          .classed( 'active-link', true );
-      }
-
-      d3.select( `#${r[ 'scene' ]}-name` )
-        .classed( 'active-text', true );
+      // d3.select( '#' + r[ 'scene' ] + '.scene' )
+      //   .classed( 'hidden', false )
+      //   .classed( 'in-frame', true )
 
       if ( r[ 'character' ] !== '' ) {
 
