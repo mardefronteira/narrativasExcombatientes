@@ -56,7 +56,7 @@ let E03 = {
     </text>
 
     <text transform="matrix(1 0 0 1 484.6604 104.5148)" class="player-description">
-    <tspan id="scene-frame" x="0" y="0" class="player-bold">Territorialidad</tspan>
+    <tspan id="scene-frame" x="0" y="0" class="player-bold">TERRITORIALIDAD</tspan>
     <tspan x="0" y="54">Los Excombatientes de las guerrillas </tspan>
     <tspan x="0" y="81">describieron y analizaron críticamente las </tspan>
     <tspan x="0" y="108">formas en que cada grupo configuró sus bases </tspan>
@@ -136,7 +136,7 @@ let E06 = {
   </text>
 
 <text transform="matrix(1 0 0 1 724.6605 104.5148)" class="player-description">
-<tspan x="0" y="0" class="player-bold">Territorialidad</tspan>
+<tspan x="0" y="0" class="player-bold">TERRITORIALIDAD</tspan>
 <tspan x="0" y="54">Los Excombatientes de las </tspan>
 <tspan x="0" y="81">guerrillas describieron y </tspan>
 <tspan x="0" y="108">analizaron críticamente las </tspan>
@@ -271,7 +271,7 @@ let E08 = {
     <tspan id="scene-group-overflow" x="0" y="120"></tspan>
     </text>
     <text transform="matrix(1 0 0 1 284.6604 104.5148)" class="player-description">
-      <tspan x="0" y="0" class="player-bold">Territorialidad</tspan>
+      <tspan x="0" y="0" class="player-bold">TERRITORIALIDAD</tspan>
       <tspan x="0" y="54" >Los Excombatientes de las guerrillas </tspan>
       <tspan x="0" y="81" >describieron y analizaron críticamente las </tspan>
       <tspan x="0" y="108" >formas en que cada grupo configuró sus bases </tspan>
@@ -729,7 +729,7 @@ let E23 = {
   </text>
 
   <text transform="matrix(1 0 0 1 204.6604 104.5148)" class="player-description">
-    <tspan x="0" y="0" class="player-bold">Territorialidad</tspan>
+    <tspan x="0" y="0" class="player-bold">TERRITORIALIDAD</tspan>
     <tspan x="0" y="54">Los Excombatientes de las guerrillas </tspan>
     <tspan x="0" y="81">describieron y analizaron críticamente las </tspan>
     <tspan x="0" y="108">formas en que cada grupo configuró sus bases </tspan>

@@ -448,19 +448,19 @@ let frameList = [
   },
   {
     id: "M-03",
-    scenes: ["E-04","E-12","E-13","E-20"],
+    scenes: ["E-12","E-13","E-20"],
   },
   {
     id: "M-04",
-    scenes: ["E-15","E-21","E-22"],
+    scenes: ["E-04","E-15","E-21","E-22"],
   },
   {
     id: "M-05",
-    scenes: ["E-01","E-14"],
+    scenes: ["E-01"],
   },
   {
     id: "M-06",
-    scenes: ["E-07","E-10","E-11","E-18","E-19","E-24"],
+    scenes: ["E-07","E-10","E-18","E-19","E-24"],
   },
 ];
 
@@ -474,6 +474,7 @@ function restart() {
       let thisId = scene.id.slice(0,4);
       let thisFrame = frameList.find( frame => frame.scenes.includes(thisId));
       if (thisFrame != undefined) {
+        console.log(thisId, thisFrame.id);
         d3.select(`#${thisId}-node`)
           .classed( thisFrame.id, true );
       }
@@ -1020,13 +1021,13 @@ function show_elements() {
           .classed( 'active', true );
     }
 
-  if (click.type !== 'frame' || click.id === 'M-01') {
+  // if (click.type !== 'frame' || click.id === 'M-01') {
     // show player
     addPlayer(click.id, click.type);
 
     // stop home audio
     // document.querySelector('#home-audio').pause();
-  }
+  // }
 }
 
 function mapValue(baseVal, minInput, maxInput, minOutput, maxOutput) {

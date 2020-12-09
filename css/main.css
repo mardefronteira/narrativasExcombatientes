@@ -25,7 +25,14 @@ body {
   margin: auto;
 }
 
-svg#viz { position:fixed; top:10; left:0; height:100%; width:100%; }
+svg#viz {
+  position:fixed;
+  top:10;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index: 1020;
+}
 
 .gradient-bg{
   background-color: #e8fffa;
@@ -254,7 +261,15 @@ g#intro-buttons {
   font-size: 0.8rem;
   position: fixed;
   width: 100%;
-  z-index: 1049;
+  z-index: 1040;
+}
+
+svg#tooltips {
+  fill: none;
+  stroke: none;
+  pointer-events: none;
+  position:fixed;
+  z-index: 1045;
 }
 
 .guide-button {
@@ -538,6 +553,7 @@ cursor: pointer;
 
 .tooltip{
   display:none;
+  pointer-events: all;
   stroke:#FFF;
   fill:#FFF;
 }

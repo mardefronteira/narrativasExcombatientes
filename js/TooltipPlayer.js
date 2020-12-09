@@ -33,6 +33,10 @@ class TooltipPlayer {
     this.playPause();
 
     document.querySelector(`#${this.id}-button`).addEventListener('click', (e) => {this.playPause(e)});
+
+    // update time
+    let timeString = document.getElementById(`${this.id}-time`);
+    timeString.innerHTML = `– 00:00 / 01:00`;
   }
 
   playPause(e) {
@@ -96,7 +100,7 @@ class TooltipPlayer {
 
     // update time
     let timeString = document.getElementById(`${this.id}-time`);
-    timeString.innerHTML = `– ${getFormattedTime(currentTime)}`
+    timeString.innerHTML = `– ${getFormattedTime(currentTime)} / 01:00`;
   }
 
   hideTooltip(id) {
