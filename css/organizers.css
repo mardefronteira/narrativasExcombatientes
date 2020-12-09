@@ -14,6 +14,14 @@
   stroke:none;
 }
 
+.cev-stroke-color {
+  stroke: #986B58;
+}
+
+.cev-fill-color {
+
+}
+
 .organizer-time {
   fill:#002F87;
   font-size:13px;

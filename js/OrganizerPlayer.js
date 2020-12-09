@@ -51,6 +51,9 @@ class OrganizerPlayer {
       document.querySelector(`#organizer-button-${i}`).addEventListener('click', (e) => {this.playPause(e)});
 
       // if (i < this.characters.length) this.displayCharacter(this.characters[i].id);
+
+      let timeString = document.getElementById(`organizer-time-${i}`);
+      timeString.innerHTML = `– 00:00 / 02:16`;
     });
 
   }
@@ -152,7 +155,7 @@ class OrganizerPlayer {
 
       // update time
       let timeString = document.getElementById(`organizer-time-${targetId}`);
-      timeString.innerHTML = `– ${getFormattedTime(currentTime)}`
+      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / 02:16`;
     }
   }
 
