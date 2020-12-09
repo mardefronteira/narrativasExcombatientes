@@ -151,7 +151,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
         updateLastClick();
     }
     somethingIsActive = true;
-    console.log(`is something active? ${somethingIsActive}`);
+    // console.log(`is something active? ${somethingIsActive}`);
   } )
   .on( 'mouseover', function() {
     // get hovered element
@@ -252,7 +252,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
             return r;
           } )
           .map( r => {
-            console.log(r['scene']) // aqui
+
             // show hover node of scenes related to character
             d3.select( `#${r[ 'scene' ]}-node` )
               .classed( 'hidden', false )
@@ -475,7 +475,7 @@ function restart() {
       let thisId = scene.id.slice(0,4);
       let thisFrame = frameList.find( frame => frame.scenes.includes(thisId));
       if (thisFrame != undefined) {
-        console.log(thisId, thisFrame.id);
+        // console.log(thisId, thisFrame.id);
         d3.select(`#${thisId}-node`)
           .classed( thisFrame.id, true );
       }
@@ -635,11 +635,11 @@ function showFrame(frameId, showLinks = true) {
     d3.select( `#${sceneId}-name` )
       .classed( 'active-text', true );
 
-    console.log(sceneId);
+    // console.log(sceneId);
   data[ 'relationships' ]
     .filter( linked => linked['scene'] === sceneId )
     .map( r => {
-      console.log(r)
+      // console.log(r)
       if ( r[ 'character' ] !== '' ) {
         var character = data[ 'characters' ].filter( c => c[ 'id' ] === r[ 'character' ] )[ 0 ];
         r[ 'group' ] = character[ 'group' ];
@@ -649,7 +649,7 @@ function showFrame(frameId, showLinks = true) {
     } )
     .map( r => {
 
-      console.log(r)
+      // console.log(r)
 
       // d3.select( '#' + r[ 'scene' ] + '.scene' )
       //   .classed( 'hidden', false )
