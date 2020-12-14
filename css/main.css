@@ -648,27 +648,27 @@ cursor: pointer;
 }
 
 .M-02-player {
-  fill: var(--m01player);
+  fill: var(--m02player);
   fill-opacity: .30;
 }
 
 .M-03-player {
-  fill: var(--m01player);
+  fill: var(--m03player);
   fill-opacity: .30;
 }
 
 .M-04-player {
-  fill: var(--m01player);
+  fill: var(--m04player);
   fill-opacity: .15;
 }
 
 .M-05-player {
-  fill: var(--m01player);
+  fill: var(--m05player);
   fill-opacity: .15;
 }
 
 .M-06-player {
-  fill: var(--m01player);
+  fill: var(--m06player);
   fill-opacity: .30;
 }
 

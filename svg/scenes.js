@@ -308,7 +308,41 @@ let E09 = {
   	765.61,417.65 770.02,421.64 769.16,426 768.79,430.35 766.4,434.23 763.44,437.64 765.98,443.4 763.71,447.29 757.3,448.12
   	756.36,452.7 752.81,455.11 751.28,459.94 748.65,464.04 742.41,461.86 739.66,466.1 735.44,467.24 731.16,467.99 726.81,467.93
   	722.55,466.82 718.34,467.63 713.82,468.91 709.37,468.56 `,
-  player: ``,
+  player: `<rect id="player-background" class="M-02-player player-background" x="275.2175" y="0" width="510.2362" height="1090"/>
+  <text id="scene-time" transform="matrix(1 0 0 1 653.4347 832.8926)" class="time">– 00:00 / 00:00</text>
+  <line id="scene-timeline" class="timeline" x1="316.6664" y1="827.6698" x2="645.6664" y2="827.6698"/>
+  <line id="E-09-marker" class="marker" x1="316.6664" y1="817.4354" x2="316.6664" y2="838.5315"/>
+  <line id="E-09-timebar" class="timebar" x1="316.6664" y1="827.6698" x2="316.6664" y2="827.6698"/>
+
+  <g id="scene-button">
+  <polygon id="scene-play-button" class="play-button" points="288.7491,837.6646 288.7491,818.4154 288.7722,818.1977 288.8124,818.0322 288.8974,817.8534
+    289.0047,817.6834 289.1299,817.5403 289.2686,817.4375 289.4474,817.3301 289.6129,817.272 289.7873,817.2318
+    290.0109,817.2318 290.1943,817.2631 290.3955,817.3212 290.5967,817.4241 290.6614,817.456 303.3882,827.0895
+    303.4758,827.1639 303.5831,827.2846 303.6458,827.3561 303.6994,827.4366 303.7352,827.5082 303.771,827.5931
+    303.8022,827.6871 303.8336,827.7899 303.8514,827.8973 303.8649,828.0046 303.8559,828.1343 303.838,828.2729 303.7978,828.416
+    303.7441,828.5412 303.6949,828.6575 303.6368,828.7424 303.5429,828.8542 303.4445,828.9392 303.3882,828.989
+    290.6614,838.5947 290.5297,838.6835 290.4089,838.7461 290.2703,838.8042 290.1317,838.8311 289.9841,838.8534
+    289.7828,838.8489 289.5637,838.7953 289.3446,838.7014 289.1613,838.5672 289.0316,838.4375 288.9287,838.2989
+    288.8482,838.1424 288.7901,838.0037 288.7498,837.8293 			"/>
+  <rect class="invisible" x="288.5896" y="817.2706" width="15px" height="20px"></rect>
+  <g id="scene-pause-button" class="pause-button">
+    <line x1="288.5896" y1="817.2706" x2="288.5896" y2="838.3668"/>
+    <line x1="301.7145" y1="817.2706" x2="301.7145" y2="838.3668"/>
+  </g>
+  </g>
+
+  <text class="player-regular" transform="matrix(1 0 0 1 314.6604 663.2512)">
+    <tspan id="scene-name" x="0" y="0" class="player-bold">scene name</tspan>
+    <tspan id="scene-character" x="0" y="48" class="player-bold">character name</tspan>
+    <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
+    <tspan id="scene-group" x="0" y="96">character group</tspan>
+    <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+  </text>
+
+  <text transform="matrix(1 0 0 1 314.6604 104.5148)" class="player-description">
+    <tspan x="0" y="0" class="player-bold">FINANZAS</tspan>
+  <tspan x="0" y="51">Excombatientes de las guerrillas expusieron </tspan><tspan x="0" y="78">las diversas estrategias de financiación que </tspan><tspan x="0" y="105">desde los años 60 desarrollaron estas </tspan><tspan x="0" y="132">organizaciones y cómo los momentos </tspan><tspan x="0" y="159">políticos y las dinámicas de la guerra </tspan><tspan x="0" y="186">afectaron los enfoques de sus actividades. </tspan><tspan x="0" y="213">Por su parte, la forma de financiación de las </tspan><tspan x="0" y="240">autodefensas tuvo un enfoque regional y </tspan><tspan x="0" y="267">diferenciado en cada uno de los bloques, el </tspan><tspan x="0" y="294">cual fue cambiando en cada etapa de su </tspan><tspan x="0" y="321">desarrollo, siempre respondiendo a la </tspan><tspan x="0" y="348">dinámica no centralizada de esta </tspan><tspan x="0" y="375">organización. Hubo un reconocimiento </tspan><tspan x="0" y="402">común sobre la degradación de la guerra a </tspan><tspan x="0" y="429">causa de la relación con el narcotráfico y </tspan><tspan x="0" y="456">demás economías ilegales. </tspan>
+  </text>`,
 }
 let E10 = {
   node: `909.4315,237.663
@@ -535,7 +569,43 @@ let E17 = {
   	485.7497,906.3815 485.4576,908.7376 483.0738,910.1923 483.7796,913.1913 480.7708,913.9377 481.4112,917.4604 479.8807,919.4127
   	477.4271,920.2804 475.1749,921.1876 473.5975,923.2449 470.7862,922.7567 468.1197,921.7906 466.1944,922.9825 464.3185,926.0965
   	461.8695,925.486 459.4577,925.8327 457.0894,925.3604 454.8227,924.5533 `,
-  player: ``,
+    player: `
+    <rect id="player-background" class="M-02-player player-background" x="185.2175" y="0" width="510.2362" height="1090"/>
+    <text id="scene-time" transform="matrix(1 0 0 1 563.4347 782.8926)" class="time">– 00:00 / 00:00</text>
+    <line id="scene-timeline" class="timeline" x1="226.6664" y1="777.6698" x2="555.6664" y2="777.6698"/>
+    <line id="E-17-marker" class="marker" x1="226.6664" y1="767.4354" x2="226.6664" y2="788.5315"/>
+    <line id="E-17-timebar" class="timebar" x1="226.6664" y1="777.6698" x2="226.6664" y2="777.6698"/>
+
+    <g id="scene-button">
+    <polygon id="scene-play-button" class="play-button" points="198.7491,787.6646 198.7491,768.4154 198.7722,768.1977 198.8125,768.0322 198.8974,767.8534
+      199.0047,767.6834 199.13,767.5403 199.2686,767.4375 199.4475,767.3301 199.6129,767.272 199.7873,767.2318 200.0109,767.2318
+      200.1943,767.2631 200.3955,767.3212 200.5967,767.4241 200.6614,767.456 213.3882,777.0895 213.4758,777.1639
+      213.5831,777.2846 213.6457,777.3561 213.6994,777.4366 213.7352,777.5082 213.771,777.5931 213.8023,777.6871
+      213.8336,777.7899 213.8514,777.8973 213.8649,778.0046 213.8559,778.1343 213.838,778.2729 213.7978,778.416 213.7441,778.5412
+      213.6949,778.6575 213.6368,778.7424 213.5429,778.8542 213.4445,778.9392 213.3882,778.989 200.6614,788.5947
+      200.5297,788.6835 200.4089,788.7461 200.2703,788.8042 200.1317,788.8311 199.9841,788.8534 199.7829,788.8489
+      199.5637,788.7953 199.3446,788.7014 199.1613,788.5672 199.0316,788.4375 198.9287,788.2989 198.8482,788.1424
+      198.7901,788.0037 198.7498,787.8293 			"/>
+    <rect class="invisible" x="198.5896" y="767.2706" width="15px" height="20px"></rect>
+    <g id="scene-pause-button" class="pause-button">
+      <line x1="198.5896" y1="767.2706" x2="198.5896" y2="788.3668"/>
+      <line x1="211.7145" y1="767.2706" x2="211.7145" y2="788.3668"/>
+    </g>
+    </g>
+
+    <text class="player-regular" transform="matrix(1 0 0 1 224.6604 613.2512)">
+      <tspan id="scene-name" x="0" y="0" class="player-bold">scene name</tspan>
+      <tspan id="scene-character" x="0" y="48" class="player-bold">character name</tspan>
+      <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
+      <tspan id="scene-group" x="0" y="96">character group</tspan>
+      <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+    </text>
+
+    <text transform="matrix(1 0 0 1 224.6604 104.5148)" class="player-description">
+      <tspan x="0" y="0" class="player-bold">FINANZAS</tspan>
+      <tspan x="0" y="51">Excombatientes de las guerrillas expusieron las </tspan><tspan x="0" y="78">diversas estrategias de financiación que desde </tspan><tspan x="0" y="105">los años 60 desarrollaron estas organizaciones y </tspan><tspan x="0" y="132">cómo los momentos políticos y las dinámicas de </tspan><tspan x="0" y="159">la guerra afectaron los enfoques de sus </tspan><tspan x="0" y="186">actividades. Por su parte, la forma de financiación </tspan><tspan x="0" y="213">de las autodefensas tuvo un enfoque regional y </tspan><tspan x="0" y="240">diferenciado en cada uno de los bloques, el cual </tspan><tspan x="0" y="267">fue cambiando en cada etapa de su desarrollo, </tspan><tspan x="0" y="294">siempre respondiendo a la dinámica no </tspan><tspan x="0" y="321">centralizada de esta organización. Hubo un </tspan><tspan x="0" y="348">reconocimiento común sobre la degradación de la </tspan><tspan x="0" y="375">guerra a causa de la relación con el narcotráfico y </tspan><tspan x="0" y="402">demás economías ilegales. </tspan>
+    </text>
+    `,
 }
 let E18 = {
   node: `398.6001,702.7811
@@ -833,7 +903,44 @@ let E25 = {
   	131.9132,707.8827 134.2501,705.4067 136.8624,703.4338 137.2695,699.4818 141.0051,698.9509 142.7114,695.5513 146.4713,696.1359
   	149.6984,696.6503 152.5632,696.1814 155.4469,696.5233 158.7453,695.0876 161.016,697.8755 165.1942,696.3687 166.8999,699.5657
   	170.3158,700.5662 `,
-  player: ``,
+    player: `
+    <rect id="player-background" class="M-02-player player-background" x="85.2175" y="0" width="510.2362" height="1090"/>
+    <text id="scene-time" transform="matrix(1 0 0 1 463.4347 962.8926)" class="time">– 00:00:00</text>
+    <line id="scene-timeline" class="timeline" x1="126.6664" y1="957.6698" x2="455.6664" y2="957.6698"/>
+    <line id="E-25-marker" class="marker" x1="126.6664" y1="947.4354" x2="126.6664" y2="968.5315"/>
+    <line id="E-25-timebar" class="timebar" x1="126.6664" y1="957.6698" x2="126.6664" y2="957.6698"/>
+
+    <g id="scene-button">
+    <polygon id="scene-play-button" class="play-button" points="98.7491,967.6646 98.7491,948.4154 98.7722,948.1977 98.8124,948.0322 98.8974,947.8534
+      99.0047,947.6834 99.13,947.5403 99.2686,947.4375 99.4475,947.3301 99.6129,947.272 99.7873,947.2318 100.0109,947.2318
+      100.1943,947.2631 100.3955,947.3212 100.5967,947.4241 100.6614,947.456 113.3882,957.0895 113.4758,957.1639
+      113.5831,957.2846 113.6457,957.3561 113.6994,957.4366 113.7352,957.5082 113.771,957.5931 113.8023,957.6871
+      113.8336,957.7899 113.8514,957.8973 113.8649,958.0046 113.8559,958.1343 113.838,958.2729 113.7978,958.416 113.7441,958.5412
+      113.6949,958.6575 113.6368,958.7424 113.5429,958.8542 113.4445,958.9392 113.3882,958.989 100.6614,968.5947
+      100.5297,968.6835 100.4089,968.7461 100.2703,968.8042 100.1317,968.8311 99.9841,968.8534 99.7829,968.8489 99.5637,968.7953
+      99.3446,968.7014 99.1613,968.5672 99.0316,968.4375 98.9287,968.2989 98.8482,968.1424 98.7901,968.0037 98.7498,967.8293
+    "/>
+    <rect class="invisible" x="98.5896" y="947.2706" width="15px" height="20px"></rect>
+    <g id="scene-pause-button" class="pause-button">
+      <line x1="98.5896" y1="947.2706" x2="98.5896" y2="968.3668"/>
+      <line x1="111.7145" y1="947.2706" x2="111.7145" y2="968.3668"/>
+    </g>
+    </g>
+
+    <text class="player-regular" transform="matrix(1 0 0 1 124.6604 793.2512)">
+      <tspan id="scene-name" x="0" y="0" class="player-bold">scene name</tspan>
+      <tspan id="scene-character" x="0" y="48" class="player-bold">character name</tspan>
+      <tspan id="scene-alias" x="0" y="72">Alias Lorem Ipsum</tspan>
+      <tspan id="scene-group" x="0" y="96">character group</tspan>
+      <tspan id="scene-group-overflow" x="0" y="120"></tspan>
+    </text>
+
+    <text transform="matrix(1 0 0 1 124.6604 104.5148)" class="player-description">
+      <tspan x="0" y="0" class="player-bold">FINANZAS</tspan>
+      <tspan x="0" y="51" >Excombatientes de las guerrillas expusieron </tspan><tspan x="0" y="78" >las diversas estrategias de financiación que </tspan><tspan x="0" y="105" >desde los años 60 desarrollaron estas </tspan><tspan x="0" y="132" >organizaciones y cómo los momentos </tspan><tspan x="0" y="159" >políticos y las dinámicas de la guerra </tspan><tspan x="0" y="186" >afectaron los enfoques de sus actividades. </tspan><tspan x="0" y="213" >Por su parte, la forma de financiación de las </tspan><tspan x="0" y="240" >autodefensas tuvo un enfoque regional y </tspan><tspan x="0" y="267" >diferenciado en cada uno de los bloques, el </tspan><tspan x="0" y="294" >cual fue cambiando en cada etapa de su </tspan><tspan x="0" y="321" >desarrollo, siempre respondiendo a la </tspan><tspan x="0" y="348" >dinámica no centralizada de esta </tspan><tspan x="0" y="375" >organización. Hubo un reconocimiento </tspan><tspan x="0" y="402" >común sobre la degradación de la guerra a </tspan><tspan x="0" y="429" >causa de la relación con el narcotráfico y </tspan><tspan x="0" y="456" >demás economías ilegales. </tspan>
+    </text>
+
+    `,
 }
 /*let E26 = {
   node: `262.7819,215.2753

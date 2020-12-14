@@ -25,7 +25,7 @@ class TooltipPlayer {
     audioElement.id = `tooltip-audio`;
     audioElement.preload = 'auto';
     audioElement.currentTime = 0;
-    audioElement.src = `../audios/${this.id}.mp3`;
+    audioElement.src = `../audios/${this.id}.wav`;
     audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
     audioElement.addEventListener('ended', () => {this.hideTooltip(this.id)});
     document.body.appendChild(audioElement);
