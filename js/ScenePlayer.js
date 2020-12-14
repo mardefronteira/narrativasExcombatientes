@@ -17,7 +17,7 @@ class ScenePlayer {
   display() {
     // get details of the element that was clicked
     let target = data[ `${this.type}s` ].find( target => target[ 'id' ] === this.id );
-    console.log(this.scene);
+    // console.log(this.scene);
     // create SVG player object
     let gElement = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     gElement.id = this.playerId;
@@ -67,7 +67,7 @@ class ScenePlayer {
     document.getElementById('scene-group').innerHTML = '';
     document.getElementById('scene-alias').innerHTML = '';
 
-    document.getElementById(`scene-time`).innerHTML = `– 00:00 / ${this.scene.duration.slice(3)}`
+    document.getElementById(`scene-time`).innerHTML = `– 00:00 / ${this.scene.duration}`
 
     // set background color
     document.getElementById('player-background').setAttribute("fill", this.playerColor);
@@ -79,7 +79,6 @@ class ScenePlayer {
     // audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
 
     this.frame = data['frames'].find(frame => frame.scenes.includes(this.id));
-    console.log(this.frame)
     if (this.frame.id === 'M-06'){
       console.log('adicionou')
       document.querySelector(`#${this.id}-guide-button`).addEventListener('click', openGuide);
@@ -202,7 +201,7 @@ class ScenePlayer {
       }
       // update time
       let timeString = document.getElementById(`scene-time`);
-      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.scene.duration.slice(3)}`
+      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.scene.duration}`
         // update text
         let character = document.getElementById(`scene-character`);
         let group = document.getElementById(`scene-group`);

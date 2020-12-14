@@ -684,6 +684,7 @@ cursor: pointer;
 
 .time {
   fill:#252526;
+  letter-spacing: 1px;
   font-size:15px;
 }
 
