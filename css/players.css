@@ -1,0 +1,28 @@
+/* M-06 classes */
+
+div#M-06-div {
+  padding: 30vh 3vw;
+  height: 620px;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+.player-title {
+  font-size: 51px;
+  font-family:"Playfair Display SemiBold", serif;
+  color: #1d1d1b;
+  letter-spacing: 1px;
+}
+
+.player-paragraph {
+  color: #1d1d1b;
+  font-size: 23px;
+}
+
+.player-video {
+  width:100%;
+}
+
+video#M-06-final {
+padding-bottom: 300px;
+}

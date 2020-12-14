@@ -16,7 +16,110 @@ let E01 = {
   	1089.4373,862.7977 1083.8872,863.6868 1084.0358,868.39 1079.2314,869.1704 1078.7925,873.8533 1077.6599,878.337
   	1074.5288,880.7341 1067.8401,877.67 1067.6552,884.5436 1065.095,888.2419 1061.4182,889.931 1057.6492,891.4196
   	1053.566,891.7985 `,
-  player: ``,
+  player: `<rect id="player-background" class="player-background M-06-player" x="188.9468" y="4.6318" class="st4" width="744.1998" height="1090"/>
+  <foreignObject x="188.9468" y="4.6318" class="st4" width="744.1998" height="1090">
+    <div id="M-06-div">
+      <video src="./video/M-06-initial.mp4" class="player-video" autoplay controls></video>
+      <h2 class="player-title">
+        Declaración por la vida, la Paz y la Reconciliación
+      </h2>
+      <p class="player-paragraph">
+        Por invitación de la Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No repetición, que actuó como orientadora y testigo; gracias a la gestión de ABCPAZ, y el apoyo y acompañamiento técnico del Centro Internacional de Justicia Transicional-ICTJ, nos reunimos en la Mesa de Trabajo: “Narrativas de Excombatientes”, que realizó sesiones mensuales en Bogotá, entre febrero y noviembre del presente año.
+      </p>
+      <p class="player-paragraph">
+        Somos mujeres y hombres que alguna vez empuñamos las armas, porque creíamos que eran la alternativa para defender determinados ideales y propósitos, y que ahora coincidimos en un compromiso serio con la solución política del conflicto armado y la construcción de la paz con justicia social. Asistimos a este ejercicio exintegrantes del Ejército de Liberación Nacional (ELN); ELN Replanteamiento; Ejército Popular de Liberación (EPL); Movimiento 19 de Abril (M19); Corriente de Renovación Socialista (CRS); Partido Revolucionario de los Trabajadores (PRT); Fuerzas Armadas Revolucionarias de Colombia-Ejército del Pueblo (FARC-EP) y las Autodefensas Unidas de Colombia (AUC).
+      </p>
+      <p class="player-paragraph">
+        Nuestro método de trabajo en la Mesa consistió en resolver individual y colectivamente, interrogantes en torno a asuntos relativos a la guerra y los contextos de violencia que produjeron impactos en las comunidades y los territorios, sobre los cuales intercambiamos opiniones y posiciones en sesiones plenarias, con el propósito de compartir experiencias, reflexionar y valorar lo vivido. Así mismo exploramos las diversas experiencias del tránsito a la paz y sus múltiples lecciones.
+      </p>
+      <p class="player-paragraph">
+        Es la primera vez en Colombia que se realiza un trabajo conjunto, un encuentro no episódico entre actores que estuvimos en vertientes armadas confrontadas, desde las orillas de la insurgencia y la contrainsurgencia. Del apretón de manos distante que inauguró las actividades, pasamos a escucharnos, a discutir algunas veces con vehemencia, hasta llegar a descubrir circunstancias coincidentes, lógicas recurrentes, esfuerzos y dolores padecidos, así como reconocer los altos costos, el drama y el horror derivados de la guerra. Despojados de las armas, entendimos la posibilidad histórica que se nos presentaba con este empeño, que estamos seguros puede tributar con creces al logro de la paz y la reconciliación.
+      </p>
+      <p class="player-paragraph">
+        El resultado de este ejercicio ha sido el de entregar a la Comisión de la Verdad un documento con informaciones, criterios, consideraciones y balances críticos importantes para coadyuvar al esclarecimiento de la verdad, la convivencia y las garantías de no repetición.
+      </p>
+      <p class="player-paragraph">
+        Las insurgencias que pactaron la paz en los años 90 pusieron de presente su contribución a la Asamblea Nacional Constituyente, la Constitución Política de 1991 y sus consiguientes dinámicas de democratización, pero dejaron constancia de las dificultades en la aplicación de los acuerdos y las falencias en garantías de seguridad, en medio de graves ataques sufridos por la población excombatiente y sus entornos. El Estado colombiano se mostró incapaz de consolidar la paz en las regiones controladas anteriormente por la insurgencia, permitiendo la prolongación en ellas de otras dinámicas de guerra, y lo que es más grave, desmontó mediante posteriores reformas constitucionales, varios de los aspectos más avanzados consagrados por el Constituyente de 1991.
+      </p>
+      <p class="player-paragraph">
+        Las antiguas AUC pusieron de presente el incumplimiento estatal en el Acuerdo de Paz convenido para su tránsito a la vida civil, destacando por una parte la ausencia de garantías de protección a la vida, lo que se tradujo en miles de asesinatos de excombatientes y familiares, y por otra la falta de garantías jurídicas que permitieron la extradición de muchos de sus dirigentes en clara violación a lo pactado, y la presente ausencia de derechos ciudadanos plenos para los desmovilizados. No obstante, reivindicaron el marco legal adoptado para su desmovilización, el cual posibilitó el inicio en nuestro país del mecanismo universal de la justicia transicional, orientada a priorizar los derechos de las víctimas. Las leyes 975/2005, 1424/2010 y 1592/2012 y su decreto reglamentario 3011, así como sus desarrollos, permitieron entregar importantes contribuciones a la verdad, que incomprensiblemente no han tenido, frente a determinados responsables del conflicto, la necesaria intervención de la justicia.
+      </p>
+      <p class="player-paragraph">
+        El Acuerdo de Paz con las FARC-EP generó una posibilidad histórica decisiva para avanzar en la construcción de la paz en Colombia, sobre la base de que en una unión de voluntades, Estado, los actores armados, el conjunto de la nación y la comunidad internacional lograrían su implementación integral. Lamentablemente los gobiernos que se han encargado de hacerlos efectivos no han actuado como se espera por la sociedad. Están pendientes de su aplicación efectiva la Reforma Rural Integral, las reformas política y electoral y las 16 Circunscripciones Transitorias Especiales de Paz. Si bien se avanzó con la expedición del Estatuto de la Oposición, el reconocimiento al partido FARC y su acceso al Congreso, no se cristalizan las garantías pactadas, de manera que se acrecientan los asesinatos sistemáticos de líderes sociales y excombatientes. La implementación de los Planes de Desarrollo con Enfoque Territorial (PDET), del Programa Integral de Sustitución de Cultivo de uso ilícito, (PNIS) y del programa de reincorporación de la población excombatiente, se ven afectados por la lentitud en la gestión y la desfinanciación.
+      </p>
+      <p class="player-paragraph">
+        El Sistema Integral de Verdad, Justicia, Reparación y No Repetición ocupa un lugar fundamental en los acuerdos, orientados por el principio de centralidad de las víctimas del conflicto. Las instituciones que lo conforman, la Jurisdicción Especial para la Paz, la Comisión de la Verdad y la Unidad de Búsqueda de Personas dadas por Desaparecidas, apuntan al reconocimiento de la verdad y la responsabilidad por parte de todos los actores del conflicto, así como a la satisfacción de los derechos de las víctimas, superando las condiciones de impunidad imperantes en la justicia. Animamos al país a rodear este sistema integral para hacerlo realidad.
+      </p>
+      <p class="player-paragraph">
+        Acordamos culminar este ejercicio de narrativas en diálogo, con la entrega pública de las siguientes consideraciones y compromisos:
+      </p>
+      <p class="player-paragraph">
+        Primero.
+      </p>
+      <p class="player-paragraph">
+        Los Acuerdos de Paz son procesos sociales y políticos que han sido incorporados a la Constitución Política desde 1991 y a sus positivos desarrollos, como garantía para una paz estable y duradera. Dejaron de ser un pacto celebrado entre el Estado y diferentes organizaciones alzadas en armas, para convertirse en patrimonio del pueblo colombiano, que ha hecho de su defensa y de la lucha por su implementación, banderas esenciales hacia la solución de sus más graves problemas.
+      </p>
+      <p class="player-paragraph">
+        Segundo.
+      </p>
+      <p class="player-paragraph">
+        Nuestro compromiso con la paz de Colombia significa un Nunca Más a la guerra y un rechazo a la violencia como forma de acción política. Recogemos el llamado del punto 3.4 del Acuerdo Final de La Habana, sobre un pacto nacional para sacar definitivamente las armas y la violencia de la política.
+      </p>
+      <p class="player-paragraph">
+        Tercero.
+      </p>
+      <p class="player-paragraph">
+        Hemos cumplido y seguiremos cumpliendo con nuestra parte de los Acuerdos. Convocamos al Estado colombiano y a sus gobiernos a cumplir fiel e integralmente con los Acuerdos de Paz, con el deber de protección a la población que dejó las armas, trátese de antiguos insurgentes o autodefensa, con el derecho a la vida y la estabilidad jurídica para los reincorporados y desmovilizados, con el marco de garantías requerido por todas las expresiones políticas, sociales y ciudadanas orientadas a la construcción de la paz.
+      </p>
+      <p class="player-paragraph">
+        Cuarto.
+      </p>
+      <p class="player-paragraph">
+        Condenamos el asesinato sistemático y continuado de líderes y lideresas sociales, dirigentes de procesos de restitución de tierras, activistas medioambientales, líderes comunitarios, étnicos, defensores de derechos humanos y excombatientes. Esta espiral de violencia constituye una flagrante violación de los Acuerdos de Paz por parte de las instituciones del Estado, que se comprometieron a rodear de garantías la vida, la integridad, la libertad física y el ejercicio pleno de la actividad política y la protesta social, no solo a quienes dejaron las armas sino al conjunto de movimientos y organizaciones sociales y políticas. La vida es sagrada. Exigimos el esclarecimiento y castigo para todos y cada uno de esos crímenes. Sólo así podremos vivir en una nación en paz y democracia.
+      </p>
+      <p class="player-paragraph">
+        Quinto.
+      </p>
+      <p class="player-paragraph">
+        Rechazamos la posición asumida por los sectores que siempre han trabajado por hacer trizas los Acuerdos de Paz, en aplicación de la vieja práctica estatal de incumplir la palabra comprometida. Nos apartamos de quienes insisten en persistir alzados en armas y de quienes tomaron la decisión de volver a ellas. El sufrimiento de un pueblo que ha puesto más de ocho millones de víctimas en una guerra fratricida de más de medio siglo y sin futuro, basta para indicar que ese ya no es el camino. Las grandes transformaciones que reclama la Nación colombiana sólo podrán obtenerse con la consciencia y la organización de su pueblo. Para los exintegrantes de las AUC, recurrir a su nombre y logotipo con el fin de lanzar ante el país una proclama de guerra, no corresponde al sentir del gran universo de sus desmovilizados. En conjunto desaprobamos cualquier manifestación, provenga de donde proviniere, que se constituya en una amenaza para la paz. Apoyamos y llamamos a seguir el ejemplo de la gran mayoría de quienes han suscrito Acuerdos de Paz y los honran.
+      </p>
+      <p class="player-paragraph">
+        Sexto.
+      </p>
+      <p class="player-paragraph">
+        Invitamos al gobierno nacional a cumplir con su obligación constitucional de conseguir la paz, con el fin de avanzar hacia una paz completa y duradera. Esperamos del ELN y otras organizaciones alzadas en armas un alto en el camino de la violencia, una actitud positiva que facilite tejer la solución política. Valoramos altamente el papel de la comunidad internacional, entidades y Estados, a favor de los procesos de paz en Colombia e instamos a que se preserven, respeten y garanticen sus valiosos apoyos.
+      </p>
+      <p class="player-paragraph">
+        Séptimo.
+      </p>
+      <p class="player-paragraph">
+        Estamos convencidos de que el narcotráfico sigue siendo un grave generador de violencia en nuestro país, pero a la vez nos identificamos con la idea de que la llamada guerra contra las drogas no es el camino para solucionarlo. Los distintos Acuerdos de Paz contemplaron una salida justa al problema. Instamos al Estado colombiano a adoptar alternativas viables de naturaleza política y jurídica para lograr el acogimiento a la legalidad de los grupos armados que persisten en actividades ilegales.
+      </p>
+      <p class="player-paragraph">
+        Octavo.
+      </p>
+      <p class="player-paragraph">
+        Invitamos a la sociedad colombiana a reafirmar como suyo y a trabajar las condiciones para el éxito de los procesos de paz en curso, lo cual pasa por el apoyo activo a la implementación integral de todos los Acuerdos. Es tarea de las partes del conflicto bélico poner punto final a la guerra, pero es tarea del Estado, los gobiernos y el conjunto de la sociedad construir la paz y garantizar la justicia social. Llamamos a los medios de comunicación a desempeñar un papel decisivo en favor de la paz, sumándose con su enorme influencia al anhelo del pueblo colombiano por la reconciliación y la convivencia pacífica.
+      </p>
+      <p class="player-paragraph">
+        Noveno.
+      </p>
+      <p class="player-paragraph">
+        Reiteramos nuestra disposición a participar conjuntamente en espacios de reconciliación regionales con las víctimas y las comunidades en los territorios del conflicto, a seguir contribuyendo al esclarecimiento de la verdad, la reparación de las víctimas, el logro de las garantías de no repetición, el perdón, la aclimatación de la convivencia y la reconciliación. Todos estos propósitos los entendemos necesarios en el marco de la más amplia movilización social por la construcción colectiva de la paz.
+      </p>
+      <p class="player-paragraph">
+        Bogotá, 15 de noviembre de 2019
+      </p>
+      <p class="player-paragraph">
+        EXINTEGRANTES DE LAS GUERRILLAS Y LAS AUTODEFENSAS UNIDAS DE COLOMBIA
+      </p>
+      <p class="player-paragraph">
+        Firmas
+      </p>
+      <video id="M-06-final" src="./video/M-06-final.mp4" class="player-video" controls></video>
+    </div>
+  </foreignObject>
+`,
 }
 /*let E02 = {
   node: `983.2679,1012.4481

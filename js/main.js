@@ -63,6 +63,11 @@ d3.select( '#background' )
     somethingIsActive = false;
 
     console.log("background click")
+
+    let homeAudio = document.querySelector('#home-audio')
+    homeAudio.play();
+    homeAudio.currentTime = 0;
+
   } );
 
   let firstRestart = true;
@@ -1030,9 +1035,9 @@ function show_elements() {
     // show player
     addPlayer(click.id, click.type);
 
-    // stop home audio
+    //stop home audio
     // document.querySelector('#home-audio').pause();
-  // }
+
 }
 
 function mapValue(baseVal, minInput, maxInput, minOutput, maxOutput) {

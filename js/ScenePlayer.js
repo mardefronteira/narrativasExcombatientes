@@ -23,65 +23,67 @@ class ScenePlayer {
     gElement.id = this.playerId;
     gElement.innerHTML = this.playerSVG;
     gElement.classList.add('player');
-
-    // create audio elements
-    let audioElement = document.createElement('AUDIO');
-    audioElement.id = this.audioId;
-    audioElement.preload = 'auto';
-    audioElement.currentTime = 0;
-    if ( target[ 'audio' ] !== undefined && target[ 'audio' ] !== '' ) {
-      audioElement.src = `./audios/${target['audio']}`;
-    }
-
-    // add elements to DOM
     document.querySelector('#players').appendChild(gElement);
-    document.body.appendChild(audioElement);
 
-    // get play buttons and set click event
-    document.getElementById(`scene-button`)
-      .addEventListener('click', (e) => {this.playPause(e)});
+    if (this.id !== "E-01") {
+      // create audio elements
+      let audioElement = document.createElement('AUDIO');
+      audioElement.id = this.audioId;
+      audioElement.preload = 'auto';
+      audioElement.currentTime = 0;
+      if ( target[ 'audio' ] !== undefined && target[ 'audio' ] !== '' ) {
+        audioElement.src = `./audios/${target['audio']}`;
+      }
 
-    // create timeline clickable area
-    this.clickable = this.getClickableArea(this.type); // get coordinates
+      // add elements to DOM
+      document.body.appendChild(audioElement);
 
-    let clickableArea = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-    clickableArea.setAttribute("id", `${this.type}-clickable`)
-    clickableArea.setAttribute("x", this.clickable.x);
-    clickableArea.setAttribute("y", this.clickable.y);
-    clickableArea.setAttribute("width", this.clickable.w);
-    clickableArea.setAttribute("height", this.clickable.h);
-    clickableArea.classList.add('clickable');
-    clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
-    clickableArea.addEventListener('click', e => {this.setTime(e)});
-    gElement.appendChild(clickableArea);
+      // get play buttons and set click event
+      document.getElementById(`scene-button`)
+        .addEventListener('click', (e) => {this.playPause(e)});
 
-    this.timecodes = data['audios'].filter( relation => relation['scene'] === this.id);
+      // create timeline clickable area
+      this.clickable = this.getClickableArea(this.type); // get coordinates
 
-    // populate this.characters array with their info
-    this.characters = this.getCharacters();
+      let clickableArea = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      clickableArea.setAttribute("id", `${this.type}-clickable`)
+      clickableArea.setAttribute("x", this.clickable.x);
+      clickableArea.setAttribute("y", this.clickable.y);
+      clickableArea.setAttribute("width", this.clickable.w);
+      clickableArea.setAttribute("height", this.clickable.h);
+      clickableArea.classList.add('clickable');
+      clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
+      clickableArea.addEventListener('click', e => {this.setTime(e)});
+      gElement.appendChild(clickableArea);
 
-    // set scene name, clear characters, set initial time
-    let name = document.getElementById('scene-name')
-    name.innerHTML = data['scenes'].filter(scene => scene['id'] === this.id)[0].scene;
-    document.getElementById('scene-character').innerHTML = '';
-    document.getElementById('scene-group').innerHTML = '';
-    document.getElementById('scene-alias').innerHTML = '';
+      this.timecodes = data['audios'].filter( relation => relation['scene'] === this.id);
 
-    document.getElementById(`scene-time`).innerHTML = `– 00:00 / ${this.scene.duration}`
+      // populate this.characters array with their info
+      this.characters = this.getCharacters();
 
-    // set background color
-    document.getElementById('player-background').setAttribute("fill", this.playerColor);
+      // set scene name, clear characters, set initial time
+      let name = document.getElementById('scene-name')
+      name.innerHTML = data['scenes'].filter(scene => scene['id'] === this.id)[0].scene;
+      document.getElementById('scene-character').innerHTML = '';
+      document.getElementById('scene-group').innerHTML = '';
+      document.getElementById('scene-alias').innerHTML = '';
 
-    // hide pause button
-    document.getElementById('scene-pause-button').classList.add('hidden');
+      document.getElementById(`scene-time`).innerHTML = `– 00:00 / ${this.scene.duration}`
 
-    audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
-    // audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
+      // set background color
+      document.getElementById('player-background').setAttribute("fill", this.playerColor);
 
-    this.frame = data['frames'].find(frame => frame.scenes.includes(this.id));
-    if (this.frame.id === 'M-06'){
-      console.log('adicionou')
-      document.querySelector(`#${this.id}-guide-button`).addEventListener('click', openGuide);
+      // hide pause button
+      document.getElementById('scene-pause-button').classList.add('hidden');
+
+      audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
+      // audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
+
+      this.frame = data['frames'].find(frame => frame.scenes.includes(this.id));
+      if (this.frame.id === 'M-06'){
+        console.log('adicionou')
+        document.querySelector(`#${this.id}-guide-button`).addEventListener('click', openGuide);
+      }
     }
   }
 
@@ -147,11 +149,12 @@ class ScenePlayer {
 
   removeElements() {
     let targetPlayer = document.querySelector(`#scene-player`);
-    let targetAudio = document.querySelector(`#${this.audioId}`);
-
     targetPlayer.remove();
-    targetAudio.currentTime = 0;
-    targetAudio.remove();
+    if (this.id !== "E-01"){
+      let targetAudio = document.querySelector(`#${this.audioId}`);
+      targetAudio.currentTime = 0;
+      targetAudio.remove();
+    }
   }
 
   setTime(e) {
