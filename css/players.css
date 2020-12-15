@@ -1,10 +1,17 @@
 /* M-06 classes */
 
+foreignObject#M-06-container {
+  padding: 30vh 3vw;
+  /* overflow-y: auto; */
+  text-align: justify;
+  /* height: 100; */
+}
+
 div#M-06-div {
   padding: 30vh 3vw;
-  height: 620px;
   overflow-y: auto;
   text-align: justify;
+  height: 650px;
 }
 
 .player-title {
@@ -17,12 +24,23 @@ div#M-06-div {
 .player-paragraph {
   color: #1d1d1b;
   font-size: 23px;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .player-video {
   width:100%;
 }
 
-video#M-06-final {
-padding-bottom: 300px;
+.bold {
+  font-weight: bold;
 }
+
+video#M-06-final {
+ padding-bottom: 500px;
+}
+
+/* video#M-06-initial {
+padding-top: 300px;
+} */

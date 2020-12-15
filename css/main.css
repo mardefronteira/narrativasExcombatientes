@@ -430,9 +430,10 @@ video#video{
 .scene-name{
   fill: var(--darkGray);
   /*font-family: 'Heebo-SemiBold';*/
-  font-weight: 600;
+  font-weight: bold;
   visibility: hidden;
   font-size: 20px;
+  letter-spacing: 1px;
 }
 
 .group, .subgroup {

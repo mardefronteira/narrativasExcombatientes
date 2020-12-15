@@ -204,6 +204,7 @@ class ScenePlayer {
       }
       // update time
       let timeString = document.getElementById(`scene-time`);
+
       timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.scene.duration}`
         // update text
         let character = document.getElementById(`scene-character`);
@@ -237,6 +238,10 @@ class ScenePlayer {
           case "G-08":
             group.innerHTML = "FUERZAS ARMADAS REVOLUCIONARIAS DE ";
             groupOverflow.innerHTML = "COLOMBIA - EJÉRCITO DEL PUEBLO";
+            break;
+          case "G-10":
+            group.innerHTML = "COMISIÓN PARA EL ESCLARECIMIENTO DE LA VERDAD,";
+            groupOverflow.innerHTML = "LA CONVICENCIA Y LA NO REPETICIÓN";
             break;
           default:
             group.innerHTML = currentCharacter.groupName;
