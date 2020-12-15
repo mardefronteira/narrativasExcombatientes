@@ -113,9 +113,11 @@ let E01 = {
       <p class="player-paragraph">
         EXINTEGRANTES DE LAS GUERRILLAS Y LAS AUTODEFENSAS UNIDAS DE COLOMBIA
       </p>
-      <p class="player-paragraph">
+      <p class="player-bold">
         Firmas
       </p>
+      <img src="./img/M-06-signatures-1.jpg" alt="firmas de excombatientes">
+      <img src="./img/M-06-signatures-2.jpg" alt="firmas de excombatientes">
       <video id="M-06-final" src="./video/M-06-final.mp4" class="player-video" controls></video>
     </div>
   </foreignObject>
