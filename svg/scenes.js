@@ -575,7 +575,9 @@ let E11 = {
   	554.5316,832.7229 558.3535,830.3542 563.4995,833.5792 567.4265,833.349 571.5164,829.9184 575.3392,833.0563 579.9907,831.4601
   	584.0038,833.0274 587.1941,836.0624 590.1823,838.9775 592.4886,842.4213 597.1324,843.7524 599.223,847.4438 599.1323,852.0939
   	601.5278,855.4404 601.7627,859.5081 `,
-  player: `<rect id="player-background" class="M-03-player player-background" x="111.2175" y="0" width="510.2362" height="1090"/>
+  player: `
+  <g transform="matrix(1 0 0 1 472 0)">
+  <rect id="player-background" class="M-03-player player-background" x="111.2175" y="0" width="510.2362" height="1090"/>
   <text id="scene-time" transform="matrix(1 0 0 1 489.4347 772.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="152.6664" y1="767.6698" x2="481.6664" y2="767.6698"/>
   <line id="E-11-marker" class="marker" x1="152.6664" y1="757.4354" x2="152.6664" y2="778.5315"/>
@@ -609,7 +611,8 @@ let E11 = {
   <text transform="matrix(1 0 0 1 150.6604 104.5148)" class="player-description">
     <tspan x="0" y="0" class="player-bold">IMPACTOS</tspan>
     <tspan x="0" y="51">El conflicto armado interno en </tspan><tspan x="0" y="78">Colombia y la encrucijada de </tspan><tspan x="0" y="105">violencias protagonizadas por </tspan><tspan x="0" y="132">diferentes actores armados durante </tspan><tspan x="0" y="159">más de cincuenta años, ha generado </tspan><tspan x="0" y="186">fuertes impactos en el país. A través </tspan><tspan x="0" y="213">del diálogo, los participantes buscan </tspan><tspan x="0" y="240">aclarar los contextos y explicar las </tspan><tspan x="0" y="267">circunstancias que propiciaron estas </tspan><tspan x="0" y="294">afectaciones.</tspan>
-  </text>`,
+  </text>
+  </g>`,
 }
 let E12 = {
   node: `568.9958,636.3518
@@ -675,7 +678,9 @@ let E13 = {
   	587.9786,443.2921 588.0338,446.1353 585.8296,448.6731 584.5486,451.0164 586.6252,454.5739 584.7656,456.836 582.9617,458.9822
   	581.0881,460.9994 578.8829,462.6245 577.3575,465.2179 574.8986,466.6414 571.6309,465.8944 569.066,466.3466 566.5948,467.5058
   	563.9294,467.6154 561.0386,468.9252 `,
-  player: `<rect id="player-background" class="M-03-player player-background" x="95.2175" y="0" width="510.2362" height="1090"/>
+  player: `
+  <g transform="matrix(1 0 0 1 -50 0)">
+  <rect id="player-background" class="M-03-player player-background" x="95.2175" y="0" width="510.2362" height="1090"/>
   <text id="scene-time" transform="matrix(1 0 0 1 473.4347 732.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="136.6664" y1="727.6698" x2="465.6664" y2="727.6698"/>
   <line id="E-13-marker" class="marker" x1="136.6664" y1="717.4354" x2="136.6664" y2="738.5315"/>
@@ -711,6 +716,7 @@ let E13 = {
     <tspan x="0" y="0" class="player-bold">IMPACTOS</tspan>
     <tspan x="0" y="51">El conflicto armado interno en </tspan><tspan x="0" y="78">Colombia y la encrucijada de violencias </tspan><tspan x="0" y="105">protagonizadas por diferentes actores </tspan><tspan x="0" y="132">armados durante más de cincuenta </tspan><tspan x="0" y="159">años, ha generado fuertes impactos en </tspan><tspan x="0" y="186">el país. A través del diálogo, los </tspan><tspan x="0" y="213">participantes buscan aclarar los </tspan><tspan x="0" y="240">contextos y explicar las circunstancias </tspan><tspan x="0" y="267">que propiciaron estas afectaciones.</tspan>
   </text>
+  </g>
 `,
 }
 /*let E14 = {
@@ -971,7 +977,9 @@ let E20 = {
   	569.92,213.85 570.05,219.31 572.65,222.65 574.85,226.3 575.86,230.46 579.29,233.97 580.03,238.34 580.54,242.75 579.93,247.16
   	574.81,250.76 577.69,255.6 575.76,259.48 574.24,263.46 571.02,266.48 567.38,268.89 567.9,274.82 564.66,277.78 558.63,276.86
   	556.31,280.72 552.3,281.89 549.33,285.74 545.58,288.59 540.58,284.86 536.65,287.69 532.4,287.34 528.24,286.58 524.28,285.06 `,
-  player: `<rect id="player-background" class="M-03-player player-background" x="85.2175" y="0" width="510.2362" height="1090"/>
+  player: `
+  <g transform="matrix(1 0 0 1 500.4503 0)">
+  <rect id="player-background" class="M-03-player player-background" x="85.2175" y="0" width="510.2362" height="1090"/>
   <text id="scene-time" transform="matrix(1 0 0 1 463.4347 682.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="126.6664" y1="677.6698" x2="455.6664" y2="677.6698"/>
   <line id="E-20-marker" class="marker" x1="126.6664" y1="667.4354" x2="126.6664" y2="688.5315"/>
@@ -1005,7 +1013,8 @@ let E20 = {
   <text transform="matrix(1 0 0 1 124.6604 104.5148)" class="player-description">
     <tspan x="0" y="0" class="player-bold">IMPACTOS</tspan>
   <tspan x="0" y="51">El conflicto armado interno en </tspan><tspan x="0" y="78">Colombia y la encrucijada de violencias </tspan><tspan x="0" y="105">protagonizadas por diferentes actores </tspan><tspan x="0" y="132">armados durante más de cincuenta </tspan><tspan x="0" y="159">años, ha generado fuertes impactos en </tspan><tspan x="0" y="186">el país. A través del diálogo, los </tspan><tspan x="0" y="213">participantes buscan aclarar los </tspan><tspan x="0" y="240">contextos y explicar las circunstancias </tspan><tspan x="0" y="267">que propiciaron estas afectaciones.</tspan>
-  </text>`,
+  </text>
+  </g>`,
 }
 let E21 = {
   node: `339.3772,455.2575
