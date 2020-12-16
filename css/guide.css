@@ -92,7 +92,7 @@ a > i {
   padding-left: 1em;
 }
 
-img {
+.guide-img {
 	width: 100%;
 	height: auto;
 }

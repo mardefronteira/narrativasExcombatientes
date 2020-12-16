@@ -67,8 +67,8 @@ function showNarratives() {
 
   // start sound
   let homeAudio = document.querySelector('#home-audio');
-  homeAudio.currentTime = 0;
   homeAudio.play();
+  homeAudio.currentTime = 0;
   // homeAudio.currentTime === 0 ? homeAudio.play() : '';
 }
 
@@ -98,7 +98,7 @@ function showCredits() {
 
 function init() {
   document.querySelector('#credits-node').addEventListener('click', showCredits)
-  document.querySelector('#guide-node').addEventListener('click', openGuide);
+  document.querySelector('#guide-node').addEventListener('click', () => {showNarratives(); openGuide();});
   document.querySelector('#intro-node').addEventListener('click', showVideo);
   document.querySelector('#intro-label').addEventListener('click', showVideo);
   document.querySelector('#menu-logo').addEventListener('click', showIntroPage);
@@ -106,12 +106,12 @@ function init() {
   document.querySelector('#narratives-label').addEventListener('click', showNarratives);
 
   btnInfo.on('click', showVideo);
-  btnClose.on('click', showNarratives);
+  btnClose.on('click', hideVideo);
   menuTitle.on('click', showContentInfo);
   // btnActiveSound.on('click', playVideo);
   btnCloseMenu.on('click', showContentInfo);
 
-  video.bind('ended', showNarratives);
+  video.bind('ended', hideVideo);
 
   // create home audio
   let audioElement = document.createElement('AUDIO');

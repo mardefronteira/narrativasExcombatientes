@@ -9,15 +9,15 @@ let guide1 =  `<div class="row">
 	</div>
 </div>
 <div class="row">
-	<img src="img/guide/M19/apertura-diálogo-1.jpg" alt="">
+	<img class="guide-img" src="img/guide/M19/apertura-diálogo-1.jpg" alt="">
 </div>
 <div class="row">
 	<div class="img-col col">
-		<img src="img/guide/M19/apertura-diálogo-3.jpg" alt="">
-		<img src="img/guide/M19/apertura-diálogo-4.jpg" alt="">
-		<img src="img/guide/M19/oligarquía-1.jpg" alt="">
-		<img src="img/guide/M19/oligarquía-2.png" alt="">
-		<img src="img/guide/M19/oligarquía-3.jpg" alt="">
+		<img class="guide-img" src="img/guide/M19/apertura-diálogo-3.jpg" alt="">
+		<img class="guide-img" src="img/guide/M19/apertura-diálogo-4.jpg" alt="">
+		<img class="guide-img" src="img/guide/M19/oligarquía-1.jpg" alt="">
+		<img class="guide-img" src="img/guide/M19/oligarquía-2.png" alt="">
+		<img class="guide-img" src="img/guide/M19/oligarquía-3.jpg" alt="">
 
 	</div>
 	<div class="text-block col">
@@ -48,7 +48,7 @@ let guide1 =  `<div class="row">
 </div>
 <div class="row">
 	<div class="img-col col">
-		<img src="img/guide/M19/oligarquía-4.jpg" alt="">
+		<img class="guide-img" src="img/guide/M19/oligarquía-4.jpg" alt="">
 	</div>
 	<div class="img-col col">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/wlwJEu84j5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
