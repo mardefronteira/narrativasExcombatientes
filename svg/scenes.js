@@ -151,7 +151,7 @@ let E03 = {
   player: `
     <rect id="player-background" x="440.3453" y="0.3461" class="M-01-player player-background" width="513" height="1090"/>
     <line id="scene-timeline" class="timeline" x1="487.8922" y1="727.0568" x2="816.8922" y2="727.0568"/>
-    <text id="scene-time" transform="matrix(1 0 0 1 824.6605 733.5091)" class="time">– 00:00:00</text>
+    <text id="E-03-time" transform="matrix(1 0 0 1 824.6605 733.5091)" class="time">– 00:00:00</text>
     <text class="player-regular" transform="matrix(1 0 0 1 484.6604 567.5646)" >
     <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
@@ -195,7 +195,7 @@ let E04 = {
   	808.71,621.84 813.46,622.29 814.75,626.81 816.5,630.33 820.71,632.92 821.45,637.17 821.67,641.43 820.17,645.46 817.93,648.94
   	816.15,652.35 814.79,656.21 811.19,658.14 808.73,661.56 804.79,662.62 801.33,665.91 797.01,662.99 792.66,665.55 `,
   player: `<rect id="player-background" class="M-04-player player-background" x="745.2175" y="0" width="510.2362" height="1090"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 1123.4347 892.8926)" class="time">– 00:00 / 00:00</text>
+  <text id="E-04-time" transform="matrix(1 0 0 1 1123.4347 892.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="786.6664" y1="887.6698" x2="1115.6664" y2="887.6698"/>
   <line id="E-04-marker" class="marker" x1="786.6664" y1="877.4354" x2="786.6664" y2="898.5315"/>
   <line id="E-04-timebar" class="timebar" x1="786.6664" y1="887.6698" x2="786.6664" y2="887.6698"/>
@@ -266,7 +266,7 @@ let E06 = {
   player: `
   <rect id="player-background" class="M-01-player player-background" x="680.3453" y="0.3461" width="513" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="727.8922" y1="987.0568" x2="1056.8921" y2="987.0568"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 1064.6604 993.5091)" class="time">– 00:00:00</text>
+  <text id="E-06-time" transform="matrix(1 0 0 1 1064.6604 993.5091)" class="time">– 00:00:00</text>
   <text class="player-regular" transform="matrix(1 0 0 1 724.6605 823.2512)" >
   <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
   <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
@@ -326,7 +326,7 @@ let E07 = {
   	762.8885,961.3489 761.1113,960.8882 758.9543,962.8796 757.1786,961.8622 `,
   player: `<rect id="player-background" class="M-06-player player-background" x="491.99" y="-1" width="513" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="533.89" y1="777.06" x2="862.89" y2="777.06"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 870.6604 783.5091)" class="time">– 00:00:00</text>
+  <text id="E-07-time" transform="matrix(1 0 0 1 870.6604 783.5091)" class="time">– 00:00:00</text>
   <text transform="matrix(1 0 0 1 530.6604 617.0373)" class="player-regular">
   <tspan id="scene-name" x="0" y="0" class="player-bold""></tspan>
   <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
@@ -402,7 +402,7 @@ let E08 = {
   player: `
     <rect id="player-background" x="240.3453" y="0.3461" class="M-01-player player-background" width="513" height="1090"/>
     <line id="scene-timeline" class="timeline" x1="287.8922" y1="837.0568" x2="616.8922" y2="837.0568"/>
-    <text id="scene-time" transform="matrix(1 0 0 1 624.6604 841.50)" class="time">– 00:00:00</text>
+    <text id="E-08-time" transform="matrix(1 0 0 1 624.6604 841.50)" class="time">– 00:00:00</text>
     <text class="player-regular" transform="matrix(1 0 0 1 284.6604 677.0373)">
     <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
@@ -449,7 +449,7 @@ let E09 = {
   	756.36,452.7 752.81,455.11 751.28,459.94 748.65,464.04 742.41,461.86 739.66,466.1 735.44,467.24 731.16,467.99 726.81,467.93
   	722.55,466.82 718.34,467.63 713.82,468.91 709.37,468.56 `,
   player: `<rect id="player-background" class="M-02-player player-background" x="275.2175" y="0" width="510.2362" height="1090"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 653.4347 832.8926)" class="time">– 00:00 / 00:00</text>
+  <text id="E-09-time" transform="matrix(1 0 0 1 653.4347 832.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="316.6664" y1="827.6698" x2="645.6664" y2="827.6698"/>
   <line id="E-09-marker" class="marker" x1="316.6664" y1="817.4354" x2="316.6664" y2="838.5315"/>
   <line id="E-09-timebar" class="timebar" x1="316.6664" y1="827.6698" x2="316.6664" y2="827.6698"/>
@@ -495,7 +495,7 @@ let E10 = {
   	906.1335,234.2815 `,
   player: `<rect id="player-background" class="M-06-player player-background" x="470.35" y="-1" width="513" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="513.89" y1="827.06" x2="842.89" y2="827.06"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 850.6604 833.5091)" class="time">– 00:00:00</text>
+  <text id="E-10-time" transform="matrix(1 0 0 1 850.6604 833.5091)" class="time">– 00:00:00</text>
   <text transform="matrix(1 0 0 1 510.6604 667.0373)" class="player-regular">
     <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
@@ -578,7 +578,7 @@ let E11 = {
   player: `
   <g transform="matrix(1 0 0 1 472 0)">
   <rect id="player-background" class="M-03-player player-background" x="111.2175" y="0" width="510.2362" height="1090"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 489.4347 772.8926)" class="time">– 00:00 / 00:00</text>
+  <text id="E-11-time" transform="matrix(1 0 0 1 489.4347 772.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="152.6664" y1="767.6698" x2="481.6664" y2="767.6698"/>
   <line id="E-11-marker" class="marker" x1="152.6664" y1="757.4354" x2="152.6664" y2="778.5315"/>
   <line id="E-11-timebar" class="timebar" x1="152.6664" y1="767.6698" x2="152.6664" y2="767.6698"/>
@@ -631,7 +631,7 @@ let E12 = {
   	582.5472,602.3262 584.2499,605.8804 589.0046,610.1439 587.738,613.8279 586.8218,617.5489 579.8687,619.1355 579.0423,622.5118
   	578.4915,626.1161 578.0865,629.9861 576.2186,633.1042 573.8327,635.8516 `,
   player: `<rect id="player-background" class="M-03-player player-background" x="95.2175" y="0" width="510.2362" height="1090"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 473.4347 752.8926)" class="time">– 00:00 / 00:00</text>
+  <text id="E-12-time" transform="matrix(1 0 0 1 473.4347 752.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="136.6664" y1="747.6698" x2="465.6664" y2="747.6698"/>
   <line id="E-12-marker" class="marker" x1="136.6664" y1="737.4354" x2="136.6664" y2="758.5315"/>
   <line id="E-12-timebar" class="timebar" x1="136.6664" y1="747.6698" x2="136.6664" y2="747.6698"/>
@@ -681,7 +681,7 @@ let E13 = {
   player: `
   <g transform="matrix(1 0 0 1 -50 0)">
   <rect id="player-background" class="M-03-player player-background" x="95.2175" y="0" width="510.2362" height="1090"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 473.4347 732.8926)" class="time">– 00:00 / 00:00</text>
+  <text id="E-13-time" transform="matrix(1 0 0 1 473.4347 732.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="136.6664" y1="727.6698" x2="465.6664" y2="727.6698"/>
   <line id="E-13-marker" class="marker" x1="136.6664" y1="717.4354" x2="136.6664" y2="738.5315"/>
   <line id="E-13-timebar" class="timebar" x1="136.6664" y1="727.6698" x2="136.6664" y2="727.6698"/>
@@ -744,7 +744,7 @@ let E15 = {
   	676.2023,184.5548 673.8063,186.3759 670.6115,183.9925 668.1003,185.8008 665.3848,185.5771 662.7267,185.0915 660.1964,184.1203
   	`,
   player: `<rect id="player-background" class="M-04-player player-background" x="615.2175" y="0" width="510.2362" height="1090"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 993.4347 882.8926)" class="time">– 00:00 / 00:00</text>
+  <text id="E-15-time" transform="matrix(1 0 0 1 993.4347 882.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="656.6664" y1="877.6698" x2="985.6664" y2="877.6698"/>
   <line id="E-15-marker" class="marker" x1="656.6664" y1="867.4354" x2="656.6664" y2="888.5315"/>
   <line id="E-15-timebar" class="timebar" x1="656.6664" y1="877.6698" x2="656.6664" y2="877.6698"/>
@@ -808,7 +808,7 @@ let E17 = {
   	461.8695,925.486 459.4577,925.8327 457.0894,925.3604 454.8227,924.5533 `,
     player: `
     <rect id="player-background" class="M-02-player player-background" x="185.2175" y="0" width="510.2362" height="1090"/>
-    <text id="scene-time" transform="matrix(1 0 0 1 563.4347 782.8926)" class="time">– 00:00 / 00:00</text>
+    <text id="E-17-time" transform="matrix(1 0 0 1 563.4347 782.8926)" class="time">– 00:00 / 00:00</text>
     <line id="scene-timeline" class="timeline" x1="226.6664" y1="777.6698" x2="555.6664" y2="777.6698"/>
     <line id="E-17-marker" class="marker" x1="226.6664" y1="767.4354" x2="226.6664" y2="788.5315"/>
     <line id="E-17-timebar" class="timebar" x1="226.6664" y1="777.6698" x2="226.6664" y2="777.6698"/>
@@ -858,7 +858,7 @@ let E18 = {
   	415.999,701.0635 411.5869,705.7747 407.2875,704.5142 403.944,700.1293 `,
   player: `<rect id="player-background" class="M-06-player player-background" x="40.35" y="-1" width="513" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="83.89" y1="927.06" x2="412.89" y2="927.06"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 420.6604 933.5091)" class="time">– 00:00:00</text>
+  <text id="E-18-time" transform="matrix(1 0 0 1 420.6604 933.5091)" class="time">– 00:00:00</text>
 
   <text transform="matrix(1 0 0 1 80.6604 767.0373)" class="player-regular">
     <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
@@ -920,7 +920,7 @@ let E19 = {
   	431.8044,511.0819 430.2707,510.1049 428.763,509.8758 426.6382,511.85 `,
   player: `<rect id="player-background" class="M-06-player player-background" x="10.35" y="-1" width="513" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="53.89" y1="883.06" x2="382.89" y2="883.06"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 390.6604 889.5091)" class="time">– 00:00:00</text>
+  <text id="E-19-time" transform="matrix(1 0 0 1 390.6604 889.5091)" class="time">– 00:00:00</text>
 
   <text transform="matrix(1 0 0 1 50.6604 723.0373)" class="player-regular">
     <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
@@ -980,7 +980,7 @@ let E20 = {
   player: `
   <g transform="matrix(1 0 0 1 500.4503 0)">
   <rect id="player-background" class="M-03-player player-background" x="85.2175" y="0" width="510.2362" height="1090"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 463.4347 682.8926)" class="time">– 00:00 / 00:00</text>
+  <text id="E-20-time" transform="matrix(1 0 0 1 463.4347 682.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="126.6664" y1="677.6698" x2="455.6664" y2="677.6698"/>
   <line id="E-20-marker" class="marker" x1="126.6664" y1="667.4354" x2="126.6664" y2="688.5315"/>
   <line id="E-20-timebar" class="timebar" x1="126.6664" x2="126.6664" y1="677.6698" y2="677.6698"/>
@@ -1028,7 +1028,7 @@ let E21 = {
   	357.4207,397.7693 352.5924,405.3002 359.2399,410.6566 358.4218,417.1092 351.519,422.6284 352.5641,428.7355 355.2372,435.9589
   	348.9056,440.0325 348.8557,446.9875 341.7276,449.4477 `,
   player: `<rect id="player-background" class="M-04-player player-background" x="215.2175" y="0" width="510.2362" height="1090"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 593.4347 1022.8926)" class="time">– 00:00 / 00:00</text>
+  <text id="E-21-time" transform="matrix(1 0 0 1 593.4347 1022.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="256.6664" y1="1017.6698" x2="585.6664" y2="1017.6698"/>
   <line id="E-21-marker" class="marker" x1="256.6664" y1="1007.4354" x2="256.6664" y2="1028.5315"/>
   <line id="E-21-timebar" class="timebar" x1="256.6664" y1="1017.6698" x2="256.6664" y2="1017.6698"/>
@@ -1075,7 +1075,7 @@ let E22 = {
   	466.9978,111.4341 469.1652,113.3068 468.8395,115.7482 469.3251,118.1036 467.5968,120.2836 466.1938,122.2348 466.4992,124.5878
   	465.9578,126.7862 465.0163,128.8518 464.9529,131.6677 `,
   player: `<rect id="player-background" class="M-04-player player-background" x="405.2175" y="0" width="510.2362" height="1090"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 783.4347 712.8926)" class="time">– 00:00 / 00:00</text>
+  <text id="E-22-time" transform="matrix(1 0 0 1 783.4347 712.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="446.6664" y1="707.6698" x2="775.6664" y2="707.6698"/>
   <line id="E-22-marker" class="marker" x1="446.6664" y1="697.4354" x2="446.6664" y2="718.5315"/>
   <line id="E-22-timebar" class="timebar" x1="446.6664" y1="707.6698" x2="446.6664" y2="707.6698"/>
@@ -1133,7 +1133,7 @@ let E23 = {
   player: `
   <rect id="player-background" class="M-01-player player-background" x="160.3453" y="0.3461" width="513" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="207.8921" y1="727.0568" x2="536.8922" y2="727.0568"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 544.6604 733.5091)" class="time">– 00:00:00</text>
+  <text id="E-23-time" transform="matrix(1 0 0 1 544.6604 733.5091)" class="time">– 00:00:00</text>
   <text class="player-regular" transform="matrix(1 0 0 1 204.6604 567.5646)">
     <tspan id="scene-name" x="0" y="0" class="player-bold">EXPANSIÓN DE LAS GUERRILLAS</tspan>
     <tspan id="scene-character" x="0" y="48" class="player-bold"></tspan>
@@ -1189,7 +1189,7 @@ let E24 = {
   	382.4251,146.72 380.6907,147.3869 382.2151,150.1288 380.0594,150.4188 `,
   player:`<rect id="player-background" class="M-06-player player-background" x="40.35" y="-1" width="513" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="83.89" y1="927.06" x2="412.89" y2="927.06"/>
-  <text id="scene-time" transform="matrix(1 0 0 1 420.6604 933.5091)" class="time">– 00:00:00</text>
+  <text id="E-24-time" transform="matrix(1 0 0 1 420.6604 933.5091)" class="time">– 00:00:00</text>
 
   <text transform="matrix(1 0 0 1 80.6604 767.0373)" class="player-regular">
     <tspan id="scene-name" x="0" y="0" class="player-bold"></tspan>
@@ -1249,7 +1249,7 @@ let E25 = {
   	170.3158,700.5662 `,
     player: `
     <rect id="player-background" class="M-02-player player-background" x="85.2175" y="0" width="510.2362" height="1090"/>
-    <text id="scene-time" transform="matrix(1 0 0 1 463.4347 962.8926)" class="time">– 00:00:00</text>
+    <text id="E-25-time" transform="matrix(1 0 0 1 463.4347 962.8926)" class="time">– 00:00:00</text>
     <line id="scene-timeline" class="timeline" x1="126.6664" y1="957.6698" x2="455.6664" y2="957.6698"/>
     <line id="E-25-marker" class="marker" x1="126.6664" y1="947.4354" x2="126.6664" y2="968.5315"/>
     <line id="E-25-timebar" class="timebar" x1="126.6664" y1="957.6698" x2="126.6664" y2="957.6698"/>

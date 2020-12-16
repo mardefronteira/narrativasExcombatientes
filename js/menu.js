@@ -4,7 +4,7 @@ let btnInfo = $( '#btn-info' );
 let btnClose = $( '#btn-close' );
 let video = $( '#video' );
 let videoElement = document.getElementById('video');
-let btnActiveSound = $( '#btn-play' );
+// let btnActiveSound = $( '#btn-play' );
 let btnCloseMenu = $( '#btn-close-menu' );
 let menuTitle = $( '#menu-title' );
 
@@ -108,10 +108,10 @@ function init() {
   btnInfo.on('click', showVideo);
   btnClose.on('click', showNarratives);
   menuTitle.on('click', showContentInfo);
-  btnActiveSound.on('click', playVideo);
+  // btnActiveSound.on('click', playVideo);
   btnCloseMenu.on('click', showContentInfo);
 
-  video.bind('ended', hideVideo);
+  video.bind('ended', showNarratives);
 
   // create home audio
   let audioElement = document.createElement('AUDIO');

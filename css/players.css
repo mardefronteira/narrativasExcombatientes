@@ -1,7 +1,7 @@
 /* M-06 classes */
 
 foreignObject#M-06-container {
-  padding: 30vh 3vw;
+  /* padding: 30vh 3vw; */
   /* overflow-y: auto; */
   text-align: justify;
   /* height: 100; */
@@ -11,7 +11,7 @@ div#M-06-div {
   padding: 30vh 3vw;
   overflow-y: auto;
   text-align: justify;
-  height: 650px;
+  height: 740px;
 }
 
 .player-title {

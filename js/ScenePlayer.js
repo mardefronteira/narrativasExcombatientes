@@ -68,7 +68,7 @@ class ScenePlayer {
       document.getElementById('scene-group').innerHTML = '';
       document.getElementById('scene-alias').innerHTML = '';
 
-      document.getElementById(`scene-time`).innerHTML = `– 00:00 / ${this.scene.duration}`
+      document.getElementById(`${this.id}-time`).innerHTML = `– 00:00 / ${this.scene.duration}`
 
       // set background color
       document.getElementById('player-background').setAttribute("fill", this.playerColor);
@@ -203,7 +203,7 @@ class ScenePlayer {
         timebar.setAttribute("x2", parseInt(markerPos));
       }
       // update time
-      let timeString = document.getElementById(`scene-time`);
+      let timeString = document.getElementById(`${this.id}-time`);
 
       timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.scene.duration}`
         // update text
