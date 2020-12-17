@@ -1,4 +1,4 @@
-let guide1 =  `<div class="row">
+let guide2 =  `<div class="row">
 	<div class="empty-col col"></div>
 	<div class="text-block col">
 		<h1 class="guide-h1">Abriendo caminos hacia el gran diálogo nacional “con el pueblo, con las armas, al poder”</h1>
@@ -53,4 +53,10 @@ let guide1 =  `<div class="row">
 	<div class="img-col col">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/wlwJEu84j5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
+</div>`
+let guide1 =  `<div class="row">
+	<img class="temp-guide-img" src="./img/guide/guide_1.jpg">
+	<img class="temp-guide-img" src="./img/guide/guide_2.jpg">
+	<img class="temp-guide-img" src="./img/guide/guide_3.jpg">
+	<img class="temp-guide-img" src="./img/guide/guide_4.jpg">
 </div>`

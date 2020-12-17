@@ -33,6 +33,13 @@ div#M-06-div {
   width:100%;
 }
 
+.player-signature {
+  fill:#252526;
+  font-weight: bold;
+  font-style: italic;
+  font-size:18px;"
+}
+
 .bold {
   font-weight: bold;
 }
@@ -44,3 +51,120 @@ video#M-06-final {
 /* video#M-06-initial {
 padding-top: 300px;
 } */
+
+.hidden-player {
+  display:none;
+}
+
+.visible-player {
+  opacity:0.16;
+  fill: #f2f2f2;
+  diplay:block;
+}
+
+
+/* player */
+
+.M-01-player {
+  fill: var(--m01player);
+  fill-opacity: .15;
+}
+
+.M-02-player {
+  fill: var(--m02player);
+  fill-opacity: .30;
+}
+
+.M-03-player {
+  fill: var(--m03player);
+  fill-opacity: .30;
+}
+
+.M-04-player {
+  fill: var(--m04player);
+  fill-opacity: .15;
+}
+
+.M-05-player {
+  fill: var(--m05player);
+  fill-opacity: .15;
+}
+
+.M-06-player {
+  fill: var(--m06player);
+  fill-opacity: .30;
+}
+
+.clickable {
+  stroke: none;
+  fill: transparent;
+}
+
+.group-background {
+  opacity:0.09;
+  fill:#252526;
+}
+
+.time {
+  fill:#252526;
+  letter-spacing: 1px;
+  font-size:15px;
+}
+
+.timeline {
+  opacity:0.24;
+  fill:none;
+  stroke:#252526;
+  stroke-width:2.141;
+  stroke-miterlimit:10;
+}
+
+.player-regular {
+  fill:#252526;
+  font-size:17px;
+}
+
+.player-description {
+  fill:#252526;
+  font-size:18px;
+}
+
+.player-bold {
+  font-weight: bold;
+  font-size:20px;
+}
+
+.invisible {
+  fill: transparent;
+  stroke: none;
+}
+
+.play-button {
+  fill:transparent;
+  stroke:#252526;
+  stroke-width:1.9269;
+  stroke-miterlimit:10;
+}
+
+.pause-button {
+  fill:none;
+  stroke:#252526;
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+
+.timebar {
+  fill:none;
+  stroke:#252526;
+  stroke-width:2.141;
+  stroke-miterlimit:10;
+}
+
+.marker {
+  fill:none;
+  stroke:#252526;
+  stroke-width:1.9269;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}

@@ -1,91 +1,479 @@
-S01 = {
+const S01 = {
 player:`
-<rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="504.769" height="1081.8749"/>
+<rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
 <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
 <tspan x="0" y="0" class="player-bold">Bloque Resistencia Tayrona</tspan>
-<tspan x="0" y="27">1986??? - 2006</tspan>
-<tspan x="0" y="81">En 1982 las autodefensas arrancan porque tenía tres </tspan>
-<tspan x="0" y="108">opciones, o se unían a las FARC, se desplazaban </tspan>
-<tspan x="0" y="135">o se organizaban para defenderse. Algunos </tspan>
-<tspan x="0" y="162">campesinos decidieron organizarse para enfrentar </tspan>
-<tspan x="0" y="189">la subversión. En esa época le hicieron un llamado</tspan>
-<tspan x="0" y="216"> al Estado que resultó en el acompañamiento del </tspan>
-<tspan x="0" y="243">Ejército por alrededor de 6 meses, cuando volvieron </tspan>
-<tspan x="0" y="270">a quedar solos. </tspan>
-<tspan x="337.834" y="297">Nodier Giraldo</tspan>
+<tspan x="0" y="27">1982 - 2006</tspan>
+<tspan x="0" y="81">En 1982 se crean las autodefensas. La gente tenía tres </tspan><tspan x="0" y="108">opciones, o se unían a las FARC, se desplazaban o se </tspan><tspan x="0" y="135">organizaban para defenderse. Algunos campesinos </tspan><tspan x="0" y="162">decidieron organizarse para enfrentar la subversión. En esa </tspan><tspan x="0" y="189">época ellos hicieron un llamado al Estado que resultó en el </tspan><tspan x="0" y="216">acompañamiento del Ejército por alrededor de 6 meses, </tspan><tspan x="0" y="243">después de eso volvieron a quedar solos. </tspan>
+<tspan x="371.8989" y="297" class="player-signature">Nodier Giraldo</tspan>
 </text>
 <g id="character-player" class="hidden">
-<text transform="matrix(1 0 0 1 691.5695 509.0643)" style="fill:#252526; letter-spacing:1;">
-  <tspan id="character-name" x="0" y="0" style="font-size:20px;">Nodier Giraldo Giraldo</tspan>
-  <tspan id="character-alias" x="0" y="24" style="font-size:17px;">Alias Lorem ipsum</tspan>
+<text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+  <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+  <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
   </text>
   <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
   <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
   <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
   <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
   <g id="character-button">
-    <polygon id="character-play-button" style="fill:transparent;stroke:#252526;stroke-width:2.7;stroke-miterlimit:10;" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
-    <rect style="fill:transparent" x="663" y="564" width="15" height="20" />
-    <g id="character-pause-button" class="hidden">
-      <line id="S-02_3_" style="fill:transparent;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
-      <line id="S-02_2_" style="fill:transparent;stroke:#252526;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
-    </g>
-  </g>
-</g>
-`
-};
-G08 = {
-player:`
-<rect x="639.0618" y="-3.5288" class="group-background" width="504.769" height="1081.8749"/>
-<text class="player-description" transform="matrix(1 0 0 1 661.7949 135.1814)">
-  <tspan x="0" y="0" class="player-bold">FUERZAS ARMADAS REVOLUCIONARIAS DE </tspan>
-  <tspan x="0" y="27" class="player-bold">COLOMBIA - EJÉRCITO DEL PUEBLO</tspan>
-  <tspan x="0" y="54">1964 - 2017</tspan>
-  <tspan x="0" y="108">Las FARC, como todos saben, nace de la agresión a </tspan>
-  <tspan x="0" y="135">un grupo de campesinos organizados que venía una </tspan>
-  <tspan x="0" y="162">experiencia de la violencia liberal-conservadora, y </tspan>
-  <tspan x="0" y="189">tenían un acumulado político y militar, y, una </tspan><tspan x="0" y="216">experiencia social. Se inicia la resistencia en </tspan>
-  <tspan x="0" y="243">Marquetalia con un llamado al diálogo, con un grito a </tspan>
-  <tspan x="0" y="270">muchas personalidades en Colombia, a la </tspan>
-  <tspan x="0" y="297">intelectualidad francesa, a la iglesia, y al Gobierno </tspan>
-  <tspan x="0" y="324">cuando se supo del operativo planeado sobre </tspan>
-  <tspan x="0" y="351">Marquetalia. Les dijeron: “no lo hagan, dialoguemos, </tspan>
-  <tspan x="0" y="378">conversemos”, pero lo hicieron, y el resultado fue el </tspan>
-  <tspan x="0" y="405">surgimiento de las FARC con un programa político, </tspan>
-  <tspan x="0" y="432">pero siempre, con un interés de búsqueda de una </tspan>
-  <tspan x="0" y="459">solución política al conflicto. En estos días tuve una </tspan>
-  <tspan x="0" y="486">conversación con los hijos del general Matallana, </tspan>
-  <tspan x="0" y="513">quien condujo la operación Marquetalia, y me </tspan>
-  <tspan x="0" y="540">regalaron un libro de él, en donde encontré unas </tspan>
-  <tspan x="0" y="567">cartas cruzadas entre Marulanda y Jacobo Arenas </tspan>
-  <tspan x="0" y="594">en los 70. Ahí vi dos hombres que buscaban </tspan>
-  <tspan x="0" y="621">caminos para resolver ese conflicto armado a través </tspan>
-  <tspan x="0" y="648">del diálogo. Marulanda y Jacobo Arenas, siempre </tspan>
-  <tspan x="0" y="675">estuvieron buscando cualquier posibilidad para </tspan>
-  <tspan x="0" y="702">lograr un camino de solución política.</tspan>
-  <tspan x="238.2031" y="729">Rodrigo Londoño Echeverri</tspan>
-</text>
-<g id="character-player" class="hidden">
-  <text transform="matrix(1 0 0 1 691.5695 940.0643)" style="fill:#252526; letter-spacing:1;">
-    <tspan id="character-name" x="0" y="0" style="font-size:20px;">Nodier Giraldo Giraldo</tspan>
-    <tspan id="character-alias" x="0" y="24" style="font-size:17px;">Alias Lorem ipsum</tspan>
-  </text>
-  <text id="character-time" transform="matrix(1 0 0 1 1028.4347 1008.7863)" class="time">– 00:00 / 00:00</text>
-  <line id="character-timeline" class="timeline" x1="691.6664" y1="1004.8339" x2="1020.6664" y2="1004.8339"/>
-  <line id="character-marker" class="marker" x1="691.6664" y1="994.5995" x2="691.6664" y2="1015.6957"/>
-  <line id="character-timebar" class="timebar" x1="691.6664" y1="1004.8339" x2="691.6664" y2="1004.8339"/>
-  <g id="character-button">
-    <polygon id="character-play-button" class="play-button" points="   663.7491,1014.8287 663.7491,995.5796 663.7722,995.3619 663.8124,995.1964 663.8974,995.0175 664.0048,994.8476    664.1299,994.7045 664.2686,994.6017 664.4474,994.4943 664.6129,994.4362 664.7873,994.3959 665.0109,994.3959 665.1943,994.4272    665.3955,994.4854 665.5967,994.5883 665.6614,994.6202 678.3882,1004.2537 678.4758,1004.3281 678.5831,1004.4488    678.6458,1004.5203 678.6994,1004.6008 678.7352,1004.6724 678.7709,1004.7573 678.8022,1004.8513 678.8336,1004.9541    678.8514,1005.0614 678.8649,1005.1688 678.8559,1005.2985 678.838,1005.4371 678.7978,1005.5802 678.7441,1005.7054    678.6949,1005.8217 678.6368,1005.9066 678.5429,1006.0184 678.4445,1006.1034 678.3882,1006.1532 665.6614,1015.7589    665.5297,1015.8477 665.4089,1015.9103 665.2703,1015.9684 665.1317,1015.9952 664.9841,1016.0176 664.7828,1016.0131    664.5637,1015.9595 664.3446,1015.8655 664.1613,1015.7314 664.0316,1015.6017 663.9287,1015.4631 663.8482,1015.3066    663.7901,1015.1679 663.7498,1014.9935  "/>
-    <rect style="fill:transparent" x="663" y="995" width="15" height="20" />
+    <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+    <rect class="invisible" x="663" y="564" width="15" height="20" />
     <g id="character-pause-button" class="pause-button hidden">
-      <line id="S-02_3_" x1="663.5896" y1="995.2706" x2="663.5896" y2="1016.3668"/>
-      <line id="S-02_2_" x1="676.7145" y1="995.2706" x2="676.7145" y2="1016.3668"/>
+      <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+      <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
     </g>
   </g>
 </g>
 `
 };
-G10 = {
+const S02 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">Bloque Norte</tspan>
+  <tspan x="0" y="27">1995 - 2006</tspan>
+  <tspan x="0" y="81">Dentro de Justicia y Paz, este Bloque es un ejemplo del </tspan><tspan x="0" y="108">expansionismo efectivo al interior de las AUC. En 1986 el </tspan><tspan x="0" y="135">Bloque Norte inició con 12 hombres y para el año 2000 </tspan><tspan x="0" y="162">éramos más o menos 3.500. Al momento de la </tspan><tspan x="0" y="189">desmovilización éramos 4.500 en 17 frentes, entre esos el </tspan><tspan x="0" y="216">Frente Resistencia Tayrona. Al interior del Bloque Norte </tspan><tspan x="0" y="243">teníamos unas políticas antisubversivas y de control social, </tspan><tspan x="0" y="270">control político y de recursos. </tspan><tspan x="373.4893" y="324" class="player-signature">Oscar Ospino</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 25)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const S03 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">Bloque Montes de María</tspan>
+  <tspan x="0" y="27">1997 - 2005</tspan>
+  <tspan x="0" y="81">Al interior de las AUC sí tuvimos una unidad y una </tspan><tspan x="0" y="108">identidad, no sólo ideológica sino también política y </tspan><tspan x="0" y="135">social de nuestro trabajo en las regiones, pero el </tspan><tspan x="0" y="162">proceso de paz fue un detonante para que salieran a </tspan><tspan x="0" y="189">flote diferencias y pugnas internas que terminaron </tspan><tspan x="0" y="216">como el país conoció. No nos reconocemos como </tspan><tspan x="0" y="243">paramilitares porque quienes fuimos autodefensas </tspan><tspan x="0" y="270">campesinas en Colombia, y tomamos la decisión de </tspan><tspan x="0" y="297">alzarnos en armas, no lo hicimos como una política de </tspan><tspan x="0" y="324">Estado, ni lo hicimos para hacerle el mandado al Estado, </tspan><tspan x="0" y="351">fuimos utilizados, y durante el curso de la guerra no </tspan><tspan x="0" y="378">fueron pocas las veces en las que hicimos el trabajo </tspan><tspan x="0" y="405">sucio de algunos sectores del Estado.</tspan><tspan x="328.4434" y="459" class="player-signature">Edward Cobos</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 162)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const S04 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">Bloque Elmer Cárdenas</tspan><tspan x="0" y="27">1997 - 2006</tspan><tspan x="0" y="81">El Bloque Elmer Cárdenas tuvo influencia en la zona del </tspan><tspan x="0" y="108">Urabá: en el Norte de Antioquia (Necoclí, San Juan y </tspan><tspan x="0" y="135">Arboletes, San Pedro, Turbo), el norte de Chocó sobre el </tspan><tspan x="0" y="162">Caribe (Acandí, Unguía, Riosucio, Murindó, Bojayá, Vigía </tspan><tspan x="0" y="189">del Fuerte), y desde finales del 2002 en la zona de </tspan><tspan x="0" y="216">nacimiento de Río Sucio (Cañasgordas, Frontino, </tspan><tspan x="0" y="243">Uramita, Dabeiba, Parque Nacional Natural Paramillo). </tspan><tspan x="0" y="270">[…] La población civil en la región del Urabá no quería </tspan><tspan x="0" y="297">saber nada de la guerrilla cuando yo llegué, pero </tspan><tspan x="0" y="324">mientras estuvieron el EPL y las FARC allí, convivieron </tspan><tspan x="0" y="351">con ellos y sus miembros eran hijos de esas </tspan><tspan x="0" y="378">comunidades. Lo miembros de los grupos armados en </tspan><tspan x="0" y="405">Colombia no han sido nicaragüenses, ni rusos, ni </tspan><tspan x="0" y="432">ecuatorianos, ni dominicanos, sino que hemos sido </tspan><tspan x="0" y="459">colombianos y en su gran mayoría, jóvenes. Esto nos </tspan><tspan x="0" y="486">deja una tarea importante.</tspan><tspan x="322.4492" y="540" class="player-signature">Freddy Rendón</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 240)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const S05 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">Autodefensas Campesinas del Magdalena Medio</tspan><tspan x="0" y="27">1992 - 2006</tspan><tspan x="0" y="81">Siempre tuve la necesidad, desde que llegué al Magdalena </tspan><tspan x="0" y="108">Medio, de contar con un discurso político que justificara la </tspan><tspan x="0" y="135">criminal acción en la que estábamos incurriendo. Había que </tspan><tspan x="0" y="162">buscar un pretexto ideológico, y en esa tarea me empeñé. </tspan><tspan x="0" y="189">[…] Cuando llegamos a las regiones del Magdalena Medio </tspan><tspan x="0" y="216">Santandereano y Boyacense encontramos a la guerrilla de </tspan><tspan x="0" y="243">las FARC, los Frentes Bernardo López Arroyave y Carlos </tspan><tspan x="0" y="270">Alirio Buitrago del ELN, y empezamos a quitarles territorio, </tspan><tspan x="0" y="297">pero no para entregárselo a la XIV Brigada, al Batallón </tspan><tspan x="0" y="324">Patriotas o al Batallón Reyes. Llegamos allá y montamos </tspan><tspan x="0" y="351">nuestro propio Estado, y eso hay que reconocerlo porque </tspan><tspan x="0" y="378">fue una realidad.</tspan><tspan x="315.4355" y="432" class="player-signature">Iván Roberto Duque</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 134)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const S06 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">Bloque Central Bolívar</tspan><tspan x="0" y="27">2000 - 2006</tspan><tspan x="0" y="81">El Bloque Central Bolívar, si bien tiene sus raíces en ese </tspan><tspan x="0" y="108">fenómeno expansionista de las AUC, el mando es finalmente </tspan><tspan x="0" y="135">entregado al Estado Mayor que se conformó en la región y </tspan><tspan x="0" y="162">que de manera independiente, con la autonomía propia, </tspan><tspan x="0" y="189">definió el desarrollo de uno de los bloques más grandes y </tspan><tspan x="0" y="216">con mayor presencia en el país. […] El Bloque Central Bolívar </tspan><tspan x="0" y="243">hace la primera incursión en el sur de Bolívar enviado por la </tspan><tspan x="0" y="270">casa Castaño, sin embargo, ellos toman el mando, ponen </tspan><tspan x="0" y="297">sus condiciones, y arman su propia estructura. Ni Carlos </tspan><tspan x="0" y="324">Castaño iba a darle órdenes a los señores del Bloque Central </tspan><tspan x="0" y="351">Bolívar, ni ellos las iban a obedecer.</tspan><tspan x="365.5176" y="405" class="player-signature">Edward Cobos</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 134)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+  `,
+};
+const S07 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">Bloque Héroes del Llano</tspan><tspan x="0" y="27">1997 - 2006</tspan><tspan x="0" y="81">Las AUC nacieron con una ideología de autodefensa, pero en </tspan><tspan x="0" y="108">la presidencia de Andrés Pastrana las FARC crecieron tanto </tspan><tspan x="0" y="135">que dejamos de ser defensivas para ser agresivas en el </tspan><tspan x="0" y="162">combate. Empezamos con una estrategia de toma de </tspan><tspan x="0" y="189">territorios donde las FARC tenían poder político y </tspan><tspan x="0" y="216">económico. […] A medida que va cambiando la guerra </tspan><tspan x="0" y="243">tenemos que también plantear cambios en el terreno de la </tspan><tspan x="0" y="270">lucha. Sin embargo, la esencia nunca se perdió, y la filosofía </tspan><tspan x="0" y="297">de los paramilitares en Colombia está demostrada. </tspan><tspan x="376.8047" y="351" class="player-signature">Arlex Arango</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 78)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const S08 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">Bloque Centauros</tspan><tspan x="0" y="27">1997 - 2006</tspan><tspan x="0" y="81">El Bloque Centauros operó en los Llanos Orientales, parte de </tspan><tspan x="0" y="108">Cundinamarca, Arauca, Guaviare y Casanare. En el Guaviare </tspan><tspan x="0" y="135">siempre ha habido un problema grande de narcotráfico, </tspan><tspan x="0" y="162">sobre todo de cultivo. San Martín, que fue nuestro centro de </tspan><tspan x="0" y="189">operaciones, es un municipio extenso, pero completamente </tspan><tspan x="0" y="216">improductivo. […] Encontramos en la región un problema muy </tspan><tspan x="0" y="243">grave de la inasistencia del Estado, que se refleja en las </tspan><tspan x="0" y="270">pocas vías que hay en la zona. […] Todos estos elementos </tspan><tspan x="0" y="297">hacen que la comunidad termine viviendo de la economía </tspan><tspan x="0" y="324">ilegal del narcotráfico. Ese grave problema social que </tspan><tspan x="0" y="351">nosotros evidenciamos cuando estuvimos en la zona y que </tspan><tspan x="0" y="378">aún continúa. </tspan><tspan x="316.3584" y="432" class="player-signature">José Eleazar Moreno</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 187)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const S09 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">Bloque Catatumbo</tspan><tspan x="0" y="27">1997 - 2006</tspan><tspan x="0" y="81">En el Catatumbo, como en el Sur de Bolívar, vemos que todo </tspan><tspan x="0" y="108">sigue igual, porque ahora hay presencia de otros grupos </tspan><tspan x="0" y="135">fuertemente armados ocupando los territorios en donde </tspan><tspan x="0" y="162">estuvimos nosotros, donde disputamos a bala territorios con </tspan><tspan x="0" y="189">las guerrillas. Vemos también que en esta zona los productos </tspan><tspan x="0" y="216">principales son la coca y las minas antipersona. Entonces, </tspan><tspan x="0" y="243">vemos que nada ha cambiado. </tspan><tspan x="325.3643" y="297" class="player-signature">Iván Roberto Duque</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 25)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+
+const G01 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">EJÉRCITO POPULAR DE LIBERACIÓN</tspan>
+  <tspan x="0" y="27">1967 - 1991</tspan>
+  <tspan x="0" y="81">El EPL fue fundado y orientado, durante toda su existencia, </tspan><tspan x="0" y="108">por el Partido Comunista de Colombia Marxista Leninista - </tspan><tspan x="0" y="135">PCC-ML. Esta organización tuvo en cuenta que en Colombia </tspan><tspan x="0" y="162">existe una sociedad capitalista que se divide en dos clases: </tspan><tspan x="0" y="189">la burguesía, que hasta ahora ha conservado el poder </tspan><tspan x="0" y="216">político, y el proletariado, que lucha por traspasar esa </tspan><tspan x="0" y="243">frontera de clase. Para ilustrar cómo surgió el EPL y por qué </tspan><tspan x="0" y="270">el PCC-ML fue su dirigente durante toda su existencia, traigo </tspan><tspan x="0" y="297">una cita del profesor Marco Palacios: “En la mitad del siglo </tspan><tspan x="0" y="324">XX se fundó una élite plutocrática compuesta por textileros, </tspan><tspan x="0" y="351">banqueros, cafeteros, ganaderos e importadores, estimaban </tspan><tspan x="0" y="378">ellos que la sociedad colombiana no estaba preparada para </tspan><tspan x="0" y="405">la democracia política. Responden las demandas sociales </tspan><tspan x="0" y="432">con la represión, criminalización de protesta social, y </tspan><tspan x="0" y="459">reducen justicia social a fracciones de gasto público”. Esta </tspan><tspan x="0" y="486">cita nos ayuda a indicar la necesidad de luchar por </tspan><tspan x="0" y="513">transformar esa situación que vivía Colombia.</tspan>
+  <tspan x="317.4487" y="567" class="player-signature">Francisco Caraballo</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 374)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const G02 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">AUTODEFENSAS UNIDAS DE COLOMBIA</tspan>
+  <tspan x="0" y="27">1980s - 2006</tspan>
+  <tspan x="0" y="81">Fue la forma en que surgieron las autodefensas lo que </tspan><tspan x="0" y="108">diferenció su accionar en las  regiones: el proceso inició en </tspan><tspan x="0" y="135">en Puerto Boyacá con Henry Pérez, después surgieron las </tspan><tspan x="0" y="162">autodefensas de Arnubio Triana Mahecha y de Ramón Isaza </tspan><tspan x="0" y="189">en el Magdalena Medio, de Héctor Buitrago en el Casanare, </tspan><tspan x="0" y="216">de Hernán Giraldo en la Sierra Nevada, de don Chepe Barrera </tspan><tspan x="0" y="243">y los Rojas en la región del Magdalena, de Manuel Piraban </tspan><tspan x="0" y="270">en los Llanos, de Morantes en Santander, de Juan Francisco </tspan><tspan x="0" y="297">Prada Márquez en el Sur Cesar. Las anteriores, son las </tspan><tspan x="0" y="324">autodefensas históricamente más antiguas, incluso antes </tspan><tspan x="0" y="351">del nacimiento de las ACCU lideradas por los hermanos </tspan><tspan x="0" y="378">Castaño Gil. Es preciso aclarar que, tanto Carlos y como </tspan><tspan x="0" y="405">Vicente eran reconocidos como los comandantes generales </tspan><tspan x="0" y="432">de las autodefensas que nacieron del proyecto de las ACCU: </tspan><tspan x="0" y="459">Bloque Norte, Bloque Catatumbo, Bloque Montes de María, </tspan><tspan x="0" y="486">Bloque Elmer Cárdenas, Bloque Bananero, las Autodefensas </tspan><tspan x="0" y="513">de Occidente Antioqueños, el Bloque Mineros, entre otros.</tspan>
+  <tspan x="362.9814" y="567" class="player-signature">Edward Cobos</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 370)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+  `,
+};
+const G03 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">EJÉRCITO DE LIBERACIÓN NACIONAL – </tspan><tspan x="0" y="27" class="player-bold">REPLANTEAMIENTO</tspan><tspan x="0" y="54">1976 - 1982</tspan><tspan x="0" y="108">Hago parte, con el compañero Medardo Correa, de la </tspan><tspan x="0" y="135">corriente de Replanteamiento que surgió en el ELN en 1976 </tspan><tspan x="0" y="162">cuando nos dimos cuenta de que los caminos de la muerte </tspan><tspan x="0" y="189">no iban a conducir a este país a ninguna parte, y que </tspan><tspan x="0" y="216">estábamos reciclando nuevamente los odios, la violencia y </tspan><tspan x="0" y="243">la muerte. […] En las estribaciones de la Cordillera </tspan><tspan x="0" y="270">Occidental entendimos que había que hacer un </tspan><tspan x="0" y="297">replanteamiento a esa entelequia que se había desatado a </tspan><tspan x="0" y="324">manera de lucha armada. […] La vida no podía seguir así, </tspan><tspan x="0" y="351">enterrando compañeros, amigos, campesinos. Enterrando </tspan><tspan x="0" y="378">de este lado, y del otro lado, originando hechos para que los </tspan><tspan x="0" y="405">que estaban allá, que eran igual de colombianos a nosotros, </tspan><tspan x="0" y="432">enterraran soldados y policías. […] En consecuencia, fuimos </tspan><tspan x="0" y="459">entendiendo que lo fundamental era replantear nuestras </tspan><tspan x="0" y="486">acciones porque no podía seguir esta locura, y de allí surge </tspan><tspan x="0" y="513">el grupo de Replanteamiento.</tspan><tspan x="321.0991" y="567" class="player-signature">Alonso Ojeda Awad</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 296)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const G04 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">EJÉRCITO DE LIBERACIÓN NACIONAL</tspan><tspan x="0" y="27">1964 - presente</tspan><tspan x="0" y="81">El ELN surge en 1964 en un contexto de insurgencia social </tspan><tspan x="0" y="108">en Colombia y América Latina, derivada de los procesos de </tspan><tspan x="0" y="135">violencia generalizada y del recorte de libertades políticas, </tspan><tspan x="0" y="162">por parte de gobiernos dictatoriales de los años 40, 50 y 60. </tspan><tspan x="0" y="189">Surge con el influjo de la recién triunfante revolución </tspan><tspan x="0" y="216">cubana, que estimula el alzamiento contra regímenes </tspan><tspan x="0" y="243">tiránicos y para el cambio radical de las estructuras de </tspan><tspan x="0" y="270">poder. El ELN desde su constitución se definió como una </tspan><tspan x="0" y="297">organización guerrillera, integrada por revolucionarios </tspan><tspan x="0" y="324">voluntarios, con el propósito de liderar un proyecto de </tspan><tspan x="0" y="351">guerra revolucionaria, capaz de derrotar a las fuerzas </tspan><tspan x="0" y="378">militares y políticas detentoras del poder oligárquico, y la </tspan><tspan x="0" y="405">construcción de una nueva sociedad: la sociedad socialista </tspan><tspan x="0" y="432">[…] Las relaciones políticas del ELN se remontan a </tspan><tspan x="0" y="459">comienzos de los 60, cuando quienes fueron sus </tspan><tspan x="0" y="486">fundadores hicieron parte de la Brigada Internacional José </tspan><tspan x="0" y="513">Antonio Galán en Cuba y participaron en una escuela básica </tspan><tspan x="0" y="540">de guerra de guerrillas, pero lo más importante fueron las </tspan><tspan x="0" y="567">relaciones políticas con los dirigentes del Movimiento 26 de </tspan><tspan x="0" y="594">Julio y luego con el Partido Comunista de Cuba.</tspan><tspan x="234.374" y="648" class="player-signature">Carlos Arturo Velandia Jagua</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 430)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const G05 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">PARTIDO REVOLUCIONARIO DE LOS TRABAJADORES</tspan><tspan x="0" y="27">1984 - 1991</tspan><tspan x="0" y="81">El PRT surge de una subdivisión del EPL y el PCC-Patria </tspan><tspan x="0" y="108">Libre, nosotros nos ubicamos en una parte de los Montes de </tspan><tspan x="0" y="135">María, el centro de Bolívar y el Magdalena. [...] en el PRT nos </tspan><tspan x="0" y="162">formamos en las doctrinas revolucionarias, pero con el </tspan><tspan x="0" y="189">transcurrir del tiempo y dados los cambios que se fueron </tspan><tspan x="0" y="216">planteando en el país, se produjeron cambios, tanto en el </tspan><tspan x="0" y="243">PRT como en los demás grupos [...] Cuando volvimos a la </tspan><tspan x="0" y="270">acción armada decidimos asumir el nombre de Combatientes </tspan><tspan x="0" y="297">Populares 9 de abril, en ese momento hubo un debate interno </tspan><tspan x="0" y="324">muy fuerte en el que se consideraron las implicaciones de la </tspan><tspan x="0" y="351">muerte de Gaitán dentro de las fuerzas progresistas de </tspan><tspan x="0" y="378">Colombia.</tspan><tspan x="254.062" y="432" class="player-signature">José Matías Ortiz Sarmiento</tspan><tspan x="0" y="513">Los que llegamos a la ANUC en esa época, a pesar de tener </tspan><tspan x="0" y="540">participación en otras organizaciones, lo hicimos no por la </tspan><tspan x="0" y="567">línea del partido, en mi caso en el PCC-ML, porque en ese </tspan><tspan x="0" y="594">momento el partido no estaba de acuerdo con la </tspan><tspan x="0" y="621">organización porque había sido creada por el Gobierno.</tspan><tspan x="365.0854" y="675" class="player-signature">Gabriel Barrios</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 407)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const G06 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">MOVIMIENTO 19 DE ABRIL</tspan><tspan x="0" y="27">1970 - 1990</tspan><tspan x="0" y="81">En el M-19 no nos casamos nunca con la ideología, había </tspan><tspan x="0" y="108">gente idealista y materialista, hablando ideológicamente. </tspan><tspan x="0" y="135">Nuestro origen, centro y dinámicas durante todo el proceso, </tspan><tspan x="0" y="162">fue la política. Nuestro argumento para surgir como M-19 fue </tspan><tspan x="0" y="189">el robo de las elecciones de la ANAPO y la frustración que </tspan><tspan x="0" y="216">esto generó. Así que siempre nuestra línea fue la política y </tspan><tspan x="0" y="243">eso no quiere decir que no había ideología. Había muchos </tspan><tspan x="0" y="270">compañeros que estudiaban el materialismo histórico y </tspan><tspan x="0" y="297">trabajaban dentro de ello, y había otros que éramos mucho </tspan><tspan x="0" y="324">más idealistas; es decir, era como una combinación.</tspan><tspan x="316.5742" y="378" class="player-signature">Luz Amparo Jiménez</tspan><tspan x="0" y="432">Otro elemento que cuenta es que en el grupo fundacional del </tspan><tspan x="0" y="459">M-19 estuvo compuesto, entre otros, por la gente cercana a </tspan><tspan x="0" y="486">las FARC que es expulsada de ese grupo debido a una </tspan><tspan x="0" y="513">ruptura con la manera en que operan, al igual que muchos </tspan><tspan x="0" y="540">que vienen también de otras experiencias, y estaban en la </tspan><tspan x="0" y="567">búsqueda de caminos diferentes. Así que, la fundación marca </tspan><tspan x="0" y="594">la semilla de esa pregunta por ¿cómo hacer la revolución en </tspan><tspan x="0" y="621">Colombia?</tspan><tspan x="400.5537" y="675" class="player-signature">Vera Grabe</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 403)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const G07 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">CORRIENTE DE RENOVACIÓN SOCIALISTA</tspan><tspan x="0" y="27">1991 - 1994</tspan><tspan x="0" y="81">La Corriente de Renovación Socialista es una fracción del </tspan><tspan x="0" y="108">Ejército de Liberación Nacional que firmó el acuerdo de </tspan><tspan x="0" y="135">negociación con el Gobierno en abril del año 94. Hubo </tspan><tspan x="0" y="162">previamente un debate interno muy profundo que terminó </tspan><tspan x="0" y="189">con la ruptura, la salida nuestra y la negociación posterior. </tspan><tspan x="0" y="216">En el debate interno del ELN había un sector llamado los </tspan><tspan x="0" y="243">Perestroikos, que plantearon el debate por las reformas que </tspan><tspan x="0" y="270">se estaban dando en la Unión Soviética con la Perestroika y </tspan><tspan x="0" y="297">las reformas de Fidel en Cuba con la rectificación de errores. </tspan><tspan x="0" y="324">Entonces, planteamos el debate interno en la Asamblea </tspan><tspan x="0" y="351">Nacional de la UCELN en diciembre de 1989, con la </tspan><tspan x="0" y="378">necesidad de replantear la lucha armada, y de abrirnos a la </tspan><tspan x="0" y="405">movilización social, en especial a la participación en la </tspan><tspan x="0" y="432">Asamblea Constituyente. Al interior del ELN no hubo </tspan><tspan x="0" y="459">posibilidad de una negociación, simplemente nos expulsaron </tspan><tspan x="0" y="486">e inclusive sectores del ELN nos declararon enemigos y </tspan><tspan x="0" y="513">objetivos militares, por lo que tuvimos que pasar a una doble </tspan><tspan x="0" y="540">clandestinidad. Sin embargo, cuando rompimos con el ELN </tspan><tspan x="0" y="567">para organizarnos en otra guerrilla, prevaleció la posición de </tspan><tspan x="0" y="594">la negociación política.</tspan><tspan x="235.1655" y="648" class="player-signature">Fernando Hernández Valencia</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 403)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const G08 = {
+  player:`
+  <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
+  <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
+  <tspan x="0" y="0" class="player-bold">FUERZAS ARMADAS REVOLUCIONARIAS DE COLOMBIA - </tspan><tspan x="0" y="27" class="player-bold">EJÉRCITO DEL PUEBLO</tspan><tspan x="0" y="54">1964 - 2017</tspan><tspan x="0" y="108">Las FARC, como todos saben, nace de la agresión a un grupo </tspan><tspan x="0" y="135">de campesinos organizados que venía de una experiencia de </tspan><tspan x="0" y="162">la violencia liberal-conservadora y tenían un acumulado </tspan><tspan x="0" y="189">político y militar, y, una experiencia social. Se inicia la </tspan><tspan x="0" y="216">resistencia con un llamado al diálogo, con un grito a muchas </tspan><tspan x="0" y="243">personalidades en Colombia, a la intelectualidad francesa, a </tspan><tspan x="0" y="270">la iglesia, y al Gobierno cuando se supo del operativo </tspan><tspan x="0" y="297">planeado sobre Marquetalia. Les dijeron: “no lo hagan, </tspan><tspan x="0" y="324">dialoguemos, conversemos”, pero lo hicieron y el resultado </tspan><tspan x="0" y="351">fue el surgimiento de las FARC con un programa político, </tspan><tspan x="0" y="378">pero siempre, con un interés de búsqueda de una solución </tspan><tspan x="0" y="405">política al conflicto. En estos días tuve una conversación con </tspan><tspan x="0" y="432">los hijos del general Matallana, quien condujo la operación </tspan><tspan x="0" y="459">Marquetalia y me regalaron un libro de él, en donde encontré </tspan><tspan x="0" y="486">unas cartas cruzadas entre Marulanda y Jacobo Arenas en </tspan><tspan x="0" y="513">los 70. Ahí vi dos hombres que buscaban caminos para </tspan><tspan x="0" y="540">resolver ese conflicto armado a través del diálogo. </tspan><tspan x="0" y="567">Marulanda y Jacobo Arenas, siempre estuvieron </tspan><tspan x="0" y="594">buscando cualquier posibilidad para lograr un camino </tspan><tspan x="0" y="621">de solución política.</tspan><tspan x="255.2129" y="675" class="player-signature">Rodrigo Londoño Echeverri</tspan>
+  </text>
+  <g id="character-player" class="hidden" transform="matrix(1 0 0 1 0 431)">
+  <text transform="matrix(1 0 0 1 691.5695 509.0643)" class="player-regular">
+    <tspan id="character-name" x="0" y="0" class="player-bold">Nodier Giraldo Giraldo</tspan>
+    <tspan id="character-alias" x="0" y="24">Alias Lorem ipsum</tspan>
+    </text>
+    <text id="character-time" class="time" transform="matrix(1 0 0 1 1028.4347 579.384)">– 00:00 / 00:00</text>
+    <line id="character-timeline" style="opacity:0.24;fill:transparent;stroke:#252526;stroke-width:3;stroke-miterlimit:10;" x1="691.6664" y1="573.8339" x2="1020.6664" y2="573.8339"/>
+    <line id="character-marker" class="marker" x1="691.6664" y1="563.5995" x2="691.6664" y2="584.6957"/>
+    <line id="character-timebar" class="timebar" x1="691.6664" y1="573.8339" x2="691.6664" y2="573.8339"/>
+    <g id="character-button">
+      <polygon id="character-play-button" class="play-button" points="    663.7491,583.8287 663.7491,564.5796 663.7722,564.3619 663.8124,564.1964 663.8974,564.0175 664.0048,563.8476     664.1299,563.7045 664.2686,563.6017 664.4474,563.4943 664.6129,563.4362 664.7873,563.3959 665.0109,563.3959     665.1943,563.4272 665.3955,563.4854 665.5967,563.5883 665.6614,563.6202 678.3882,573.2537 678.4758,573.3281     678.5831,573.4488 678.6458,573.5203 678.6994,573.6008 678.7352,573.6724 678.7709,573.7573 678.8022,573.8513     678.8336,573.9541 678.8514,574.0614 678.8649,574.1688 678.8559,574.2985 678.838,574.4371 678.7978,574.5802 678.7441,574.7054     678.6949,574.8217 678.6368,574.9066 678.5429,575.0184 678.4445,575.1034 678.3882,575.1532 665.6614,584.7589     665.5297,584.8477 665.4089,584.9103 665.2703,584.9684 665.1317,584.9952 664.9841,585.0176 664.7828,585.0131     664.5637,584.9595 664.3446,584.8655 664.1613,584.7314 664.0316,584.6017 663.9287,584.4631 663.8482,584.3066     663.7901,584.1679 663.7498,583.9935   "/>
+      <rect class="invisible" x="663" y="564" width="15" height="20" />
+      <g id="character-pause-button" class="pause-button hidden">
+        <line id="S-02_3_" x1="663.5896" y1="564.2706" x2="663.5896" y2="585.3668"/>
+        <line id="S-02_2_" x1="676.7145" y1="564.2706" x2="676.7145" y2="585.3668"/>
+      </g>
+    </g>
+  </g>
+
+  `,
+};
+const G09 = {
+  player:`
+
+  `,
+};
+const G10 = {
   audioFiles: ['02_Lucia_Gonzalez-CEV.mp3','00_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav','02_Lucia_Gonzalez-CEV.mp3','00_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav'],
   player: `
   <text transform="matrix(1 0 0 1 187.4673 374.1088)" id="organizer-character" class="organizer-text">Lucía González</text>
@@ -694,4 +1082,9 @@ G10 = {
   <path id="XMLID_3907_" style="fill:#101986;" d="M291.26,246.6h0.78l2.28,8.19h-0.89l-0.7-2.83h-2.17l-0.69,2.83h-0.87L291.26,246.6z
    M291.64,247.59l-0.91,3.7h1.83L291.64,247.59z"/>
   `
-}
+};
+const G11 = {
+  player:`
+
+  `,
+};

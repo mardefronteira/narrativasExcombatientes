@@ -4,9 +4,11 @@ let btnInfo = $( '#btn-info' );
 let btnClose = $( '#btn-close' );
 let video = $( '#video' );
 let videoElement = document.getElementById('video');
-// let btnActiveSound = $( '#btn-play' );
 let btnCloseMenu = $( '#btn-close-menu' );
 let menuTitle = $( '#menu-title' );
+
+let btnSound = $( '#btn-sound' );
+let soundIsOn = true;
 
 $(document).ready(function(){
   init();
@@ -22,6 +24,34 @@ function showContentInfo(){
     contentInfo.fadeIn();
     infoIsVisible = true;
   }
+}
+
+function handleSound() {
+  let homeAudio = document.querySelector('#home-audio');
+  let guideAudio = document.querySelector('#guide-audio');
+  let playButton = document.querySelector('#btn-sound-on');
+  let pauseButton = document.querySelector('#btn-sound-off');
+
+  if (soundIsOn) {
+    guideAudio.pause();
+    homeAudio.pause();
+    playButton.classList.add('invisible');
+    pauseButton.classList.remove('invisible');
+  } else {
+    pauseButton.classList.add('invisible');
+    playButton.classList.remove('invisible');
+
+    if (!d3.select('#guide-modal').classed('modal-hidden')) {
+      console.log('foi aqi')
+      guideAudio.currentTime = 0;
+      guideAudio.play();
+    } else if (lastClick.type == 'restart') {
+      console.log('foi aqiuuu')
+      homeAudio.currentTime = 0;
+      homeAudio.play();
+    }
+  }
+    soundIsOn = !soundIsOn
 }
 
 function showVideo() {
@@ -66,9 +96,11 @@ function showNarratives() {
   hideVideo();
 
   // start sound
-  let homeAudio = document.querySelector('#home-audio');
-  homeAudio.play();
-  homeAudio.currentTime = 0;
+  if (soundIsOn) {
+    let homeAudio = document.querySelector('#home-audio');
+    homeAudio.play();
+    homeAudio.currentTime = 0;
+  }
   // homeAudio.currentTime === 0 ? homeAudio.play() : '';
 }
 
@@ -108,7 +140,7 @@ function init() {
   btnInfo.on('click', showVideo);
   btnClose.on('click', hideVideo);
   menuTitle.on('click', showContentInfo);
-  // btnActiveSound.on('click', playVideo);
+  btnSound.on('click', handleSound);
   btnCloseMenu.on('click', showContentInfo);
 
   video.bind('ended', hideVideo);

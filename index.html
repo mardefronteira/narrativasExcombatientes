@@ -70,6 +70,7 @@
 
         <!--Mute button-->
         <g id="btn-sound" class="info-button menu-button">
+          <rect class="invisible" x="1820" y="10" width="35" height="35"/>
         	<polygon  points="
         		1845.9758,14.1588 1845.9758,33.7231 1837.7439,27.6293 1833.4675,27.5224 1833.4675,20.3595 1837.9576,20.3595 	"/>
         	<g id="btn-sound-on">
@@ -77,10 +78,11 @@
         			<line x1="1864.9628" y1="14.1588" x2="1864.9628" y2="33.7231"/>
         			<line x1="1853.946" y1="19.9044" x2="1853.946" y2="27.9775"/>
         	</g>
-        	<g id="btn-sound-off" class="hidden">
+        	<g id="btn-sound-off" class="invisible">
         			<line x1="1861.0192" y1="18.645" x2="1852.946" y2="26.718"/>
         			<line x1="1852.946" y1="18.645" x2="1861.0192" y2="26.718"/>
         	</g>
+
         </g>
 
         <g id="M-01" class="frame menu-button"><!--button 1-->
@@ -717,8 +719,9 @@
 
 
     <div id="guide-modal" class="modal modal-hidden">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+      <div id="guide-svg-container" class="modal-content">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="30px"
+      	 viewBox="0 0 1920 1080" style="background:#E8FFFA;" xml:space="preserve">
       <rect id="guide-background" x="-3.04" y="1.71" width="1925.29" height="1081.26"/>
       <rect id="guide-main-background" x="209.72" y="176.25" width="1495" height="831.79"/>
 
@@ -773,6 +776,7 @@
         <text transform="matrix(1 0 0 1 1581.8025 157.6459)">Guía 7</text>
       </g>
       </svg>
+    </div>
     </div>
     <audio id="guide-audio" src="./audios/GUIAS.mp3" class="hidden"></audio>
 

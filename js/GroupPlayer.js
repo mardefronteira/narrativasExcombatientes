@@ -47,7 +47,7 @@ class GroupPlayer {
     let randomCharacter = this.characters[Math.floor(Math.random() * this.characters.length)].id;
     this.displayCharacter(randomCharacter);
 
-    document.querySelector(`#character-time`).innerHTML = `– 00:00 / ${this.activeCharacter.duration.slice(3)}`;
+    document.querySelector(`#character-time`).innerHTML = `– 00:00 / ${this.activeCharacter.duration}`;
   }
 
   playPause(e) {
@@ -100,7 +100,7 @@ class GroupPlayer {
     characterAlias.innerHTML = this.activeCharacter.alias;
 
     let timeString = document.getElementById(`character-time`);
-    timeString.innerHTML = `– ${getFormattedTime(audioElement.currentTime)} / ${this.activeCharacter.duration.slice(3)}`
+    timeString.innerHTML = `– ${getFormattedTime(audioElement.currentTime)} / ${this.activeCharacter.duration}`
 
     // Display element with the play button
     document.querySelector('#character-player').classList.remove('hidden');
@@ -153,7 +153,7 @@ class GroupPlayer {
 
       // update time
       let timeString = document.getElementById(`character-time`);
-      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.activeCharacter.duration.slice(3)}`
+      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.activeCharacter.duration}`
     }
   }
 

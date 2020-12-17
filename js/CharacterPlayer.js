@@ -18,7 +18,7 @@ class CharacterPlayer {
     // set character info
     document.querySelector('#character-name').innerHTML = this.character.character;
     document.querySelector('#character-alias').innerHTML = this.character.alias;
-    document.querySelector('#character-time').innerHTML = `– 00:00 / ${this.character.duration.slice(3,8)}`;
+    document.querySelector('#character-time').innerHTML = `– 00:00 / ${this.character.duration}`;
     // document.querySelector('#character-group').innerHTML = getGroupName(this.character);
 
     let group = document.querySelector('#character-group');
@@ -125,7 +125,7 @@ class CharacterPlayer {
 
     // update time
     let timeString = document.getElementById(`character-time`);
-    timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.character.duration.slice(3,8)}`;
+    timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.character.duration}`;
   }
 
   removeElements() {

@@ -63,10 +63,11 @@ d3.select( '#background' )
     somethingIsActive = false;
 
     console.log("background click")
-
-    let homeAudio = document.querySelector('#home-audio')
-    homeAudio.play();
-    homeAudio.currentTime = 0;
+    if (soundIsOn) {
+      let homeAudio = document.querySelector('#home-audio')
+      homeAudio.play();
+      homeAudio.currentTime = 0;
+    }
 
   } );
 

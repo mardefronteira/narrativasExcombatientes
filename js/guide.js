@@ -3,17 +3,24 @@ function openGuide() {
   // console.log('abriu!')
   Array.from(document.querySelectorAll('audio')).map(audio => audio.id !==  this.audioId ? audio.pause() : ``);
 
-  // create audio elements
-  let audioElement = document.querySelector('#guide-audio');
-  audioElement.currentTime = 0;
-  audioElement.play();
+  // get audio element
+  if (soundIsOn) {
+    let audioElement = document.querySelector('#guide-audio');
+    audioElement.currentTime = 0;
+    audioElement.play();
+  }
 
+  // create guide
   let content = document.createElement('DIV');
   content.setAttribute("xmlns", "http://www.w3.org/1999/xhtml");
   content.id="guide-content-div";
   content.innerHTML = guide1;
   document.querySelector('#guide-content').appendChild(content);
   document.querySelector('#guide-modal').classList.remove('modal-hidden');
+}
+
+function showGuideContent(content) {
+  document.getElementById('guide-content-div').innerHTML = content;
 }
 
 function closeGuide() {
