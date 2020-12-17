@@ -109,7 +109,10 @@ a > i {
 
 div#guide-svg-container {
   top: 2vh;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
   justify-content: center;
 }
 
