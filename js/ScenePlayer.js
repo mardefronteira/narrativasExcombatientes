@@ -54,7 +54,13 @@ class ScenePlayer {
       clickableArea.classList.add('clickable');
       clickableArea.addEventListener('mousemove', e => {mouseIsPressed ? this.setTime(e) : ''});
       clickableArea.addEventListener('click', e => {this.setTime(e)});
-      gElement.appendChild(clickableArea);
+
+      // if player was translated, add clickable to translated g, otherwise add to main player g
+      if (document.querySelector('#translate-g')) {
+        document.querySelector('#translate-g').appendChild(clickableArea);
+      } else {
+        document.getElementById(`${this.playerId}`).appendChild(clickableArea);
+      }
 
       this.timecodes = data['audios'].filter( relation => relation['scene'] === this.id);
 

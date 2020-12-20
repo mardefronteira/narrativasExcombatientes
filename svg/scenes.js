@@ -576,7 +576,7 @@ let E11 = {
   	584.0038,833.0274 587.1941,836.0624 590.1823,838.9775 592.4886,842.4213 597.1324,843.7524 599.223,847.4438 599.1323,852.0939
   	601.5278,855.4404 601.7627,859.5081 `,
   player: `
-  <g transform="matrix(1 0 0 1 472 0)">
+  <g id="translate-g" transform="matrix(1 0 0 1 472 0)">
   <rect id="player-background" class="M-03-player player-background" x="111.2175" y="0" width="510.2362" height="1090"/>
   <text id="E-11-time" transform="matrix(1 0 0 1 489.4347 772.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="152.6664" y1="767.6698" x2="481.6664" y2="767.6698"/>
@@ -679,7 +679,7 @@ let E13 = {
   	581.0881,460.9994 578.8829,462.6245 577.3575,465.2179 574.8986,466.6414 571.6309,465.8944 569.066,466.3466 566.5948,467.5058
   	563.9294,467.6154 561.0386,468.9252 `,
   player: `
-  <g transform="matrix(1 0 0 1 -50 0)">
+  <g id="translate-g" transform="matrix(1 0 0 1 -50 0)">
   <rect id="player-background" class="M-03-player player-background" x="95.2175" y="0" width="510.2362" height="1090"/>
   <text id="E-13-time" transform="matrix(1 0 0 1 473.4347 732.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="136.6664" y1="727.6698" x2="465.6664" y2="727.6698"/>
@@ -978,7 +978,7 @@ let E20 = {
   	574.81,250.76 577.69,255.6 575.76,259.48 574.24,263.46 571.02,266.48 567.38,268.89 567.9,274.82 564.66,277.78 558.63,276.86
   	556.31,280.72 552.3,281.89 549.33,285.74 545.58,288.59 540.58,284.86 536.65,287.69 532.4,287.34 528.24,286.58 524.28,285.06 `,
   player: `
-  <g transform="matrix(1 0 0 1 500.4503 0)">
+  <g id="translate-g" transform="matrix(1 0 0 1 500.4503 0)">
   <rect id="player-background" class="M-03-player player-background" x="85.2175" y="0" width="510.2362" height="1090"/>
   <text id="E-20-time" transform="matrix(1 0 0 1 463.4347 682.8926)" class="time">– 00:00 / 00:00</text>
   <line id="scene-timeline" class="timeline" x1="126.6664" y1="677.6698" x2="455.6664" y2="677.6698"/>
