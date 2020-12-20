@@ -4,7 +4,7 @@ let guide01 =  `<div class="row">
 	<img class="temp-guide-img" src="./img/guide/guide_3.jpg">
 	<img class="temp-guide-img" src="./img/guide/guide_4.jpg">
 </div>`;
-let guide02 =  `<div class="row">
+/* let guide02 =  `<div class="row">
 	<div class="empty-col col"></div>
 	<div class="text-block col">
 		<h1 class="guide-h1">Abriendo caminos hacia el gran diálogo nacional “con el pueblo, con las armas, al poder”</h1>
@@ -59,7 +59,8 @@ let guide02 =  `<div class="row">
 	<div class="img-col col">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/wlwJEu84j5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
-</div>`;
+</div>`; */
+let guide02 = `<p>guia 2</p>`;
 let guide03 = `<p>guia 3</p>`;
 let guide04 = `<p>guia 4</p>`;
 let guide05 = `<p>guia 5</p>`;
