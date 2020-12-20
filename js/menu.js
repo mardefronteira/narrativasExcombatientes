@@ -130,7 +130,7 @@ function showCredits() {
 
 function init() {
   document.querySelector('#credits-node').addEventListener('click', showCredits)
-  document.querySelector('#guide-node').addEventListener('click', () => {showNarratives(); openGuide();});
+  document.querySelector('#guide-node').addEventListener('click', () => {showNarratives(); openGuide("guide-01");});
   document.querySelector('#intro-node').addEventListener('click', showVideo);
   document.querySelector('#intro-label').addEventListener('click', showVideo);
   document.querySelector('#menu-logo').addEventListener('click', showIntroPage);
@@ -155,4 +155,8 @@ function init() {
 
   showIntroPage();
 
+  // set guide buttons
+  for (let i = 1; i < 9; i++) {
+    document.querySelector(`#guide-0${i}`).addEventListener('click', () => {showGuideContent(`guide-0${i}`)});
+  }
 }

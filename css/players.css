@@ -154,6 +154,10 @@ padding-top: 300px;
   stroke-miterlimit:10;
 }
 
+.player-image {
+  width: 100%;
+}
+
 .timebar {
   fill:none;
   stroke:#252526;

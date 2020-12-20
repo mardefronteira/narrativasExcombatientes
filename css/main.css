@@ -162,6 +162,10 @@ div#menu-bar{
   fill-opacity: 1;
 }
 
+.info-button:hover > polygon {
+  fill-opacity: 1;
+}
+
 .info-button:hover > text {
   fill:var(--primary);
 }
@@ -326,7 +330,8 @@ video#video{
 }
 
 #btn-sound {
-  fill:transparent;
+  fill:#E8FFFA;
+  fill-opacity:0;
   stroke:#E8FFFA;
   stroke-width:2;
   stroke-linecap:round;

@@ -116,8 +116,8 @@ let E01 = {
       <p class="player-paragraph bold">
         Firmas
       </p>
-      <img src="./img/M-06-signatures-1.jpg" alt="firmas de excombatientes">
-      <img src="./img/M-06-signatures-2.jpg" alt="firmas de excombatientes">
+      <img class="player-image" src="./img/M-06-signatures-1.jpg" alt="firmas de excombatientes">
+      <img class="player-image" src="./img/M-06-signatures-2.jpg" alt="firmas de excombatientes">
       <video id="M-06-final" src="./video/M-06-final.mp4" class="player-video" autoplay muted></video>
     </div>
   </foreignObject>

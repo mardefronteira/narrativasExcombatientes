@@ -81,8 +81,7 @@ class ScenePlayer {
 
       this.frame = data['frames'].find(frame => frame.scenes.includes(this.id));
       if (this.frame.id === 'M-06'){
-        console.log('adicionou')
-        document.querySelector(`#${this.id}-guide-button`).addEventListener('click', openGuide);
+        document.querySelector(`#${this.id}-guide-button`).addEventListener('click', () => {openGuide("guide-02")});
       }
     }
   }

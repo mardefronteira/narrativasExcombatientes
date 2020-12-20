@@ -1,5 +1,5 @@
 
-function openGuide() {
+function openGuide(guideId) {
   // console.log('abriu!')
   Array.from(document.querySelectorAll('audio')).map(audio => audio.id !==  this.audioId ? audio.pause() : ``);
 
@@ -14,13 +14,27 @@ function openGuide() {
   let content = document.createElement('DIV');
   content.setAttribute("xmlns", "http://www.w3.org/1999/xhtml");
   content.id="guide-content-div";
-  content.innerHTML = guide1;
+  content.innerHTML = '';
   document.querySelector('#guide-content').appendChild(content);
   document.querySelector('#guide-modal').classList.remove('modal-hidden');
+
+  showGuideContent(guideId)
 }
 
-function showGuideContent(content) {
-  document.getElementById('guide-content-div').innerHTML = content;
+function showGuideContent(guideId) {
+  // get content variable
+  let jsId = eval(guideId.replace('-', ''));
+
+  // deselect all tabs
+  d3.selectAll('.guide-tab-active')
+    .classed('guide-tab-active', false);
+
+  // activate this tab
+  d3.select(`#${guideId}`)
+    .classed('guide-tab-active', true);
+
+  // switch content
+  document.getElementById('guide-content-div').innerHTML = jsId;
 }
 
 function closeGuide() {
