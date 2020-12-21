@@ -159,4 +159,6 @@ function init() {
   for (let i = 1; i < 9; i++) {
     document.querySelector(`#guide-0${i}`).addEventListener('click', () => {showGuideContent(`guide-0${i}`)});
   }
+
+  setTimeout(showContentInfo, 3000);
 }
