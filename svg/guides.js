@@ -1,4 +1,5 @@
-let guide01 =  `<div class="row">
+let guide01 = `<iframe src="./img/guide_timeline.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%"></iframe>`;
+let guide02 =  `<div class="row">
 	<img class="temp-guide-img" src="./img/guide/guide_1.jpg">
 	<img class="temp-guide-img" src="./img/guide/guide_2.jpg">
 	<img class="temp-guide-img" src="./img/guide/guide_3.jpg">
@@ -60,7 +61,6 @@ let guide01 =  `<div class="row">
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/wlwJEu84j5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 </div>`; */
-let guide02 = `<p>guia 2</p>`;
 let guide03 = `<p>guia 3</p>`;
 let guide04 = `<p>guia 4</p>`;
 let guide05 = `<p>guia 5</p>`;
