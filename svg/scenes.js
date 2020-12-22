@@ -118,7 +118,7 @@ let E01 = {
       </p>
       <img class="player-image" src="./img/M-06-signatures-1.jpg" alt="firmas de excombatientes">
       <img class="player-image" src="./img/M-06-signatures-2.jpg" alt="firmas de excombatientes">
-      <video id="M-06-final" src="./video/M-06-final.mp4" class="player-video" autoplay muted></video>
+      <iframe id="M-06-final" src="https://player.vimeo.com/video/493732119" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
   </foreignObject>
 `,

@@ -8,10 +8,11 @@ foreignObject#M-06-container {
 }
 
 div#M-06-div {
-  padding: 30vh 3vw;
+  padding: 0 5vw;
   overflow-y: auto;
   text-align: justify;
-  height: 740px;
+  /* height: 740px; */
+  height: inherit;
 }
 
 .player-title {
@@ -44,13 +45,15 @@ div#M-06-div {
   font-weight: bold;
 }
 
-video#M-06-final {
- padding-bottom: 500px;
+iframe#M-06-final {
+ padding-bottom: 60vh;
+ width: 100%;
 }
 
-/* video#M-06-initial {
-padding-top: 300px;
-} */
+iframe#M-06-initial {
+padding-top: 40vh;
+width: 100%;
+}
 
 .hidden-player {
   display:none;
