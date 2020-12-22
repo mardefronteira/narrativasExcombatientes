@@ -123,9 +123,10 @@ function showIntroPage() {
 }
 
 function showCredits() {
-  // let credits = d3.select('#intro-credits');
-  // let visibility = credits.classed('hidden-intro-page') ? false : true;
-  // credits.classed('hidden-intro-page', visibility);
+  let credits = d3.select('#intro-credits');
+  document.querySelector('#intro-credits').innerHTML = creditsContent;
+  let visibility = credits.classed('hidden-intro-page') ? false : true;
+  credits.classed('hidden-intro-page', visibility);
 }
 
 function init() {

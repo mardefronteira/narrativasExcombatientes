@@ -56,6 +56,19 @@ class OrganizerPlayer {
       timeString.innerHTML = `– 00:00 / 02:16`;
     });
 
+    if (this.id == 'G-10') {
+      const frame = eval(`${this.jsId}.frameList`);
+      for (let i = 0; i < 6; i++) {
+          // let thisFrame = `#${frame[i]}`;
+          // console.log(thisFrame)
+          document.querySelector(`#organizer-frame-${i+1}`).addEventListener('click', () => {
+          getClickedElement( d3.select(`#${frame[i]}`) );
+          restart();
+          show_elements();
+          updateLastClick();
+        });
+      }
+    }
   }
 
   playPause(e) {
@@ -65,21 +78,24 @@ class OrganizerPlayer {
 
     // pause all other players
     Array.from(document.querySelectorAll('audio')).map(audio => audio.id !== audioElement.id ? audio.pause() : ``);
+    d3.selectAll('.play-button').classed('hidden', false);
+    d3.selectAll('.pause-button').classed('hidden', true);
 
     // play or pause audio
     audioElement.paused ? audioElement.play() : audioElement.pause();
 
     // show corresponding button
-    // let buttonToShow = audioElement.paused ? 'play' : 'pause';
-    // let buttonToHide = audioElement.paused ? 'pause' : 'play';
-    // document.getElementById(`organizer-${buttonToShow}-button`).classList.remove('hidden');
-    // document.getElementById(`organizer-${buttonToHide}-button`).classList.add('hidden');
+    let buttonToShow = audioElement.paused ? 'play' : 'pause';
+    let buttonToHide = audioElement.paused ? 'pause' : 'play';
+    document.getElementById(`organizer-${buttonToShow}-${targetId}`).classList.remove('hidden');
+    document.getElementById(`organizer-${buttonToHide}-${targetId}`).classList.add('hidden');
   }
 
 
   getClickableAreas() {
   for (let i = 0; i < this.numPlayers ; i++) {
     let targetElement = document.querySelector(`#organizer-timeline-${i}`);
+    // console.log(`#organizer-timeline-${i}`);
     let timeline = {
       x1: targetElement.getAttribute("x1"),
       x2: targetElement.getAttribute("x2"),

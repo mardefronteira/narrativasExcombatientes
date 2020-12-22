@@ -216,7 +216,7 @@ div#menu-bar{
   fill-opacity: 1;
 }
 
-text#M-06-number {
+text#M-06-number, .M-06-number {
   fill:#FFF;
 }
 

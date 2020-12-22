@@ -137,6 +137,7 @@ padding-top: 300px;
 .invisible {
   fill: transparent;
   stroke: none;
+  pointer-events: all;
 }
 
 .play-button {
