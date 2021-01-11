@@ -264,7 +264,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
               .classed( 'hidden', false )
               .classed( 'minor', false );
 
-            d3.select( '#' + r[ 'scene' ] + '.scene-link' )
+            d3.select( `#${r['scene']}-link` )
               .classed( 'visible-link', true );
 
             d3.select( `#${r[ 'scene' ]}-name` )
@@ -278,21 +278,21 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
                   .classed( 'active-group', true );
               }
 
-              d3.select( '#' + r[ 'group' ] + '.group' )
+              d3.select( `#${r['group']}` )
                   .classed( 'active-group', true );
 
-              d3.select( '#' + r[ 'group' ] + '.group-link' )
+              d3.select( `#${r['group']}-link` )
                 .classed( 'visible-link', true );
 
-              d3.select( '#' + r[ 'group' ] + '-name' )
+              d3.select( `#${r['group']}-name` )
                 .classed( 'visible-text', true );
 
-              d3.select( '#' + r[ 'character' ] + '.character' )
+              d3.select( `#${r['character']}` )
                 .classed( 'active', true )
                 .classed( 'hidden', false )
                 .classed( 'active-character', true );
 
-              d3.select( '#' + r[ 'character' ] + '.character-link' )
+              d3.select( `#${r['character']}-link` )
                 .classed( 'visible-link', true );
 
               d3.select( `#${r['character']}-name` )
@@ -307,7 +307,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
           .filter( d => d[ click.type ] === click.id )
           .map( r => {
 
-            d3.select( '#' + r[ 'group' ] + '.group' )
+            d3.select( `#${r['group']}` )
               .classed( 'hover', true )
               .classed( 'active-group', true );
 
@@ -315,16 +315,16 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
 
               if ( lastClick.type !== 'subgroup' ) {
 
-                d3.select( '#' + r[ 'group' ] + '-name' )
+                d3.select( `#${r['group']}-name` )
                   .classed( 'visible-text', true );
 
               }
 
-              d3.select( '#' + r[ 'id' ] + '.character' )
+              d3.select( `#${r['character']}` )
                 .classed( 'hover', true )
                 .classed( 'active-character', true );;
 
-              d3.select( '#' + r[ 'id' ] + '.character-link' )
+              d3.select( `#${r['id']}-link` )
                 .classed( 'visible-link', true );
 
                 // tarefa 01
@@ -343,24 +343,24 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
           .filter( d => d[ click.type ] === click.id )
           .map( r => {
 
-            d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
+            d3.select( `#${r['subgroup']}` )
                 .classed( 'active-group', true );
 
-            d3.select( '#' + r[ 'group' ] + '.group' )
+            d3.select( `#${r['group']}` )
                 .classed( 'active-group', true );
 
-            d3.select( '#' + r[ 'subgroup' ] + '-name' )
+            d3.select( `#${r['subgroup']}-name` )
               .classed( 'visible-text', true );
 
-            d3.select( '#' + r[ 'group' ] + '-name' )
+            d3.select( `#${r['group']}-name` )
               .classed( 'visible-text', true );
 
-            d3.select( '#' + r[ 'id' ] + '.character' )
+            d3.select( `#${r['id']}` )
               .classed( 'hidden', false )
               .classed( 'active-character', true );
 
 
-            d3.select( '#' + r[ 'id' ] + '.character-link' )
+            d3.select( `#${r['id']}-link` )
               .classed( 'visible-link', true );
 
             d3.select( `#${r[ 'id' ]}-name` )
@@ -416,7 +416,7 @@ d3.selectAll( '.scene,.group,.subgroup,.character' )
             .classed( 'visible-text', false)
             .classed( 'hidden', true );
 
-          d3.select( `#${character.id}`+'.character-link' )
+          d3.select( `#${character.id}-link` )
             .classed( 'visible-link', false)
             .classed( 'hidden', true );
         })
@@ -634,7 +634,7 @@ function showFrame(frameId, showLinks = true) {
     showSceneAs(sceneId, 'hover');
 
     if (showLinks) {
-      d3.select( '#' + sceneId + '.scene-link' )
+      d3.select( `#${sceneId}-link` )
         .classed( 'active-link', true );
     }
 
@@ -683,20 +683,20 @@ function showFrame(frameId, showLinks = true) {
 
         }
         if (showLinks) {
-          d3.select( '#' + r[ 'group' ] + '.group-link' )
+          d3.select( `#${r['group']}-link` )
             .classed( 'active-link', true );
         }
 
-        d3.select( '#' + r[ 'group' ] + '-name' )
+        d3.select( `#${r['group']}-name` )
           .classed( 'active-text', true );
 
-        d3.select( '#' + r[ 'character' ] + '.character' )
+        d3.select( `#${r['character']}` )
           .classed( 'hidden', false )
           .classed( 'visited', true )
           .classed( 'active', true );
 
         if (showLinks) {
-          d3.select( '#' + r[ 'character' ] + '.character-link' )
+          d3.select( `#${r['character']}-link` )
             .classed( 'active-link', true );
         }
 
@@ -802,7 +802,7 @@ function show_elements() {
       case 'scene':
 
         // activate link of clicked scene
-        d3.select( '#' + click.id + '.scene-link' )
+        d3.select( `#${click.id}-link` )
             .classed( 'active-link', true );
 
         showRelatedScenes( click.id, 'hover' );
@@ -828,35 +828,35 @@ function show_elements() {
             if ( r[ 'character' ] !== '' ) {
 
               if ( r[ 'subgroup' ] !== '' ) {
-                d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
+                d3.select( `#${r['subgroup']}` )
                   .classed( 'hidden', false )
                   .classed( 'active-group', true )
                   .classed( 'visited', true );
 
-                d3.select( '#' + r[ 'group' ] + '.group' )
+                d3.select( `#${r['group']}` )
                   .classed( 'hidden', false )
                   .classed( 'active-group', true )
                   .classed( 'visited', true );
               } else {
-                d3.select( '#' + r[ 'group' ] + '.group' )
+                d3.select( `#${r['group']}` )
                   .classed( 'hidden', false )
                   .classed( 'active-group', true )
                   .classed( 'visited', true );
               }
 
-              d3.select( '#' + r[ 'group' ] + '.group-link' )
+              d3.select( `#${r['group']}-link` )
                 .classed( 'active-link', true );
 
-              d3.select( '#' + r[ 'group' ] + '-name' )
+              d3.select( `#${r['group']}-name` )
                 .classed( 'active-text', true );
 
-              d3.select( '#' + r[ 'character' ] + '.character' )
+              d3.select( `#${r[ 'character' ]}` )
                 .classed( 'hidden', false )
                 .classed( 'visited', true )
                 .classed( 'active', true )
                 .classed( 'active-character', true );
 
-              d3.select( '#' + r[ 'character' ] + '.character-link' )
+              d3.select( `#${r['character']}-link` )
                 .classed( 'active-link', true );
 
               d3.select( `#${r['character']}-name` )
@@ -880,7 +880,7 @@ function show_elements() {
           return r;
         } )
         .map( r => {
-          d3.select( '#' + r[ 'scene' ] + '-node' )
+          d3.select( `#${r['scene']}-node` )
           .classed( 'hidden', false )
           .classed( 'minor', false )
           .classed( 'in-frame', true );
@@ -888,41 +888,41 @@ function show_elements() {
           // show related scene node and link
           showSceneAs(r['scene'], 'initial');
 
-          d3.select( '#' + r[ 'scene' ] + '.scene-link' )
+          d3.select( `#${r['scene']}-link` )
             .classed( 'active-link', true );
 
           if ( r[ 'character' ] !== '' ) {
 
             if ( r[ 'subgroup' ] !== '' ) {
-              d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
+              d3.select( `#${r['subgroup']}` )
                 .classed( 'hidden', false )
                 .classed( 'active-group', true )
                 .classed( 'visited', true );
 
 
-              d3.select( '#' + r[ 'group' ] + '.group' )
+              d3.select( `#${r['group']}` )
                 .classed( 'hidden', false )
                 .classed( 'active-group', true )
                 .classed( 'visited', true );
             } else {
-              d3.select( '#' + r[ 'group' ] + '.group' )
+              d3.select( `#${r['group']}` )
                 .classed( 'hidden', false )
                 .classed( 'active-group', true )
                 .classed( 'visited', true );
             }
 
-            d3.select( '#' + r[ 'group' ] + '.group-link' )
+            d3.select( `#${r['group']}-link` )
               .classed( 'active-link', true );
 
-            d3.select( '#' + r[ 'group' ] + '-name' )
+            d3.select( `#${r['group']}-name` )
               .classed( 'active-text', true );
 
-            d3.select( '#' + r[ 'character' ] + '.character' )
+            d3.select( `#${r['character']}` )
               .classed( 'hidden', false )
               .classed( 'visited', true )
               .classed( 'active', true );
 
-            d3.select( '#' + r[ 'character' ] + '.character-link' )
+            d3.select( `#${r['character']}-link` )
               .classed( 'active-link', true );
 
             d3.select( `#${r['character']}-name` )
@@ -948,16 +948,16 @@ function show_elements() {
           var group = data[ 'groups' ].filter( g => g[ 'id' ] === click.id )[ 0 ];
           if ( group[ 'organizer' ] === 'false' ) {
 
-            d3.select( '#' + r[ 'group' ] + '-name' )
+            d3.select( `#${r['group']}-name` )
               .classed( 'active-text', true );
 
-            d3.select( '#' + r[ 'id' ] + '.character' )
+            d3.select( `#${r['id']}` )
               .classed( 'hidden', false )
               .classed( 'visited', true )
               .classed( 'active', true )
               .classed( 'active-character', true );
 
-            d3.select( '#' + r[ 'id' ] + '.character-link' )
+            d3.select( `#${r['id']}-link` )
               .classed( 'active-link', true );
 
             d3.select( `#${r[ 'id' ]}-name` )
@@ -1002,13 +1002,13 @@ function show_elements() {
           // d3.select( '#' + r[ 'subgroup' ] + '-name' )
           //   .classed( 'active-text', true );
 
-          d3.select( '#' + r[ 'id' ] + '.character' )
+          d3.select( `#${r['id']}` )
             .classed( 'hidden', false )
             .classed( 'visited', true )
             .classed( 'active', true )
             .classed( 'active-character', true );;
 
-          d3.select( '#' + r[ 'id' ] + '.character-link' )
+          d3.select( `#${r['id']}-link` )
             .classed( 'active-link', true );
 
           d3.select( `#${r[ 'id' ]}-name` )
