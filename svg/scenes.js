@@ -119,6 +119,30 @@ let E01 = {
       <img class="player-image" src="./img/M-06-signatures-1.jpg" alt="firmas de excombatientes">
       <img class="player-image" src="./img/M-06-signatures-2.jpg" alt="firmas de excombatientes">
       <iframe id="M-06-final" src="https://player.vimeo.com/video/493732119" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+      <svg version="1.1" id="E-01-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      	 viewBox="0 0 400 70" style="enable-background:new 0 0 400 70;" xml:space="preserve">
+      <style type="text/css">
+      	.st_0{fill:#F27777;}
+      	.st_1{fill:none;}
+      	.st_2{fill:#002F87;}
+      	.st_3{font-family:'Heebo';}
+      	.st_4{font-size:17px;font-weight:600;}
+      </style>
+      <g transform="translate(30 0)">
+      	<polygon class="st_0" points="68.07,40.36 69.85,44 65.76,45.69 70.26,51.69 68.47,54.87 63.61,55.27 63.32,60.02 56.18,55.79
+      			57.08,63.65 54.13,65.96 49.29,61.88 46.32,62.9 43.11,59.63 39.77,66.15 36.56,64.48 33.15,64.14 32.09,58.18 26.73,61.65
+      			27.06,55.52 22.28,56.38 21.64,52.64 20.23,49.91 13.62,49.93 17.06,44.75 10.09,43.37 11.11,39.45 15.31,35.8 17.62,32.95
+      			15.91,29.74 11.61,25.15 15.91,23.1 19,21.14 19.69,17.81 22.04,15.61 22.68,11.44 28,13.2 27.93,6.59 32.89,9.57 34.41,3.12
+      			39.03,9.57 41.88,7.86 45.12,5.94 48.63,5.17 50.73,9.83 54.92,7.8 56.47,11.77 62.25,9.2 59.66,17.2 64.25,16.98 65.61,19.88
+      			65.95,23.19 67.63,25.71 69.72,28.27 73.22,30.97 76.13,34.37 74.74,38.02 		"/>
+      	<rect x="98.15" y="21.73" class="st_1" width="360.85" height="28.59"/>
+      	<text transform="matrix(1 0 0 1 98.1497 41.9789)" class="st_2 st_3 st_4">Conozca a los participantes</text>
+      	<polygon class="st_2" points="53.08,36.92 52.39,39.66 52.45,43.9 48.96,45.05 45.46,43.95 42.18,46.32 39.65,43.65 36.2,42.73
+      			34.32,39.78 34.51,36.29 33.11,32.85 34.43,29.49 38.26,28.39 40.5,26.47 43.19,24.02 46.25,26.37 50.08,25.23 53.09,27.26
+      			53,31.28 55.35,33.93 		"/>
+      </g>
+      </svg>
     </div>
   </foreignObject>
 `,

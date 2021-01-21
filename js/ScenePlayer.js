@@ -89,6 +89,8 @@ class ScenePlayer {
       if (this.frame.id === 'M-06'){
         document.querySelector(`#${this.id}-guide-button`).addEventListener('click', () => {openGuide("guide-02")});
       }
+    } else {
+      document.querySelector('#E-01-button').addEventListener('click', () => {openGuide("guide-08")});
     }
   }
 

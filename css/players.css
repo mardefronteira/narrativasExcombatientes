@@ -46,8 +46,13 @@ div#M-06-div {
 }
 
 iframe#M-06-final {
- padding-bottom: 60vh;
  width: 100%;
+}
+
+svg#E-01-button {
+  margin-bottom: 60vh;
+  margin-top: 5vh;
+  cursor:pointer;
 }
 
 iframe#M-06-initial {
@@ -95,7 +100,7 @@ width: 100%;
 
 .M-06-player {
   fill: var(--m06player);
-  fill-opacity: .30;
+  fill-opacity: .15;
 }
 
 .clickable {
