@@ -121,7 +121,6 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
 
       case 'scene':
         if (click.type === 'character'){
-          // player.displayCharacter(click.id);
         } else {
           restart();
           show_elements();
@@ -157,14 +156,10 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
         updateLastClick();
     }
     somethingIsActive = true;
-    // console.log(`is something active? ${somethingIsActive}`);
   } )
   .on( 'mouseover', function() {
     // get hovered element
     getClickedElement(d3.select( this ));
-
-    // d3.selectAll( '.organizer-name' )
-    //   .classed( 'visible-text', false );
 
     d3.selectAll( '.group-name' )
       .classed( 'visible-text', false );
@@ -210,8 +205,6 @@ d3.selectAll( '.scene,.group,.subgroup,.character,.frame' )
         case 'scene':
           if (!click.element.classed('active')){
             // Show hover node and related scenes
-            // showSceneAs(click.id, 'hover');
-            //AQUI
             document.querySelector(`#${click.id}-node`).classList.remove('minor');
             showRelatedScenes(click.id, 'hover');
           }
@@ -481,7 +474,6 @@ function restart() {
       let thisId = scene.id.slice(0,4);
       let thisFrame = frameList.find( frame => frame.scenes.includes(thisId));
       if (thisFrame != undefined) {
-        // console.log(thisId, thisFrame.id);
         d3.select(`#${thisId}-node`)
           .classed( thisFrame.id, true );
       }
@@ -544,10 +536,6 @@ function restart() {
   d3.selectAll('.group-name')
     .classed('visible-text',true);
 
-  // show organizer names
-  // d3.selectAll( '.organizer-name' )
-  //   .classed( 'visible-text', true );
-
   // hide all players
   d3.selectAll('.temp-player' )
     .classed( 'hidden-player', true )
@@ -575,9 +563,6 @@ function restart() {
     clearAllPlayers();
   }
 
-  // if (d3.select('#intro-page').classed('hidden-intro-page')){
-  //   document.querySelector('#home-audio').play();
-  // }
 }
 
 function clearAllPlayers() {
@@ -613,17 +598,13 @@ function getFormattedTime( timeInSeconds ) {
   timeInMinutes = timeInSeconds / 60;
 
   // calculate formatted time
-  // hours = Math.floor(timeInMinutes / 60);
-  // minutes = Math.floor(timeInMinutes % 60);
   minutes = Math.floor(timeInMinutes);
   seconds = Math.floor((timeInMinutes - Math.floor(timeInMinutes)) * 60);
 
   // add a zero before the value if it's less than 10
-  // hours < 10 ? hours = `0${hours}` : '';
   minutes < 10 ? minutes = `0${minutes}` : '';
   seconds < 10 ? seconds = `0${seconds}` : '';
 
-  // return `${hours}:${minutes}:${seconds}`;
   return `${minutes}:${seconds}`;
 }
 
@@ -641,11 +622,9 @@ function showFrame(frameId, showLinks = true) {
     d3.select( `#${sceneId}-name` )
       .classed( 'active-text', true );
 
-    // console.log(sceneId);
   data[ 'relationships' ]
     .filter( linked => linked['scene'] === sceneId )
     .map( r => {
-      // console.log(r)
       if ( r[ 'character' ] !== '' ) {
         var character = data[ 'characters' ].filter( c => c[ 'id' ] === r[ 'character' ] )[ 0 ];
         r[ 'group' ] = character[ 'group' ];
@@ -654,12 +633,6 @@ function showFrame(frameId, showLinks = true) {
       return r;
     } )
     .map( r => {
-
-      // console.log(r)
-
-      // d3.select( '#' + r[ 'scene' ] + '.scene' )
-      //   .classed( 'hidden', false )
-      //   .classed( 'in-frame', true )
 
       if ( r[ 'character' ] !== '' ) {
 
@@ -738,7 +711,6 @@ function addPlayer(id, type) {
       player.display();
       break;
   }
-  // console.log(players);
 }
 
 function loaded() {
@@ -755,8 +727,6 @@ function loaded() {
 
       scene.appendChild(thisNode);
   }
-
-  // document.querySelector('#viz').setAttribute('viewBox', `0 0 ${window.innerHeight} ${window.innerWidth}`);
 
   restart ();
 }
@@ -788,10 +758,6 @@ function clearNodes() {
 function show_elements() {
 
   clearNodes();
-
-  // hide organizer names
-  // d3.selectAll( '.organizer-name' )
-  //   .classed( 'visible-text', false );
 
   // hide group names
   d3.selectAll( '.group-name' )
@@ -988,20 +954,6 @@ function show_elements() {
         .filter( d => d[ click.type ] === click.id )
         .map( r => {
 
-          // d3.select( '#' + r[ 'subgroup' ] + '.subgroup' )
-          //   .classed( 'hidden', false )
-          //   .classed( 'visited', true );
-          //
-          // d3.select( '#' + r[ 'group' ] + '.group' )
-          //   .classed( 'hidden', false )
-          //   .classed( 'visited', true );
-
-          // d3.select( '#' + r[ 'group' ] + '-name' )
-          //   .classed( 'active-text', true );
-          //
-          // d3.select( '#' + r[ 'subgroup' ] + '-name' )
-          //   .classed( 'active-text', true );
-
           d3.select( `#${r['id']}` )
             .classed( 'hidden', false )
             .classed( 'visited', true )
@@ -1032,12 +984,7 @@ function show_elements() {
           .classed( 'active', true );
     }
 
-  // if (click.type !== 'frame' || click.id === 'M-01') {
-    // show player
     addPlayer(click.id, click.type);
-
-    //stop home audio
-    // document.querySelector('#home-audio').pause();
 
 }
 

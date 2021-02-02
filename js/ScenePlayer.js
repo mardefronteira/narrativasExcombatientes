@@ -17,7 +17,7 @@ class ScenePlayer {
   display() {
     // get details of the element that was clicked
     let target = data[ `${this.type}s` ].find( target => target[ 'id' ] === this.id );
-    // console.log(this.scene);
+    
     // create SVG player object
     let gElement = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     gElement.id = this.playerId;
@@ -83,7 +83,6 @@ class ScenePlayer {
       document.getElementById('scene-pause-button').classList.add('hidden');
 
       audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
-      // audioElement.addEventListener('ended', () => {this.showFrame(this.id)});
 
       this.frame = data['frames'].find(frame => frame.scenes.includes(this.id));
       if (this.frame.id === 'M-06'){
@@ -177,25 +176,11 @@ class ScenePlayer {
     audioElement.currentTime = mapValue(offsetX, 0, clickBox.width, 0, audioElement.duration);
   }
 
-  // showFrame(id){
-  //   let thisFrame = data['frames'].find(frame => frame.scenes.includes(id));
-  //
-  //   showFrame(thisFrame.id);
-  //   d3.select(`#${thisFrame.id}`)
-  //     .classed( 'selected-menu-icon', true );
-  //   d3.select(`#${thisFrame.id}-tooltip`)
-  //     .classed( 'visible-tooltip', true );
-  //
-  //   document.querySelector(`#scene-player`).classList.add('hidden');
-  // }
-
   updatePlayer(target) {
     if (this.hasBegun) {
       let audioElement = target;
       let clickable = this.clickable;
       let currentTime = audioElement.currentTime;
-
-      // console.log(currentTime);
 
       // get marker and timebar, and scale them to the current audio time
       let marker =  document.getElementById(`${this.id}-marker`);
@@ -230,9 +215,6 @@ class ScenePlayer {
             alias: '',
           }
         }
-
-        // // get its info
-        // currentCharacter = this.characters.filter(char => char.id === currentCharacter)[0];
 
         character.innerHTML = currentCharacter.character;
         alias.innerHTML = currentCharacter.alias ? `${currentCharacter.alias}` : '';

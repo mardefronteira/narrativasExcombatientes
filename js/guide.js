@@ -1,6 +1,5 @@
 
 function openGuide(guideId) {
-  // console.log('abriu!')
   Array.from(document.querySelectorAll('audio')).map(audio => audio.id !==  this.audioId ? audio.pause() : ``);
 
   // get audio element
@@ -39,6 +38,5 @@ function showGuideContent(guideId) {
 
 function closeGuide() {
   Array.from(document.querySelectorAll('audio')).map(audio => audio.pause());
-  // document.querySelector('#home-audio').play();
   document.querySelector('#guide-modal').classList.add('modal-hidden');
 }

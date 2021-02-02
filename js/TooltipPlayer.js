@@ -35,9 +35,6 @@ class TooltipPlayer {
 
     document.querySelector(`#${this.id}-button`).addEventListener('click', (e) => {this.playPause(e)});
 
-    // let thisFrame = data['frames'].find(frame => frame.id === this.id);
-    // this.duration = thisFrame.duration;
-    // console.log(this.id, this.duration)
     // update time
     let timeString = document.getElementById(`${this.id}-time`);
     timeString.innerHTML = `– 00:00 / ${this.frame.duration}`;
