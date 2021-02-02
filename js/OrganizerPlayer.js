@@ -5,25 +5,26 @@ class OrganizerPlayer {
     this.jsId = this.id.replace("-","");
     this.playerSVG = eval(`${this.jsId}.player`); // player SVG in ./svg/players.js
     this.audioFiles = eval(`${this.jsId}.audioFiles`);
-    this.characters = [];
+    this.audioTimes = eval(`${this.jsId}.audioTimes`);
+    // this.characters = [];
     this.clickables = [];
     this.numPlayers = 0;
   }
 
   display() {
+    // hide original node
+    document.querySelector(`#${this.id}`).classList.add('hidden');
+
     // create SVG player object
     let gElement = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     gElement.id = this.playerId;
     gElement.innerHTML = this.playerSVG;
     document.querySelector('#organizers').appendChild(gElement);
 
-    // get the number of players in
-    this.numPlayers = Array.from(document.querySelectorAll('.organizer-time')).length;
+    // get the number of players in SVG
+    this.numPlayers = Array.from(document.querySelectorAll('.timeline')).length;
 
-    // get character data
-    this.getCharacters();
-
-    // create players and audios for characters
+    // create clickable area for players
     this.getClickableAreas();
 
     this.clickables.map((clickable, i) => {
@@ -50,23 +51,26 @@ class OrganizerPlayer {
 
       document.querySelector(`#organizer-button-${i}`).addEventListener('click', (e) => {this.playPause(e)});
 
-      // if (i < this.characters.length) this.displayCharacter(this.characters[i].id);
-
       let timeString = document.getElementById(`organizer-time-${i}`);
-      timeString.innerHTML = `– 00:00 / 02:16`;
+      timeString.innerHTML = `– 00:00 / ${this.audioTimes[i]}`;
     });
 
-    if (this.id == 'G-10') {
-      const frame = eval(`${this.jsId}.frameList`);
-      for (let i = 0; i < 6; i++) {
-          // let thisFrame = `#${frame[i]}`;
-          // console.log(thisFrame)
-          document.querySelector(`#organizer-frame-${i+1}`).addEventListener('click', () => {
-          getClickedElement( d3.select(`#${frame[i]}`) );
+    if (eval(`${this.jsId}.frameList`) !== undefined) {
+      const frameList = eval(`${this.jsId}.frameList`);
+      for (let i = 0; i < frameList.length; i++) {
+          let thisFrame = `#${frameList[i][1]}`;
+          console.log(thisFrame)
+          document.querySelector(`#organizer-frame-${frameList[i][0]}`).addEventListener('click', () => {
+          getClickedElement( d3.select(`#${frameList[i][1]}`));
           restart();
           show_elements();
           updateLastClick();
         });
+      }
+    } else {
+      const themes = Array.from(document.querySelectorAll('.abc-node'));
+      for (let theme of themes) {
+        theme.addEventListener('click', (e) => {this.setAudioSource(e)});
       }
     }
   }
@@ -75,6 +79,8 @@ class OrganizerPlayer {
     // get audio info
     let targetId = e.target.id.slice(-1);
     let audioElement = document.getElementById(`organizer-audio-${targetId}`);
+
+    console.log(e);
 
     // pause all other players
     Array.from(document.querySelectorAll('audio')).map(audio => audio.id !== audioElement.id ? audio.pause() : ``);
@@ -95,7 +101,7 @@ class OrganizerPlayer {
   getClickableAreas() {
   for (let i = 0; i < this.numPlayers ; i++) {
     let targetElement = document.querySelector(`#organizer-timeline-${i}`);
-    // console.log(`#organizer-timeline-${i}`);
+    console.log(`#organizer-timeline-${i}`);
     let timeline = {
       x1: targetElement.getAttribute("x1"),
       x2: targetElement.getAttribute("x2"),
@@ -110,32 +116,34 @@ class OrganizerPlayer {
     this.clickables.push(clickable);
   }
 }
-//
-//   displayCharacter (id) {
-//     // get character character info
-//     let thisCharacter = this.characters.find( char => char.id === id);
-//
-//     // set audio source
-//     let audioElement = document.querySelector(`#organizer-audio`);
-//     audioElement.src = `../audios/${thisCharacter.audio}`;
-//
-//     // set character name
-//     let characterName = document.querySelector(`#organizer-name`);
-//     characterName.innerHTML = thisCharacter.character;
-//
-//     let characterAlias = document.querySelector(`#organizer-alias`);
-//     characterAlias.innerHTML = thisCharacter.alias;
-//
-//     // Display element with the play button
-//     document.querySelector('#organizer-player').classList.remove('hidden');
-//     document.querySelector('#organizer-play-button').classList.remove('hidden');
-//     document.querySelector('#organizer-pause-button').classList.add('hidden');
-//   }
-//
-  getCharacters() {
-    this.characters = data['characters'].filter(
-        info => info[`group`] === this.id
-      );
+
+  setAudioSource(e) {
+    const targetId = e.target.parentElement.id.slice(-1)
+
+    // get audio source and time from js objects
+    const thisAudio = this.audioFiles[targetId];
+    const thisTime = this.audioTimes[targetId];
+
+    console.log(targetId);
+    console.log(thisAudio);
+
+    // set audio source and total time
+    let audioElement = document.querySelector(`#organizer-audio-1`);
+    audioElement.src = `../audios/${thisAudio}`;
+
+    let timeElement = document.querySelector(`#organizer-time-1`);
+    timeElement.innerHTML = `– 00:00 / ${thisTime}`;
+
+    // get theme description from html element
+    const thisTheme = document.querySelector(`#abc-theme-${targetId-1}`).innerHTML;
+
+    // set audio description from theme
+    let textElement = document.querySelector(`#organizer-text-1`);
+    textElement.innerHTML = thisTheme;
+
+    // Display element with the play button
+    document.querySelector('#organizer-play-1').classList.remove('hidden');
+    document.querySelector('#organizer-pause-1').classList.add('hidden');
   }
 
   setTime(e) {
@@ -171,7 +179,7 @@ class OrganizerPlayer {
 
       // update time
       let timeString = document.getElementById(`organizer-time-${targetId}`);
-      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / 02:16`;
+      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.audioTimes[targetId]}`;
     }
   }
 

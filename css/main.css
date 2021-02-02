@@ -596,6 +596,7 @@ cursor: pointer;
   fill: transparent;
   stroke-width:3;
   stroke-linecap:round;
+  cursor:pointer;
 }
 
 .tooltip-timeline {
