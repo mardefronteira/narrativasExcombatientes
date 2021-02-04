@@ -20,6 +20,12 @@ function openGuide(guideId) {
   showGuideContent(guideId)
 }
 
+function suggestGuide(guideId) {
+  // activate this tab
+  d3.select(`#${guideId}`)
+    .classed('guide-tab-suggested', true);
+}
+
 function showGuideContent(guideId) {
   // get content variable
   let jsId = eval(guideId.replace('-', ''));
@@ -27,13 +33,15 @@ function showGuideContent(guideId) {
   // deselect all tabs
   d3.selectAll('.guide-tab-active')
     .classed('guide-tab-active', false);
+  d3.selectAll('.guide-tab-suggested')
+    .classed('guide-tab-suggested', false);
+
+    // switch content
+    document.getElementById('guide-content-div').innerHTML = jsId;
 
   // activate this tab
   d3.select(`#${guideId}`)
-    .classed('guide-tab-active', true);
-
-  // switch content
-  document.getElementById('guide-content-div').innerHTML = jsId;
+  .classed('guide-tab-active', true);
 }
 
 function closeGuide() {

@@ -14,11 +14,6 @@
   cursor: pointer;
 }
 
-#guide-close-button > text, #guide-title {
-  fill:#002F87;
-  font-size:20px;
-}
-
 .guide-tab {
   fill:transparent;
   stroke:#F27777;
@@ -27,12 +22,32 @@
 }
 
 .guide-tab > text {
-  fill:#F27777;
+  fill:#002F87;
+  stroke: none;
   font-size:17px;
 }
 
 .guide-tab-active {
   fill:#FFF;
+  fill-opacity: 1;
+}
+
+.guide-tab-active > text {
+  fill:#F27777;
+  /* font-size:17px; */
+}
+
+.guide-tab-active > .guide-line {
+  opacity: 0;
+}
+
+.guide-tab-suggested {
+  fill:#FFF;
+  fill-opacity: .7;
+}
+
+.guide-tab-suggested > text {
+  fill-opacity: 1;
 }
 
 div#guide-content-div {

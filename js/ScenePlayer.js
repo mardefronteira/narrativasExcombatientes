@@ -17,7 +17,7 @@ class ScenePlayer {
   display() {
     // get details of the element that was clicked
     let target = data[ `${this.type}s` ].find( target => target[ 'id' ] === this.id );
-    
+
     // create SVG player object
     let gElement = document.createElementNS('http://www.w3.org/2000/svg', 'g');
     gElement.id = this.playerId;
@@ -86,7 +86,11 @@ class ScenePlayer {
 
       this.frame = data['frames'].find(frame => frame.scenes.includes(this.id));
       if (this.frame.id === 'M-06'){
-        document.querySelector(`#${this.id}-guide-button`).addEventListener('click', () => {openGuide(eval(`${this.jsId}.relatedGuide`))});
+        document.querySelector(`#${this.id}-guide-button`).addEventListener('click', () => {
+          let guides = eval(`${this.jsId}.relatedGuide`);
+          openGuide(guides[0]);
+          guides.length > 1 ? suggestGuide(guides[1]) : '';
+      });
       }
     } else {
       document.querySelector('#E-01-button').addEventListener('click', () => {openGuide("guide-08")});
