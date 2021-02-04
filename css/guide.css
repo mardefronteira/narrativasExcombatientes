@@ -57,8 +57,9 @@ div#guide-content-div {
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: auto;
-  height: 99.5%;
+  height: 99.8%;
   border: 2px solid #F27777;
+  border-top: none;
 }
 
 .empty-col, .img-col {

@@ -10,12 +10,17 @@ function openGuide(guideId) {
   }
 
   // create guide
-  let content = document.createElement('DIV');
-  content.setAttribute("xmlns", "http://www.w3.org/1999/xhtml");
-  content.id="guide-content-div";
-  content.innerHTML = '';
-  document.querySelector('#guide-content').appendChild(content);
+  if (!document.querySelector('#guide-content-div')){
+    let content = document.createElement('DIV');
+    content.setAttribute("xmlns", "http://www.w3.org/1999/xhtml");
+    content.id="guide-content-div";
+    content.innerHTML = '';
+    document.querySelector('#guide-content').appendChild(content);
+  }
+
+  // show guide modal
   document.querySelector('#guide-modal').classList.remove('modal-hidden');
+
 
   showGuideContent(guideId)
 }
