@@ -4,8 +4,9 @@ class OrganizerPlayer {
     this.playerId = `organizer-player`;
     this.jsId = this.id.replace("-","");
     this.playerSVG = eval(`${this.jsId}.player`); // player SVG in ./svg/players.js
-    this.audioFiles = eval(`${this.jsId}.audioFiles`);
-    this.audioTimes = eval(`${this.jsId}.audioTimes`);
+    this.audios = eval(`${this.jsId}.audios`);
+    // this.audioFiles = eval(`${this.jsId}.audioFiles`);
+    // this.audioTimes = eval(`${this.jsId}.audioTimes`);
     // this.characters = [];
     this.clickables = [];
     this.numPlayers = 0;
@@ -45,21 +46,20 @@ class OrganizerPlayer {
       audioElement.preload = 'none';
       audioElement.dataSize = 45;
       audioElement.currentTime = 0;
-      audioElement.src = `./audios/${this.audioFiles[i]}`
+      audioElement.src = `./audios/${this.audios[i].audio}`
       audioElement.addEventListener('timeupdate', (e) => this.updatePlayer(e.target));
       document.body.appendChild(audioElement);
 
       document.querySelector(`#organizer-button-${i}`).addEventListener('click', (e) => {this.playPause(e)});
 
       let timeString = document.getElementById(`organizer-time-${i}`);
-      timeString.innerHTML = `– 00:00 / ${this.audioTimes[i]}`;
+      timeString.innerHTML = `– 00:00 / ${this.audios[i].duration}`;
     });
 
     if (eval(`${this.jsId}.frameList`) !== undefined) {
       const frameList = eval(`${this.jsId}.frameList`);
       for (let i = 0; i < frameList.length; i++) {
           let thisFrame = `#${frameList[i][1]}`;
-          console.log(thisFrame)
           document.querySelector(`#organizer-frame-${frameList[i][0]}`).addEventListener('click', () => {
           getClickedElement( d3.select(`#${frameList[i][1]}`));
           restart();
@@ -80,8 +80,6 @@ class OrganizerPlayer {
     let targetId = e.target.id.slice(-1);
     let audioElement = document.getElementById(`organizer-audio-${targetId}`);
 
-    console.log(e);
-
     // pause all other players
     Array.from(document.querySelectorAll('audio')).map(audio => audio.id !== audioElement.id ? audio.pause() : ``);
     d3.selectAll('.play-button').classed('hidden', false);
@@ -101,7 +99,6 @@ class OrganizerPlayer {
   getClickableAreas() {
   for (let i = 0; i < this.numPlayers ; i++) {
     let targetElement = document.querySelector(`#organizer-timeline-${i}`);
-    console.log(`#organizer-timeline-${i}`);
     let timeline = {
       x1: targetElement.getAttribute("x1"),
       x2: targetElement.getAttribute("x2"),
@@ -121,11 +118,11 @@ class OrganizerPlayer {
     const targetId = e.target.parentElement.id.slice(-1)
 
     // get audio source and time from js objects
-    const thisAudio = this.audioFiles[targetId];
-    const thisTime = this.audioTimes[targetId];
+    const thisAudio = this.audios[targetId].audio;
+    const thisTime = this.audios[targetId].duration;
 
-    console.log(targetId);
-    console.log(thisAudio);
+    // console.log(targetId);
+    // console.log(thisAudio);
 
     // set audio source and total time
     let audioElement = document.querySelector(`#organizer-audio-1`);
@@ -135,7 +132,7 @@ class OrganizerPlayer {
     timeElement.innerHTML = `– 00:00 / ${thisTime}`;
 
     // get theme description from html element
-    const thisTheme = document.querySelector(`#abc-theme-${targetId-1}`).innerHTML;
+    const thisTheme = document.querySelector(`#abc-theme-${targetId}`).innerHTML;
 
     // set audio description from theme
     let textElement = document.querySelector(`#organizer-text-1`);
@@ -161,6 +158,7 @@ class OrganizerPlayer {
   updatePlayer(target) {
     let audioElement = target;
     let targetId = target.id.slice(-1);
+    let duration = document.querySelector(`#organizer-time-${targetId}`).innerHTML.slice(-5);
     let clickable = this.clickables[targetId];
     let currentTime = audioElement.currentTime;
 
@@ -179,7 +177,7 @@ class OrganizerPlayer {
 
       // update time
       let timeString = document.getElementById(`organizer-time-${targetId}`);
-      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${this.audioTimes[targetId]}`;
+      timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${duration}`;
     }
   }
 

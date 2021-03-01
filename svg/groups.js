@@ -469,8 +469,6 @@ const G08 = {
   `,
 };
 const G09 = {
-  audioFiles: ['02_Lucia_Gonzalez-CEV.mp3','00_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav','02_Lucia_Gonzalez-CEV.mp3','00_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav'],
-  audioTimes: ['11:11','11:11','11:11','11:11','11:11','11:11','11:11'],
   frameList: [[1,'M-01'],[2,'M-02'],[3,'M-06'],[5,'M-01'],[6,'M-02']],
   player:`
   <polygon class="ictj-fill-color node-opacity" points="1246.6432,989.6115 1248.5929,992.9282 1249.84,996.6042 1250.0758,1000.4974
@@ -482,11 +480,11 @@ const G09 = {
   <foreignObject transform="matrix(1 0 0 1 1300 115)" x="0" y="0" width="400" height="900">
     <p class="organizer-description">
       El Centro Internacional para la Justicia Transicional - ICTJ es una organización internacional, sin ánimo de lucro, especializada en procesos de justicia transicional. En Colombia, el ICTJ ha brindado asistencia técnica y acompañamiento al proceso de negociación e implementación del Acuerdo de Paz suscrito entre el gobierno nacional y las FARC-EP. En este sentido, el ICTJ puso a disposición del Sistema Integral de Verdad, Justicia, Reparación y No Repetición, su conocimiento y capacidad técnica para asesorar y acompañar la implementación de la Jurisdicción Especial para la Paz, la Comisión para el Esclarecimiento de la Verdad - CEV, la Convivencia y la No Repetición y la Unidad de Búsqueda de Personas dadas por Desaparecidas, con el fin de que cumplan integralmente sus objetivos misionales.
-      <br/>
+      <br/><br/>
       De esta forma, el ICTJ ha llevado a cabo proyectos conjuntos con la CEV entre los que se destaca la Mesa de Excombatientes. Este proyecto reconoce la necesidad de incorporar las voces y garantizar la participación de los excombatientes en los ejercicios de memoria, esclarecimiento, reconocimiento de responsabilidades y convivencia desarrollados en el marco del mandato de la Comisión. Para ello fue necesario, por un lado, analizar experiencias internacionales y experiencias similares desarrolladas en el marco de la Ley 975 o mejor conocida como Ley de Justicia y Paz, y por el otro, activar diálogos y acercamientos con ex miembros de las organizaciones armadas que hicieron las paces con el Estado colombiano.
-      <br/>
+      <br/><br/>
       Las experiencias internacionales y los procesos de desmovilización o dejación de armas ocurridos en Colombia en los últimos treinta años permitieron identificar múltiples factores en cuanto a la persistencia de violencias territoriales y reorganización de estructuras criminales. Uno de ellos es, concretamente, la falta de ejercicios, planes y estrategias post desmovilización, en los cuales se reconozcan a quienes empuñaron las armas como voces válidas y actores fundamentales en los procesos de cierre de conflictos armados.
-      <br/>
+      <br/><br/>
       En este sentido, la convicción del ICTJ con el proyecto “Mesa de Excombatientes” apuntó a llevar a cabo un genuino proceso de escucha, de reconocimiento y de diálogo entre quienes lideraron, en distintos momentos de la confrontación, organizaciones armadas como una contribución al esclarecimiento de la verdad, a la reconciliación y a su participación en acciones para la no repetición de los hechos.
     </p>
   </foreignObject>
@@ -520,7 +518,7 @@ const G09 = {
         </g>
 
         <g id="organizer-player-1">
-          <text transform="matrix(1 0 0 1 217.9983 529.4179)" id="organizer-text-1" class="organizer-text">TERRITORIALIDAD</text>
+          <!--<text transform="matrix(1 0 0 1 217.9983 529.4179)" id="organizer-text-1" class="organizer-text">TERRITORIALIDAD</text>-->
           <text transform="matrix(1 0 0 1 553.1799 576.1155)" id="organizer-time-1" class="organizer-time">– 00:00 / 02:15</text>
           <line id="organizer-timeline-1" class="timeline" x1="215.3844" y1="570.8036" x2="544.3845" y2="570.8036"/>
           <line id="organizer-timebar-1" class="timebar ictj-stroke-color" x1="215.3844" y1="570.8036" x2="215.3844" y2="570.8036"/>
@@ -561,7 +559,7 @@ const G09 = {
         </g>
 
         <g id="organizer-player-2">
-          <text transform="matrix(1 0 0 1 217.9983 686.3107)" id="organizer-text-2" class="organizer-text">FINANZAS</text>
+          <!--<text transform="matrix(1 0 0 1 217.9983 686.3107)" id="organizer-text-2" class="organizer-text">FINANZAS</text>-->
           <text transform="matrix(1 0 0 1 553.1799 733.8962)" id="organizer-time-2" class="organizer-time">– 00:00 / 02:15</text>
           <line id="organizer-timeline-2" class="timeline" x1="215.3844" y1="728.6173" x2="544.3845" y2="728.6173"/>
           <line id="organizer-timebar-2" class="timebar ictj-stroke-color" x1="215.3844" y1="728.6173" x2="215.3844" y2="728.6173"/>
@@ -602,7 +600,7 @@ const G09 = {
         </g>
 
         <g id="organizer-player-3">
-          <text transform="matrix(1 0 0 1 217.9983 844.6302)" id="organizer-text-3" class="organizer-text">ACUERDOS</text>
+          <!--<text transform="matrix(1 0 0 1 217.9983 844.6302)" id="organizer-text-3" class="organizer-text">ACUERDOS</text>-->
           <text transform="matrix(1 0 0 1 553.1799 891.9392)" id="organizer-time-3" class="organizer-time">– 00:00 / 02:15</text>
           <line id="organizer-timeline-3" class="timeline" x1="215.3844" y1="886.6603" x2="544.3845" y2="886.6603"/>
           <line id="organizer-timebar-3" class="timebar ictj-stroke-color" x1="215.3844" y1="886.6603" x2="215.3844" y2="886.6603"/>
@@ -668,7 +666,7 @@ const G09 = {
           </g>
 
           <g id="organizer-player-5">
-            <text transform="matrix(1 0 0 1 768.9363 529.4179)" id="organizer-text-5" class="organizer-text">TERRITORIALIDAD</text>
+            <!--<text transform="matrix(1 0 0 1 768.9363 529.4179)" id="organizer-text-5" class="organizer-text">TERRITORIALIDAD</text>-->
             <text transform="matrix(1 0 0 1 1104.1179 574.5766)" id="organizer-time-5" class="organizer-time">– 00:00 / 02:15</text>
             <line id="organizer-timeline-5" class="timeline" x1="764.9559" y1="570.8036" x2="1093.9558" y2="570.8036"/>
             <line id="organizer-timebar-5" class="timebar ictj-stroke-color" x1="764.9559" y1="570.8036" x2="764.9559" y2="570.8036"/>
@@ -710,7 +708,7 @@ const G09 = {
           </g>
 
           <g id="organizer-player-6">
-            <text transform="matrix(1 0 0 1 768.9363 687.7351)" id="organizer-text-6" class="organizer-text">FINANZAS</text>
+            <!--<text transform="matrix(1 0 0 1 768.9363 687.7351)" id="organizer-text-6" class="organizer-text">FINANZAS</text>-->
             <text transform="matrix(1 0 0 1 1104.1179 734.5837)" id="organizer-time-6" class="organizer-time">– 00:00 / 02:15</text>
             <line id="organizer-timeline-6" class="timeline" x1="764.9559" y1="728.6173" x2="1093.9558" y2="728.6173"/>
             <line id="organizer-timebar-6" class="timebar ictj-stroke-color" x1="764.9559" y1="728.6173" x2="764.9559" y2="728.6173"/>
@@ -757,8 +755,6 @@ const G09 = {
 `,
 };
 const G10 = {
-  audioFiles: ['02_Lucia_Gonzalez-CEV.mp3','00_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav','02_Lucia_Gonzalez-CEV.mp3','00_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav'],
-  audioTimes: ['11:11','11:11','11:11','11:11','11:11'],
   frameList: [[1,'M-01'],[2,'M-02'],[3,'M-03'],[4,'M-06']],
   player: `
 
@@ -778,8 +774,25 @@ const G10 = {
 
       <foreignObject transform="matrix(1 0 0 1 1300 115)" x="0" y="0" width="400" height="900">
       <p class="organizer-description">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet.
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore. Lorem ipsum dolor sit amet, consectetuer adipiscing Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet.
+        <span class="bold">¿Por qué escuchar el relato de la guerra desde la voz de los excombatientes?</span>
+        <br/><br/>
+        Para la Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición es un gusto, y parte de su responsabilidad, poner en conocimiento de todos el gran privilegio que ha sido para nosotros, sus miembros, escuchar los relatos de rebelión, revolución, conflicto armado o guerra en la voz de sus actores –la mayoría de ellos excomandantes- de las guerrillas y los grupos de autodefensas.
+        <br/><br/>
+        Es un gusto, en primer lugar, porque creemos que en ese diálogo aprendimos mucho y queremos que también otros puedan hacerlo. Comprendimos dimensiones del conflicto armado que difícilmente se pueden comprender desde el imaginario de quienes estamos por fuera del campo de batalla; y, sobre todo, presenciamos el encuentro y el reconocimiento de seres humanos que se odiaron entre sí y se buscaron para matarse. No solo los vimos establecer una conversación inteligente y cordial: también los vimos encontrar semejanzas en sus testimonios, dolores y sueños compartidos; y los vimos crear nuevas alianzas para la paz.
+        <br/><br/>
+        Es nuestra responsabilidad, en segundo lugar, porque una comprensión más holística y humana de las diferentes aristas del conflicto debe extenderse a muchos más, no para justificar la guerra, sino para entender las causas y las motivaciones más hondas: aquellas que hacen que tantos seres humanos, hombres en su mayoría, entreguen su vida y maten por una causa, por un interés, que a veces es incluso ajeno. Ha sido urgente y necesario identificar –y lo seguirá siendo, terminado el mandato de la Comisión de la Verdad– aquello que impide que existan otras motivaciones, otros anhelos, o incluso peor: que aun habiéndolos, miles de hombres y mujeres prefieran ir a la guerra.
+        <br/><br/>
+        Esta mesa de diálogo sobre las narrativas que motivaron a cada uno sus participantes a combatir en el conflicto armado interno colombiano es la demostración de que la reconciliación no solo es posible sino deseable.
+        <br/><br/>
+        Les agradecemos a estos hombres y mujeres valientes que, en diez sesiones de arduo trabajo, confiaron a la Comisión de la Verdad y al país su vida, dialogaron con respeto y nos dejaron recomendaciones para el logro de la paz. Le agradecemos al ICTJ por haber entendido la importancia de esta reflexión compartida y por haber contribuido con su sabiduría, su dirección y sus recursos. Gracias, también, a ABC Paz por su liderazgo y apoyo en la realización de este encuentro. Y gracias, finalmente, a Mapa Teatro por hacer posible la traducción de este texto al lenguaje multimedial, y permitirnos alcanzar así a cientos de miles con un contenido que tiene un valor histórico.
+        <br/><br/>
+        Si muchos más colombianos dijeran la verdad, como sucede en este texto honesto y profundo que ustedes están a punto de leer, este sería un país distinto.
+        <br/><br/>
+        <span class="bold">
+          Lucía González
+          <br/>
+          Comisionada de la Verdad
+        </span>
       </p>
       </foreignObject>
 
@@ -814,7 +827,7 @@ const G10 = {
   </g>
 
   <g id="organizer-player-1">
-    <text transform="matrix(1 0 0 1 222.5728 528.9445)" id="organizer-text-1" class="organizer-text">TERRITORIALIDAD</text>
+    <!--<text transform="matrix(1 0 0 1 222.5728 528.9445)" id="organizer-text-1" class="organizer-text">TERRITORIALIDAD</text>-->
     <text transform="matrix(1 0 0 1 553.1799 574.796)" id="organizer-time-1" class="organizer-time">– 00:00 / 02:15</text>
     <line id="organizer-timeline-1" class="timeline cev-stroke-color" x1="216.4117" y1="569.5463" x2="545.4117" y2="569.5463"/>
     <line id="organizer-timebar-1" class="timebar cev-stroke-color" x1="216.4117" y1="569.5463" x2="216.4117" y2="569.5463"/>
@@ -855,7 +868,7 @@ const G10 = {
   </g>
 
   <g id="organizer-player-2">
-    <text transform="matrix(1 0 0 1 222.4227 698.2631)" id="organizer-text-2" class="organizer-text">FINANZAS</text>
+    <!--<text transform="matrix(1 0 0 1 222.4227 698.2631)" id="organizer-text-2" class="organizer-text">FINANZAS</text>-->
     <text transform="matrix(1 0 0 1 553.1799 744.1155)" id="organizer-time-2" class="organizer-time">– 00:00 / 02:15</text>
     <line id="organizer-timeline-2" class="timeline cev-stroke-color" x1="216.4117" y1="738.8658" x2="545.4117" y2="738.8658"/>
     <line id="organizer-marker-2" class="marker cev-stroke-color" x1="216.4117" y1="727.7042" x2="216.4117" y2="748.8004"/>
@@ -897,7 +910,7 @@ const G10 = {
   </g>
 
   <g id="organizer-player-3">
-    <text transform="matrix(1 0 0 1 773.1618 528.9435)" id="organizer-text-3" class="organizer-text">PERSISTENCIA</text>
+    <!--<text transform="matrix(1 0 0 1 773.1618 528.9435)" id="organizer-text-3" class="organizer-text">PERSISTENCIA</text>-->
     <text transform="matrix(1 0 0 1 1104.1179 574.796)" id="organizer-time-3" class="organizer-time">– 00:00 / 02:15</text>
     <line id="organizer-timeline-3" class="timeline cev-stroke-color" x1="767.3497" y1="569.5463" x2="1096.3497" y2="569.5463"/>
     <line id="organizer-marker-3" class="marker cev-stroke-color" x1="767.3497" y1="558.3846" x2="767.3497" y2="579.4808"/>
@@ -939,7 +952,7 @@ const G10 = {
   </g>
 
   <g id="organizer-player-4">
-    <text transform="matrix(1 0 0 1 773.6005 697.7242)" id="organizer-text-4" class="organizer-text">ACUERDOS</text>
+    <!--<text transform="matrix(1 0 0 1 773.6005 697.7242)" id="organizer-text-4" class="organizer-text">ACUERDOS</text>-->
     <text transform="matrix(1 0 0 1 1104.1179 742.5766)" id="organizer-time-4" class="organizer-time">– 00:00 / 02:15</text>
     <line id="organizer-timeline-4" class="timeline cev-stroke-color" x1="767.3497" y1="737.3268" x2="1096.3497" y2="737.3268"/>
     <line id="organizer-marker-4" class="marker cev-stroke-color" x1="767.3497" y1="726.1653" x2="767.3497" y2="747.2615"/>
@@ -983,47 +996,39 @@ const G10 = {
   `
 };
 const G11 = {
-  audioFiles: ['02_Lucia_Gonzalez-CEV.mp3','00_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav','02_Lucia_Gonzalez-CEV.mp3','00_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav','01_Lucia_Gonzalez-CEV.wav'],
-  audioTimes: ['11:11','11:11','11:11','11:11','11:11','11:11','11:11','11:11'],
   player:`
   <rect x="630.1482" y="0.1359" style="fill:#266041;opacity:0.15;" width="549.574" height="1090"/>
   <g class="abc-node" id="abc-node-1">
-  	<rect x="1360" y="669.7248" class="invisible" width="394.6508" height="14.222"/>
-  	<text id="abc-theme-0" transform="matrix(1 0 0 1 1404.3845 682.4749)" class="abc-theme">IDELEOGÍA ELN</text>
-  	<polygon class="organizer-node" points="1380.2507,667.51 1383.9677,674.2986 1383.9688,681.7949 1377.8726,686.7114
-  		1369.8721,686.1555 1364.8652,679.7394 1366.9862,672.3418 1372.3524,667.3309 		"/>
-  </g>
-  <g class="abc-node" id="abc-node-2">
-  	<text id="abc-theme-1" transform="matrix(1 0 0 1 1404.3845 723.6883)" class="abc-theme">RELACIONES CON OTRAS REVOLUCIONES</text>
+  	<text id="abc-theme-1" transform="matrix(1 0 0 1 1404.3845 723.6883)" class="abc-theme">IDEOLOGÍA ELN</text>
   	<rect x="1360" y="710.9382" class="invisible" width="394.6508" height="14.222"/>
   	<polygon class="organizer-node" points="1380.2507,709.7368 1383.9677,716.5253 1383.9688,724.0217 1377.8726,728.9382
   		1369.8721,728.3823 1364.8652,721.9662 1366.9862,714.5686 1372.3524,709.5576 		"/>
   </g>
-  <g class="abc-node" id="abc-node-3">
+  <g class="abc-node" id="abc-node-2">
   	<rect x="1360" y="752.1516" class="invisible" width="394.6508" height="14.222"/>
   	<text id="abc-theme-2" transform="matrix(1 0 0 1 1404.3845 764.9017)" class="abc-theme">TERRITORIALIDAD</text>
   	<polygon class="organizer-node" points="1380.2332,750.6274 1385.4995,756.9481 1383.2433,764.4769 1377.8175,769.6041
   		1370.6302,767.8792 1366.278,762.4229 1366.541,755.1799 1372.1113,749.5703 		"/>
   </g>
-  <g class="abc-node" id="abc-node-4">
+  <g class="abc-node" id="abc-node-3">
   	<rect x="1360" y="793.3651" class="invisible" width="394.6508" height="14.222"/>
   	<text id="abc-theme-3" transform="matrix(1 0 0 1 1404.3845 806.1152)" class="abc-theme">FINANZAS</text>
   	<polygon class="organizer-node" points="1379.7998,792.2651 1385.0146,797.9453 1384.4822,806.0256 1378.0463,811.2664
   		1369.9299,809.9965 1366.296,803.2769 1365.671,795.5546 1372.2579,790.9438 		"/>
   </g>
-  <g class="abc-node" id="abc-node-5">
+  <g class="abc-node" id="abc-node-4">
   	<rect x="1360" y="834.5785" class="invisible" width="394.6508" height="14.222"/>
   	<text id="abc-theme-4" transform="matrix(1 0 0 1 1404.3845 847.3286)" class="abc-theme">IMPACTOS</text>
   	<polygon class="organizer-node" points="1379.7893,833.1429 1384.2725,839.0158 1383.1257,846.1296 1377.8153,851.3145
   		1370.4124,849.9889 1366.3047,844.1334 1366.3373,836.7846 1372.1178,831.3109 		"/>
   </g>
-  <g class="abc-node" id="abc-node-6">
+  <g class="abc-node" id="abc-node-5">
   	<rect x="1360" y="875.7919" class="invisible" width="394.6508" height="14.222"/>
   	<text id="abc-theme-5" transform="matrix(1 0 0 1 1404.3845 888.5421)" class="abc-theme">ACUERDOS</text>
   	<polygon class="organizer-node" points="1379.6377,874.2744 1384.5157,879.8056 1383.1351,886.994 1377.9292,892.5737
   		1370.1459,891.3267 1365.2416,885.2953 1365.5269,877.1926 1372.3141,872.8594 		"/>
   </g>
-  <g class="abc-node" id="abc-node-7">
+  <g class="abc-node" id="abc-node-6">
   	<rect x="1360" y="917.0053" class="invisible" width="394.6508" height="14.222"/>
   	<text id="abc-theme-6" transform="matrix(1 0 0 1 1404.3845 929.7555)" class="abc-theme">PERSISTENCIA</text>
   	<polygon class="organizer-node" points="1380.3533,913.8481 1385.2891,920.4445 1383.2761,927.9315 1377.7854,932.9277
@@ -1042,8 +1047,6 @@ const G11 = {
   		<path class="abc-link" d="M1216.0009,919.9883	c-614.2593,0-505.1202-650.1635-887.4795-650.1635"/>
 
   		<path class="abc-link" d="M1216.0009,919.9883
-  			c111.0967,0,63.5365-243.1525,159.0588-243.1525"/>
-  		<path class="abc-link" d="M1216.0009,919.9883
   			c109.5105,0,89.5726-119.2076,159.0588-119.2076"/>
   		<path class="abc-link" d="M1216.0009,919.9883
   			c117.4904,2.8829,63.5365-200.9258,159.0588-200.9258"/>
@@ -1058,7 +1061,7 @@ const G11 = {
   	</g>
 
   	<g id="organizer-player-1">
-  		<text id="organizer-text-1" transform="matrix(1 0 0 1 691.5695 163.8143)" class="player-bold">IDELEOGÍA ELN</text>
+  		<text id="organizer-text-1" transform="matrix(1 0 0 1 691.5695 163.8143)" class="player-bold">IDEOLOGÍA ELN</text>
   		<text id="organizer-time-1" class="time" transform="matrix(1 0 0 1 1028.4347 209.384)">– 00:00 / 00:00</text>
   		<line id="organizer-timeline-1" class="timeline " x1="691.6664" y1="203.834" x2="1020.6664" y2="203.834"/>
   		<line id="organizer-marker-1" class="marker " x1="691.6664" y1="193.5995" x2="691.6664" y2="214.6957"/>

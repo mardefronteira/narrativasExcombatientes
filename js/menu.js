@@ -81,7 +81,12 @@ function playVideo(){
   }
 }
 
+let organizersAreSet = false;
+
 function showNarratives() {
+  organizersAreSet ? '' : setOrganizerInfo();
+
+
   // prepare homepage
   getAllNames();
   restart();
@@ -161,5 +166,41 @@ function init() {
     document.querySelector(`#guide-0${i}`).addEventListener('click', () => {showGuideContent(`guide-0${i}`)});
   }
 
+  // show hidden menu
   setTimeout(showContentInfo, 3000);
+}
+
+function setOrganizerInfo() {
+  // ABC PAZ
+  G11.audios= [
+    data['characters'].find(char => char.id == 'P-18'),
+    data['scenes'].find(scene => scene.id == 'O-10'),
+    data['scenes'].find(scene => scene.id == 'O-12'),
+    data['scenes'].find(scene => scene.id == 'O-13'),
+    data['scenes'].find(scene => scene.id == 'O-14'),
+    data['scenes'].find(scene => scene.id == 'O-15'),
+    data['scenes'].find(scene => scene.id == 'O-16'),
+  ];
+
+  // ICTJ
+  G09.audios= [
+    data['characters'].find(char => char.id == 'P-33'),
+    data['scenes'].find(scene => scene.id == 'O-03'),
+    data['scenes'].find(scene => scene.id == 'O-04'),
+    data['scenes'].find(scene => scene.id == 'O-05'),
+    data['characters'].find(char => char.id == 'P-34'),
+    data['scenes'].find(scene => scene.id == 'O-01'),
+    data['scenes'].find(scene => scene.id == 'O-02'),
+  ];
+
+  // CEV
+  G10.audios= [
+    data['characters'].find(char => char.id == 'P-36'),
+    data['scenes'].find(scene => scene.id == 'O-06'),
+    data['scenes'].find(scene => scene.id == 'O-07'),
+    data['scenes'].find(scene => scene.id == 'O-08'),
+    data['scenes'].find(scene => scene.id == 'O-09'),
+  ];
+
+  organizersAreSet = true;
 }

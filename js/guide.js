@@ -42,7 +42,9 @@ function showGuideContent(guideId) {
     .classed('guide-tab-suggested', false);
 
     // switch content
-    document.getElementById('guide-content-div').innerHTML = jsId;
+    const guide = document.getElementById('guide-content-div');
+    guide.innerHTML = jsId;
+    guide.scrollTo(0,0);
 
   // activate this tab
   d3.select(`#${guideId}`)

@@ -82,6 +82,9 @@ a {
   position: relative;
   top: 0px;
   transition: 0.5s;
+  max-height: 95vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 div#close-menu-div {
@@ -109,6 +112,12 @@ div#info-top-bar{
 div#info-menu-content {
   font-size: 15px;
   line-height: 1.5em;
+}
+
+@media (max-width: 800px) {
+  div#info-menu-content {
+    flex-direction: column;
+  }
 }
 
 text#menu-title {
