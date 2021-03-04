@@ -5,73 +5,73 @@
   --lightGray: #cccccc;
   --primary: #f27777;
   --m01node: #ffb98e;
-  --m01player: #673065;;
+  --m01player: #673065;
   --m02node: #e5d4d3;
   --m02player: #e5d4d3;
   --m03node: #c1a292;
   --m03player: #c1a292;
   --m04node: #986b58;
-  --m04player: #05F258;
+  --m04player: #05f258;
   --m05node: #ff6b00;
-  --m05player: #F2E205;;
+  --m05player: #f2e205;
   --m06node: #002f87;
-  --m06player: #F2E205;
+  --m06player: #f2e205;
 
   font-size: 15px;
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   margin: auto;
 }
 
 svg#viz {
-  position:fixed;
-  top:10;
-  left:0;
-  height:100%;
-  width:100%;
+  position: fixed;
+  top: 10;
+  left: 0;
+  height: 100%;
+  width: 100%;
   z-index: 1020;
 }
 
-.gradient-bg{
+.gradient-bg {
   background-color: #e8fffa;
   transition: 1s;
 }
 
-.black-bg{
+.black-bg {
   background: var(--darkGray);
 }
 
-g#intro-page{
-  position:absolute;
-  top:0;
-  left:0;
+g#intro-page {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .intro-node {
-  fill:transparent;
-  stroke:#F6F7EA;
-  stroke-width:0.75;
-  stroke-miterlimit:10;
+  fill: transparent;
+  stroke: #f6f7ea;
+  stroke-width: 0.75;
+  stroke-miterlimit: 10;
 }
 
 .intro-label {
-  font-size:17px;
-  fill: #F6F7EA;
+  font-size: 17px;
+  fill: #f6f7ea;
 }
 
 .intro-link {
-  opacity:0.7;
-  fill:none;
-  stroke:#F6F7EA;
-  stroke-width:0.7;
-  stroke-miterlimit:10;
+  opacity: 0.7;
+  fill: none;
+  stroke: #f6f7ea;
+  stroke-width: 0.7;
+  stroke-miterlimit: 10;
 }
 
 a {
   font-weight: bold;
-  color: #33FFCC;
+  color: #33ffcc;
 }
 
 /* Top menu */
@@ -97,15 +97,15 @@ div#close-menu-div {
   justify-content: center;
 }
 
-img#btn-close-menu{
+img#btn-close-menu {
   cursor: pointer;
-  display:flex;
-  opacity:1;
+  display: flex;
+  opacity: 1;
   height: 50%;
   width: auto;
 }
 
-div#info-top-bar{
+div#info-top-bar {
   display: none;
 }
 
@@ -121,19 +121,19 @@ div#info-menu-content {
 }
 
 text#menu-title {
-  position:relative;
+  position: relative;
   top: 1.5vh;
   left: 3vw;
   cursor: pointer;
-  letter-spacing:1px;
-  fill:#FFF;
-  stroke:none;
-  font-size:19px;
+  letter-spacing: 1px;
+  fill: #fff;
+  stroke: none;
+  font-size: 19px;
 }
 
 text#menu-title.in-intro {
-  fill:#000;
-  stroke:#000;
+  fill: #000;
+  stroke: #000;
 }
 
 #info-menu-content.in-intro {
@@ -141,26 +141,26 @@ text#menu-title.in-intro {
 }
 
 .info-button.in-intro {
-  stroke:#000;
+  stroke: #000;
   fill: #000;
 }
 
-div#menu-bar{
-  display:block;
+div#menu-bar {
+  display: block;
 }
 /*separar icones do (?) e home para estilizar somente em hover */
 
 .info-button {
   cursor: pointer;
   fill-opacity: 0;
-  fill: #FFF;
+  fill: #fff;
   font-size: 1rem;
   font-weight: 1000;
-  stroke: #FFF;
+  stroke: #fff;
 }
 
 .info-button > text {
-  fill: #FFF;
+  fill: #fff;
   fill-opacity: 1;
   font-size: 1rem;
   font-weight: 1000;
@@ -176,42 +176,42 @@ div#menu-bar{
 }
 
 .info-button:hover > text {
-  fill:var(--primary);
+  fill: var(--primary);
 }
 
-.M-01{
-  fill:var(--m01node);
-  stroke:var(--m01node);
+.M-01 {
+  fill: var(--m01node);
+  stroke: var(--m01node);
 }
 
-.M-02{
-  fill:var(--m02node);
-  stroke:var(--m02node);
+.M-02 {
+  fill: var(--m02node);
+  stroke: var(--m02node);
 }
 
-.M-03{
-  fill:var(--m03node);
-  stroke:var(--m03node);
+.M-03 {
+  fill: var(--m03node);
+  stroke: var(--m03node);
 }
 
-.M-04{
-  fill:var(--m04node);
-  stroke:var(--m04node);
+.M-04 {
+  fill: var(--m04node);
+  stroke: var(--m04node);
 }
 
-.M-05{
-  fill:var(--m05node);
-  stroke:var(--m05node);
+.M-05 {
+  fill: var(--m05node);
+  stroke: var(--m05node);
 }
 
-.M-06{
-  fill:var(--m06node);
-  stroke:var(--m06node);
+.M-06 {
+  fill: var(--m06node);
+  stroke: var(--m06node);
 }
 
 .menu-node {
   pointer-events: visible;
-  stroke-miterlimit:10;
+  stroke-miterlimit: 10;
 }
 
 .selected-menu-icon .menu-node {
@@ -221,49 +221,50 @@ div#menu-bar{
 
 .menu-text {
   font-weight: bold;
-  fill:var(--black);
+  fill: var(--black);
   fill-opacity: 1;
 }
 
-text#M-06-number, .M-06-number {
-  fill:#FFF;
+text#M-06-number,
+.M-06-number {
+  fill: #fff;
 }
 
 .selected-menu-icon > #M-01-number {
-  fill:var(--m01node);
+  fill: var(--m01node);
 }
 
 .selected-menu-icon > #M-02-number {
-  fill:var(--m02node);
+  fill: var(--m02node);
 }
 
 .selected-menu-icon > #M-03-number {
-  fill:var(--m03node);
+  fill: var(--m03node);
 }
 
 .selected-menu-icon > #M-04-number {
-  fill:var(--m04node);
+  fill: var(--m04node);
 }
 
 .selected-menu-icon > #M-05-number {
-  fill:var(--m05node);
+  fill: var(--m05node);
 }
 
 .selected-menu-icon > #M-06-number {
-  fill:var(--m06node);
+  fill: var(--m06node);
 }
 
 .menu-button {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 g#intro-buttons {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .menu-text {
-  font-size:16px;
-  letter-spacing:1px;
+  font-size: 16px;
+  letter-spacing: 1px;
   stroke: none;
 }
 
@@ -281,7 +282,7 @@ svg#tooltips {
   fill: none;
   stroke: none;
   pointer-events: none;
-  position:fixed;
+  position: fixed;
   z-index: 1045;
 }
 
@@ -303,12 +304,12 @@ svg#tooltips {
 }
 
 .modal-hidden {
-  display:none;
+  display: none;
 }
 
 .modal-content {
   /* position: fixed; */
-  top:0;
+  top: 0;
   height: 100vh;
   width: auto;
   display: -ms-flexbox;
@@ -322,15 +323,15 @@ svg#tooltips {
   outline: 0;
 }
 
-video#video{
+video#video {
   width: 100vw;
   display: block;
   border: 0;
-  top:0;
+  top: 0;
 }
 
 #btn-close {
-  position:fixed;
+  position: fixed;
   top: 5vh;
   right: 7vw;
   width: 3vw;
@@ -339,13 +340,13 @@ video#video{
 }
 
 #btn-sound {
-  fill:#E8FFFA;
-  fill-opacity:0;
-  stroke:#E8FFFA;
-  stroke-width:2;
-  stroke-linecap:round;
-  stroke-linejoin:round;
-  stroke-miterlimit:10;
+  fill: #e8fffa;
+  fill-opacity: 0;
+  stroke: #e8fffa;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
   cursor: pointer;
 }
 
@@ -364,19 +365,19 @@ video#video{
   background: #dd7e03;
 } */
 
-.row{
+.row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
-.row:after ,
+.row:after,
 .row:before {
   box-sizing: border-box;
 }
 
-.row .col{
+.row .col {
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -ms-flex-positive: 1;
@@ -393,7 +394,7 @@ div#contacts {
   text-align: right;
 }
 
-div#logos{
+div#logos {
   justify-content: space-around;
   /* text-align: left !important; */
   align-items: flex-start;
@@ -403,7 +404,7 @@ div#logos{
   padding-bottom: 150px;
 }
 
-.grid-image{
+.grid-image {
   display: flex;
   /* justify-content: left; */
   /* background-color: #FFF; */
@@ -414,14 +415,14 @@ div#logos{
 }
 
 .organizer-screen {
-   display: none;
+  display: none;
 }
 
 .visible-organizer {
-  display:block;
+  display: block;
 }
 
-#organizers{
+#organizers {
   position: absolute;
   top: 15px;
 }
@@ -431,9 +432,9 @@ div#logos{
 }
 
 .character-in-player {
-  font-size:15px;
-  fill:#0D0D0D;
-  font-family:'Heebo-SemiBold';
+  font-size: 15px;
+  fill: #0d0d0d;
+  font-family: "Heebo-SemiBold";
   /* letter-spacing:1; */
 }
 
@@ -447,13 +448,13 @@ div#logos{
 /* Vis */
 
 .scene {
-  opacity: .95;
+  opacity: 0.95;
   stroke-width: 2px;
   stroke-miterlimit: 10;
   cursor: pointer;
 }
 
-.scene-name{
+.scene-name {
   fill: var(--darkGray);
   /*font-family: 'Heebo-SemiBold';*/
   font-weight: bold;
@@ -462,7 +463,8 @@ div#logos{
   letter-spacing: 1px;
 }
 
-.group, .subgroup {
+.group,
+.subgroup {
   fill: transparent;
   fill-opacity: 0;
   stroke: var(--black);
@@ -505,13 +507,13 @@ cursor: pointer;
   fill: var(--primary);
   fill-opacity: 0;
   stroke: var(--primary);
-  stroke-opacity: .8;
+  stroke-opacity: 0.8;
   stroke-width: 2px;
   stroke-miterlimit: 10;
   cursor: pointer;
 }
 
-.character-name{
+.character-name {
   fill: var(--darkGray);
   /*font-family: 'Heebo-SemiBold';*/
   font-weight: 500;
@@ -527,11 +529,10 @@ cursor: pointer;
 
 .visited {
   /* stroke-opacity: .6; */
-
 }
 
 .active {
-  fill-opacity: .75;
+  fill-opacity: 0.75;
   stroke-opacity: 0;
 }
 
@@ -552,66 +553,70 @@ cursor: pointer;
 }
 
 .visited-text {
-  opacity:.7;
+  opacity: 0.7;
 }
 
 .hidden {
   visibility: hidden;
+  display: none;
+  pointer-events: none;
 }
 
 .hidden-intro-page {
   visibility: hidden;
+  display: none;
+  pointer-events: none;
 }
 
 .home-text {
   visibility: visible;
-  fill-opacity: .2;
+  fill-opacity: 0.2;
 }
 
 .visible-text {
   visibility: visible;
-  fill-opacity: .6;
+  fill-opacity: 0.6;
 }
 
 .active-text {
   visibility: visible;
-  fill-opacity: .9;
+  fill-opacity: 0.9;
 }
 
-.tooltip{
-  display:none;
+.tooltip {
+  display: none;
   pointer-events: all;
-  stroke:#FFF;
-  fill:#FFF;
+  stroke: #fff;
+  fill: #fff;
 }
 
-.visible-tooltip{
-  display:block;
+.visible-tooltip {
+  display: block;
 }
 
 .popup {
   fill: var(--primary);
-  stroke:none;
+  stroke: none;
 }
 
-.tooltip > text :not(.tooltip-time){
-	font-size:19px;
+.tooltip > text :not(.tooltip-time) {
+  font-size: 19px;
   font-weight: bold;
   stroke: none;
-  stroke-miterlimit:10;
+  stroke-miterlimit: 10;
 }
 
 .tooltip-button {
   fill: transparent;
-  stroke-width:3;
-  stroke-linecap:round;
-  cursor:pointer;
+  stroke-width: 3;
+  stroke-linecap: round;
+  cursor: pointer;
 }
 
 .tooltip-timeline {
-  opacity:0.24;
-  fill:none;
-  stroke-width:2;
+  opacity: 0.24;
+  fill: none;
+  stroke-width: 2;
 }
 
 .tooltip-time {
@@ -619,27 +624,27 @@ cursor: pointer;
   letter-spacing: 2px;
 }
 
-.tooltip-timebar, .tooltip-marker {
- stroke-width:2;
- stroke-linecap:round;
+.tooltip-timebar,
+.tooltip-marker {
+  stroke-width: 2;
+  stroke-linecap: round;
 }
 
 .transparent {
   stroke-opacity: 0;
-  fill-opacity:0;
+  fill-opacity: 0;
 }
 
 .minor-text {
   visibility: visible;
-  fill-opacity: .4;
+  fill-opacity: 0.4;
 }
 
-
 .link {
-  fill:none;
+  fill: none;
   stroke: var(--black);
   stroke-width: 0.5;
-  stroke-opacity: .6;
+  stroke-opacity: 0.6;
   visibility: hidden;
   pointer-events: none;
 }
@@ -654,20 +659,19 @@ cursor: pointer;
 
 .active-link {
   visibility: visible;
-  stroke-opacity: .9;
+  stroke-opacity: 0.9;
 }
 
-
 .guide-button > text {
-  fill:#002F87;
+  fill: #002f87;
   font-weight: bold;
-  font-size:27px;
+  font-size: 27px;
 }
 
 /* group classes */
 
 .minor-group {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .active-group {
@@ -685,5 +689,5 @@ cursor: pointer;
 /* scene node */
 
 .minor-node {
-  fill:transparent;
+  fill: transparent;
 }
