@@ -94,6 +94,8 @@ function getClickedElement(element) {
     click.type = "subgroup";
   } else if (element.classed("character")) {
     click.type = "character";
+  } else if (element.classed("character-name")) {
+    click.type = "character";
   } else if (element.classed("frame")) {
     click.type = "frame";
   }
@@ -106,7 +108,7 @@ function updateLastClick() {
   };
 }
 
-d3.selectAll(".scene,.group,.subgroup,.character,.frame")
+d3.selectAll(".scene,.group,.subgroup,.character,.character-name,.frame")
   .on("click", function () {
     // get element
     getClickedElement(d3.select(this));
@@ -351,47 +353,50 @@ d3.selectAll(".scene,.group,.subgroup,.character,.frame")
     }
   });
 
-d3.selectAll(".scene,.group,.subgroup,.character").on("mouseout", function () {
-  getClickedElement(d3.select(this));
+d3.selectAll(".scene,.group,.subgroup,.character,.character-name").on(
+  "mouseout",
+  function () {
+    getClickedElement(d3.select(this));
 
-  if (!somethingIsActive) {
-    restart();
-  } else {
-    if (click.type === "subgroup") {
-      d3.selectAll(".subgroup-name").classed("visible-text", false);
-      if (lastClick.type === "subgroup" && click.id !== lastClick.id) {
-        d3.selectAll(`#${click.id}`).classed("active-group", false);
+    if (!somethingIsActive) {
+      restart();
+    } else {
+      if (click.type === "subgroup") {
+        d3.selectAll(".subgroup-name").classed("visible-text", false);
+        if (lastClick.type === "subgroup" && click.id !== lastClick.id) {
+          d3.selectAll(`#${click.id}`).classed("active-group", false);
+        }
+      }
+
+      if (click.type === "scene") {
+        d3.selectAll(".scene-name").classed("visible-text", false);
       }
     }
 
-    if (click.type === "scene") {
-      d3.selectAll(".scene-name").classed("visible-text", false);
+    // Show all character names if no characters are active
+    let activeTexts = d3.selectAll(".active-text")["_groups"][0]; // select all active texts
+    let activeOrganizer = ["G-09", "G-10", "G-11"].includes(click.id)
+      ? true
+      : false; // select all active organizers
+    if (activeTexts.length === 0 && !activeOrganizer) {
+      d3.selectAll(".character-name").classed("visible-text", true);
+    } else {
+      Array.from(d3.selectAll(".character:not(.active)")._groups[0]).map(
+        (character) => {
+          d3.select(character).classed("hidden", true);
+
+          d3.select(`#${character.id}-name`)
+            .classed("visible-text", false)
+            .classed("hidden", true);
+
+          d3.select(`#${character.id}-link`)
+            .classed("visible-link", false)
+            .classed("hidden", true);
+        }
+      );
     }
   }
-
-  // Show all character names if no characters are active
-  let activeTexts = d3.selectAll(".active-text")["_groups"][0]; // select all active texts
-  let activeOrganizer = ["G-09", "G-10", "G-11"].includes(click.id)
-    ? true
-    : false; // select all active organizers
-  if (activeTexts.length === 0 && !activeOrganizer) {
-    d3.selectAll(".character-name").classed("visible-text", true);
-  } else {
-    Array.from(d3.selectAll(".character:not(.active)")._groups[0]).map(
-      (character) => {
-        d3.select(character).classed("hidden", true);
-
-        d3.select(`#${character.id}-name`)
-          .classed("visible-text", false)
-          .classed("hidden", true);
-
-        d3.select(`#${character.id}-link`)
-          .classed("visible-link", false)
-          .classed("hidden", true);
-      }
-    );
-  }
-});
+);
 
 d3.selectAll(".frame").on("mouseout", function () {
   getClickedElement(d3.select(this));
