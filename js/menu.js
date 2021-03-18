@@ -1,18 +1,17 @@
-// let hoverMenu = $( '#hidden-menu' );
+// let hoverMenu = document.querySelector( '#hidden-menu' );
 let contentInfo = $("#info-top-bar");
-let btnInfo = $("#btn-info");
-let btnClose = $("#btn-close");
-let video = $("#video");
+let btnInfo = document.querySelector("#btn-info");
+let btnClose = document.querySelector("#btn-close");
 let videoElement = document.getElementById("video");
-let btnCloseMenu = $("#btn-close-menu");
-let menuTitle = $("#menu-title");
+let btnCloseMenu = document.querySelector("#btn-close-menu");
+let menuTitle = document.querySelector("#menu-title");
 
-let btnSound = $("#btn-sound");
+let btnSound = document.querySelector("#btn-sound");
 let soundIsOn = true;
 
-$(document).ready(function () {
-  init();
-});
+// document.querySelector(document).ready(function () {
+//   init();
+// });
 
 let infoIsVisible = false;
 
@@ -61,7 +60,7 @@ function showVideo() {
   videoElement.currentTime = 0;
   playVideo();
   document.querySelector("#video-modal").classList.remove("modal-hidden");
-  // $('#video-modal').show()
+  // document.querySelector('#video-modal').show()
 }
 
 function hideVideo() {
@@ -69,7 +68,7 @@ function hideVideo() {
   videoElement.currentTime = 0;
   videoElement.muted = true;
   document.querySelector("#video-modal").classList.add("modal-hidden");
-  // $('#video-modal').hide();
+  d3.selectAll(".hidden-first").classed("hidden-first", false);
 }
 
 function playVideo() {
@@ -138,6 +137,15 @@ function showCredits() {
   credits.classed("hidden-intro-page", visibility);
 }
 
+function infoTooltip() {
+  const tooltip = document.querySelector("#info-tooltip");
+  if (tooltip.classList.contains("visible-tooltip")) {
+    tooltip.classList.remove("visible-tooltip");
+  } else {
+    tooltip.classList.add("visible-tooltip");
+  }
+}
+
 function init() {
   document
     .querySelector("#credits-node")
@@ -156,19 +164,21 @@ function init() {
     .querySelector("#narratives-label")
     .addEventListener("click", showNarratives);
 
-  btnInfo.on("click", showVideo);
-  btnClose.on("click", hideVideo);
-  menuTitle.on("click", showContentInfo);
-  btnSound.on("click", handleSound);
-  btnCloseMenu.on("click", showContentInfo);
+  btnInfo.addEventListener("click", showVideo);
+  btnInfo.addEventListener("mouseover", infoTooltip);
+  btnInfo.addEventListener("mouseout", infoTooltip);
+  btnClose.addEventListener("click", hideVideo);
+  menuTitle.addEventListener("click", showContentInfo);
+  btnSound.addEventListener("click", handleSound);
+  btnCloseMenu.addEventListener("click", showContentInfo);
 
-  video.bind("ended", hideVideo);
+  videoElement.addEventListener("ended", hideVideo);
 
   // create home audio
   let audioElement = document.createElement("AUDIO");
   audioElement.id = "home-audio";
   audioElement.preload = "auto";
-  audioElement.currentTime = 0;
+  videoElement.controls = "controls";
   audioElement.src = `./audios/HOME.wav`;
   document.body.appendChild(audioElement);
 
@@ -182,7 +192,7 @@ function init() {
   }
 
   // show hidden menu
-  // setTimeout(showContentInfo, 3000);
+  setTimeout(showContentInfo, 3000);
 
   // show video
   // showVideo();

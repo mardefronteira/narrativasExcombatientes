@@ -150,17 +150,27 @@ div#menu-bar {
 }
 /*separar icones do (?) e home para estilizar somente em hover */
 
-.info-button {
-  cursor: pointer;
-  fill-opacity: 0;
+#menu-logo {
   fill: #fff;
-  font-size: 1rem;
-  font-weight: 1000;
   stroke: #fff;
 }
 
+#menu-logo.in-intro {
+  stroke: #000;
+  fill: #000;
+}
+
+.info-button {
+  cursor: pointer;
+  fill-opacity: 0;
+  fill: var(--m06node);
+  font-size: 1rem;
+  font-weight: 1000;
+  stroke: var(--m06node);
+}
+
 .info-button > text {
-  fill: #fff;
+  fill: var(--m06node);
   fill-opacity: 1;
   font-size: 1rem;
   font-weight: 1000;
@@ -562,7 +572,15 @@ cursor: pointer;
   pointer-events: none;
 }
 
+/* hidden on intro page */
 .hidden-intro-page {
+  visibility: hidden;
+  display: none;
+  pointer-events: none;
+}
+
+/* hidden on first page load */
+.hidden-first {
   visibility: hidden;
   display: none;
   pointer-events: none;
@@ -604,6 +622,13 @@ cursor: pointer;
   font-weight: bold;
   stroke: none;
   stroke-miterlimit: 10;
+}
+
+#info-tooltip > text {
+  font-size: 19px;
+  font-weight: bolder;
+  stroke: none;
+  fill: #e8fffa;
 }
 
 .tooltip-button {

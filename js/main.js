@@ -665,6 +665,8 @@ function addPlayer(id, type) {
 }
 
 function loaded() {
+  init();
+
   // create scene nodes dinamically
   let scenes = document.querySelectorAll(".scene");
 

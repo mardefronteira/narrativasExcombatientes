@@ -1,5 +1,5 @@
 const S01 = {
-player:`
+  player: `
 <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
 <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
 <tspan x="0" y="0" class="player-bold">Bloque Resistencia Tayrona</tspan>
@@ -25,10 +25,10 @@ player:`
     </g>
   </g>
 </g>
-`
+`,
 };
 const S02 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">Bloque Norte</tspan>
@@ -57,7 +57,7 @@ const S02 = {
   `,
 };
 const S03 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">Bloque Montes de María</tspan>
@@ -86,7 +86,7 @@ const S03 = {
   `,
 };
 const S04 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">Bloque Elmer Cárdenas</tspan><tspan x="0" y="27">1997 - 2006</tspan><tspan x="0" y="81">El Bloque Elmer Cárdenas tuvo influencia en la zona del </tspan><tspan x="0" y="108">Urabá: en el Norte de Antioquia (Necoclí, San Juan y </tspan><tspan x="0" y="135">Arboletes, San Pedro, Turbo), el norte de Chocó sobre el </tspan><tspan x="0" y="162">Caribe (Acandí, Unguía, Riosucio, Murindó, Bojayá, Vigía </tspan><tspan x="0" y="189">del Fuerte), y desde finales del 2002 en la zona de </tspan><tspan x="0" y="216">nacimiento de Río Sucio (Cañasgordas, Frontino, </tspan><tspan x="0" y="243">Uramita, Dabeiba, Parque Nacional Natural Paramillo). </tspan><tspan x="0" y="270">[…] La población civil en la región del Urabá no quería </tspan><tspan x="0" y="297">saber nada de la guerrilla cuando yo llegué, pero </tspan><tspan x="0" y="324">mientras estuvieron el EPL y las FARC allí, convivieron </tspan><tspan x="0" y="351">con ellos y sus miembros eran hijos de esas </tspan><tspan x="0" y="378">comunidades. Lo miembros de los grupos armados en </tspan><tspan x="0" y="405">Colombia no han sido nicaragüenses, ni rusos, ni </tspan><tspan x="0" y="432">ecuatorianos, ni dominicanos, sino que hemos sido </tspan><tspan x="0" y="459">colombianos y en su gran mayoría, jóvenes. Esto nos </tspan><tspan x="0" y="486">deja una tarea importante.</tspan><tspan x="322.4492" y="540" class="player-signature">Freddy Rendón</tspan>
@@ -113,7 +113,7 @@ const S04 = {
   `,
 };
 const S05 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">Autodefensas Campesinas del Magdalena Medio</tspan><tspan x="0" y="27">1992 - 2006</tspan><tspan x="0" y="81">Siempre tuve la necesidad, desde que llegué al Magdalena </tspan><tspan x="0" y="108">Medio, de contar con un discurso político que justificara la </tspan><tspan x="0" y="135">criminal acción en la que estábamos incurriendo. Había que </tspan><tspan x="0" y="162">buscar un pretexto ideológico, y en esa tarea me empeñé. </tspan><tspan x="0" y="189">[…] Cuando llegamos a las regiones del Magdalena Medio </tspan><tspan x="0" y="216">Santandereano y Boyacense encontramos a la guerrilla de </tspan><tspan x="0" y="243">las FARC, los Frentes Bernardo López Arroyave y Carlos </tspan><tspan x="0" y="270">Alirio Buitrago del ELN, y empezamos a quitarles territorio, </tspan><tspan x="0" y="297">pero no para entregárselo a la XIV Brigada, al Batallón </tspan><tspan x="0" y="324">Patriotas o al Batallón Reyes. Llegamos allá y montamos </tspan><tspan x="0" y="351">nuestro propio Estado, y eso hay que reconocerlo porque </tspan><tspan x="0" y="378">fue una realidad.</tspan><tspan x="315.4355" y="432" class="player-signature">Iván Roberto Duque</tspan>
@@ -140,7 +140,7 @@ const S05 = {
   `,
 };
 const S06 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">Bloque Central Bolívar</tspan><tspan x="0" y="27">2000 - 2006</tspan><tspan x="0" y="81">El Bloque Central Bolívar, si bien tiene sus raíces en ese </tspan><tspan x="0" y="108">fenómeno expansionista de las AUC, el mando es finalmente </tspan><tspan x="0" y="135">entregado al Estado Mayor que se conformó en la región y </tspan><tspan x="0" y="162">que de manera independiente, con la autonomía propia, </tspan><tspan x="0" y="189">definió el desarrollo de uno de los bloques más grandes y </tspan><tspan x="0" y="216">con mayor presencia en el país. […] El Bloque Central Bolívar </tspan><tspan x="0" y="243">hace la primera incursión en el sur de Bolívar enviado por la </tspan><tspan x="0" y="270">casa Castaño, sin embargo, ellos toman el mando, ponen </tspan><tspan x="0" y="297">sus condiciones, y arman su propia estructura. Ni Carlos </tspan><tspan x="0" y="324">Castaño iba a darle órdenes a los señores del Bloque Central </tspan><tspan x="0" y="351">Bolívar, ni ellos las iban a obedecer.</tspan><tspan x="365.5176" y="405" class="player-signature">Edward Cobos</tspan>
@@ -166,7 +166,7 @@ const S06 = {
   `,
 };
 const S07 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">Bloque Héroes del Llano</tspan><tspan x="0" y="27">1997 - 2006</tspan><tspan x="0" y="81">Las AUC nacieron con una ideología de autodefensa, pero en </tspan><tspan x="0" y="108">la presidencia de Andrés Pastrana las FARC crecieron tanto </tspan><tspan x="0" y="135">que dejamos de ser defensivas para ser agresivas en el </tspan><tspan x="0" y="162">combate. Empezamos con una estrategia de toma de </tspan><tspan x="0" y="189">territorios donde las FARC tenían poder político y </tspan><tspan x="0" y="216">económico. […] A medida que va cambiando la guerra </tspan><tspan x="0" y="243">tenemos que también plantear cambios en el terreno de la </tspan><tspan x="0" y="270">lucha. Sin embargo, la esencia nunca se perdió, y la filosofía </tspan><tspan x="0" y="297">de los paramilitares en Colombia está demostrada. </tspan><tspan x="376.8047" y="351" class="player-signature">Arlex Arango</tspan>
@@ -193,7 +193,7 @@ const S07 = {
   `,
 };
 const S08 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">Bloque Centauros</tspan><tspan x="0" y="27">1997 - 2006</tspan><tspan x="0" y="81">El Bloque Centauros operó en los Llanos Orientales, parte de </tspan><tspan x="0" y="108">Cundinamarca, Arauca, Guaviare y Casanare. En el Guaviare </tspan><tspan x="0" y="135">siempre ha habido un problema grande de narcotráfico, </tspan><tspan x="0" y="162">sobre todo de cultivo. San Martín, que fue nuestro centro de </tspan><tspan x="0" y="189">operaciones, es un municipio extenso, pero completamente </tspan><tspan x="0" y="216">improductivo. […] Encontramos en la región un problema muy </tspan><tspan x="0" y="243">grave de la inasistencia del Estado, que se refleja en las </tspan><tspan x="0" y="270">pocas vías que hay en la zona. […] Todos estos elementos </tspan><tspan x="0" y="297">hacen que la comunidad termine viviendo de la economía </tspan><tspan x="0" y="324">ilegal del narcotráfico. Ese grave problema social que </tspan><tspan x="0" y="351">nosotros evidenciamos cuando estuvimos en la zona y que </tspan><tspan x="0" y="378">aún continúa. </tspan><tspan x="316.3584" y="432" class="player-signature">José Eleazar Moreno</tspan>
@@ -220,7 +220,7 @@ const S08 = {
   `,
 };
 const S09 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">Bloque Catatumbo</tspan><tspan x="0" y="27">1997 - 2006</tspan><tspan x="0" y="81">En el Catatumbo, como en el Sur de Bolívar, vemos que todo </tspan><tspan x="0" y="108">sigue igual, porque ahora hay presencia de otros grupos </tspan><tspan x="0" y="135">fuertemente armados ocupando los territorios en donde </tspan><tspan x="0" y="162">estuvimos nosotros, donde disputamos a bala territorios con </tspan><tspan x="0" y="189">las guerrillas. Vemos también que en esta zona los productos </tspan><tspan x="0" y="216">principales son la coca y las minas antipersona. Entonces, </tspan><tspan x="0" y="243">vemos que nada ha cambiado. </tspan><tspan x="325.3643" y="297" class="player-signature">Iván Roberto Duque</tspan>
@@ -248,7 +248,7 @@ const S09 = {
 };
 
 const G01 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">EJÉRCITO POPULAR DE LIBERACIÓN</tspan>
@@ -278,7 +278,7 @@ const G01 = {
   `,
 };
 const G02 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">AUTODEFENSAS UNIDAS DE COLOMBIA</tspan>
@@ -307,7 +307,7 @@ const G02 = {
   `,
 };
 const G03 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">EJÉRCITO DE LIBERACIÓN NACIONAL – </tspan><tspan x="0" y="27" class="player-bold">REPLANTEAMIENTO</tspan><tspan x="0" y="54">1976 - 1982</tspan><tspan x="0" y="108">Hago parte, con el compañero Medardo Correa, de la </tspan><tspan x="0" y="135">corriente de Replanteamiento que surgió en el ELN en 1976 </tspan><tspan x="0" y="162">cuando nos dimos cuenta de que los caminos de la muerte </tspan><tspan x="0" y="189">no iban a conducir a este país a ninguna parte, y que </tspan><tspan x="0" y="216">estábamos reciclando nuevamente los odios, la violencia y </tspan><tspan x="0" y="243">la muerte. […] En las estribaciones de la Cordillera </tspan><tspan x="0" y="270">Occidental entendimos que había que hacer un </tspan><tspan x="0" y="297">replanteamiento a esa entelequia que se había desatado a </tspan><tspan x="0" y="324">manera de lucha armada. […] La vida no podía seguir así, </tspan><tspan x="0" y="351">enterrando compañeros, amigos, campesinos. Enterrando </tspan><tspan x="0" y="378">de este lado, y del otro lado, originando hechos para que los </tspan><tspan x="0" y="405">que estaban allá, que eran igual de colombianos a nosotros, </tspan><tspan x="0" y="432">enterraran soldados y policías. […] En consecuencia, fuimos </tspan><tspan x="0" y="459">entendiendo que lo fundamental era replantear nuestras </tspan><tspan x="0" y="486">acciones porque no podía seguir esta locura, y de allí surge </tspan><tspan x="0" y="513">el grupo de Replanteamiento.</tspan><tspan x="321.0991" y="567" class="player-signature">Alonso Ojeda Awad</tspan>
@@ -334,7 +334,7 @@ const G03 = {
   `,
 };
 const G04 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">EJÉRCITO DE LIBERACIÓN NACIONAL</tspan><tspan x="0" y="27">1964 - presente</tspan><tspan x="0" y="81">El ELN surge en 1964 en un contexto de insurgencia social </tspan><tspan x="0" y="108">en Colombia y América Latina, derivada de los procesos de </tspan><tspan x="0" y="135">violencia generalizada y del recorte de libertades políticas, </tspan><tspan x="0" y="162">por parte de gobiernos dictatoriales de los años 40, 50 y 60. </tspan><tspan x="0" y="189">Surge con el influjo de la recién triunfante revolución </tspan><tspan x="0" y="216">cubana, que estimula el alzamiento contra regímenes </tspan><tspan x="0" y="243">tiránicos y para el cambio radical de las estructuras de </tspan><tspan x="0" y="270">poder. El ELN desde su constitución se definió como una </tspan><tspan x="0" y="297">organización guerrillera, integrada por revolucionarios </tspan><tspan x="0" y="324">voluntarios, con el propósito de liderar un proyecto de </tspan><tspan x="0" y="351">guerra revolucionaria, capaz de derrotar a las fuerzas </tspan><tspan x="0" y="378">militares y políticas detentoras del poder oligárquico, y la </tspan><tspan x="0" y="405">construcción de una nueva sociedad: la sociedad socialista </tspan><tspan x="0" y="432">[…] Las relaciones políticas del ELN se remontan a </tspan><tspan x="0" y="459">comienzos de los 60, cuando quienes fueron sus </tspan><tspan x="0" y="486">fundadores hicieron parte de la Brigada Internacional José </tspan><tspan x="0" y="513">Antonio Galán en Cuba y participaron en una escuela básica </tspan><tspan x="0" y="540">de guerra de guerrillas, pero lo más importante fueron las </tspan><tspan x="0" y="567">relaciones políticas con los dirigentes del Movimiento 26 de </tspan><tspan x="0" y="594">Julio y luego con el Partido Comunista de Cuba.</tspan><tspan x="234.374" y="648" class="player-signature">Carlos Arturo Velandia Jagua</tspan>
@@ -361,7 +361,7 @@ const G04 = {
   `,
 };
 const G05 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">PARTIDO REVOLUCIONARIO DE LOS TRABAJADORES</tspan><tspan x="0" y="27">1984 - 1991</tspan><tspan x="0" y="81">El PRT surge de una subdivisión del EPL y el PCC-Patria </tspan><tspan x="0" y="108">Libre, nosotros nos ubicamos en una parte de los Montes de </tspan><tspan x="0" y="135">María, el centro de Bolívar y el Magdalena. [...] en el PRT nos </tspan><tspan x="0" y="162">formamos en las doctrinas revolucionarias, pero con el </tspan><tspan x="0" y="189">transcurrir del tiempo y dados los cambios que se fueron </tspan><tspan x="0" y="216">planteando en el país, se produjeron cambios, tanto en el </tspan><tspan x="0" y="243">PRT como en los demás grupos [...] Cuando volvimos a la </tspan><tspan x="0" y="270">acción armada decidimos asumir el nombre de Combatientes </tspan><tspan x="0" y="297">Populares 9 de abril, en ese momento hubo un debate interno </tspan><tspan x="0" y="324">muy fuerte en el que se consideraron las implicaciones de la </tspan><tspan x="0" y="351">muerte de Gaitán dentro de las fuerzas progresistas de </tspan><tspan x="0" y="378">Colombia.</tspan><tspan x="254.062" y="432" class="player-signature">José Matías Ortiz Sarmiento</tspan><tspan x="0" y="513">Los que llegamos a la ANUC en esa época, a pesar de tener </tspan><tspan x="0" y="540">participación en otras organizaciones, lo hicimos no por la </tspan><tspan x="0" y="567">línea del partido, en mi caso en el PCC-ML, porque en ese </tspan><tspan x="0" y="594">momento el partido no estaba de acuerdo con la </tspan><tspan x="0" y="621">organización porque había sido creada por el Gobierno.</tspan><tspan x="365.0854" y="675" class="player-signature">Gabriel Barrios</tspan>
@@ -388,7 +388,7 @@ const G05 = {
   `,
 };
 const G06 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">MOVIMIENTO 19 DE ABRIL</tspan><tspan x="0" y="27">1970 - 1990</tspan><tspan x="0" y="81">En el M-19 no nos casamos nunca con la ideología, había </tspan><tspan x="0" y="108">gente idealista y materialista, hablando ideológicamente. </tspan><tspan x="0" y="135">Nuestro origen, centro y dinámicas durante todo el proceso, </tspan><tspan x="0" y="162">fue la política. Nuestro argumento para surgir como M-19 fue </tspan><tspan x="0" y="189">el robo de las elecciones de la ANAPO y la frustración que </tspan><tspan x="0" y="216">esto generó. Así que siempre nuestra línea fue la política y </tspan><tspan x="0" y="243">eso no quiere decir que no había ideología. Había muchos </tspan><tspan x="0" y="270">compañeros que estudiaban el materialismo histórico y </tspan><tspan x="0" y="297">trabajaban dentro de ello, y había otros que éramos mucho </tspan><tspan x="0" y="324">más idealistas; es decir, era como una combinación.</tspan><tspan x="316.5742" y="378" class="player-signature">Luz Amparo Jiménez</tspan><tspan x="0" y="432">Otro elemento que cuenta es que en el grupo fundacional del </tspan><tspan x="0" y="459">M-19 estuvo compuesto, entre otros, por la gente cercana a </tspan><tspan x="0" y="486">las FARC que es expulsada de ese grupo debido a una </tspan><tspan x="0" y="513">ruptura con la manera en que operan, al igual que muchos </tspan><tspan x="0" y="540">que vienen también de otras experiencias, y estaban en la </tspan><tspan x="0" y="567">búsqueda de caminos diferentes. Así que, la fundación marca </tspan><tspan x="0" y="594">la semilla de esa pregunta por ¿cómo hacer la revolución en </tspan><tspan x="0" y="621">Colombia?</tspan><tspan x="400.5537" y="675" class="player-signature">Vera Grabe</tspan>
@@ -415,7 +415,7 @@ const G06 = {
   `,
 };
 const G07 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">CORRIENTE DE RENOVACIÓN SOCIALISTA</tspan><tspan x="0" y="27">1991 - 1994</tspan><tspan x="0" y="81">La Corriente de Renovación Socialista es una fracción del </tspan><tspan x="0" y="108">Ejército de Liberación Nacional que firmó el acuerdo de </tspan><tspan x="0" y="135">negociación con el Gobierno en abril del año 94. Hubo </tspan><tspan x="0" y="162">previamente un debate interno muy profundo que terminó </tspan><tspan x="0" y="189">con la ruptura, la salida nuestra y la negociación posterior. </tspan><tspan x="0" y="216">En el debate interno del ELN había un sector llamado los </tspan><tspan x="0" y="243">Perestroikos, que plantearon el debate por las reformas que </tspan><tspan x="0" y="270">se estaban dando en la Unión Soviética con la Perestroika y </tspan><tspan x="0" y="297">las reformas de Fidel en Cuba con la rectificación de errores. </tspan><tspan x="0" y="324">Entonces, planteamos el debate interno en la Asamblea </tspan><tspan x="0" y="351">Nacional de la UCELN en diciembre de 1989, con la </tspan><tspan x="0" y="378">necesidad de replantear la lucha armada, y de abrirnos a la </tspan><tspan x="0" y="405">movilización social, en especial a la participación en la </tspan><tspan x="0" y="432">Asamblea Constituyente. Al interior del ELN no hubo </tspan><tspan x="0" y="459">posibilidad de una negociación, simplemente nos expulsaron </tspan><tspan x="0" y="486">e inclusive sectores del ELN nos declararon enemigos y </tspan><tspan x="0" y="513">objetivos militares, por lo que tuvimos que pasar a una doble </tspan><tspan x="0" y="540">clandestinidad. Sin embargo, cuando rompimos con el ELN </tspan><tspan x="0" y="567">para organizarnos en otra guerrilla, prevaleció la posición de </tspan><tspan x="0" y="594">la negociación política.</tspan><tspan x="235.1655" y="648" class="player-signature">Fernando Hernández Valencia</tspan>
@@ -442,7 +442,7 @@ const G07 = {
   `,
 };
 const G08 = {
-  player:`
+  player: `
   <rect x="639.0618" y="-3.5288" style="opacity:0.09; fill:#252526;" width="535.1827" height="1081.8749"/>
   <text transform="matrix(1 0 0 1 661.2535 135.1814)" class="player-description">
   <tspan x="0" y="0" class="player-bold">FUERZAS ARMADAS REVOLUCIONARIAS DE COLOMBIA - </tspan><tspan x="0" y="27" class="player-bold">EJÉRCITO DEL PUEBLO</tspan><tspan x="0" y="54">1964 - 2017</tspan><tspan x="0" y="108">Las FARC, como todos saben, nace de la agresión a un grupo </tspan><tspan x="0" y="135">de campesinos organizados que venía de una experiencia de </tspan><tspan x="0" y="162">la violencia liberal-conservadora y tenían un acumulado </tspan><tspan x="0" y="189">político y militar, y, una experiencia social. Se inicia la </tspan><tspan x="0" y="216">resistencia con un llamado al diálogo, con un grito a muchas </tspan><tspan x="0" y="243">personalidades en Colombia, a la intelectualidad francesa, a </tspan><tspan x="0" y="270">la iglesia, y al Gobierno cuando se supo del operativo </tspan><tspan x="0" y="297">planeado sobre Marquetalia. Les dijeron: “no lo hagan, </tspan><tspan x="0" y="324">dialoguemos, conversemos”, pero lo hicieron y el resultado </tspan><tspan x="0" y="351">fue el surgimiento de las FARC con un programa político, </tspan><tspan x="0" y="378">pero siempre, con un interés de búsqueda de una solución </tspan><tspan x="0" y="405">política al conflicto. En estos días tuve una conversación con </tspan><tspan x="0" y="432">los hijos del general Matallana, quien condujo la operación </tspan><tspan x="0" y="459">Marquetalia y me regalaron un libro de él, en donde encontré </tspan><tspan x="0" y="486">unas cartas cruzadas entre Marulanda y Jacobo Arenas en </tspan><tspan x="0" y="513">los 70. Ahí vi dos hombres que buscaban caminos para </tspan><tspan x="0" y="540">resolver ese conflicto armado a través del diálogo. </tspan><tspan x="0" y="567">Marulanda y Jacobo Arenas, siempre estuvieron </tspan><tspan x="0" y="594">buscando cualquier posibilidad para lograr un camino </tspan><tspan x="0" y="621">de solución política.</tspan><tspan x="255.2129" y="675" class="player-signature">Rodrigo Londoño Echeverri</tspan>
@@ -469,8 +469,14 @@ const G08 = {
   `,
 };
 const G09 = {
-  frameList: [[1,'M-01'],[2,'M-02'],[3,'M-06'],[5,'M-01'],[6,'M-02']],
-  player:`
+  frameList: [
+    [1, "M-01"],
+    [2, "M-02"],
+    [3, "M-06"],
+    [5, "M-01"],
+    [6, "M-02"],
+  ],
+  player: `
   <polygon class="ictj-fill-color node-opacity" points="1246.6432,989.6115 1248.5929,992.9282 1249.84,996.6042 1250.0758,1000.4974
       1249.1238,1004.2591 1247.8995,1007.9351 1245.6041,1011.0764 1242.4385,1013.2861 1239.166,1015.2079 1235.5143,1016.281
       1231.6927,1016.8091 1227.9286,1015.945 1224.2592,1014.7144 1221.0731,1012.4756 1218.5302,1009.532 1217.1053,1005.9453
@@ -755,7 +761,12 @@ const G09 = {
 `,
 };
 const G10 = {
-  frameList: [[1,'M-01'],[2,'M-02'],[3,'M-03'],[4,'M-06']],
+  frameList: [
+    [1, "M-01"],
+    [2, "M-02"],
+    [3, "M-03"],
+    [4, "M-06"],
+  ],
   player: `
 
     <polygon class="cev-fill-color node-opacity" points="1224.09,962.38 1224.67,964.21 1223.73,965.93 1223.45,967.69 1223.65,969.61 1222.47,971.12
@@ -993,11 +1004,11 @@ const G10 = {
     </g>
   </g>
 
-  `
+  `,
 };
 const G11 = {
-  player:`
-  <rect x="630.1482" y="0.1359" style="fill:#266041;opacity:0.15;" width="549.574" height="1090"/>
+  player: `
+  <rect x="436.9468" y="4.6318" style="fill:#266041;opacity:0.15;" width="744.1998" height="1090"/>
   <g class="abc-node" id="abc-node-1">
   	<text id="abc-theme-1" transform="matrix(1 0 0 1 1404.3845 723.6883)" class="abc-theme">IDEOLOGÍA ELN</text>
   	<rect x="1360" y="710.9382" class="invisible" width="394.6508" height="14.222"/>
@@ -1060,12 +1071,22 @@ const G11 = {
   			c78.5031,0,89.5726,3.3696,159.0588,3.3696"/>
   	</g>
 
-  	<g id="organizer-player-1">
+    <foreignObject transform="matrix(0.9814 0 0 0.9804 477.5385 359.9138)" x="0" y="0" width="667" height="400">
+
+    <video width="667" height="377" controls>
+      <source src="video/abcpaz.mp4" type="video/mp4"/>
+      Your browser does not support HTML video.
+    </video>
+    </foreignObject>
+
+  	<g id="organizer-player-1" transform="translate(-99 0)">
   		<text id="organizer-text-1" transform="matrix(1 0 0 1 691.5695 163.8143)" class="player-bold">IDEOLOGÍA ELN</text>
   		<text id="organizer-time-1" class="time" transform="matrix(1 0 0 1 1028.4347 209.384)">– 00:00 / 00:00</text>
   		<line id="organizer-timeline-1" class="timeline " x1="691.6664" y1="203.834" x2="1020.6664" y2="203.834"/>
   		<line id="organizer-marker-1" class="marker " x1="691.6664" y1="193.5995" x2="691.6664" y2="214.6957"/>
   		<line id="organizer-timebar-1" class="timebar " x1="691.6664" y1="203.834" x2="691.6664" y2="203.834"/>
+
+
   		<g id="organizer-button-1">
   			<polygon id="organizer-play-1" class="play-button " points="
   				663.7491,213.8287 663.7491,194.5796 663.7722,194.3619 663.8124,194.1964 663.8974,194.0175 664.0048,193.8476 664.1299,193.7045

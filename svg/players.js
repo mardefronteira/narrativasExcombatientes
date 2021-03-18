@@ -1,5 +1,5 @@
 let characterPlayer = `
-<rect class="player-background" x="638.0618" y="1" style="opacity:0.09;fill:#F3022F;" width="504.769" height="1077.3461"/>
+<rect class="player-background" x="638.0618" y="1" style="opacity:0.09;fill:#F3022F;" width="515" height="1077.3461"/>
 <line id="character-timeline" class="timeline" x1="684.8922" y1="205.0567" x2="1013.8922" y2="205.0567"/>
 <text id="character-time" transform="matrix(1 0 0 1 1021.6605 211.0184)" class="time">– 00:00 / 00:00</text>
 <text transform="matrix(1 0 0 1 681.6605 90.2004)" class="player-regular">
@@ -17,4 +17,4 @@ let characterPlayer = `
 </g>
 <line id="character-timebar" class="timebar" x1="684.8922" y1="205.0567" x2="684.8922" y2="205.0567"/>
 <line id="character-marker" class="marker" x1="684.8922" y1="193.8952" x2="684.8922" y2="214.9914"/>
-`
+`;
