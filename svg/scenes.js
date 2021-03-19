@@ -123,7 +123,7 @@ let E01 = {
       <svg version="1.1" id="E-01-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 viewBox="0 0 400 70" style="enable-background:new 0 0 400 70;" xml:space="preserve">
       <style type="text/css">
-      	.st_0{fill:#F27777;}
+      	.st_0{fill:#ff6b00;}
       	.st_1{fill:none;}
       	.st_2{fill:#002F87;}
       	.st_3{font-family:'Heebo';}
@@ -146,7 +146,7 @@ let E01 = {
     </div>
   </foreignObject>
 `,
-}
+};
 let E03 = {
   node: `855.1132,907.0385
   	849.9958,904.3903 844.119,905.6941 840.3556,900.4321 833.2849,902.2891 830.9409,895.9703 826.1947,893.312 823.41,888.6507
@@ -196,7 +196,7 @@ let E03 = {
     <line id="E-03-timebar" class="timebar" x1="487.8922" y1="727.0568" x2="487.8922" y2="727.0568"/>
     <line id="E-03-marker" class="marker" x1="487.8922" y1="715.8952" x2="487.8922" y2="736.9913"/>
   `,
-}
+};
 let E04 = {
   node: `789.01,663.02
   	784.25,663.09 781.02,660.06 779.88,655.39 776.14,653.01 774.03,649.3 774.44,644.9 774.96,640.89 774.07,636.78 773.58,632.22
@@ -239,7 +239,7 @@ let E04 = {
     <tspan x="0" y="51">En este diálogo se analizan las causas por las que </tspan><tspan x="0" y="78">se sigue reproduciendo un ciclo de violencia en el </tspan><tspan x="0" y="105">país, considerando que los factores de </tspan><tspan x="0" y="132">persistencia son elementos o circunstancias que </tspan><tspan x="0" y="159">se perpetúan o prolongan en el tiempo, a pesar de </tspan><tspan x="0" y="186">las negociaciones pactadas. Los factores de </tspan><tspan x="0" y="213">persistencia son de diferente naturaleza; </tspan><tspan x="0" y="240">históricos, económicos, políticos, socioculturales, </tspan><tspan x="0" y="267">e internacionales.</tspan>
   </text>
 `,
-}
+};
 let E06 = {
   node: `1123.6638,295.0528
   	1118.5133,300.343 1122.1543,304.1177 1123.1713,308.3833 1125.7911,312.899 1117.5153,316.3188 1118.8728,320.6609
@@ -305,9 +305,9 @@ let E06 = {
   <line id="E-06-timebar" class="timebar" x1="727.8922" y1="987.0568" x2="727.8922" y2="987.0568"/>
   <line id="E-06-marker" class="marker" x1="727.8922" y1="975.8952" x2="727.8922" y2="996.9913"/>
   `,
-}
+};
 let E07 = {
-  relatedGuide:['guide-06'],
+  relatedGuide: ["guide-06"],
   node: `755.4766,960.9152
   	754.077,959.4631 751.4517,960.2847 751.3444,957.0624 749.1467,956.8773 747.754,955.6099 747.4478,953.4711 745.8307,952.3897
   	745.5873,950.446 744.5217,948.9609 742.6218,947.6376 742.0509,945.7809 742.5135,943.7806 741.7035,941.9151 743.8529,940.1505
@@ -384,7 +384,7 @@ let E07 = {
       <tspan x="0" y="29" >acuerdos de paz</tspan>
     </text>
   </g>`,
-}
+};
 let E08 = {
   node: `674.5076,550.4149
   	677.0271,551.88 680.5911,551.8427 682.4489,554.4296 684.7419,556.481 688.1323,558.0994 686.8271,562.2009 687.5533,565.0422
@@ -432,7 +432,7 @@ let E08 = {
     <line id="E-08-timebar" class="timebar" x1="287.8922" y1="837.0568" x2="287.8922" y2="837.0568"/>
     <line id="E-08-marker" class="marker" x1="287.8922" y1="825.8952" x2="287.8922" y2="846.9913"/>
   `,
-}
+};
 let E09 = {
   node: `705.91,465.11
   	700.17,467.21 696.7,464 695.81,457.59 690.34,457.59 686.63,455.03 686.08,449.82 685.05,445.5 680.77,443.14 675.88,440.47
@@ -478,9 +478,9 @@ let E09 = {
     <tspan x="0" y="0" class="player-bold">FINANZAS</tspan>
   <tspan x="0" y="51">Excombatientes de las guerrillas expusieron </tspan><tspan x="0" y="78">las diversas estrategias de financiación que </tspan><tspan x="0" y="105">desde los años 60 desarrollaron estas </tspan><tspan x="0" y="132">organizaciones y cómo los momentos </tspan><tspan x="0" y="159">políticos y las dinámicas de la guerra </tspan><tspan x="0" y="186">afectaron los enfoques de sus actividades. </tspan><tspan x="0" y="213">Por su parte, la forma de financiación de las </tspan><tspan x="0" y="240">autodefensas tuvo un enfoque regional y </tspan><tspan x="0" y="267">diferenciado en cada uno de los bloques, el </tspan><tspan x="0" y="294">cual fue cambiando en cada etapa de su </tspan><tspan x="0" y="321">desarrollo, siempre respondiendo a la </tspan><tspan x="0" y="348">dinámica no centralizada de esta </tspan><tspan x="0" y="375">organización. Hubo un reconocimiento </tspan><tspan x="0" y="402">común sobre la degradación de la guerra a </tspan><tspan x="0" y="429">causa de la relación con el narcotráfico y </tspan><tspan x="0" y="456">demás economías ilegales. </tspan>
   </text>`,
-}
+};
 let E10 = {
-  relatedGuide: ['guide-05'],
+  relatedGuide: ["guide-05"],
   node: `909.4315,237.663
   	909.0245,242.0593 910.9778,246.3663 910.7231,250.8662 906.6679,254.1993 905.0287,257.9441 904.956,262.9328 901.4545,265.7277
   	897.1761,267.2534 893.7397,269.4531 890.4861,272.3073 886.6716,274.6133 882.4435,276.6728 877.9514,274.8674 873.6774,274.2075
@@ -560,7 +560,7 @@ let E10 = {
       <tspan x="0" y="29">acuerdos de paz</tspan>
     </text>
   </g>`,
-}
+};
 let E11 = {
   node: `603.6063,863.3466
   	603.4953,867.4599 602.5505,871.451 605.2962,876.5076 603.7735,880.7581 601.8913,884.8852 595.2263,885.4591 594.5611,890.2993
@@ -609,7 +609,7 @@ let E11 = {
     <tspan x="0" y="51">El conflicto armado interno en </tspan><tspan x="0" y="78">Colombia y la encrucijada de </tspan><tspan x="0" y="105">violencias protagonizadas por </tspan><tspan x="0" y="132">diferentes actores armados durante </tspan><tspan x="0" y="159">más de cincuenta años, ha generado </tspan><tspan x="0" y="186">fuertes impactos en el país. A través </tspan><tspan x="0" y="213">del diálogo, los participantes buscan </tspan><tspan x="0" y="240">aclarar los contextos y explicar las </tspan><tspan x="0" y="267">circunstancias que propiciaron estas </tspan><tspan x="0" y="294">afectaciones.</tspan>
   </text>
   </g>`,
-}
+};
 let E12 = {
   node: `568.9958,636.3518
   	568.0765,640.2867 565.8052,643.069 561.4774,643.2285 561.3286,649.2567 558.0609,651.0315 553.0169,649.04 551.9606,655.7284
@@ -663,7 +663,7 @@ let E12 = {
     <tspan x="0" y="51">El conflicto armado interno en </tspan><tspan x="0" y="78">Colombia y la encrucijada de violencias </tspan><tspan x="0" y="105">protagonizadas por diferentes actores </tspan><tspan x="0" y="132">armados durante más de cincuenta </tspan><tspan x="0" y="159">años, ha generado fuertes impactos en </tspan><tspan x="0" y="186">el país. A través del diálogo, los </tspan><tspan x="0" y="213">participantes buscan aclarar los </tspan><tspan x="0" y="240">contextos y explicar las circunstancias </tspan><tspan x="0" y="267">que propiciaron estas afectaciones.</tspan>
   </text>
 `,
-}
+};
 let E13 = {
   node: `558.6566,466.8291
   	556.5679,464.8899 554.3079,463.7589 550.3914,464.8505 548.0704,463.1053 547.0101,460.2066 545.0107,458.2213 545.4967,454.8556
@@ -714,7 +714,7 @@ let E13 = {
   </text>
   </g>
 `,
-}
+};
 let E15 = {
   node: `657.6917,183.2577
   	654.1774,184.4142 652.0049,182.4335 651.4107,178.5805 648.0817,178.4144 645.839,176.7339 645.5131,173.5455 644.9189,170.8683
@@ -763,7 +763,7 @@ let E15 = {
     <tspan x="0" y="51">En este diálogo se analizan las causas por las que </tspan><tspan x="0" y="78">se sigue reproduciendo un ciclo de violencia en el </tspan><tspan x="0" y="105">país, considerando que los factores de </tspan><tspan x="0" y="132">persistencia son elementos o circunstancias que </tspan><tspan x="0" y="159">se perpetúan o prolongan en el tiempo, a pesar de </tspan><tspan x="0" y="186">las negociaciones pactadas. Los factores de </tspan><tspan x="0" y="213">persistencia son de diferente naturaleza; </tspan><tspan x="0" y="240">históricos, económicos, políticos, socioculturales, </tspan><tspan x="0" y="267">e internacionales.</tspan>
   </text>
 `,
-}
+};
 let E17 = {
   node: `452.4293,924.176
   	451.063,921.4758 448.7449,921.0002 447.3433,919.0397 444.9123,918.435 443.0169,917.0374 443.045,914.0606 439.4034,913.7975
@@ -776,7 +776,7 @@ let E17 = {
   	485.7497,906.3815 485.4576,908.7376 483.0738,910.1923 483.7796,913.1913 480.7708,913.9377 481.4112,917.4604 479.8807,919.4127
   	477.4271,920.2804 475.1749,921.1876 473.5975,923.2449 470.7862,922.7567 468.1197,921.7906 466.1944,922.9825 464.3185,926.0965
   	461.8695,925.486 459.4577,925.8327 457.0894,925.3604 454.8227,924.5533 `,
-    player: `
+  player: `
     <rect id="player-background" class="M-02-player player-background" x="185.2175" y="0" width="510.2362" height="1090"/>
     <text id="E-17-time" transform="matrix(1 0 0 1 563.4347 782.8926)" class="time">– 00:00 / 00:00</text>
     <line id="scene-timeline" class="timeline" x1="226.6664" y1="777.6698" x2="555.6664" y2="777.6698"/>
@@ -813,9 +813,9 @@ let E17 = {
       <tspan x="0" y="51">Excombatientes de las guerrillas expusieron las </tspan><tspan x="0" y="78">diversas estrategias de financiación que desde </tspan><tspan x="0" y="105">los años 60 desarrollaron estas organizaciones y </tspan><tspan x="0" y="132">cómo los momentos políticos y las dinámicas de </tspan><tspan x="0" y="159">la guerra afectaron los enfoques de sus </tspan><tspan x="0" y="186">actividades. Por su parte, la forma de financiación </tspan><tspan x="0" y="213">de las autodefensas tuvo un enfoque regional y </tspan><tspan x="0" y="240">diferenciado en cada uno de los bloques, el cual </tspan><tspan x="0" y="267">fue cambiando en cada etapa de su desarrollo, </tspan><tspan x="0" y="294">siempre respondiendo a la dinámica no </tspan><tspan x="0" y="321">centralizada de esta organización. Hubo un </tspan><tspan x="0" y="348">reconocimiento común sobre la degradación de la </tspan><tspan x="0" y="375">guerra a causa de la relación con el narcotráfico y </tspan><tspan x="0" y="402">demás economías ilegales. </tspan>
     </text>
     `,
-}
+};
 let E18 = {
-  relatedGuide: ['guide-04','guide-07'],
+  relatedGuide: ["guide-04", "guide-07"],
   node: `398.6001,702.7811
   	397.0771,695.7375 393.4252,694.2267 389.8125,692.4785 384.9246,691.946 380.8981,689.8901 379.8695,685.1706 375.4043,683.0676
   	375.3876,678.1542 373.2461,674.5238 369.4203,671.2664 371.3768,666.3531 370.0348,662.3102 367.6518,658.1055 372.0287,654.0314
@@ -876,9 +876,9 @@ let E18 = {
       <tspan x="0" y="29">acuerdos de paz</tspan>
     </text>
   </g>`,
-}
+};
 let E19 = {
-  relatedGuide: ['guide-02','guide-08'],
+  relatedGuide: ["guide-02", "guide-08"],
   node: `424.986,511.2916
   	423.496,510.3729 422.9071,508.0268 421.4862,507.3347 420.5134,506.0618 419.036,505.3321 416.8076,505.0417 415.5304,503.8049
   	416.8494,501.1611 415.2783,500.1366 415.8306,498.2788 415.0946,496.8733 414.131,495.4078 414.9186,493.7769 413.7733,492.1324
@@ -939,7 +939,7 @@ let E19 = {
       <tspan x="0" y="29">acuerdos de paz</tspan>
     </text>
   </g>`,
-}
+};
 let E20 = {
   node: `520.36,283.71
   	514.86,285.52 511.46,282.42 510.53,276.39 505.32,276.13 501.81,273.5 501.3,268.51 500.37,264.32 496.43,261.77 491.97,258.87
@@ -987,7 +987,7 @@ let E20 = {
   <tspan x="0" y="51">El conflicto armado interno en </tspan><tspan x="0" y="78">Colombia y la encrucijada de violencias </tspan><tspan x="0" y="105">protagonizadas por diferentes actores </tspan><tspan x="0" y="132">armados durante más de cincuenta </tspan><tspan x="0" y="159">años, ha generado fuertes impactos en </tspan><tspan x="0" y="186">el país. A través del diálogo, los </tspan><tspan x="0" y="213">participantes buscan aclarar los </tspan><tspan x="0" y="240">contextos y explicar las circunstancias </tspan><tspan x="0" y="267">que propiciaron estas afectaciones.</tspan>
   </text>
   </g>`,
-}
+};
 let E21 = {
   node: `339.3772,455.2575
   	334.0164,458.279 330.9751,464.2302 323.707,463.7957 317.9561,464.91 312.7707,467.0797 307.8565,471.4417 302.1042,474.1776
@@ -1034,7 +1034,7 @@ let E21 = {
     <tspan x="0" y="0" class="player-bold">PERSISTENCIA</tspan>
     <tspan x="0" y="51">En este diálogo se analizan las causas por las </tspan><tspan x="0" y="78">que se sigue reproduciendo un ciclo de </tspan><tspan x="0" y="105">violencia en el país, considerando que los </tspan><tspan x="0" y="132">factores de persistencia son elementos o </tspan><tspan x="0" y="159">circunstancias que se perpetúan o prolongan </tspan><tspan x="0" y="186">en el tiempo, a pesar de las negociaciones </tspan><tspan x="0" y="213">pactadas. Los factores de persistencia son de </tspan><tspan x="0" y="240">diferente naturaleza; históricos, económicos, </tspan><tspan x="0" y="267">políticos, socioculturales, e internacionales.</tspan>
   </text>`,
-}
+};
 let E22 = {
   node: `463.2785,133.4292
   	460.6479,134.0727 458.7965,135.4015 456.3613,135.6746 454.2828,136.3021 452.2115,136.7953 450.4162,138.6604 448.2954,140.3955
@@ -1083,7 +1083,7 @@ let E22 = {
     <tspan x="0" y="51">En este diálogo se analizan las causas por las que </tspan><tspan x="0" y="78">se sigue reproduciendo un ciclo de violencia en el </tspan><tspan x="0" y="105">país, considerando que los factores de </tspan><tspan x="0" y="132">persistencia son elementos o circunstancias que </tspan><tspan x="0" y="159">se perpetúan o prolongan en el tiempo, a pesar de </tspan><tspan x="0" y="186">las negociaciones pactadas. Los factores de </tspan><tspan x="0" y="213">persistencia son de diferente naturaleza; </tspan><tspan x="0" y="240">históricos, económicos, políticos, socioculturales, </tspan><tspan x="0" y="267">e internacionales.</tspan>
   </text>
 `,
-}
+};
 let E23 = {
   node: `289.1368,915.4932
   	291.7065,919.6233 295.2162,920.8506 298.8575,921.9164 302.5457,923.0833 304.0437,927.5762 308.5658,927.7126 311.4893,930.1192
@@ -1142,9 +1142,9 @@ let E23 = {
   <line id="E-23-timebar" class="timebar" x1="207.8921" y1="727.0568" x2="207.8921" y2="727.0568"/>
   <line id="E-23-marker" class="marker" x1="207.8921" y1="715.8952" x2="207.8921" y2="736.9913"/>
   `,
-}
+};
 let E24 = {
-  relatedGuide: ['guide-03'],
+  relatedGuide: ["guide-03"],
   node: `380.2634,152.5819
   	378.8334,153.3591 378.272,155.0694 376.1626,154.9055 375.516,156.668 373.749,156.7227 372.808,158.2731 370.5188,156.7655
   	369.5123,158.2931 368.2896,159.5749 366.7054,159.5574 365.0272,158.3796 363.5619,157.919 362.1303,159.7528 360.622,159.5379
@@ -1160,7 +1160,7 @@ let E24 = {
   	383.4282,126.5926 382.0561,128.7623 383.9915,129.5854 384.3698,131.0126 385.1329,132.3727 385.7766,133.813 383.9398,135.4381
   	385.6525,136.8692 384.7817,138.3178 384.2704,139.7204 384.1618,141.1689 384.9088,142.8875 382.5616,143.6677 384.3369,145.9528
   	382.4251,146.72 380.6907,147.3869 382.2151,150.1288 380.0594,150.4188 `,
-  player:`<rect id="player-background" class="M-06-player player-background" x="40.35" y="-1" width="513" height="1090"/>
+  player: `<rect id="player-background" class="M-06-player player-background" x="40.35" y="-1" width="513" height="1090"/>
   <line id="scene-timeline" class="timeline" x1="83.89" y1="927.06" x2="412.89" y2="927.06"/>
   <text id="E-24-time" transform="matrix(1 0 0 1 420.6604 933.5091)" class="time">– 00:00:00</text>
 
@@ -1210,7 +1210,7 @@ let E24 = {
     </text>
   </g>
   `,
-}
+};
 let E25 = {
   node: `170.1903,704.7034
   	172.3311,706.8783 173.4763,709.6679 173.4853,712.7245 174.7251,715.5637 174.732,718.6006 174.2048,721.595 175.1275,725.2294
@@ -1220,7 +1220,7 @@ let E25 = {
   	131.9132,707.8827 134.2501,705.4067 136.8624,703.4338 137.2695,699.4818 141.0051,698.9509 142.7114,695.5513 146.4713,696.1359
   	149.6984,696.6503 152.5632,696.1814 155.4469,696.5233 158.7453,695.0876 161.016,697.8755 165.1942,696.3687 166.8999,699.5657
   	170.3158,700.5662 `,
-    player: `
+  player: `
     <rect id="player-background" class="M-02-player player-background" x="85.2175" y="0" width="510.2362" height="1090"/>
     <text id="E-25-time" transform="matrix(1 0 0 1 463.4347 962.8926)" class="time">– 00:00:00</text>
     <line id="scene-timeline" class="timeline" x1="126.6664" y1="957.6698" x2="455.6664" y2="957.6698"/>
@@ -1258,4 +1258,4 @@ let E25 = {
     </text>
 
     `,
-}
+};

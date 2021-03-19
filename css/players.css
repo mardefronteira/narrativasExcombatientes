@@ -47,6 +47,7 @@ div#M-06-div {
 
 iframe#M-06-final {
  width: 100%;
+ margin-top: 5vh;
 }
 
 svg#E-01-button {
@@ -56,7 +57,7 @@ svg#E-01-button {
 }
 
 iframe#M-06-initial {
-padding-top: 40vh;
+padding-top: 25vh;
 width: 100%;
 }
 
@@ -69,7 +70,6 @@ width: 100%;
   fill: #f2f2f2;
   diplay:block;
 }
-
 
 /* player */
 

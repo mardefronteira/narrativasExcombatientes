@@ -1073,10 +1073,7 @@ const G11 = {
 
     <foreignObject transform="matrix(0.9814 0 0 0.9804 477.5385 359.9138)" x="0" y="0" width="667" height="400">
 
-    <video width="667" height="377" controls>
-      <source src="video/abcpaz.mp4" type="video/mp4"/>
-      Your browser does not support HTML video.
-    </video>
+    <iframe src="https://player.vimeo.com/video/525857637" width="667" height="377" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </foreignObject>
 
   	<g id="organizer-player-1" transform="translate(-99 0)">
