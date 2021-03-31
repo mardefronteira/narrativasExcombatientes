@@ -1,85 +1,89 @@
 .organizer-text {
-  fill:#002F87;
+  fill: #002f87;
   font-weight: bolder;
-  font-size:18px;
+  font-size: 18px;
+  stroke: none;
 }
 
 .organizer-name {
-  fill:#002F87;
+  fill: #002f87;
   font-weight: bolder;
-  font-size:21px;
+  font-size: 21px;
+  stroke: none;
 }
 
 .organizer-node {
-  fill:#F3022F;
-  opacity: .77;
+  fill: #f3022f;
+  opacity: 0.77;
 }
 
 .organizer-description {
-  color:#002F87;
-  font-size:18px;
+  color: #002f87;
+  font-size: 18px;
   height: 880px;
   padding: 0 10px;
-  position:relative;
+  position: relative;
   overflow: auto;
+  fill: #002f87;
+  stroke: none;
 }
 
 .organizer-time {
-  fill:#002F87;
-  font-size:15px;
+  fill: #002f87;
+  font-size: 15px;
   letter-spacing: 2px;
 }
 
 .cev-stroke-color {
-  stroke: #986B58;
+  stroke: #986b58;
 }
 
 .cev-fill-color {
-  fill:#002F87;
-  stroke:none;
+  fill: #002f87;
+  stroke: none;
 }
 
 .ictj-fill-color {
-  fill:#FF6B00;
-  stroke:none;
+  fill: #ff6b00;
+  stroke: none;
 }
 
 .ictj-stroke-color {
-  stroke:#FF6B00;
+  stroke: #ff6b00;
 }
 
 .abc-fill-color {
-  fill:#00B189;
-  stroke:none;
+  fill: #00b189;
+  stroke: none;
 }
 
 .abc-darkfill {
-  fill:#266041;
-  stroke:none;
+  fill: #266041;
+  stroke: none;
 }
 
 .abc-stroke-color {
-  stroke:#266041;
+  stroke: #266041;
 }
 
 .abc-theme {
-  font-size:18px;
+  font-size: 18px;
   fill: black;
   font-weight: bolder;
 }
 
 .abc-link {
-  opacity:0.7;
-  fill:none;
-  stroke:#266041;
-  stroke-width:0.7;
-  stroke-miterlimit:10;
+  opacity: 0.7;
+  fill: none;
+  stroke: #266041;
+  stroke-width: 0.7;
+  stroke-miterlimit: 10;
 }
 
 .abc-name {
-  fill:#266041;
+  fill: #266041;
   font-weight: bolder;
-  font-size:21px;
+  font-size: 21px;
 }
 
 .node-opacity {
@@ -87,5 +91,5 @@
 }
 
 .abc-node {
-  cursor:pointer;
+  cursor: pointer;
 }

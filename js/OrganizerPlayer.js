@@ -145,9 +145,6 @@ class OrganizerPlayer {
     const thisAudio = this.audios[targetId].audio;
     const thisTime = this.audios[targetId].duration;
 
-    // console.log(targetId);
-    // console.log(thisAudio);
-
     // set audio source and total time
     let audioElement = document.querySelector(`#organizer-audio-1`);
     audioElement.src = `../audios/${thisAudio}`;
@@ -163,16 +160,16 @@ class OrganizerPlayer {
     let textElement = document.querySelector(`#organizer-text-1`);
     textElement.innerHTML = thisTheme;
 
-    // Display element with the play button
-    document.querySelector("#organizer-play-1").classList.remove("hidden");
-    document.querySelector("#organizer-pause-1").classList.add("hidden");
-
     // pause all other players
     Array.from(document.querySelectorAll("audio")).map((audio) =>
       audio.id !== audioElement.id ? audio.pause() : ``
     );
     d3.selectAll(".play-button").classed("hidden", false);
     d3.selectAll(".pause-button").classed("hidden", true);
+
+    // Display element with the play button
+    document.querySelector("#organizer-play-1").classList.add("hidden");
+    document.querySelector("#organizer-pause-1").classList.remove("hidden");
 
     audioElement.play();
   }
