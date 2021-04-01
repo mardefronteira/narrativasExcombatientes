@@ -126,6 +126,7 @@ text#menu-title {
   left: 3vw;
   cursor: pointer;
   letter-spacing: 1px;
+  font-weight: bolder;
   fill: #fff;
   stroke: none;
   font-size: 19px;
@@ -133,7 +134,7 @@ text#menu-title {
 
 text#menu-title.in-intro {
   fill: #000;
-  stroke: #000;
+  stroke: none;
 }
 
 #info-menu-content.in-intro {

@@ -204,7 +204,6 @@ class ScenePlayer {
     const target = e.target || e.srcElement,
       clickBox = target.getBoundingClientRect(),
       offsetX = e.clientX - clickBox.left;
-    // console.log(offsetX);
 
     // update audio time based on where the marker was dragged
     let targetType = e.target.id.split("-")[0];

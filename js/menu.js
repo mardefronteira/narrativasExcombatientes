@@ -41,11 +41,9 @@ function handleSound() {
     playButton.classList.remove("invisible");
 
     if (!d3.select("#guide-modal").classed("modal-hidden")) {
-      console.log("foi aqi");
       guideAudio.currentTime = 0;
       guideAudio.play();
     } else if (lastClick.type == "restart") {
-      console.log("foi aqiuuu");
       homeAudio.currentTime = 0;
       homeAudio.play();
     }

@@ -5,9 +5,8 @@ class OrganizerPlayer {
     this.jsId = this.id.replace("-", "");
     this.playerSVG = eval(`${this.jsId}.player`); // player SVG in ./svg/players.js
     this.audios = eval(`${this.jsId}.audios`);
-    // this.audioFiles = eval(`${this.jsId}.audioFiles`);
-    // this.audioTimes = eval(`${this.jsId}.audioTimes`);
-    // this.characters = [];
+    this.timecodes = [];
+    this.characters = [];
     this.clickables = [];
     this.numPlayers = 0;
   }
@@ -45,9 +44,13 @@ class OrganizerPlayer {
       clickableArea.addEventListener("mousedown", (e) => {
         this.setTime(e);
       });
-      document
-        .querySelector(`#organizer-player-${i}`)
-        .appendChild(clickableArea);
+      this.id === "G-11"
+        ? document
+            .querySelector(`#organizer-player-${i}`)
+            .appendChild(clickableArea)
+        : document
+            .querySelector(`#organizer-g-${i}`)
+            .appendChild(clickableArea);
 
       let audioElement = document.createElement("AUDIO");
       audioElement.id = `organizer-audio-${i}`;
@@ -66,6 +69,18 @@ class OrganizerPlayer {
         .addEventListener("click", (e) => {
           this.playPause(e.target.id);
         });
+
+      // if the group is not ABC PAZ, and the player index is one of the interactive ones
+      if (
+        (this.id === "G-09" && ![0, 4].includes(i)) ||
+        (this.id === "G-10" && i !== 0)
+      ) {
+        // set clear characters, set initial time
+        document.querySelector(`#character-name-${i}`).innerHTML = "";
+        document.querySelector(`#character-alias-${i}`).innerHTML = "";
+        document.querySelector(`#character-group-${i}`).innerHTML = "";
+        document.querySelector(`#character-overflow-${i}`).innerHTML = "";
+      }
 
       let timeString = document.getElementById(`organizer-time-${i}`);
       timeString.innerHTML = `– 00:00 / ${this.audios[i].duration}`;
@@ -92,6 +107,43 @@ class OrganizerPlayer {
         });
       }
     }
+
+    if (this.id !== "G11") {
+      for (let audio of this.audios) {
+        // get audio times
+        this.timecodes.push(
+          data["audios"].filter((relation) => relation["scene"] === audio.id)
+        );
+      }
+      // populate this.characters array with their info
+      this.characters = this.getCharacters();
+    }
+  }
+
+  getCharacters() {
+    let characterIds = [];
+    let characterInfos = [];
+    this.timecodes.map((scene) => {
+      scene.map((timecode) => {
+        if (!characterIds.includes(timecode.character)) {
+          characterIds.push(timecode.character);
+        }
+      });
+    });
+
+    // map characterIds, push its data to characterInfos
+    characterIds.map((characterId) => {
+      characterInfos.push(
+        data["characters"].filter((info) => info["id"] === characterId)[0]
+      );
+    });
+
+    // get group and subgroup names
+    characterInfos.map((char) => {
+      char.groupName = getGroupName(char);
+    });
+
+    return characterInfos;
   }
 
   playPause(id) {
@@ -195,9 +247,12 @@ class OrganizerPlayer {
   updatePlayer(target) {
     let audioElement = target;
     let targetId = target.id.slice(-1);
-    let duration = document
-      .querySelector(`#organizer-time-${targetId}`)
-      .innerHTML.slice(-5);
+    let duration =
+      document.querySelector(`#organizer-time-${targetId}`) != null
+        ? document
+            .querySelector(`#organizer-time-${targetId}`)
+            .innerHTML.slice(-5)
+        : "";
     let clickable = this.clickables[targetId];
     let currentTime = audioElement.currentTime;
 
@@ -224,6 +279,62 @@ class OrganizerPlayer {
       // update time
       let timeString = document.getElementById(`organizer-time-${targetId}`);
       timeString.innerHTML = `– ${getFormattedTime(currentTime)} / ${duration}`;
+
+      if (this.id !== "G-11") {
+        // check for character info fields, if none, return.
+        const character = document.querySelector(`#character-name-${targetId}`);
+        if (!character) return;
+
+        const alias = document.querySelector(`#character-alias-${targetId}`);
+        const group = document.querySelector(`#character-group-${targetId}`);
+        const groupOverflow = document.querySelector(
+          `#character-overflow-${targetId}`
+        );
+
+        // get character that corresponds to timecode
+        let currentCharacter = this.timecodes[targetId].find(
+          (slice) =>
+            slice.start_sec < currentTime && slice.end_sec > currentTime
+        );
+        if (currentCharacter) {
+          currentCharacter = this.characters.find(
+            (char) => char.id === currentCharacter.character
+          );
+        } else {
+          currentCharacter = {
+            character: "",
+            groupName: "",
+            alias: "",
+          };
+        }
+
+        character.innerHTML = currentCharacter.character;
+        alias.innerHTML = currentCharacter.alias
+          ? `${currentCharacter.alias}`
+          : "";
+
+        switch (currentCharacter.group) {
+          case "G-03":
+            group.innerHTML = "EJÉRCITO DE LIBERACIÓN NACIONAL";
+            groupOverflow.innerHTML = "- REPLANTEAMIENTO";
+            break;
+          case "G-08":
+            group.innerHTML = "FUERZAS ARMADAS REVOLUCIONARIAS DE ";
+            groupOverflow.innerHTML = "COLOMBIA - EJÉRCITO DEL PUEBLO";
+            break;
+          case "G-09":
+            group.innerHTML = "CENTRO INTERNACIONAL PARA LA";
+            groupOverflow.innerHTML = "JUSTICIA TRANSICIONAL";
+            break;
+          case "G-10":
+            group.innerHTML = "COMISIÓN PARA EL ESCLARECIMIENTO DE LA VERDAD,";
+            groupOverflow.innerHTML = "LA CONVICENCIA Y LA NO REPETICIÓN";
+            break;
+          default:
+            group.innerHTML = currentCharacter.groupName;
+            groupOverflow.innerHTML = "";
+        }
+      }
     }
   }
 

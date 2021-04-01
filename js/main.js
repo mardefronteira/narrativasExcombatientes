@@ -65,7 +65,7 @@ d3.select("#background").on("click", function () {
 
   somethingIsActive = false;
 
-  console.log("background click");
+  // console.log("background click");
   if (soundIsOn) {
     let homeAudio = document.querySelector("#home-audio");
     homeAudio.play();
@@ -113,9 +113,9 @@ d3.selectAll(".scene,.group,.subgroup,.character,.character-name,.frame")
     // get element
     getClickedElement(d3.select(this));
     closeGuide();
-    console.log(
-      `last click: ${lastClick.type}(${lastClick.id}), current click: ${click.type}(${click.id})`
-    );
+    // console.log(
+    //   `last click: ${lastClick.type}(${lastClick.id}), current click: ${click.type}(${click.id})`
+    // );
 
     switch (lastClick.type) {
       case "restart":
@@ -313,7 +313,7 @@ d3.selectAll(".scene,.group,.subgroup,.character,.character-name,.frame")
               d3.select(`#${r["group"]}-name`).classed("visible-text", true);
             }
 
-            d3.select(`#${r["character"]}`)
+            d3.select(`#${r["id"]}`)
               .classed("hover", true)
               .classed("active-character", true);
 
@@ -924,7 +924,6 @@ function getGroupName(character) {
 
   if (character.group !== "G-02") {
     groupName = data["groups"].find((group) => group["id"] === character.group);
-    // console.log(groupName)
     groupName = groupName != undefined ? groupName.group : "";
   } else {
     let subgroupName;
@@ -951,7 +950,6 @@ function showRelatedScenes(sceneId, nodeType) {
 
 function showSceneAs(scene, nodeType) {
   let isMinor = nodeType === "minor" ? true : false;
-  // console.log(`isMinor? ${isMinor} to #${scene}-node`)
 
   d3.select(`#${scene}-node`)
     .classed("hidden", false)

@@ -555,6 +555,7 @@ const G09 = {
       class="organizer-name"
       >María Camila Moreno</text
     >
+    <g id="organizer-g-0">
     <text
       transform="matrix(1 0 0 1 553.1799 417.796)"
       id="organizer-time-0"
@@ -616,6 +617,7 @@ const G09 = {
         points="197.8196,354.2749 203.0865,360.1862 201.9875,368.1316 195.548,372.3202
             188.4004,371.1967 183.0288,365.8991 184.0018,358.1202 190.235,353.6665 		"
       />
+      </g>
     </g>
   </g>
 
@@ -631,13 +633,14 @@ const G09 = {
         >Lorem ipsum dolor sit amet,
       </tspan>
       <tspan
-        id="character-group-overflow-1"
+        id="character-overflow-1"
         x="0"
         y="72"
         class="organizer-description"
         >consectetur adipiscing elit.
       </tspan>
     </text>
+    <g id="organizer-g-1">
     <text
       transform="matrix(1 0 0 1 553.1799 576.1155)"
       id="organizer-time-1"
@@ -718,6 +721,7 @@ const G09 = {
       >
     </g>
   </g>
+  </g>
 
   <g id="organizer-player-2">
     <text transform="matrix(1 0 0 1 215.9224 661.0701)">
@@ -731,14 +735,14 @@ const G09 = {
         >Lorem ipsum dolor sit amet,
       </tspan>
       <tspan
-        id="character-group-overflow-2"
+        id="character-overflow-2"
         x="0"
         y="72"
         class="organizer-description"
         >consectetur adipiscing elit.
       </tspan>
     </text>
-    <g transform="matrix(1 0 0 1 0 42)">
+    <g id="organizer-g-2" transform="matrix(1 0 0 1 0 42)">
       <text
         transform="matrix(1 0 0 1 553.1799 733.8962)"
         id="organizer-time-2"
@@ -833,14 +837,14 @@ const G09 = {
         >Lorem ipsum dolor sit amet,
       </tspan>
       <tspan
-        id="character-group-overflow-3"
+        id="character-overflow-3"
         x="0"
         y="72"
         class="organizer-description"
         >consectetur adipiscing elit.
       </tspan>
     </text>
-    <g transform="matrix(1 0 0 1 0 84)">
+    <g id="organizer-g-3" transform="matrix(1 0 0 1 0 84)">
       <text
         transform="matrix(1 0 0 1 553.1799 891.9392)"
         id="organizer-time-3"
@@ -932,6 +936,7 @@ const G09 = {
       class="organizer-name"
       >Juan Carlos Villamizar</text
     >
+    <g id="organizer-g-4">
     <text
       transform="matrix(1 0 0 1 1104.1179 417.796)"
       id="organizer-time-4"
@@ -995,7 +1000,7 @@ const G09 = {
       />
     </g>
   </g>
-
+  </g>
   <g id="organizer-player-5">
     <text transform="matrix(1 0 0 1 767.8604 461.3895)">
       <tspan id="character-name-5" x="0" y="0" class="organizer-name"
@@ -1008,13 +1013,14 @@ const G09 = {
         >Lorem ipsum dolor sit amet,
       </tspan>
       <tspan
-        id="character-group-overflow-5"
+        id="character-overflow-5"
         x="0"
         y="72"
         class="organizer-description"
         >consectetur adipiscing elit.
       </tspan>
     </text>
+    <g id="organizer-g-5">
     <text
       transform="matrix(1 0 0 1 1104.1179 574.5766)"
       id="organizer-time-5"
@@ -1096,6 +1102,7 @@ const G09 = {
       >
     </g>
   </g>
+  </g>
 
   <g id="organizer-player-6">
     <text transform="matrix(1 0 0 1 767.8604 661.0701)">
@@ -1109,14 +1116,14 @@ const G09 = {
         >Lorem ipsum dolor sit amet,
       </tspan>
       <tspan
-        id="character-group-overflow-6"
+        id="character-overflow-6"
         x="0"
         y="72"
         class="organizer-description"
         >consectetur adipiscing elit.
       </tspan>
     </text>
-    <g transform="matrix(1 0 0 1 0 42)">
+    <g id="organizer-g-6" transform="matrix(1 0 0 1 0 42)">
       <text
         transform="matrix(1 0 0 1 1104.1179 734.5837)"
         id="organizer-time-6"
@@ -1315,6 +1322,7 @@ const G10 = {
       class="organizer-name"
       >Lucía González</text
     >
+    <g id="organizer-g-0">
     <text
       transform="matrix(1 0 0 1 553.1799 417.0154)"
       id="organizer-time-0"
@@ -1379,7 +1387,7 @@ const G10 = {
       />
     </g>
   </g>
-
+</g>
   <g id="organizer-player-1">
     <text transform="matrix(1 0 0 1 215.9224 615.0701)">
       <tspan id="character-name-1" x="0" y="0" class="organizer-name"
@@ -1392,14 +1400,14 @@ const G10 = {
         >Lorem ipsum dolor sit amet,
       </tspan>
       <tspan
-        id="character-group-overflow-1"
+        id="character-overflow-1"
         x="0"
         y="72"
         class="organizer-description"
         >consectetur adipiscing elit.
       </tspan>
     </text>
-    <g transform="matrix(1 0 0 1 0 157.3662)">
+    <g id="organizer-g-1" transform="matrix(1 0 0 1 0 157.3662)">
       <text
         transform="matrix(1 0 0 1 553.1799 574.796)"
         id="organizer-time-1"
@@ -1494,14 +1502,14 @@ const G10 = {
         >Lorem ipsum dolor sit amet,
       </tspan>
       <tspan
-        id="character-group-overflow-2"
+        id="character-overflow-2"
         x="0"
         y="72"
         class="organizer-description"
         >consectetur adipiscing elit.
       </tspan>
     </text>
-    <g transform="matrix(1 0 0 1 0 188.3667)">
+    <g id="organizer-g-2" transform="matrix(1 0 0 1 0 188.3667)">
       <text
         transform="matrix(1 0 0 1 553.1799 744.1155)"
         id="organizer-time-2"
@@ -1596,14 +1604,14 @@ const G10 = {
         >Lorem ipsum dolor sit amet,
       </tspan>
       <tspan
-        id="character-group-overflow-3"
+        id="character-overflow-3"
         x="0"
         y="72"
         class="organizer-description"
         >consectetur adipiscing elit.
       </tspan>
     </text>
-    <g transform="matrix(1 0 0 1 0 -41.5267)">
+    <g id="organizer-g-3" transform="matrix(1 0 0 1 0 -41.5267)">
       <text
         transform="matrix(1 0 0 1 1104.1179 574.796)"
         id="organizer-time-3"
@@ -1696,14 +1704,14 @@ const G10 = {
       ><tspan id="character-group-4" x="0" y="48" class="organizer-description"
         >Lorem ipsum dolor sit amet,</tspan
       ><tspan
-        id="character-group-overflow-4"
+        id="character-overflow-4"
         x="0"
         y="72"
         class="organizer-description"
         >consectetur adipiscing elit.</tspan
       ></text
     >
-    <g transform="matrix(1 0 0 1 0 -10.4144)">
+    <g id="organizer-g-4" transform="matrix(1 0 0 1 0 -10.4144)">
       <text
         transform="matrix(1 0 0 1 1104.1179 742.5766)"
         id="organizer-time-4"
