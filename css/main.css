@@ -273,6 +273,10 @@ g#intro-buttons {
   cursor: pointer;
 }
 
+#book-node {
+  cursor: default;
+}
+
 .menu-text {
   font-size: 16px;
   letter-spacing: 1px;
