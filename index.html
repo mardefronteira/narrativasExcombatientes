@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
 
     <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/99775cdb50.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/99775cdb50.js" crossorigin="anonymous"></script> -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js" integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA=" crossorigin="anonymous"></script>
@@ -623,7 +623,7 @@
                 <text transform="matrix(1 0 0 1 1433.3098 796.7824)" class="intro-label">Créditos</text>
               </g>
             </g>
-            <g id="book-node" class="hidden-first">
+            <g id="epub-node" class="hidden-first">
               <polygon class="intro-node" points="760.71,651.57 759.31,656.94 755.51,661.27 750.05,663.05 744.57,662.18 739.52,660.36     735.15,656.87 730.28,652.14 731.05,645.53 733.82,639.75 738.57,635.65 744.11,632.49 750.23,634.38 756.02,635.9 758.31,641.55     763.75,645.64   "/>
               <g id="book-label">
             		<rect class="invisible" x="481" y="676.79" width="249.15" height="14.49"/>
@@ -665,8 +665,12 @@
       </svg>
     </div>
 
+    <div id="epub-modal" class="modal modal-hidden">
+      <iframe id="epub-iframe" src=""></iframe>
+    </div>
 
-    <div id="guide-modal" class="modal modal-hidden">
+
+    <div id="guide-modal" class="modal-hidden modal ">
       <div id="guide-svg-container" class="modal-content">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="30px"
       	 viewBox="0 0 1920 1080" style="background:#E8FFFA;" xml:space="preserve">

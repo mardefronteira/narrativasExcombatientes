@@ -112,10 +112,8 @@ d3.selectAll(".scene,.group,.subgroup,.character,.character-name,.frame")
   .on("click", function () {
     // get element
     getClickedElement(d3.select(this));
+
     closeGuide();
-    // console.log(
-    //   `last click: ${lastClick.type}(${lastClick.id}), current click: ${click.type}(${click.id})`
-    // );
 
     switch (lastClick.type) {
       case "restart":

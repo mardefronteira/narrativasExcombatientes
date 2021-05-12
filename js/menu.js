@@ -114,11 +114,15 @@ function setMenuColor(colorToSet) {
 }
 
 function showIntroPage() {
-  if (d3.select("#intro-page").classed("hidden-intro-page")) {
+  if (
+    d3.select("#intro-page").classed("hidden-intro-page") ||
+    !d3.select("#epub-modal").classed("modal-hidden")
+  ) {
     d3.select("#body").classed("black-bg", true);
     d3.select("#body").classed("gradient-bg", false);
     d3.selectAll(".menu-button").classed("hidden-intro-page", true);
     d3.select("#intro-page").classed("hidden-intro-page", false);
+    d3.select("#epub-modal").classed("modal-hidden", true);
     setMenuColor("black");
     restart();
     closeGuide();
@@ -151,6 +155,14 @@ function init() {
   document.querySelector("#guide-node").addEventListener("click", () => {
     showNarratives();
     openGuide("guide-01");
+  });
+  document.querySelector("#epub-node").addEventListener("click", () => {
+    // load epub
+    const epub = document.querySelector("#epub-iframe");
+    epub.src.slice(-1) !== "l" ? (epub.src = "epub/index.html") : "";
+
+    // show epub
+    document.querySelector("#epub-modal").classList.remove("modal-hidden");
   });
   document.querySelector("#intro-node").addEventListener("click", showVideo);
   document.querySelector("#intro-label").addEventListener("click", showVideo);
@@ -191,9 +203,6 @@ function init() {
 
   // show hidden menu
   setTimeout(showContentInfo, 3000);
-
-  // show video
-  // showVideo();
 }
 
 function setOrganizerInfo() {

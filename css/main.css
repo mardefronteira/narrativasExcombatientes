@@ -273,10 +273,6 @@ g#intro-buttons {
   cursor: pointer;
 }
 
-#book-node {
-  cursor: default;
-}
-
 .menu-text {
   font-size: 16px;
   letter-spacing: 1px;
@@ -720,4 +716,20 @@ cursor: pointer;
 
 .minor-node {
   fill: transparent;
+}
+
+/* epub */
+#epub-iframe {
+  width: 100%;
+  height: 96%;
+  position: absolute;
+  bottom: 0;
+  border: none;
+}
+
+div#epub-modal {
+  background: #dce3db;
+  height: 100vh;
+  z-index: 1030;
+  overflow: hidden;
 }
